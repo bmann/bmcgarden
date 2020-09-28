@@ -1,8 +1,7 @@
 ---
 title: Second Brain
+status: processing
 ---
-
-_A [[WIP]] write up on some personal wiki / second brain concepts_
 
 The concept of wikis goes back to an earlier era of the web. With the advent of blogging (and I would say, RSS feeds to subscribe and follow content from all over), wikis went away for a while.
 

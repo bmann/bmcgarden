@@ -1,7 +1,7 @@
 title: Digital Notes Garden
 name: Boris Mann
 user_description: "Open Source. Community. Decentralized Web. Building dev tools at Fission. Cooks & eats."
-description: "Notes and long term archive for Boris Mann"
+description: "Second Brain, Daily Notes, and long term archive of Boris Mann"
 notes_url: "https://bmannconsulting.com"
 notes_title: Notes, Articles, and Links
 notes_tagline: Information gardening
@@ -12,7 +12,7 @@ baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://bmannconsulting.com" # the base hostname & protocol for your site, e.g. http://example.com
 encoding: utf-8
 
-exclude: ['.env', 'fission.yaml', 'gemset.nix', 'pages']
+exclude: ['.env', 'fission.yaml', 'gemset.nix', 'pages', 'fission.yaml', 'blog.code-workspace', 'netlify.toml', '_ignore']
 
 markdown: CommonMarkGhPages
 # markdown: kramdown
@@ -40,12 +40,12 @@ sass:
   style: compressed
 
 # Default permalink
-permalink: /:path/:title
+permalink: /:path/:title/
 
 collections:
     notes:
       output: true
-      permalink: /:title
+      permalink: /:title/
 
 disqus:
   shortname: raghuveerdotnet
@@ -56,22 +56,25 @@ defaults:
       type: posts
     values:
       layout: post
-      permalink: /blog/:year/:month/:day/:title
+      permalink: /blog/:year/:month/:day/:title/
       content-type: post
+      section: blog
   - scope:
       path: "_posts/archive/*"
       type: posts
     values:
       layout: post
-      permalink: /archive/:year/:month/:day/:title
+      permalink: /archive/:year/:month/:day/:title/
       content-type: post
+      section: archive
   - scope:
       path: "_posts/journal/*"
       type: posts
     values:
       layout: post
-      permalink: /journal/:year/:month/:day/:title
+      permalink: /journal/:year/:month/:day/
       content-type: post
+      section: journal
   - scope:
       path: "_notes/*"
       type: notes

@@ -1,39 +1,7 @@
 ---
 ---
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <meta content="{{ site.name }}'s {{ site.title }}" property="og:site_name"/>
-    <meta content="{{ site.description }}" property="og:description">
-    <meta content="{{ site.url }}/notes/about/" property="article:author">
-
-    {%- if page.title -%}
-    <meta content="{{ page.title }}" property="og:title">
-    <meta content="article" property="og:type">
-    <meta content="{{ site.url }}{{ page.url }}" property="og:url">
-    {%- else -%}
-    <meta content="website" property="og:type">
-    <meta content="{{ site.url }}{{ page.url }}" property="og:url">
-    {%- endif -%}
-
-    <title>{{site.title}}</title>
-
-    <link rel="canonical" href="{{site.url}}{{page.url}}"/>
-    <link rel="apple-touch-icon" href="{{site.profile_pic}}">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
-
-    <link rel="icon" href="{{site.favicon}}" type="image/png" sizes="16x16"/>
-    <link href="/assets/css/style.css" rel="stylesheet" media="all" class="default"/>
-
-    <!--[if IE]>
-        <link href="/assets/css/ie-target.css" rel="stylesheet" type="text/css"/>
-    <![endif]-->
-    <!--<link href="/assets/css/prism.css" rel="stylesheet" />-->
-    <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml">
-</head>
-
+{%- include head.html -%}
+<!-- /head -->
 <body>
     <div class="container">                    
         <div class = "box">
@@ -45,12 +13,17 @@
             <main>
                 <h1>{{page.title}}</h1>
                 {%- include content.html -%}
+                <!-- /content -->
                 {%- include backlinks.html -%}
+                <!-- /backlinks -->
                 {%- include related.html -%}
+                <!-- /related -->
             </main>
             {%- endif -%}
             {%- include comments.html -%}
+            <!-- /comments -->
             {%- include footer.html -%}
+            <!-- /footer -->
         </div>
         <button class="scroll-to-top" id="scroll-to-top"><i class="fa fa-chevron-up"></i></button>
     </div>
@@ -59,6 +32,5 @@
             window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
         });
     </script>
-    {%- include contextmenu.html -%}
 </body>
 </html>

@@ -6,12 +6,6 @@ A place to stash links for further processing
 
 ---
 
-My [[DrupalCon]] video is up https://www.youtube.com/watch?v=vqrc3XH2Vdc
-* Slides on Notist https://noti.st/bmann/3UmZKZ/drupal-and-the-decentralized-web
-* Fission Talk Forum post https://talk.fission.codes/t/drupal-and-the-decentralized-web-boris-mann-drupalcon-global-july-14th/729
-
----
-
 Do I need this relative links filter for [[Jekyll]]? https://github.com/benbalter/jekyll-relative-links
 
 ---

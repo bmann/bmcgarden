@@ -2,12 +2,9 @@
 title: Projects
 ---
 
-I'm the CEO and co-founder of [[Fission]], which is where I spend the bulk of my time.
-
 ## Current Projects
 
 * [[Venture Scouts]]
-* [[AllTheBestRecipes]]
 * [[Vancouver CLT]]
 
 ## Backlog

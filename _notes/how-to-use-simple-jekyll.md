@@ -1,7 +1,6 @@
 ---
 title: How to use Simply Jekyll features on your website
 tags: simplyjekyll
-comments: true
 ---
 
 Welcome to this feature usage tour. This is going to be another short post that describes how to use all the fancy features we saw in [[Exploring the features of Simply Jekyll]]. So without further ado, let's get started.
@@ -28,9 +27,9 @@ Similarly, for external links all you have to do is add a double colon after the
 
 Example of an internal link that points to a valid post or page, that is, a page with the title (not url) mentioned in the double brackets.
 
-> **Raw Syntax:** **[​[**​Comparison based on accomplishment does not have a baseline**]]**
+> **Raw Syntax:** **[​[**​Exploring the features of Simply Jekyll**]]**
 >
-> **Rendered Text:** [[Comparison based on accomplishment does not have a baseline]]
+> **Rendered Text:** [[Exploring the features of Simply Jekyll]]
 
 
 Example of an internal link that do not point to a valid post or page, that is, a page with the title (not url) mentioned in the double brackets.
@@ -105,13 +104,15 @@ So, all you have to do is type in the keywords of the corresponding type of side
 
 Example of a transclusion to the right side of the page: 
 
-> **Raw Syntax:** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum tortor in pharetra vehicula. Fusce gravida lacus ac sem luctus congue at id justo. Ut sed tempus ante. **[​[**Comparison based on accomplishment does not have a baseline**::rmn-transclude]]** Suspendisse sit amet diam nec justo rhoncus tristique. Ut blandit faucibus nisi vitae rutrum. Vivamus fermentum efficitur justo non facilisis.
+> **Raw Syntax:** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum tortor in pharetra vehicula. Fusce gravida lacus ac sem luctus congue at id justo. Ut sed tempus ante. **[​[**Exploring the features of Simply Jekyll**::rmn-transclude]]** Suspendisse sit amet diam nec justo rhoncus tristique. Ut blandit faucibus nisi vitae rutrum. Vivamus fermentum efficitur justo non facilisis.
 >
-> **Rendered Text:** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum tortor in pharetra vehicula. Fusce gravida lacus ac sem luctus congue at id justo. Ut sed tempus ante. [[Comparison based on accomplishment does not have a baseline::rmn-transclude]] Suspendisse sit amet diam nec justo rhoncus tristique. Ut blandit faucibus nisi vitae rutrum. Vivamus fermentum efficitur justo non facilisis.
+> **Rendered Text:** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum tortor in pharetra vehicula. Fusce gravida lacus ac sem luctus congue at id justo. Ut sed tempus ante. [[Exploring the features of Simply Jekyll::rmn-transclude]] Suspendisse sit amet diam nec justo rhoncus tristique. Ut blandit faucibus nisi vitae rutrum. Vivamus fermentum efficitur justo non facilisis.
 
 Same goes with `rsn`, `lsn`, `lmn`
 
 ### 5. Wrapping a text inside a box
+
+_Note: I've updated the `<blockquote>` to have the box by default_
 
 **<u>General Syntax</u>**
 
@@ -137,6 +138,8 @@ Same goes with `rsn`, `lsn`, `lmn`
 
 ### 7. Specific classes for changing font-type, font-size, and font-weight
 
+_Note: This is something that [[Kramdown]] supports, but [[CommonMark]] does not. This means HTML syntax will be needed and that none of the examples below will render_
+
 There are classes like very-small, medium-small, small, small-medium, medium, medium-large, large, very-large; that can be used to change the size of your text directly from markdown like this:
 
 > **Raw Syntax:**
@@ -148,8 +151,8 @@ There are classes like very-small, medium-small, small, small-medium, medium, me
 >
 > **Rendered Text:**
 > 
-> {:.large}
-> Some text here that needs to be enlarged
+> 
+> <p class="large">Some text here that needs to be enlarged</p>
 
 
 Similarly there are classes like regular-sans, serif, bold, italic, oblique, bolder, etc for formatting the text.
@@ -166,7 +169,7 @@ Similarly there are classes like regular-sans, serif, bold, italic, oblique, bol
 > {:.medium .serif .oblique}
 > Some text here that needs to be enlarged
 
-Other common classes are .boxit that is used to wrap the text, .disable-user-select to disallow users from being able to select a particular piece of text by selecting it, etc. There are more classes like these which you can see in the file `style.css`. Once you figure out which class to use, all you have to do is just add the class before the text you want inside a curl brace like this ​{:\<classnames-with-dot-prepended-to-them>​}
+Other common classes are `.boxit` that is used to wrap the text, `.disable-user-select` to disallow users from being able to select a particular piece of text by selecting it, etc. There are more classes like these which you can see in the file `style.css`. Once you figure out which class to use, all you have to do is just add the class before the text you want inside a curl brace like this ​{:\<classnames-with-dot-prepended-to-them>​}
  
 ### 8. Other implicit features.
 
@@ -175,5 +178,4 @@ Features like backlinks, context menu, related posts, page preview are available
 #### Note:
 When you typeout square brackets, it can be frustrating to type out the entire file title everytime. At least it was for me, so I created a small VSCode plugin, the editor in which I write my essays to autocomplete the titles as soon as I type double squarebrackets. It has been pretty handy for me, if you are interested in using VSCode or already use it, you can find it here: [[Notecomplete::https://github.com/raghuveerdotnet/scratchpad/tree/master/note-complete]]. It is pretty simple to use, all you have to do is just download the note-complete folder and copy it to .vscode directory in your OS to start using it. :)
 
-  
 For setting up the theme on your website checkout [[How to setup Simply Jekyll]]

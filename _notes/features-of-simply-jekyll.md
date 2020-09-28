@@ -1,7 +1,6 @@
 ---
 title: Exploring the features of Simply Jekyll
 tags: simplyjekyll
-status: ongoing
 ---
 
 Essentiality is the heart of any good software, and this theme is designed to ensure that I don't add things that I won't use on a daily basis or not have things that would be important for my personal usecase. It has been designed carefully to get rid of all  the feature creeps, bloatwares, etc. i.e., no bootstrap, no semantic, no jquery, no nothing...
