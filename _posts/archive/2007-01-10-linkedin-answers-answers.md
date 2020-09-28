@@ -1,0 +1,15 @@
+--- 
+layout: post
+title: LinkedIn Answers Answers
+created: 1168451263
+categories: 
+- LinkedIn
+- LinkedIn Answers
+- Scott Allen
+- Betsy Kimak
+- Social Media
+---
+<p>As I mentioned in <a href="/blog/bmann/linkedin-answers-getting-hot">my last post on LinkedIn Answers</a>, I posted a meta-question to give feedback:</p><blockquote><h3>Suggestions on how LinkedIn Answers should evolve</h3><p>I&#39;ve been poking around LinkedIn Answers and am enjoying it so far. As other posts have said -- the offtopic and/or posts that aren&#39;t questions need to have a way that members can flag them.  <br />Here&#39;s one suggestion on further additions: give me RSS feeds and/or other notification options to subscribe to Answers -- per category, as well as per post, so I can follow up on later answers. </p></blockquote><p>There has been lots of good activity in there, but of course it is up to me as question poser to &quot;close&quot; the question and award the best answer to someone. In another pseudo-question on the use of open source software, I remarked that making these discussios public are of higher value to the &quot;open Internet&quot;, and encouraged people to at the very least cross-post to their blogs when they are adding valuable answers.</p><p>Scott Allen saw this and posted to his blog, which is dedicated to looking at <a href="http://linkedintelligence.com/top-ten-feature-requests-for-linkedin-answers/">LinkedIn: LinkedIntelligence - Top Ten Feature Requests for LinkedIn Answers</a>. I think I&#39;ll nominate him as the best question answer-er and add to the &quot;green expert stars&quot; he&#39;s collecting.</p><p>I also wanted to share a snippet of an answer from <a href="http://www.umaitech.com/">Betsy Kimak</a>, indicating that LinkedIn Answers is getting a bit addictive...</p><blockquote><p>I&#39;m sure I had things to do...goals and projects...family? Hmmm. Can&#39;t seem to remember what they were. Maybe if I pose a question someone will tell me. I&#39;ll just look through the list first&hellip; Huh, deal-flow generation, what&#39;s that? There&#39;s really a tube yogurt market? Am I interested in split placement? How do I know? I had better find out what that is&hellip; What is it that I do again? Ok, here&#39;s the category&hellip;What&#39;s that one? Oh, I know the answer! Better respond...Wow, is it dark outside already? <br /> <br /> My suggestions: <br /> <br /> (1) Support group for LinkedIn Answers addicts. Seriously. Sign me up. There&#39;s got to be someone here with the credentials, let me just browse through the profiles&hellip; <br /> <br />(2) Mechanical Turk-style payment/barter feature. Lots of talent is being given away for free. Besides, we&#39;ll need a way to support ourselves after we all lose our jobs and clients. After all, a penny earned&hellip; </p></blockquote><p>Thanks for sharing that, Betsy -- made me grin.&nbsp;</p>
+
+<p>Final thought: what about making the LinkedIn Answers portion of the site public? And a widget for displaying my "expert stars"? And cross posting questions/answers to my blog? And...and... :P</p>
+<!--break-->

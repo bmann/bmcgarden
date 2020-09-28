@@ -1,16 +1,26 @@
 <!-- Parse internal links, external links, transclusions etc and manipuate the content to reflect it accordingly -->
-{%- if page.content-type == "post" -%}
+
 <ul class="tags">
     {%- if page.status != nil and page.status != empty -%}
     <li><a href="javascript:void(0)" class="tag"><b>Status:</b> <i>{{page.status | capitalize}}</i></a></li>
     {%- endif -%}
-    <li><a href="/dates/#{{ page.date | date: '%d-%B-%Y' }}" class="tag">{{ page.date | date: '%B-%d-%Y' }}</a></li>
-    <!-- Loop through page categories and print them in tags -->
+    {%- if page.published -%}
+    <li><span class="tag">Article Date: {{ page.published | date: '%B %d, %Y' }}</span></li>
+    {%- endif -%}
+    {%- if page.content-type == "notes" -%}
+    <li><span class="tag">Last Edit: {{ page.last_modified_at | date: '%B %d, %Y' }}</span></li>
+    {%- else -%}
+    <li><span class="tag">{{ page.date | date: '%B %d, %Y' }}</span></li>
+    {%- endif -%}
+    <!-- TODO - Better link and date tags: Loop through page categories and print them in tags -->
+    {% comment %}
+    <li><a href="/dates/#{{ page.date | date: '%d-%B-%Y' }}" class="tag">{{ page.date | date: '%B %d, %Y' }}</a></li>
     {%- for tag in page.tags -%}
         <li><a href="/tags/#{{ tag }}" class="tag">{{ tag }}</a></li>
     {%- endfor -%}
+    {% endcomment %}
 </ul>
-{%- endif -%}
+
 <div class="content">
     {%- assign content_array = content | split:'[[' -%}
     {%- assign external_link_delimiter = '::' -%}

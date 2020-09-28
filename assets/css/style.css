@@ -184,7 +184,10 @@ blockquote:before {
 }
 
 blockquote {
-    padding: 10px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    font-size: 18px !important;
 }
 
 cite {

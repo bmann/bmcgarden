@@ -1,0 +1,11 @@
+---
+title: Journal
+layout: feed
+content-type: eg
+permalink: /journal/
+---
+
+{% assign journalposts = site.posts | where_exp: "post", "post.url contains 'journal/'" | sort: 'date' | reverse %}
+{% for item in journalposts %}
+  {%- include contextfeed.html -%}
+{% endfor %}

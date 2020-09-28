@@ -1,50 +1,79 @@
-title: Simply Jekyll
-name: John Doe
-user_description: Programmer (Interested in Philosophy and Math)
-notes_url: "https://simply-jekyll.netlify.app"
-profile_pic: /assets/img/profile.png
-favicon: /assets/img/favicon.png
-copyright_name: John Doe
+title: Digital Notes Garden
+name: Boris Mann
+user_description: "Open Source. Community. Decentralized Web. Building dev tools at Fission. Cooks & eats."
+description: "Notes and long term archive for Boris Mann"
+notes_url: "https://bmannconsulting.com"
+notes_title: Notes, Articles, and Links
+notes_tagline: Information gardening
+profile_pic: /assets/bmann_hair_orange_256x256.png
+favicon: /assets/bmann_hair_orange_256x256.png
+copyright_name: Boris Mann
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://simply-jekyll.netlify.app/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://bmannconsulting.com" # the base hostname & protocol for your site, e.g. http://example.com
 encoding: utf-8
+
+exclude: ['.env', 'fission.yaml', 'gemset.nix', 'pages']
+
+markdown: CommonMarkGhPages
+# markdown: kramdown
+
+commonmark:
+  options: ["SMART", "FOOTNOTES"]
+  extensions: ["strikethrough", "autolink", "table"]
+
+# kramdown:
+#  input: GFM
+#  hard_wrap: false
+#  math_engine: mathjax
+#  smart_quotes: ["apos", "apos", "quot", "quot"]
+#  syntax_highlighter: rouge
 
 # Build settings
 theme: null
 plugins:
-  - jekyll-feed 
-  - jekyll-sitemap 
-
-markdown: kramdown
-
-kramdown:
-  input: GFM
-  hard_wrap: false
-  math_engine: mathjax
-  smart_quotes: ["apos", "apos", "quot", "quot"]
-  syntax_highlighter: rouge
+#  - jekyll-feed 
+#  - jekyll-sitemap 
+  - jekyll-last-modified-at
+  - jekyll-commonmark-ghpages
 
 sass:
   style: compressed
 
+# Default permalink
+permalink: /:path/:title
+
 collections:
     notes:
       output: true
-      permalink: /notes/:title
+      permalink: /:title
 
 disqus:
   shortname: raghuveerdotnet
 
 defaults:
   - scope:
-      path: ""
+      path: "_posts/*"
       type: posts
     values:
       layout: post
-      permalink: /posts/:title
+      permalink: /blog/:year/:month/:day/:title
       content-type: post
   - scope:
-      path: ""
+      path: "_posts/archive/*"
+      type: posts
+    values:
+      layout: post
+      permalink: /archive/:year/:month/:day/:title
+      content-type: post
+  - scope:
+      path: "_posts/journal/*"
+      type: posts
+    values:
+      layout: post
+      permalink: /journal/:year/:month/:day/:title
+      content-type: post
+  - scope:
+      path: "_notes/*"
       type: notes
     values:
       layout: post

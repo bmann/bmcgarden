@@ -1,0 +1,45 @@
+---
+layout: post
+title: Links
+permalink: /links/
+content-type: eg
+---
+
+<p>Recently added and updated articles and bookmarks to external content, with quoted content and notes kept here locally:</p>
+  <div style="margin-left: 20px">
+    {% assign linkcount = 0 %}
+    {% assign sortednotes = site.notes | sort: 'last_modified_at' | reverse %}
+    {% for note in sortednotes %}
+      {% if note.link and linkcount < 5 %}
+        <div class="note-entry" style="margin-bottom: 10px;">
+          <span><a class="internal-link" href="{{ note.url }}">{{ note.title }}</a></span><br /><span style="margin-left: 20px; font-size: smaller;">Source: <a href="{{ note.link }}">{{ note.link }}</a></span>
+        </div>
+        {% assign linkcount = linkcount | plus: 1 %}
+      {% elsif linkcount >= 5 %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+  </div>
+
+    <hr />
+
+    <h2>Articles by Published Date</h2>
+    <p>News items, blog posts, and other articles with a publish date:</p>
+    <div style="margin-left: 20px">
+    {% assign linkcount = 0 %}
+    {% assign sortednotes = site.notes | sort: 'published' | reverse %}
+    {% for note in sortednotes %}
+      {% if note.link and linkcount < 10 %}
+        <div class="note-entry" style="margin-bottom: 10px;">
+          <span>{{ note.published | date: "%Y %B" }}: <a href="{{ note.link }}">{{ note.title }}</a></span>&nbsp;<span><a href="{{ note.url }}" class="internal-link" title="Local Notes - {{ note.title }}">#</a></span>
+        </div>
+        {% assign linkcount = linkcount | plus: 1 %}
+      {% elsif linkcount >= 10 %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+</div>
+
+    <hr />
+
+    <p>Subscribe to the <a class="internal-link" href="/feed/links.xml">links feed</a>.</p>

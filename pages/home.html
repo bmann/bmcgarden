@@ -1,0 +1,37 @@
+---
+title: Home
+---
+
+<h1>Boris Mann 🌱 Notes Garden 🌱</h1>
+
+<p>I write a semi-daily <a class="internal-link" href="journal/">Journal</a>, and you can browse <a class="internal-link" href="links/">Links and Articles</a>. I may have some things stashed in <a class="internal-link" href="processing/">Processing</a>.</p>
+
+<h2>Seeds</h2>
+
+<p>Starting points that lead deeper into the site.</p>
+
+<ul>
+  <li><a class="internal-link" href="startup/">Startup</a></li>
+  <li><a class="internal-link" href="projects/">Projects</a></li>
+  <li><a class="internal-link" href="chromebook/">Chromebook</a></li>
+</ul>
+
+<h2>Recently Updated</h2>
+
+<div>
+  <ul>
+{% assign sortednotes = site.notes | sort: 'last_modified_at' | reverse %}
+{% for note in sortednotes limit: 10 %}
+    <li><div class="note-entry" style="margin-bottom: 10px;">
+      <span><a class="internal-link" href="{{ note.url }}">{{ note.title }}</a></span>
+      {% if note.link %}<span> - <a href="{{ note.link }}">{{ note.link }}</a></span>{% endif %}
+    </div></li>
+{% endfor %}
+  </ul>
+</div>
+
+<hr />
+
+<p>You can read more <a class="internal-link" href="about/">About me</a>. The <a class="internal-link" href="colophon/">Colophon</a> goes into detail how the site is put together, and its history.</p>
+
+<p>Subscription options are on the <a class="internal-link" href="feed/">Feeds page <img class="inline" src="assets/orange-square.svg" style="height: 1.1em;"></a>. Get in touch on the <a class="internal-link" href="contact/">Contact</a> page.</p>
