@@ -47,8 +47,8 @@ collections:
       output: true
       permalink: /:title/
 
-disqus:
-  shortname: raghuveerdotnet
+#disqus:
+#  shortname: raghuveerdotnet
 
 defaults:
   - scope:
