@@ -2,11 +2,11 @@
 title: Colophon
 ---
 
-Historically, a **Colophon** was "a statement at the end of a book, typically with a printer's emblem, giving information about its authorship and printing" (via Google Dictionary).
+Historically, a **Colophon** was "a statement at the end of a book, typically with a printer's emblem, giving information about its authorship and printing" (via Google Dictionary).[[This site was last built: <strong>{{ site.time | date: '%B %e, %Y'}}</strong>::lmn]]
 
 So, I keep notes on what software and other tools I use, in part as notes to myself.
 
-My [personal blog colophon](https://blog.bmannconsulting.com/colophon/) documents software & changes all the way to 2001.
+My [[Blog Colophon]] documents software & changes all the way to 2001.
 
 ## bmannconsulting garden & gazebo (Sept 2020)
 

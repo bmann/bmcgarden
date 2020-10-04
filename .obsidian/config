@@ -1,0 +1,20 @@
+{
+  "theme": "obsidian",
+  "pluginEnabledStatus": {
+    "file-explorer": true,
+    "global-search": true,
+    "switcher": true,
+    "graph": true,
+    "backlink": true,
+    "command-palette": true,
+    "markdown-importer": true,
+    "word-count": true,
+    "daily-notes": true,
+    "page-preview": true
+  },
+  "showFrontmatter": false,
+  "useTab": false,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "_notes",
+  "attachmentFolderPath": "assets/2020"
+}

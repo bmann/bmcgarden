@@ -2,13 +2,11 @@
 date: '2019-01-18T04:50:39.090Z'
 title: Livegrep
 tags: code search
+link: https://github.com/livegrep/livegrep
 ---
-
-github: https://github.com/livegrep/livegrep
-
 “Instantly grep all code at your company from a web interface, with it producing the relevant files, contextual snippets, and links to the full version in Github/GHE/etc.”
 
-via [[Patrick McKenzie]] [@patio11](https://twitter.com/patio11/status/1086112277659451392)
+[[livegrep/livegrep::https://github.com/livegrep/livegrep]]
 
 > When folks ask me a question about our codebase internally I try to
 >
@@ -20,3 +18,5 @@ via [[Patrick McKenzie]] [@patio11](https://twitter.com/patio11/status/108611227
 > Since it's publicly available, let me mention that the most common tool I use for answering these questions is livegrep and that I intend to boot up a livegrep instance on the first day of every startup for the rest of my life.
 >
 >It borders on miraculous.
+
+via [[Patrick McKenzie]] [[@patio11::https://twitter.com/patio11/status/1086112277659451392]]

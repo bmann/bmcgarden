@@ -5,7 +5,7 @@ title: Projects
 ## Current Projects
 
 * [[Venture Scouts]]
-* [[Vancouver CLT]]
+* [[Cobuilding]]
 
 ## Backlog
 

@@ -4,9 +4,9 @@ title: Links
 permalink: /links/
 content-type: eg
 ---
-
 <p>Recently added and updated articles and bookmarks to external content, with quoted content and notes kept here locally:</p>
-  <div style="margin-left: 20px">
+<label for="rmn-1" class="margin-toggle  ">⊕</label><input type="checkbox" id="rmn-1" class="margin-toggle"><span class="mn-right">These will appear in both the Recently Updated Notes and Recent Links <a href='{% link _notes/feeds.md %}'>Feeds</a>. </span>
+  <div style="margin-left: 20px; margin-bottom: 20px;">
     {% assign linkcount = 0 %}
     {% assign sortednotes = site.notes | sort: 'last_modified_at' | reverse %}
     {% for note in sortednotes %}
@@ -24,7 +24,7 @@ content-type: eg
     <hr />
 
     <h2>Articles by Published Date</h2>
-    <p>News items, blog posts, and other articles with a publish date:</p>
+    <p>News items, blog posts, and other articles with a publish date. The title link takes you straight to the article, and the # is the local permalinked note.</p>
     <div style="margin-left: 20px">
     {% assign linkcount = 0 %}
     {% assign sortednotes = site.notes | sort: 'published' | reverse %}

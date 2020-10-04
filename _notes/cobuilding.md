@@ -1,8 +1,10 @@
 ---
-title: Vancouver CLT
+title: Cobuilding
 ---
 
 Exploring shared housing options in [[Vancouver]] through [[Community Land Trusts]] (CLT) and other models.
+
+Registered https://cobuilding.ca, which is going to be a [[Discourse]] forum setup with email.
 
 ### 10 Unit Apartment Building Costing
 

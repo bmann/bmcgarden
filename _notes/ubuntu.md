@@ -4,7 +4,15 @@ title: Ubuntu
 
 # Add a user to sudo group
 
-`usermod -aG sudo (username)`
+`usermod -aG sudo <username>`
+
+# Count files recursively in a directory
+
+`find <directory> -type f | wc -l`
+
+Also suppress permission denied errors:
+
+`find <directory> -type f 2> /dev/null | wc -l`
 
 # Reference Articles
 

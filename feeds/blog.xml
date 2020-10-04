@@ -1,6 +1,6 @@
 ---
 layout: null
-permalink: /feed/notes.xml 
+permalink: /feed/blog.xml 
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"
@@ -9,7 +9,7 @@ permalink: /feed/notes.xml
 	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
 >
 	<channel>
-		<title>{{ site.name | xml_escape }} - Updated Notes</title>
+		<title>{{ site.name | xml_escape }} - Blog Feed</title>
 		<description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>		
 		<sy:updatePeriod>{{ site.feed_update_period | default: "daily" | xml_escape }}</sy:updatePeriod>
 		<sy:updateFrequency>{{ site.feed_update_frequency | default: 1 | xml_escape }}</sy:updateFrequency>
@@ -17,8 +17,10 @@ permalink: /feed/notes.xml
 		<atom:link href="{{ site.url }}/{{ page.path }}" rel="self" type="application/rss+xml" />
 		<lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
 		{% assign feed_items = site.feed_items | default: 10 %}
-		{% assign sortednotes = site.notes | sort: 'last_modified_at' | reverse %}
-		{% for post in sortednotes limit:feed_items %}
+		{% assign sortedblog = site.posts | sort: 'date' | reverse %}
+		{% assign blogcount = 0 %}
+		{% for post in sortedblog  %}
+		  {% if post.section == 'blog' and blogcount < feed_items %}
 			<item>
 				<title>{{ post.title | xml_escape }}</title>
 				{% if site.author.name %}
@@ -29,6 +31,10 @@ permalink: /feed/notes.xml
 				<link>{{ site.url }}{{ post.url }}</link>
 				<guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
 			</item>
+		    {% assign blogcount = blogcount | plus: 1 %}
+          {% elsif blogcount >= feed_items %}
+            {% break %}
+          {% endif %}
 		{% endfor %}
 	</channel>
 </rss>

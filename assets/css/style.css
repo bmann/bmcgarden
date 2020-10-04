@@ -867,6 +867,14 @@ li .mn-right {
     text-align:left;
 }
 
+.tooltip a::before {
+  content: "[[";
+}
+
+.tooltip a::after {
+    content: "]]";
+  }
+
 
 .tooltip bottom {
     display: none;
@@ -978,7 +986,7 @@ label.srs-toggle {
 }
 
 .related {
-    background-color: #f7f7f7;
+    /* background-color: #f7f7f7; */
     width: 100%;
     min-height: 100px;
     border-radius: 10px;
@@ -1424,4 +1432,17 @@ label.margin-toggle:not(.sidenote-number) {
 #disqus_thread {
     margin-left: 10px;
     margin-right: 10px;
+}
+
+section.footnotes, div.related {
+    margin-top: 30px;
+    border-top: 1px solid lightgray;
+}
+
+.content li {
+    margin-bottom: 5px;
+}
+
+div.content {
+    margin-bottom: 20px;
 }

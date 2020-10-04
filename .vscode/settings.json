@@ -1,0 +1,30 @@
+{
+  "editor.minimap.enabled": false,
+  "editor.wrappingIndent": "indent",
+  "editor.overviewRulerBorder": false,
+  "editor.lineHeight": 24,
+  "[markdown]": {
+    "editor.quickSuggestions": true
+  },
+  "git.enableSmartCommit": true,
+  "git.postCommitCommand": "sync",
+  "files.exclude": {
+    "**/node_modules": true
+  },
+  "files.watcherExclude": {
+    "**/node_modules": true,
+    "_site/*": true
+  },
+  "vscodeMarkdownNotes.noteCompletionConvention": "noExtension",
+
+  "files.exclude": {
+    "_site/*": true,
+    ".jekyll-cache/*": true
+  },
+  "liquid.format": true,
+  "foam.openDailyNote.directory": "_posts/journal/",
+  "foam.openDailyNote.filenameFormat": "yyyy-mm-dd-journal.md",
+  "foam.openDailyNote.titleFormat": "mmm-d, yyyy",
+  "vscodeMarkdownNotes.newNoteDirectory": "_notes",
+  "vscodeMarkdownNotes.newNoteTemplate": "---\ntitle: ${noteName}\n---\n"
+}
