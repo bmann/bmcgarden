@@ -4,9 +4,10 @@ link: https://supernuclear.substack.com/p/co-buying-property-with-friends
 category:
   - Article
 tags:
-  - cohousing
+  - cobuilding
   - video
   - real estate
+published: 2020-08-19
 ---
 
 By [[Phil Levin]], https://supernuclear.substack.com/p/co-buying-property-with-friends. Found via the [[Embassy Network]] Slack.

@@ -1,5 +1,5 @@
 ---
-title: Social Co-op
+title: Social.Coop
 tags:
   - Mastodon
   - co-op

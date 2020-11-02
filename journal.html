@@ -6,6 +6,9 @@ permalink: /journal/
 ---
 
 {% assign journalposts = site.posts | where_exp: "post", "post.section == 'journal'" | sort: 'date' | reverse %}
-{% for item in journalposts %}
-  {%- include contextfeed.html -%}
+{% for item in journalposts limit: 7 %}
+  <h2>{{ item.date | date: "%A, %B %e, %Y" }}</h2>
+  <article>
+  {{ item.content | markdownify }}
+  </article><span class="permalink"><a href="{{ item.url }}">#</a></span>
 {% endfor %}
