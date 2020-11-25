@@ -19,6 +19,9 @@
         <li><a href="/tags/#{{ tag }}" class="tag">{{ tag }}</a></li>
     {%- endfor -%}
     {% endcomment %}
+    {% if page.link %}
+    <li><span class="tag">External link: <a href="{{ page.link }}">{{ page.link }}</a></span></li>
+    {% endif %}
 </ul>
 
 <div class="content">
