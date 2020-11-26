@@ -1,6 +1,9 @@
 ---
 title: Second Brain
 status: processing
+tags:
+    - secondbrain
+    - "tools for thought"
 ---
 
 The concept of wikis goes back to an earlier era of the web. With the advent of blogging (and I would say, RSS feeds to subscribe and follow content from all over), wikis went away for a while.
@@ -33,17 +36,15 @@ Today, with very good search, why do we bookmark? I think a collection of easy a
 
 I want to document and keep links to apps and tools that I research, use, and/or recommend, in order to find it again later, review if anything has changed, and to share it with other people.
 
-I want to document articles. Maybe it's keeping a copy of something insightful, especially quoting relevant parts. Yes, like Roam helps to do, to capture these relevant parts. Here's an example of [saving and quoting 'When Tailwinds Vanish'](/article/tailwinds-vanish){: .internal-link}. I haven't social shared this anywhere, but have mentioned, shared privately, and discussed it in person with multiple people. Clearly something I should keep around.
+I want to document articles. Maybe it's keeping a copy of something insightful, especially quoting relevant parts. Yes, like Roam helps to do, to capture these relevant parts. Here's an example of [saving and quoting 'When Tailwinds Vanish']({% link _notes/tailwinds-vanish.md %}). I haven't social shared this anywhere, but have mentioned, shared privately, and discussed it in person with multiple people. Clearly something I should keep around.
 
 Basically, if I'm going to share an article with someone, I should "keep" a copy, same as with recommending an app / tool / person.
 
 For now, I'm highlighting some of them on the home page.
 
-_Sharing_ an article is more likely to be done through a [social share on my blog](https://blog.bmannconsulting.com/archives/social), which in turn gets cross posted to Twitter.[^1]
+_Sharing_ an article is more likely to be done through a [social share on my blog](https://microblog.bmannconsulting.com), which in turn gets cross posted to Twitter.[^1]
 
 [^1]: for search purposes, should have all the content on my blog accessible here as well and/or available for transclusion (which is really just the case that generalized transclusion from a URI is extremely useful)
-
-I also have [Bookmarks on my blog](https://blog.bmannconsulting.com/bookmarks), mainly because that's one of the object types defined by the [[Indieweb]] [[Micropub]] interface. I will likely use it less now that this site exists.
 
 ### Worklog
 
@@ -73,15 +74,13 @@ There's a HOWTO version of this when I'm taking notes as I attempt to program or
 
 ### Recommendations
 
-As mentioned above, I've got a variety of recommendations. This usually comes from someone asking "what do you use for X?", or it will come from personal research of figuring out what I should use. My [Personal CRM post](https://blog.bmannconsulting.com/personal-crm/) is a good example of this in blog post form.
+As mentioned above, I've got a variety of recommendations. This usually comes from someone asking "what do you use for X?", or it will come from personal research of figuring out what I should use. My [[Personal CRM]] post is a good example of this in blog post form.
 
-The [startup page](/startup){: .internal-link} just got a categorized brain dump of a whole bunch of different categories. Some of them are people / service provider recommendations, like using Justin at Osler as a startup lawyer, or Mike at Sprout Accounting for company accounting.[^2]
-
-[^2]: Again, super painful to me that I'm not linking those names / companies to individual blocks or fragments, and with this page-based WikiJS interface, it's slightly too painful / time consuming to create those links.
+The [[Startup]] page just got a categorized brain dump of a whole bunch of different categories. Some of them are people / service provider recommendations, like using Justin at Osler as a startup lawyer, or Mike at Sprout Accounting for company accounting.
 
 ### Search
 
-There is a [seminal Algolia internal search article](/algolia-electron-internal){: .internal-link}[^algolia] that I refer to as the ultimate in company wide knowledge search interfaces, and it's pretty much what I want as well. I just tagged that article with [[memex]] for what I'll use for that shorthand from now on: all my information available and searchable / browseable at the point of looking for something.
+There is a [seminal Algolia internal search article]({% link _notes/algolia-electron-internal.md %})[^algolia] that I refer to as the ultimate in company wide knowledge search interfaces, and it's pretty much what I want as well. I just tagged that article with [[memex]] for what I'll use for that shorthand from now on: all my information available and searchable / browseable at the point of looking for something.
 
 It's one of the reasons that I publish a lot of things publicly online. Future me has a chance of finding it again by doing `site:bmannconsulting.com some-search-term` to see if I've talked about it before.
 

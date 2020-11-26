@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A Personal CRM
+title: Personal CRM
 date: '2016-06-13T12:34:34-07:00'
 excerpt: "I’ve been once again looking for a personal CRM. Something that gets to do’s out of my inbox, collects data and messages on the people that I’m interacting with, and generally keeps me informed and up to date in my communications. Here's a review of past tools and analysis of my choice."
 categories:
