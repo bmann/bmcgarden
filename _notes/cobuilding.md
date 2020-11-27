@@ -1,12 +1,20 @@
 ---
 title: Cobuilding
+link: https://cobuilding.ca
 ---
 
 Exploring shared housing options in [[Vancouver]] through [[Community Land Trusts]] (CLT) and other models.
 
-Registered https://cobuilding.ca. Have an Airtable signup form at http://signup.cobuilding.ca to gather information, need to setup more of a landing page.
+## Nov 27th, 2020: New cobuilding.ca live
 
-### 10 Unit Apartment Building Costing
+Used [[Forestry]] -- sort of, need to go back and edit the settings. The [[Minimal Mistakes]] [[Jekyll]] theme. All on Github Pages directly.
+## Sept 16th, 2020: Domain name acquired
+
+Registered https://cobuilding.ca. Have an Airtable signup form at http://signup.cobuilding.ca to gather information, need to setup more of a landing page. 
+
+## April 2020: 10 Unit Apartment Building Costing
+
+[[I put this together during the pandemic as part of research into what our landlord's costs actually were::lmn]]
 
 The apartment I currently live in is a 3 story, 10 unit apartment building. I was doing some research and found a [similar apartment on West 12th](https://goodmanreport.com/sold-properties/1209-cedar-crest-manor-1569-west-12th-avenue-vancouver/).
 
