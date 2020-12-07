@@ -1,9 +1,15 @@
 ---
 title: Blog Colophon
 ---
-It's archives all the way down! The long(er) form content from the (original) `blog.bmannconsulting.com` has all been imported here. I swapped the domain to [[Micro.blog]], and that's where I post photos and short content. The [[Colophon]] page covers "this" site.
+It's archives all the way down! This is archive version of how I've run my blog over the years. The [[Colophon]] page covers "this" site, which is sort of a superset archive. The plan is I'll keep it active from now on in this Digital Notes Garden format.
 
-## May 2020 - current
+## July 2020 - current
+
+The long(er) form content from the (original) `blog.bmannconsulting.com` has all been imported here.
+
+I swapped that blog domain to [[Micro.blog]], and that's where I post photos and short content, and sort of more non tech bloggy content. Yes, there is a [colophon there too](https://blog.bmannconsulting.com/colophon).
+
+## May 2020
 
 This blog is currently powered by [Jekyll 4](http://jekyllrb.com) hosted on [Netlify](http://netlify.com). Netlify builds the site from a private git repo on Github.
 

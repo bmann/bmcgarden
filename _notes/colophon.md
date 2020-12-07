@@ -2,11 +2,28 @@
 title: Colophon
 ---
 
-Historically, a **Colophon** was "a statement at the end of a book, typically with a printer's emblem, giving information about its authorship and printing" (via Google Dictionary).[[This site was last built: <strong>{{ site.time | date: '%B %e, %Y'}}</strong>::lmn]]
+Historically, a **Colophon** was "a statement at the end of a book, typically with a printer's emblem, giving information about its authorship and printing" (via Google Dictionary).
 
 So, I keep notes on what software and other tools I use, in part as notes to myself.
 
 My [[Blog Colophon]] documents software & changes all the way to 2001.
+
+[[This site was last built: <strong>{{ site.time | date: '%B %e, %Y'}}</strong>::lmn]]
+# Current
+
+[[Simply Jekyll]] theme for Jekyll. If you want to run it yourself, I've got some public work around this with the [[Simply Jekyll Template]].
+
+Using [[VSCode]] on my desktop to edit.
+
+Hosting on [[Fission]]. [[Cloudflare]] is powering the DNS and [[Cloudflare IPFS Gateway]].
+
+## To Do
+
+* Look at side / margin notes and just use footnotes everywhere, possibly using [[BigfootJS]]
+* Integrate [[Micro.blog]] [sidebar.js embed](https://help.micro.blog/2016/sidebar-js/) on the home page
+
+
+# Archive
 
 ## bmannconsulting garden & gazebo (Sept 2020)
 
