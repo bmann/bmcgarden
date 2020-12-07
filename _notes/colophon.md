@@ -20,8 +20,6 @@ Hosting on [[Fission]]. [[Cloudflare]] is powering the DNS and [[Cloudflare IPFS
 ## To Do
 
 * Look at side / margin notes and just use footnotes everywhere, possibly using [[BigfootJS]]
-* Integrate [[Micro.blog]] [sidebar.js embed](https://help.micro.blog/2016/sidebar-js/) on the home page
-
 
 # Archive
 

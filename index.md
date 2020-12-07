@@ -16,7 +16,9 @@ Starting with the [[Startup]] note, there are various operations guides, product
 
 If I haven't sent it to you already, you should read [[When Tailwinds Vanish: The Internet in the 2020s]].[[Software companies founded today are competing less with pen and paper than with other Internet-first incumbents. Put another way, as happens in every maturing industry before it, Internet company revenue will become zero-sum. As a corollary, the time between founding years of software startups and their competitive incumbents is shrinking — <a href='https://luttig.substack.com/p/when-tailwinds-vanish'>When Tailwinds Vanish</a>::rmn]]
 
+<!--
 ### Microblog
 Photos and short content is over on the <a href='https://blog.bmannconsulting.com'>personal microblog</a>, with recent posts below:
 
 <script type="text/javascript" src="https://micro.blog/sidebar.js?username=bmann&count=5"></script>
+-->

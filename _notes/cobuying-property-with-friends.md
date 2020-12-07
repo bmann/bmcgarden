@@ -8,6 +8,7 @@ tags:
   - video
   - real estate
 published: 2020-08-19
+date: 2020-11-06
 ---
 
 By [[Phil Levin]], https://supernuclear.substack.com/p/co-buying-property-with-friends. Found via the [[Embassy Network]] Slack.
