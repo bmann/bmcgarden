@@ -15,8 +15,7 @@ My [[Blog Colophon]] documents software & changes all the way to 2001.
 
 Using [[VSCode]] on my desktop to edit.
 
-Hosting on [[Fission]]. [[Cloudflare]] is powering the DNS and [[Cloudflare IPFS Gateway]].
-
+Hosting on [[Fission]]. [[Cloudflare]] is powering the DNS and using [[Cloudflare IPFS Gateway]].
 ## To Do
 
 * Look at side / margin notes and just use footnotes everywhere, possibly using [[BigfootJS]]

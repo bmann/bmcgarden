@@ -15,6 +15,10 @@ Home page has avatar and "follow on Mb" links. Change to ???
 
 No pagination on Photos page. Remove and replace with a new / different photos layout.
 
+Error on bio page (linked to avatar). Need to include new partial.
+
+Custom 404 page, need to add `not_found.html`
+
 ## Done
 
 The "Call to Action" (CTA) on single posts in the upper right hand corner points to Mb -- point it at bmannconsulting for now.
