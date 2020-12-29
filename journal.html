@@ -7,7 +7,7 @@ permalink: /journal/
 
 {% assign journalposts = site.posts | where_exp: "post", "post.section == 'journal'" | sort: 'date' | reverse %}
 {% for item in journalposts limit: 7 %}
-  <h2>{{ item.date | date: "%A, %B %e, %Y" }}</h2>
+  <h2><a href="{{ item.url }}">{{ item.date | date: "%A, %B %e, %Y" }}</a></h2>
   <article>
   {{ item.content | markdownify }}
   </article><span class="permalink"><a href="{{ item.url }}">#</a></span>
