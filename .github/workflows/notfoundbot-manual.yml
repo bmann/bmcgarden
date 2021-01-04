@@ -1,5 +1,5 @@
 
-name: notfoundbot
+name: notfoundbot-manual
 on:
   workflow_dispatch:
 jobs:
