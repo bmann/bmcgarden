@@ -1,6 +1,7 @@
 ---
 title: Twitter Archive
 link: https://tweets.bmannconsulting.com
+date: 2021-01-10
 ---
 
 My personal Twitter Archive -- everything posted to [my @bmann Twitter account](https://twitter.com/bmann) -- is at <https://tweets.bmannconsulting.com>.

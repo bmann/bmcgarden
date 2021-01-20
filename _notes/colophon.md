@@ -1,5 +1,6 @@
 ---
 title: Colophon
+modified: 2021-01-10
 ---
 
 Historically, a **Colophon** was "a statement at the end of a book, typically with a printer's emblem, giving information about its authorship and printing" (via Google Dictionary).
@@ -16,9 +17,18 @@ My [[Blog Colophon]] documents software & changes all the way to 2001.
 Using [[VSCode]] on my desktop to edit.
 
 Hosting on [[Fission]]. [[Cloudflare]] is powering the DNS and using [[Cloudflare IPFS Gateway]].
+
+## [[WIP]]
+
+* Add `modified` and `date` to notes as they are created / edited manually -- the modified plugin doesn't really seem to work at all
+* Rewrite the notes and link [[Feeds]] to use those values
+* the [Links page]({% link links.html %}) will be articles -- which have a `published` date -- and Bookmark-style links, which have the date and/or modified. Will do a combined Links feed which uses date and modified -- published can go inline
+
 ## To Do
 
 * Look at side / margin notes and just use footnotes everywhere, possibly using [[BigfootJS]]
+* Sort `/notes` by `modified`
+* Add a third link type, for notes that contain `github`
 
 # Archive
 

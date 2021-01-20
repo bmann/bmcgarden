@@ -1,6 +1,8 @@
 ---
 title: Marfa Theme
 github: https://github.com/bmann/theme-marfa
+date: 2020-12-06
+modified: 2021-01-10
 ---
 
 I'm using the Marfa theme from [[Micro.blog]] for my site [blog.bmannconsulting.com](https://blog.bmannconsulting.com). My fork is public here: https://github.com/bmann/theme-marfa
@@ -15,7 +17,7 @@ Error on bio page (linked to avatar). Need to include new partial.
 
 Custom 404 page, need to add `not_found.html`
 
-## WIP
+## [[WIP]]
 
 Copied [yearly grouping](https://github.com/jnjosh/internet-weblog/blob/master/layouts/partials/yearly_grouping.html) across from `internet-weblog` theme into the marfa theme. Live example on the authors blog: <https://jnjosh.com/posts/>. Copied `list.archivehtml.html` and `list.photoshtml.html` across from the `theme-blank` default Mb theme. Figuring out how these all fit together, how do I get Hugo to locally create this archive page? Just make an `/archive` folder?
 
