@@ -14,9 +14,11 @@ My [[Blog Colophon]] documents software & changes all the way to 2001.
 
 [[Simply Jekyll]] theme for Jekyll. If you want to run it yourself, I've got some public work around this with the [[Simply Jekyll Template]].
 
-Using [[VSCode]] on my desktop to edit.
+Using [[VSCode]] on my desktop to edit.ß
 
 Hosting on [[Fission]]. [[Cloudflare]] is powering the DNS and using [[Cloudflare IPFS Gateway]].
+
+Source code is public on Github at [bmann/bmcgarden](https://github.com/bmann/bmcgarden).
 
 ## [[WIP]]
 
@@ -29,6 +31,7 @@ Hosting on [[Fission]]. [[Cloudflare]] is powering the DNS and using [[Cloudflar
 * Look at side / margin notes and just use footnotes everywhere, possibly using [[BigfootJS]]
 * Sort `/notes` by `modified`
 * Add a third link type, for notes that contain `github`
+* Connect to [[Agora]] and adjust settings as needed in git repo
 
 # Archive
 
