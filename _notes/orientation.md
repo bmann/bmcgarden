@@ -1,7 +1,12 @@
 ---
 title: Orientation
 link: https://orientation.io/
-tags: documentation opensource deploytoheroku markdown rails
+github: https://github.com/orientation/orientation
+tags:
+    - documentation
+    - opensource
+    - markdown
+    - rails
 ---
 Rails app to create internal docs & tutorials for an organization. Has [[Deploy to Heroku]] support, uses Google Auth for login, can group articles as lists to make Guides.[[We're using a <a href='{% link _notes/discourse.md %}'>Discourse forum</a> for this at Fission, and I'd probably recommend Discourse for this use case now.::lmn]]
 

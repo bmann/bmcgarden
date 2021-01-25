@@ -1,8 +1,12 @@
 ---
 title: WikiJS
+github: https://github.com/Requarks/wiki
+link: https://wiki.js.org/
+date: 2020-09-28
+modified: 2021-01-24
 ---
 
-_[[Wiki]] software built on [[NodeJS]]. Has great [[DeployToHeroku]] support_
+_[[Wiki]] software built on [[NodeJS]]. Has great [[Deploy To Heroku]] support_
 
 * Home page https://wiki.js.org/
 * OpenCollective Donations https://opencollective.com/wikijs
