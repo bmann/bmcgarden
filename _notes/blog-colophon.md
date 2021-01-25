@@ -1,5 +1,6 @@
 ---
 title: Blog Colophon
+date: 2020-10-03
 ---
 It's archives all the way down! This is archive version of how I've run my blog over the years. The [[Colophon]] page covers "this" site, which is sort of a superset archive. The plan is I'll keep it active from now on in this Digital Notes Garden format.
 

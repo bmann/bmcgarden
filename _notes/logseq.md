@@ -1,8 +1,10 @@
 ---
 title: LogSeq
+date: 2020-09-24
+modified: 2021-01-24
+github: https://github.com/logseq/logseq
+link: https://logseq.com
 ---
-
-https://logseq.com
 
 From the Github README:
 

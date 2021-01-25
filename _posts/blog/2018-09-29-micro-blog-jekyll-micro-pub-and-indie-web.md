@@ -1,8 +1,12 @@
 ---
 layout: post
 date: '2018-09-29T18:24:04.304Z'
+modified: 2021-01-24
 title: 'MicroBlog, Jekyll, MicroPub and IndieWeb'
-tags: indieweb micro.blog micropub jekyll
+tags:
+  - indieweb
+  - micropub
+  - jekyll
 mf-mp-slug:
   - microblog-jekyll-micropub-indieweb
 slug: micro-blog-jekyll-micro-pub-and-indie-web
@@ -27,7 +31,7 @@ And that was a good reminder that that I should work on being less dependent on 
 
 ## Using MicroBlog
 
-I've had my eye on [MicroBlog](https://micro.blog/) for a long time. I reserved the handle [@boris](http://micro.blog/boris) there right at the beginning, but didn't do anything with it.
+I've had my eye on [[Micro.blog]] for a long time. I reserved the handle [@boris](http://micro.blog/boris) there right at the beginning, but didn't do anything with it.
 
 I have great admiration for [Pat Dryburgh](https://patdryburgh.com) and saw him working on a Jekyll theme and [using MicroBlog](https://micro.blog/pat) so all his content is on his own site.
 
@@ -41,9 +45,9 @@ Since I use [Jekyll](https://jekyllrb.com/) for my blog, all of the content is t
 
 Currently I have the blog source in a private repo on GitHub and use a free account on Netlify to build and serve it[^colophon].
 
-[^colophon]:My [colophon](https://blog.bmannconsulting.com/colophon) has documented my blog travels over the years.
+[^colophon]:My [[Colophon]] and [[Blog Colophon]] have documented my blog travels over the years.
 
-But, with a static site, I need to run a separate server if I wanted to accept short posts on mobile. Specifically, with MicroBlog's iOS client, it talks to either a Wordpress site or to anything that can accept Micropub[^micropub] posts.
+But, with a static site, I need to run a separate server if I wanted to accept short posts on mobile. Specifically, with MicroBlog's iOS client, it talks to either a Wordpress site or to anything that can accept [[Micropub]][^micropub] posts.
 
 [^micropub]: The [IndieWeb site talks Micropub](https://indieweb.org/Micropub), which is in fact a [W3C Recommendation](https://www.w3.org/TR/micropub/). It's been a while since I paid attention to this -- great to see the spec matured and formalized.
 
@@ -61,7 +65,7 @@ I wrote this up as a [series of issues in a GitHub repo](https://github.com/bman
 
 And so I dove into Pelle's [webpage-micropub-to-github](https://github.com/voxpelli/webpage-micropub-to-github). He pretty much wrote it exactly how I had hoped to have such a thing built.
 
-It's built in Node and has a _Deploy to Heroku_ button which can get you up and running in minutes.
+It's built in Node and has a [[Deploy to Heroku ]]button which can get you up and running in minutes.
 
 Of course, minutes turned into _slightly_ longer as I worked on getting the entire IndieWeb toolchain configured and setup on my blog and various other places.
 
