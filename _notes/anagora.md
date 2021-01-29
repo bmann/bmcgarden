@@ -2,14 +2,14 @@
 title: Anagora
 link: https://anagora.org/
 date: 2020-11-24
-modified: 2021-01-24
+modified: 2021-01-29
 ---
 
 An [[Agora]] implementation by @Flancian.
 
 The concept is to have nodes / notes where people maintain their own digital notes garden like I do here, but then pull them in and link them through their public git repos. Aka a "distributed knowledge graph".
 
-The [Agora Plan](https://anagora.org/node/agora-plan) page has more details, including a link to the [[Agora Server::https://github.com/flancian/agora-server]]. It is written in [[Python]] / Flask and is open source under the [[Apache2 License]].
+The [Agora Plan](https://anagora.org/node/agora-plan) page has more details, including a link to the [Agora Server on Github](https://github.com/flancian/agora-server). It is written in [[Python]] / Flask and is open source under the [[Apache2 License]].
 
 ---
 
@@ -42,9 +42,9 @@ Can I indicate that some portion of the git repo should be included or ignored?
 
 I would like to ignore my archive and journal posts, or at least only selectively include them. 
 
-Suggestion: include a file, `.agora` or `.agora-config` or similar that is YAML or similar.
+Suggestion: include a file, `.agora` or `.agora-config` or similar that is YAML or similar. I'm looking at [[Jekyll]] `config.yml` for inspiration and formating on this:
 
-```yaml
+```text
 exclude:
     - _posts/journal/*
     - _posts/archive/*

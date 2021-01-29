@@ -1,0 +1,23 @@
+# unless in the include section, anything file without a .html or .md extension is excluded, 
+# as are directories that begin with a period (.)
+exclude:
+    - _posts/journal/*
+    - _posts/archive/*
+    - _ignore/*
+    - notes.html
+    - links.html
+    - journal.html
+    - ipfs-404.html
+    - index.md
+    - blog.html
+    - archive.html
+    - Gemfile*
+    - README.md
+    - tags.html
+    - _includes/*
+    - _layouts/*
+    - feeds/*
+
+include:
+    - _posts/journal/2021-01-24-journal.md
+home: _notes/agora.md
