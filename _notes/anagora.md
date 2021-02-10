@@ -2,14 +2,16 @@
 title: Anagora
 link: https://anagora.org/
 date: 2020-11-24
-modified: 2021-01-29
+modified: 2021-02-09
 ---
 
 An [[Agora]] implementation by @Flancian.
 
 The concept is to have nodes / notes where people maintain their own digital notes garden like I do here, but then pull them in and link them through their public git repos. Aka a "distributed knowledge graph".
 
-The [Agora Plan](https://anagora.org/node/agora-plan) page has more details, including a link to the [Agora Server on Github](https://github.com/flancian/agora-server). It is written in [[Python]] / Flask and is open source under the [[Apache2 License]].
+The [[Agora Plan]][^agoraplan] page has more details. It is written in [[Python]] / Flask and is open source under the [[Apache2 License]].
+
+[^agoraplan]: Not sure what the syntax should be here. I want to link to the "global" [Agora plan](https://anagora.org/node/agora-plan) page.
 
 ---
 
@@ -34,20 +36,7 @@ Link to the contract with a date indicating you accepted it.
 
 ## Feature Requests
 
-Ideas about the agora social system as a whole, but for now mostly technical features of the Anagora server software.
+Ideas about the agora social system as a whole, but for now mostly technical features of the Agora server software and the main [[Anagora]] instance. Join us on the [[FedStoa]] [[GitLab]] to add your own ideas <https://gitlab.com/fedstoa/agora-server>
 
-### Include / Ignore Content
-
-Can I indicate that some portion of the git repo should be included or ignored?
-
-I would like to ignore my archive and journal posts, or at least only selectively include them. 
-
-Suggestion: include a file, `.agora` or `.agora-config` or similar that is YAML or similar. I'm looking at [[Jekyll]] `config.yml` for inspiration and formating on this:
-
-```text
-exclude:
-    - _posts/journal/*
-    - _posts/archive/*
-include:
-    - _posts/journal/2021-01-24-journal.md
-```
+* Ideas on `agora.yml` format, mainly [[Jekyll]] inspired <https://gitlab.com/fedstoa/agora-server/-/issues/1>
+* If no local node found for [[wikilinks]], then auto-link to global node?

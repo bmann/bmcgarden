@@ -1,5 +1,6 @@
 ---
 title: eGPU
+date: 2020-10-03
 ---
 
 External GPU for computers that can't have full size video cards installed internally, like a [[Mac Mini]] or a laptop. Usually connected over Thunderbolt 3.

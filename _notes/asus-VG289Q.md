@@ -4,6 +4,7 @@ tags:
   - asus
   - monitor
   - 4K
+date: 2020-11-08
 ---
 
 ASUS 28" 4K Monitor. Bought it at Best Buy:

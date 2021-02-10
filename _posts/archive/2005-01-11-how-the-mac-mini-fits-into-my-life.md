@@ -2,7 +2,7 @@
 layout: post
 title: How the Mac Mini fits into my life
 created: 1105503311
-categories: 
+tags: 
 - Small Form Factor
 - Mac
 - Multimedia PC
