@@ -1,6 +1,7 @@
 ---
 title: Colophon
-modified: 2021-02-13
+modified: 2021-02-14
+date: 2020-09-28
 ---
 
 Historically, a **Colophon** was "a statement at the end of a book, typically with a printer's emblem, giving information about its authorship and printing" (via Google Dictionary).
@@ -18,22 +19,18 @@ Using [[VSCode]] on my desktop to edit.ß
 
 Hosting on [[Fission]]. [[Cloudflare]] is powering the DNS and using [[Cloudflare IPFS Gateway]].
 
-Source code is public on Github at [bmann/bmcgarden](https://github.com/bmann/bmcgarden).
+Source code is public on Github at [bmann/bmcgarden](https://github.com/bmann/bmcgarden). [[Connecting to the Agora]] as of jan 24th, 2021.
 
 Changed fission app from `ancient-aquamarine-metalic-princess.fission.app` to `bmcgarden.fission.app` and updating Cloudflare.
 
+Switched over Notes and Links pages to use `modified`. Added Github Links to the Links page. Disabled the last_modified plugin, which never seemed to work in any case.
 ## [[WIP]]
 
-* Add `modified` and `date` to notes as they are created / edited manually -- the modified plugin doesn't really seem to work at all
-* Rewrite the notes and link [[Feeds]] to use those values
-* the [Links page]({% link links.html %}) will be articles -- which have a `published` date -- and Bookmark-style links, which have the date and/or modified. Will do a combined Links feed which uses date and modified -- published can go inline
+* More work on [[Feeds]] and `modified` vs `date`
 
 ## To Do
 
 * Look at side / margin notes and just use footnotes everywhere, possibly using [[BigfootJS]]
-* Sort `/notes` by `modified`
-* Add a third link type, for notes that contain `github`
-* Connect to [[Agora]] and adjust settings as needed in git repo
 
 # Archive
 
