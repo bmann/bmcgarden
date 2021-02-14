@@ -14,7 +14,7 @@ permalink: /feed/links.xml
 		<sy:updateFrequency>{{ site.feed_update_frequency | default: 1 | xml_escape }}</sy:updateFrequency>
 		<link>{{ site.url }}</link>
 		<atom:link href="{{ site.url }}/{{ page.path }}" rel="self" type="application/rss+xml" />
-		{% assign sortednotes = site.notes | sort: 'last_modified_at' | reverse %}
+		{% assign sortednotes = site.notes | sort: 'date' | reverse %}
         {% for post in sortednotes %}
 			{% if post.link %}
 			<item>

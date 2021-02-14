@@ -5,7 +5,7 @@ permalink: /notes/
 content-type: eg
 ---
 
-{% assign sortednotes = site.notes | sort: 'last_modified_at' | reverse %}
+{% assign sortednotes = site.notes | sort: 'modified' | reverse %}
 {%- for item in sortednotes limit: 20 -%}
   {%- include contextfeed.html -%}
 {%- endfor -%}

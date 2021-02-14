@@ -1,11 +1,14 @@
 ---
 title: Projects
+date: 2020-09-28
+modified: 2021-02-14
 ---
 
 ## Current Projects
 
-* [[Venture Scouts]]
-* [[Cobuilding]]
+* [[Venture Scouts]] [[2020]]
+* [[Cobuilding]] [[2020]]
+* [[Moa Party]] [[2021]]
 
 ## Backlog
 

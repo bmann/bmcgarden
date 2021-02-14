@@ -1,5 +1,6 @@
 ---
 title: Vyper on ChromeOS
+date: 2020-09-28
 ---
 _[[Vyper]] smart contract language on [[ChromeOS]]_
 

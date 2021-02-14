@@ -17,7 +17,7 @@ permalink: /feed/notes.xml
 		<atom:link href="{{ site.url }}/{{ page.path }}" rel="self" type="application/rss+xml" />
 		<lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
 		{% assign feed_items = site.feed_items | default: 10 %}
-		{% assign sortednotes = site.notes | sort: 'last_modified_at' | reverse %}
+		{% assign sortednotes = site.notes | sort: 'modified' | reverse %}
 		{% for post in sortednotes limit:feed_items %}
 			<item>
 				<title>{{ post.title | xml_escape }}</title>

@@ -1,16 +1,16 @@
 ---
 title: Mac Mini
 date: 2020-10-03
-modified: 2021-02-09
+modified: 2021-02-14
 ---
 
 I bought a Mac Mini[^macmini2018] at the [beginning of October 2020]({% link _posts/journal/2020-10-03-journal.md %}). I got the higher end model and bumped the processor to the **3.2GHz 6‑core 8th‑generation Intel Core i7**, but everything else base -- 8GB RAM, 512GB SSD.
 
-I have often used Norse Mythology as a naming scheme for computers, although I'm also currently using a Pokemon theme for portable devices. This current Mac Mini is named _Utgard_[^utgardwikipedia].
-
 [^macmini2018]: This is known as the Mac Mini (2018) edition. The [Apple Mac Mini page](https://www.apple.com/mac-mini/) now lists the new Mac Mini with the [[Apple M1]] ARM chip.
 
-[^utgardwikipedia]: [Útgarðar on Wikipedia](https://en.wikipedia.org/wiki/%C3%9Atgar%C3%B0ar), where you can follow many other Norse mythology references
+I have often used Norse Mythology as a naming scheme for computers, although I'm also currently using a Pokemon theme for portable devices. This current Mac Mini is named _Utgard_.[^utgard]
+
+[^utgard]: See [Útgarðar on Wikipedia](https://en.wikipedia.org/wiki/%C3%9Atgar%C3%B0ar), where you can follow many other Norse mythology references
 
 The rest of my home desktop setup:
 
@@ -29,7 +29,4 @@ To research:
 * Wired headphones and digital amp
 * Wrist rest? I have to get the position / height of my hands, the desk, and keyboard set correctly
 * Kneeling chair? The office chair is pretty good, but I'm spending a LOT of time in this room
-
-
-
 
