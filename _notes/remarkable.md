@@ -5,6 +5,15 @@ date: 2021-02-13
 
 The reMarkable is a "paper tablet" with a monochrome e-ink screen with touch support, and a non-powered stylus.
 
+## Resources
+
+* reMarkable Awesome list - huge list of apps, tools, templates, and more <https://github.com/reHackable/awesome-reMarkable> 
+* RemarkableTablet on Reddit <https://www.reddit.com/r/RemarkableTablet/>
+* ReMarkable Wiki <https://remarkablewiki.com/>
+* rmkit, a site about remarkable app dev https://rmkit.dev/
+
+---
+
 I bought one in [[February 2021]].
 
 <blockquote class="quoteback" data-title="" data-author="Boris Mann" data-avatar="https://micro.blog/boris/avatar.jpg" cite="https://blog.bmannconsulting.com/2021/02/13/sitting-at-the.html"><p>Sitting at the breakfast table writing what will become a blog post on drop in audio.</p>
