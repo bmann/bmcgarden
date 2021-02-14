@@ -1,6 +1,6 @@
 ---
 title: Colophon
-modified: 2021-01-10
+modified: 2021-02-13
 ---
 
 Historically, a **Colophon** was "a statement at the end of a book, typically with a printer's emblem, giving information about its authorship and printing" (via Google Dictionary).
@@ -19,6 +19,8 @@ Using [[VSCode]] on my desktop to edit.ß
 Hosting on [[Fission]]. [[Cloudflare]] is powering the DNS and using [[Cloudflare IPFS Gateway]].
 
 Source code is public on Github at [bmann/bmcgarden](https://github.com/bmann/bmcgarden).
+
+Changed fission app from `ancient-aquamarine-metalic-princess.fission.app` to `bmcgarden.fission.app` and updating Cloudflare.
 
 ## [[WIP]]
 
