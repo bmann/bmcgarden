@@ -30,6 +30,7 @@ Switched over Notes and Links pages to use `modified`. Added Github Links to the
 
 ## To Do
 
+* Add the `link` and `github` fields to the body in the Recent Links feed
 * Look at side / margin notes and just use footnotes everywhere, possibly using [[BigfootJS]]
 
 # Archive

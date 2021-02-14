@@ -33,7 +33,9 @@ I bought one in [[February 2021]].
 
 Anton @theunfoldingway asked if it supports custom templates. I had just discovered the [regular templates for notes](https://support.remarkable.com/hc/en-us/articles/360002674558-Templates).
 
-Doing a quick search found all these [for sale custom templates](https://www.einkpads.com/), and an app to load them onto your device.
+![Remarkable Template Selection Screen](../assets/2021/02/remarkable-templates.png)
+
+Doing a quick search found all these [for sale custom templates](https://www.einkpads.com/), and an app to load them onto your device. But, there are lots of open source tools to help with this.
 
 This video shows how to create and add custom templates on [[Windows]]:
 

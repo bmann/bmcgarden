@@ -43,11 +43,13 @@ But of course, social networks aren't primarily about the technology powering th
 
 After trying out Soapbox ([here's my profile](https://soapbox.social/user/boris)), my friend [Claire Atkin @catthekin](https://twitter.com/catthekin) gave me a demo of what she had learned about Clubhouse so far (she was an early adopter last year). Mute when you're not talking "on stage", "flick" the mute button when you agree with the current speaker (rather than saying anything audible), the 🎉 on your profile means you're new and people will cut you some slack for the first couple of days.
 
-The day after Claire gave me a tour, I went for a walk and decided to explore a little more on my own. I dropped in and "pinged" Carter Rabasa. Carter was one of the people that had initially invited me and has been having some fun experiences.
+The day after Claire gave me a tour, I went for a walk and decided to explore a little more on my own. I dropped in and "pinged" [Carter Rabasa @crtr0](https://twitter.com/crtr0). Carter was one of the people that had initially invited me and has been having some fun experiences.
 
-We had a good chat about how web-based drop in audio has a real disadvantage us. native mobile app notifications drawing you back in.
+We had a good chat about how web-based drop in audio has a real disadvantage us. native mobile app notifications drawing you back in.[^carter]
 
 Carter pointed out that "where your friends are" really drives early network formation. This is a good point, and Clubhouse itself leans into Twitter and Instagram (and your phone's address book of contact phone numbers).
+
+[^carter]: Plus a bunch of other topics, like pandemic & US politics being a downer, Pacific North West snow, DevRel evolution. It was definitely nice that Carter "picked up" and we could just chat for a bit and catch up.
 
 Twitter login for web based drop in audio (or Mastodon or other existing social networks) is key for making it easy to grow your network.
 
