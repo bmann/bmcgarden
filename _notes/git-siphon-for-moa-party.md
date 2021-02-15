@@ -51,6 +51,29 @@ Something like:
 
 The output is then a page with each post in chronological order for the day.
 
+## File per Post
+
+After discussing with @Flancian, creating the daily log directly removes a lot of flexibility for the user. You lose posts as atomic units, so at best you can only reference the Daily Log for backlinks, and can't really re-use post content elsewhere within your garden.
+
+We also have to mindful that a [[Jekyll]] garden like mine is only one client of a Moa git-push. Agora is another client, as will be [[Hugo]] and other platforms that get used to make [[SecondBrain]] sites.
+
+Template preferences might need to be a bit more complicated, but roughly mirror the preferences from Daily Log above, just applying to each file:
+
+* preference text field: path to social posts folder, default `_social/` (Jekyll specific)
+  * This makes social posts in Jekyll their own content type, which means users can choose to not even publish them, but still use the data from them e.g. as backlinks or transcluding on the pages representing [[wikilinks]] in the post
+* preference text field: file naming of social posts files, default `[YYYY-MM-DD-HH-SS.md]`
+* preference text field: front matter settings
+  * skipped over above, so I'll go into a bit more depth here. These are all YAML keys:
+  * title: not included and blank by default
+  * link: link to source social post
+  * tags: blank by default; many users use tags to control display
+  * categories: blank by default, same as tags 
+  * date: dates are hard :P, pick some default timestamp format, probably in UTC
+
+
+Again, IndieKit has a whole template system for this. We should start with a default and see how it works for people.
+
+
 ## Filtering Options
 
 A siphon isn't really cross posting, so the filtering options are different. We'll need to think through these options and how they interact with the core cross-posting filter options.
@@ -59,6 +82,7 @@ A siphon isn't really cross posting, so the filtering options are different. We'
 * Only post if [[wikilinks]] are included
 * Only post if there is a link or image included
 * Only post if global hashtag is included
+* [[push]] options (Agora specific)
 
 Zero or more checkboxes can be checked, and each checked rule must be satisfied.
 
