@@ -1,7 +1,7 @@
 ---
 title: Minimal Mistakes
 link: https://mmistakes.github.io/minimal-mistakes/
-github: https://github.com/mmistakes/minimal-mistakes
+git: https://github.com/mmistakes/minimal-mistakes
 tags:
     - opensource
     - jekyll

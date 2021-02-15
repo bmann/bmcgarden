@@ -9,4 +9,4 @@ You can use Foam for organising your research, keeping re-discoverable notes, wr
 Foam is free, open source, and extremely extensible to suit your personal workflow. You own the information you create with Foam, and you’re free to share it, and collaborate on it with anyone you want.
 
 website: https://foambubble.github.io/foam/
-github: https://github.com/foambubble/foam
+git: https://github.com/foambubble/foam

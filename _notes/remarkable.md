@@ -1,6 +1,7 @@
 ---
 title: reMarkable
 date: 2021-02-13
+link: https://remarkable.com
 ---
 
 The reMarkable is a "paper tablet" with a monochrome e-ink screen with touch support, and a non-powered stylus.
@@ -40,3 +41,13 @@ Doing a quick search found all these [for sale custom templates](https://www.ein
 This video shows how to create and add custom templates on [[Windows]]:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Bl1krpUZTdo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+## Using
+
+* Official [Chrome Extension](https://chrome.google.com/webstore/detail/read-on-remarkable/bfhkfdnddlhfippjbflipboognpdpoeh)
+
+## To Test
+
+* [Google Drive Remarkable Sync](https://github.com/bsdz/google-drive-remarkable-sync)
+* [[ReMailable]]

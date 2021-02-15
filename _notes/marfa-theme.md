@@ -1,6 +1,6 @@
 ---
 title: Marfa Theme
-github: https://github.com/bmann/theme-marfa
+git: https://github.com/bmann/theme-marfa
 date: 2020-12-06
 modified: 2021-01-10
 ---

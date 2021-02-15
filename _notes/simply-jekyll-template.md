@@ -1,6 +1,6 @@
 ---
 title: Simply Jekyll Template
-github: https://github.com/bmann/simply-jekyll/
+git: https://github.com/bmann/simply-jekyll/
 date: 2020-11-24
 modified: 2021-01-24
 ---

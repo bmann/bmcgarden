@@ -1,7 +1,7 @@
 ---
 title: Moa Party
 link: https://moa.party
-github: https://github.com/foozmeat/moa
+git: https://github.com/foozmeat/moa
 date: 2021-01-24
 modified: 2021-02-13
 tags:

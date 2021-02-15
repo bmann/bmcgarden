@@ -1,7 +1,7 @@
 ---
 title: BigfootJS
 link: http://www.bigfootjs.com/
-github: https://github.com/lemonmade/bigfoot
+git: https://github.com/lemonmade/bigfoot
 tags:
     - opensource
     - footnotes

@@ -1,7 +1,7 @@
 ---
 title: Orbit Model
 link: https://github.com/orbit-love/orbit-model
-github: https://github.com/orbit-love/orbit-model
+git: https://github.com/orbit-love/orbit-model
 date: 2021-01-24
 published: 2019-12-01
 ---

@@ -23,14 +23,14 @@ Source code is public on Github at [bmann/bmcgarden](https://github.com/bmann/bm
 
 Changed fission app from `ancient-aquamarine-metalic-princess.fission.app` to `bmcgarden.fission.app` and updating Cloudflare.
 
-Switched over Notes and Links pages to use `modified`. Added Github Links to the Links page. Disabled the last_modified plugin, which never seemed to work in any case.
+Switched over Notes and Links pages to use `modified`. Added Git Links to the Links page. Disabled the jekyll last_modified plugin, which never seemed to work in any case.
 ## [[WIP]]
 
 * More work on [[Feeds]] and `modified` vs `date`
 
 ## To Do
 
-* Add the `link` and `github` fields to the body in the Recent Links feed
+* Add the `link` and `git` fields to the body in the Recent Links feed
 * Look at side / margin notes and just use footnotes everywhere, possibly using [[BigfootJS]]
 
 # Archive

@@ -5,6 +5,6 @@ tags: GitHub bot code git
 ---
 
 website: https://github.com/apps/pull
-github: https://github.com/wei/pull
+git: https://github.com/wei/pull
 
 A [[Github]] App that keeps your forks up-to-date with upstream via automated pull requests.

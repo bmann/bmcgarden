@@ -1,7 +1,7 @@
 ---
 title: TypeSense Showcase Recipe Search
 link: https://recipe-search.typesense.org/
-github: https://github.com/typesense/showcase-recipe-search
+git: https://github.com/typesense/showcase-recipe-search
 date: 2021-01-10
 ---
 Showcase of using [[TypeSense]] search to search a ~2M recipe data set which is stored as structured data.

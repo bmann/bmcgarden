@@ -1,7 +1,7 @@
 ---
 title: IndieKit
 link: https://getindiekit.com/
-github: https://github.com/getindiekit/indiekit
+git: https://github.com/getindiekit/indiekit
 date: 2021-01-24
 tags:
     - micropub

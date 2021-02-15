@@ -1,7 +1,7 @@
 ---
 title: Orientation
 link: https://orientation.io/
-github: https://github.com/orientation/orientation
+git: https://github.com/orientation/orientation
 tags:
     - documentation
     - opensource

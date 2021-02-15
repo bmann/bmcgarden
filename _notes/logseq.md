@@ -2,7 +2,7 @@
 title: LogSeq
 date: 2020-09-24
 modified: 2021-01-24
-github: https://github.com/logseq/logseq
+git: https://github.com/logseq/logseq
 link: https://logseq.com
 ---
 

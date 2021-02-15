@@ -4,6 +4,6 @@ title: Standard Readme
 tags: opensource readme
 ---
 
-github: https://github.com/RichardLitt/standard-readme
+git: https://github.com/RichardLitt/standard-readme
 
 A standard format for README files, designed for open source libraries.

@@ -7,7 +7,7 @@ tags:
   - heroku
   - analytics
 link: https://posthog.com/
-github: https://github.com/PostHog/posthog
+git: https://github.com/PostHog/posthog
 ---
 Open source [[Product Analytics]]
 

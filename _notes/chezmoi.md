@@ -1,7 +1,7 @@
 ---
 title: Chezmoi
 link: https://www.chezmoi.io
-github: https://github.com/twpayne/chezmoi
+git: https://github.com/twpayne/chezmoi
 tags:
   - dotfiles
   - opensource

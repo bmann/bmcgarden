@@ -1,6 +1,6 @@
 ---
 title: Astuto
-github: https://github.com/riggraz/astuto
+git: https://github.com/riggraz/astuto
 link: https://github.com/riggraz/astuto
 tags:
     - opensource

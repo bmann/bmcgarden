@@ -1,6 +1,6 @@
 ---
 title: WikiJS
-github: https://github.com/Requarks/wiki
+git: https://github.com/Requarks/wiki
 link: https://wiki.js.org/
 date: 2020-09-28
 modified: 2021-01-24

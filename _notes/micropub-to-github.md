@@ -1,7 +1,6 @@
 ---
 title: Micropub to Github
-github: https://github.com/voxpelli/webpage-micropub-to-github
-link: https://github.com/voxpelli/webpage-micropub-to-github
+git: https://github.com/voxpelli/webpage-micropub-to-github
 date: 2021-01-24
 tags:
     - opensource

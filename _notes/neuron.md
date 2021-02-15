@@ -1,7 +1,7 @@
 ---
 title: Neuron
 link: https://neuron.zettel.page/
-github: https://github.com/srid/neuron
+git: https://github.com/srid/neuron
 ---
 
 A future-proof open-source app for managing your plain-text notes in Zettelkasten style, as well as for publishing them on the web.

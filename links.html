@@ -42,14 +42,14 @@ content-type: eg
   </div>
 
   <h2>Github Links</h2>
-<p>Links to Github hosted Code Projects</p>
+<p>Links to Git hosted Code Projects</p>
   <div style="margin-left: 20px; margin-bottom: 20px;">
     {% assign linkcount = 0 %}
     {% assign sortednotes = site.notes | sort: 'modified' | reverse %}
     {% for note in sortednotes %}
-      {% if note.github and linkcount < 20 %}
+      {% if note.git and linkcount < 20 %}
         <div class="note-entry" style="margin-bottom: 10px;">
-          <span><a class="internal-link" href="{{ note.url }}">{{ note.title }}</a></span><br /><span style="margin-left: 20px; font-size: smaller;">Source: <a href="{{ note.github }}">{{ note.github }}</a></span>
+          <span><a class="internal-link" href="{{ note.url }}">{{ note.title }}</a></span><br /><span style="margin-left: 20px; font-size: smaller;">Source: <a href="{{ note.git }}">{{ note.git }}</a></span>
         </div>
         {% assign linkcount = linkcount | plus: 1 %}
       {% elsif linkcount >= 10 %}
