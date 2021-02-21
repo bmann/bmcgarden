@@ -19,6 +19,8 @@
                 {%- include related.html -%}
                 <!-- /related -->
             </main>
+            {%- else -%} {% comment %} This is a log {% endcomment %}
+                {%- include content.html -%}
             {%- endif -%}
             {%- include comments.html -%}
             <!-- /comments -->

@@ -1,0 +1,16 @@
+---
+title: Log
+layout: feed
+content-type: eg
+permalink: /logs/
+---
+
+{% assign sortednotes = site.logs | sort: 'date' | reverse %}
+{%- for item in sortednotes limit: 20 -%}
+
+  <article>
+  {{ item.content | markdownify }}
+  <div><a href="{{ item.url }}">#</a></div>
+  </article>
+
+{%- endfor -%}

@@ -46,9 +46,10 @@ collections:
     notes:
       output: true
       permalink: /:title/
+    logs:
+      output: true
+      permalink: /log/:slug/
 
-#disqus:
-#  shortname: raghuveerdotnet
 
 defaults:
   - scope:
@@ -81,3 +82,9 @@ defaults:
     values:
       layout: post
       content-type: notes
+  - scope:
+      path: "_logs/*"
+      type: logs
+    values:
+      layout: post
+      content-type: logs
