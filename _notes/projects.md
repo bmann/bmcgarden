@@ -1,14 +1,14 @@
 ---
 title: Projects
 date: 2020-09-28
-modified: 2021-02-14
+modified: 2021-02-20
 ---
 
 ## Current Projects
 
 * [[Venture Scouts]] [[2020]]
 * [[Cobuilding]] [[2020]]
-* [[Moa Party]] [[2021]]
+* [[Moa Party]] and [[Connecting to the Agora]] [[2021]]
 
 ## Backlog
 
@@ -16,7 +16,7 @@ modified: 2021-02-14
 * [[Community ISP]] -- can we form co-ops and collectives and create community ISPs?
 * [[Vancouver Local Makers Directory]] -- a list of made in [[Vancouver]] items, ideally with direct call to purchase
 
-## Older Projects
+## Older Projects & Events
 
 * [[Berlin Open Source Salon]] - [[2019]]
 * [[Open Angel Canada]]

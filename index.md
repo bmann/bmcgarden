@@ -8,6 +8,9 @@ This is my space for Notes[[Yes, basically a personal wiki, although becoming kn
 ### Recent Blog Posts
 {% include recentblogs.html bloglimit=3 %}
 
+### Recent Journals
+{% include recentjournals.html journallimit=3 %}
+
 ### Seeds
 
 You can browse current and past [[Projects]]. These are mainly small [[Vancouver]] focused things, I'm pretty busy as the founder of [[Fission]].[[Check out the <a href='https://blog.fission.codes'>Fission blog</a>.::lmn]]
@@ -15,6 +18,8 @@ You can browse current and past [[Projects]]. These are mainly small [[Vancouver
 Starting with the [[Startup]] note, there are various operations guides, products, and recommendations to explore.
 
 If I haven't sent it to you already, you should read [[When Tailwinds Vanish: The Internet in the 2020s]].[[Software companies founded today are competing less with pen and paper than with other Internet-first incumbents. Put another way, as happens in every maturing industry before it, Internet company revenue will become zero-sum. As a corollary, the time between founding years of software startups and their competitive incumbents is shrinking — <a href='https://luttig.substack.com/p/when-tailwinds-vanish'>When Tailwinds Vanish</a>::rmn]]
+
+The [[Gumroad No Full Time Employees]] article is also a good read.[[Today, working at Gumroad resembles working on an open source project like Rails. Except it’s neither open source, nor unpaid. — @shl, <a href='https://sahillavingia.com/work'>No Meetings, No Deadlines, No Full-Time Employees</a>::lmn]]
 
 ## Microblog
 
