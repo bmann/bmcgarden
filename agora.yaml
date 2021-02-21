@@ -16,4 +16,11 @@ exclude:
     - _includes/*
     - _layouts/*
     - feeds/*
+
+# instead of index.md or index.html in the root of your repo, this is showed as the "home" for your agora
 home: _notes/agora.md
+
+# the agora has certain metadata items. This lets front matter used in individual files get mapped to agora norms
+frontmatter_mapping:
+  git: [[git]]
+  link: [[website]]
