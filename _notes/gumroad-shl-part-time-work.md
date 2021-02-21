@@ -1,5 +1,5 @@
 ---
-title: 
+title: Gumroad No Full Time Employees
 link: https://sahillavingia.com/work
 published: 2021-01-07
 date: 2021-02-20
