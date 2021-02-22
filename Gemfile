@@ -5,7 +5,7 @@ gem "jekyll", "~> 4.0.0"
 gem "liquid-c"
 
 group :jekyll_plugins do
-  gem "jekyll-last-modified-at"
+#  gem "jekyll-last-modified-at"
   gem "jekyll-commonmark-ghpages"
 end
 

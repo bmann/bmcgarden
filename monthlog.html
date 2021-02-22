@@ -1,0 +1,21 @@
+---
+title: Monthly Log
+layout: feed
+content-type: eg
+permalink: /monthly/
+---
+
+{% assign postsByDay = site.logs | group_by_exp: "log", "log.date | date: '%A, %B %e, %Y'" | reverse %}
+
+{% for day in postsByDay %}
+  <h2>{{ day.name }}</h2>
+    <ul>
+      {% for post in day.items %}
+        <h3><a href="{{ post.url }}">{{ post.date | date: "%l:%M%P" }}</a></h3>
+        {% if post.bookmark-of != nil %}
+          <p>🔖 Bookmarked: <a href="{{ post.bookmark-of }}">{{ post.bookmark-of }}</a></p>
+        {% endif %}
+        <p style="margin-left: 30px">{{ post.content | remove: "<p>" | replace: "</p>", "<br /><br />" | truncate: 500 }}</p>
+      {% endfor %}
+    </ul>
+{% endfor %}
