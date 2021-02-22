@@ -1,5 +1,5 @@
 ---
-title: Log
+title: Logs
 layout: feed
 content-type: eg
 permalink: /logs/
@@ -9,8 +9,10 @@ permalink: /logs/
 {%- for item in sortednotes limit: 20 -%}
 
   <article>
-  {{ item.content | markdownify }}
-  <div><a href="{{ item.url }}">#</a></div>
+  <div><a href="{{ item.url }}">
+  {% assign d = item.date | date: "%-d" %}{{ item.date | date: "%B" }} {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %}, {{ item.date | date: "%l:%M%P" }}
+  </a></div>
+  <p style="margin-left: 30px">{{ item.content | remove: "<p>" | replace: "</p>", "<br /><br />" | truncate: 500 }}</p>
   </article>
 
 {%- endfor -%}
