@@ -15,7 +15,7 @@ exclude:
     - tags.html
     - _includes/*
     - _layouts/*
-    - feeds/*
+    - feed/*
 
 # instead of index.md or index.html in the root of your repo, this is showed as the "home" for your agora
 home: _notes/agora.md
