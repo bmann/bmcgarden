@@ -25,7 +25,7 @@ content-type: eg
 
 <h2>Recently Added and Updated</h2>
 <p>Recently added bookmark style links to external content. Permalinks to tools and services rather than dated articles or news.</p>
-<label for="rmn-1" class="margin-toggle  ">⊕</label><input type="checkbox" id="rmn-1" class="margin-toggle"><span class="mn-right">These will appear in both the Recently Updated Notes and Recent Links <a href='{% link _notes/feeds.md %}'>Feeds</a>. </span>
+<label for="rmn-1" class="margin-toggle  ">⊕</label><input type="checkbox" id="rmn-1" class="margin-toggle"><span class="mn-right">These will appear in both the Recently Updated Notes and Recent Links <a href='/feeds/'>Feeds</a>. </span>
   <div style="margin-left: 20px; margin-bottom: 20px;">
     {% assign linkcount = 0 %}
     {% assign sortednotes = site.notes | sort: 'modified' | reverse %}
