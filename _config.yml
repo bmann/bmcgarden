@@ -69,14 +69,6 @@ defaults:
       content-type: post
       section: archive
   - scope:
-      path: "_posts/journal/*"
-      type: posts
-    values:
-      layout: post
-      permalink: /journal/:year/:month/:day/
-      content-type: post
-      section: journal
-  - scope:
       path: "_notes/*"
       type: notes
     values:
