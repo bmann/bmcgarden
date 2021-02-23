@@ -1,12 +1,18 @@
 ---
 title: Neocities
-tags: opensource openweb ipfs dweb
+tags:
+    - opensource
+    - openweb
+    - ipfs
+    - dweb
+link: https://neocities.org/
+git: https://github.com/neocities/neocities
 ---
-Neocities https://neocities.org/ is a reboot of Geocities. The entire site is [[Open Source]], you can send a pull request on their [[Github::https://github.com/neocities/neocities]].
+Neocities is a reboot of Geocities. The entire site is [[Open Source]].
 
 I have an empty placeholder site there https://bmann.neocities.org/
 
-As I [found out]({% link _posts/journal/2020-09-30-journal.md %}), Neocities experiments with [[IPFS]]: you can [enable IPFS archiving](https://neocities.org/distributed-web), and they [blogged about it in 2015](https://blog.neocities.org/blog/2015/09/08/its-time-for-the-distributed-web.html).
+As I [found out]({% link _logs/2020-09-30-journal.md %}), Neocities experiments with [[IPFS]]: you can [enable IPFS archiving](https://neocities.org/distributed-web), and they [blogged about it in 2015](https://blog.neocities.org/blog/2015/09/08/its-time-for-the-distributed-web.html).
 
 ---
 

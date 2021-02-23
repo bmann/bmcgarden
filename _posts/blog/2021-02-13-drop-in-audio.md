@@ -1,6 +1,7 @@
 ---
 title: Drop in Audio
 date: '2021-02-13T23:34:34-07:00'
+modified: 2021-02-22
 categories:
   - Commons
 tags:
@@ -57,10 +58,10 @@ So, can you "own your own drop in audio"? Yes! Just like running a newsletter or
 
 Will I keep using Clubhouse? Sure, I'll keep an eye on it and experiment a little, and enjoy the novelty of a new network.
 
-In fact, join me on February 23rd, 9:30am PST / 12:30pm EST / 18:30 CET for a discussion on Decentralized Open Networks. [Find the event on Clubhouse](https://www.joinclubhouse.com/event/PvNo69XP), or register on Luma:
+In fact, join me on ~~February 23rd~~ March 3rd, 9:30am PST / 12:30pm EST / 18:30 CET for a discussion on Decentralized Open Networks. I'll also be joined by [Simona Pop @Sim_Pop](https://twitter.com/sim_pop), who will be co-hosting with me. [Find the event on Clubhouse](https://www.joinclubhouse.com/event/PvNo69XP), or register on Luma:
 
 <br /><br />
-<a href="https://lu.ma/event/evt-4hubOg6pSTUk3jS" class="luma-checkout--button" data-luma-action="checkout" data-luma-event-id="evt-4hubOg6pSTUk3jS">Sign up for Decentralized Open Networks, Feb 23rd</a>
+<a href="https://lu.ma/event/evt-4hubOg6pSTUk3jS" class="luma-checkout--button" data-luma-action="checkout" data-luma-event-id="evt-4hubOg6pSTUk3jS">Sign up for Decentralized Open Networks, Mar 3rd</a>
 <script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></script>
 <br />
 I'll also drop a link to some BBB and Speakeasy rooms [on Twitter](https://twitter.com/bmann) to experiment with those platforms.
@@ -83,3 +84,7 @@ A Discord bot and built in voice channels could probably do something interestin
 I didn't mention [@TwitterSpaces](https://twitter.com/TwitterSpaces), audio chat being built into Twitter directly. I think it will do well, and I'm much more likely to use it, since I think of Twitter as a platform native to the web (as opposed to mobile app). What will they do to add APIs & make it open & programmable?
 
 _Fun fact: this was the first blog post that started out as handwritten pages on my new [[reMarkable]] paper tablet_
+
+---
+
+_Update 2021-02-22:_ The Decentralized Open Networks talk is being re-scheduled to March 3rd. Links and registration above are all correct, just changed the date and added Simona as co-host. I also found [[Jam]] which very directly calls itself an open source alternative. 

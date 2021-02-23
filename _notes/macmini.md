@@ -4,7 +4,7 @@ date: 2020-10-03
 modified: 2021-02-14
 ---
 
-I bought a Mac Mini[^macmini2018] at the [beginning of October 2020]({% link _posts/journal/2020-10-03-journal.md %}). I got the higher end model and bumped the processor to the **3.2GHz 6‑core 8th‑generation Intel Core i7**, but everything else base -- 8GB RAM, 512GB SSD.
+I bought a Mac Mini[^macmini2018] at the [beginning of October 2020]({% link _logs/2020-10-03-journal.md %}). I got the higher end model and bumped the processor to the **3.2GHz 6‑core 8th‑generation Intel Core i7**, but everything else base -- 8GB RAM, 512GB SSD.
 
 [^macmini2018]: This is known as the Mac Mini (2018) edition. The [Apple Mac Mini page](https://www.apple.com/mac-mini/) now lists the new Mac Mini with the [[Apple M1]] ARM chip.
 
@@ -19,9 +19,9 @@ The rest of my home desktop setup:
 * [[Asus VG289Q Monitor]] 28" 4K monitor
 * Logitech M535 Bluetooth mouse
 * HyperX membrane keyboard: quieter, full size, and permanently wired, so my [[Royal Kludge]] becomes my wireless / portable keyboard. Don't worry, it still has rainbow backlighting!
-* 2TB NVMe drive in an external enclosure, [researched originally Nov 14th, 2020]({% link _posts/journal/2020-11-14-journal.md %}), purchased and installed [Nov 24th, 2020]({% link _posts/journal/2020-11-24-journal.md %})
+* 2TB NVMe drive in an external enclosure, [researched originally Nov 14th, 2020]({% link _logs/2020-11-14-journal.md %}), purchased and installed [Nov 24th, 2020]({% link _logs/2020-11-24-journal.md %})
 * OWC Mercury Elite Pro Dock with 2x 2TB SSD drives (installed [[February 9th, 2021]]); the fan is very loud, so unplugged for now?
-* Webcam, [detailed Nov 7th, 2020, along with eGPU purchase]({% link _posts/journal/2020-11-07-journal.md %})
+* Webcam, [detailed Nov 7th, 2020, along with eGPU purchase]({% link _logs/2020-11-07-journal.md %})
 * Yeti Blue USB Microphone, which I also plug my Sennheiser Headset into
 
 

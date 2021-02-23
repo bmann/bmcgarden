@@ -1,6 +1,6 @@
 ---
 layout: null
-permalink: /feed/notes.xml 
+permalink: /feed/journal.xml 
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"
@@ -17,21 +17,17 @@ permalink: /feed/notes.xml
 		<atom:link href="{{ site.url }}/{{ page.path }}" rel="self" type="application/rss+xml" />
 		<lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
 		{% assign feed_items = site.feed_items | default: 10 %}
-		{% assign sortednotes = site.notes | sort: 'date' | reverse %}
-		{% for post in sortednotes limit:feed_items %}
+		{% assign sortedlogs = site.logs | sort: 'date' | reverse %}
+		{% for post in sortedlogs limit:feed_items %}
 			<item>
-				<title>{{ post.title | xml_escape }}</title>
+				<title>{{ post.date | date: "%l:%M%P - %B %e" }}</title>
 				{% if site.author.name %}
 					<dc:creator>{{ site.author.name | xml_escape }}</dc:creator>
 				{% endif %}
 				<description>
-				{% if post.link != nil %}
-				Link: <a href="{{ post.link | escape }}">{{ post.link | escape }}</a><br/>
+				{% if post.bookmark-of != nil %}
+				Bookmark: <a href="{{ post.bookmark-of | escape }}">{{ post.title | escape }}</a><br/>
 				{% endif %}
-				{% if post.git != nil %}
-				Git: <a href="{{ post.git | escape }}">{{ post.git | escape }}</a><br/>
-				{% endif %}
-				<br/>
 				{{ post.content | xml_escape }}
 				</description>
 				<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>

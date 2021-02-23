@@ -1,8 +1,12 @@
 ---
 title: Feeds
+date: 2021-09-28
+modified: 2021-02-22
 ---
 
-Don't know what a feed is? Learn more on the [About Feeds](https://aboutfeeds.com/) site.[[Or dive into more thoughts on <a href='{% link _notes/webfeeds.md %}'>Web Feeds</a>.::rmn]]
+Don't know what a feed is? Learn more on the [About Feeds](https://aboutfeeds.com/) site.[^webfeeds]
+
+[^webfeeds]: Or dive into more thoughts on [[Web Feeds]]
 
 ## RSS Feeds
 [[There is no feed for the <a href='/archive/'>Archive</a> other than newer blog posts. I don't intend to create a feed for my <a href='/journal/'>Journal</a>, you can come by and visit the site if you really want a peek.::lmn]]
@@ -20,4 +24,4 @@ Anything with a link field. Mostly comes in two flavours. One is a kind of bookm
 
 **Blog** <a href="https://bmannconsulting.com/feed/blog.xml"><img src="../assets/orange-square.svg" style="height: 1.1em;" class="inline"></a>
 
-The home page and the [Blog](/blog/) page list recent blogs.[[Blogging is slow and infrequent in these parts. I'm busy updating notes instead! The <a href='https://microblog.bmannconsulting.com'>microblog</a> has more frequent short posts, images, and such. <a href="https://microblog.bmannconsulting.com/feed.xml"><img src="../assets/orange-square.svg" style="height: 1.1em;" class="inline"></a> ::rmn]] 
+The home page and the [Blog](/blog/) page list recent blogs.[[Blogging is slow and infrequent in these parts. I'm busy updating notes instead! The <a href='https://blog.bmannconsulting.com'>blog</a> has more frequent short posts, images, and such. <a href="https://blog.bmannconsulting.com/feed.xml"><img src="../assets/orange-square.svg" style="height: 1.1em;" class="inline"></a> ::rmn]] 
