@@ -11,6 +11,7 @@ copyright_name: Boris Mann
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://bmannconsulting.com" # the base hostname & protocol for your site, e.g. http://example.com
 encoding: utf-8
+timezone: America/Vancouver
 
 exclude: ['.env', 'fission.yaml', 'gemset.nix', 'pages', 'fission.yaml', 'blog.code-workspace', 'netlify.toml', '_ignore', '.vscode', '.obsidian']
 

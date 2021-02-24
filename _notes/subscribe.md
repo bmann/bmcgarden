@@ -1,8 +1,7 @@
 ---
-title: Feeds
+title: Subscribe
 date: 2021-09-28
 modified: 2021-02-22
-permalink: /feeds/index.html
 ---
 
 Don't know what a feed is? Learn more on the [About Feeds](https://aboutfeeds.com/) site.[^webfeeds]
