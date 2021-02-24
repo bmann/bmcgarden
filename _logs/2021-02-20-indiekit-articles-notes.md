@@ -1,6 +1,6 @@
 ---
 date: 2021-02-20T22:28:45.084-08:00
-tags:
+category:
     - IndieKit
     - iA Writer
     - Quill

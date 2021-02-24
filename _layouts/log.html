@@ -8,14 +8,11 @@
             {%- include header.html -%}
             <main>
                 {% comment %}Only Bookmarks have titles{% endcomment %}
-                {% if page.title != nil %}
+                {% if page.bookmark-of != nil %}
                 <h1>{{page.title}}</h1>
-                <span>🔖&nbsp;<a href="{{ page.bookmark-of }}">{{ page.bookmark-of }}</a></span>
+                <span class="bookmark" style="display: inline-block; padding: 0px 30px 20px 30px; font: monospace 1.1em ;">🔖&nbsp;<a href="{{ page.bookmark-of }}">{{ page.bookmark-of }}</a></span>
                 {% else %}
-                    {% comment %}Otherwise it might be a favourite / like{% endcomment %}
-                    {% if page.bookmark-of != nil %}
-                    <span>❤️&nbsp;<a href="{{ page.bookmark-of }}">{{ page.bookmark-of }}</a></span>
-                    {% endif %}
+                    <h1>{{ page.date | date: "%l:%M%P %A" }}</h1>
                 {% endif %}
                 {%- include content.html -%}
                 <!-- /content -->
