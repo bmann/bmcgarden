@@ -1,9 +1,9 @@
 ---
 date: 2021-02-21T22:42:37.992-08:00
-title: Lightfoot
+title: Littlefoot
 git: https://github.com/goblindegook/littlefoot
 ---
-Lightfoot is a [[JavaScript]] library to make great inline footnotes. It's a non-jQuery replacement for [[BigfootJS]].
+Littlefoot is a [[JavaScript]] library to make great inline footnotes. It's a non-jQuery replacement for [[BigfootJS]].
 
 From the [Github README](https://github.com/goblindegook/littlefoot):
 >littlefoot is a lightweight JavaScript library that creates exceptional footnotes. It was forked from Bigfoot.js by Chris Sauvé and does not require jQuery.
