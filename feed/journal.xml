@@ -9,7 +9,7 @@ permalink: /feed/journal.xml
 	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
 >
 	<channel>
-		<title>{{ site.name | xml_escape }} - Updated Notes</title>
+		<title>{{ site.name | xml_escape }} - Daily Journal Logs</title>
 		<description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>		
 		<sy:updatePeriod>{{ site.feed_update_period | default: "daily" | xml_escape }}</sy:updatePeriod>
 		<sy:updateFrequency>{{ site.feed_update_frequency | default: 1 | xml_escape }}</sy:updateFrequency>
@@ -26,9 +26,11 @@ permalink: /feed/journal.xml
 				{% endif %}
 				<description>
 				{% if post.bookmark-of != nil %}
-				Bookmark: <a href="{{ post.bookmark-of | escape }}">{{ post.title | escape }}</a><br/>
+				{% capture bookmark %}
+				Bookmark: <a href="{{ post.bookmark-of }}">{{ post.title }}</a><br/>
 				{% endif %}
-				{{ post.content | xml_escape }}
+				{% endcapture %}
+				{{ bookmark | append: post.content | xml_escape }}
 				</description>
 				<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
 				<link>{{ site.url }}{{ post.url }}</link>
