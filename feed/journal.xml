@@ -28,8 +28,9 @@ permalink: /feed/journal.xml
 				{% if post.bookmark-of != nil %}
 				{% capture bookmark %}
 				Bookmark: <a href="{{ post.bookmark-of }}">{{ post.title }}</a><br/>
-				{% endif %}
 				{% endcapture %}
+				{% endif %}
+				
 				{{ bookmark | append: post.content | xml_escape }}
 				</description>
 				<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
