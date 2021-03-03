@@ -1,0 +1,15 @@
+{
+  "links": [
+    {
+      "rel": "http://tools.ietf.org/id/draft-dejong-remotestorage",
+      "href": "https://storage.5apps.com/boris",
+      "properties": {
+        "http://remotestorage.io/spec/version": "draft-dejong-remotestorage-13",
+        "http://remotestorage.io/spec/web-authoring": null,
+        "http://tools.ietf.org/html/rfc6749#section-4.2": "https://5apps.com/rs/oauth/boris",
+        "http://tools.ietf.org/html/rfc6750#section-2.3": null,
+        "http://tools.ietf.org/html/rfc7233": "GET"
+      }
+    }
+  ]
+}
