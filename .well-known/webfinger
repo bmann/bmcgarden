@@ -1,4 +1,8 @@
 {
+  "subject": "boris@bmannconsulting.com",
+  "properties": {
+    "http://schema.org/name": "Boris Mann"
+  },
   "links": [
     {
       "rel": "http://tools.ietf.org/id/draft-dejong-remotestorage",
@@ -10,6 +14,10 @@
         "http://tools.ietf.org/html/rfc6750#section-2.3": null,
         "http://tools.ietf.org/html/rfc7233": "GET"
       }
+    },
+    {
+      "rel": "http://webfinger.net/rel/profile-page",
+      "href": "https://bmannconsulting.com"
     }
   ]
 }

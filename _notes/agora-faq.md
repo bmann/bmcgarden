@@ -1,11 +1,9 @@
 ---
 date: 2021-03-05T22:38:12.011-08:00
-title: agora-faq
-draft: true
+title: Agora FAQ
 ---
-# Agora FAQ
 
-I realize that while this site is connected into [[Anagora]] — but that’s an instance, so I should be saying [[Agora]] instead? — that I don’t really know how it works! Or what the special features are!
+I realize that while this site is connected into [[Anagora]] (but that’s an instance, so I should be saying [[Agora]] instead?) that I don’t really know how it works! Or what the special features are!
 
 ## What markup do I use to link to a “global” node? A particular user’s node?
 

@@ -19,11 +19,7 @@ permalink: /feed/links.xml
 			{% if post.link %}
 			<item>
 				<title>{{ post.title | xml_escape }}</title>
-				{% if post.excerpt %}
-					<description>{{ post.excerpt | xml_escape }}</description>
-				{% else %}
-					<description>{{ post.content | xml_escape }}</description>
-				{% endif %}
+				<description>Link: <a href="{{ post.link | escape }}">{{ post.link | escape }}</a><br/><br/>{{ post.content | xml_escape }}</description>
 				<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
 				<link>{{ post.link | escape }}</link>
 				<guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
