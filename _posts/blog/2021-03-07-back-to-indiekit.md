@@ -1,9 +1,14 @@
 ---
 date: 2021-03-07T17:52:10.268-08:00
-title: back-to-indiekit
-draft: true
+title: Back to Indiekit
+categories:
+    - Second Brain
+tags:
+    - blogging
+    - Micropub
+    - IndieWeb
+    - IndieKit
 ---
-# Back to IndieKit
 
 I’m back to using [[IndieKit]] with this site, a personal [[Micropub]] server that lets me publish to the Git repo where the source of this site lives. 
 
@@ -15,7 +20,7 @@ In fact, [[IndieAuth]] means that my site is what I use for a login.
 
 But the thing I wanted to enable is posting on the go. While I have been spending a lot of time at my desktop, using my [[VSCode]] or [[Obsidian]] editor apps, I do a lot of reading on my phone. 
 
-I wanted to quickly post a note, bookmark, or journal item directly to my [[SecondBrain]] site.
+I wanted to quickly post a note, bookmark, or journal item directly to my [[Second Brain]] site.
 
 Running IndieKit as a Micropub server enables this. 
 
@@ -41,7 +46,7 @@ I’ve been enjoying it. It’s like [[RSS Club]]: without broadcasting on socia
 
 ## Bookmarks
 
-Since IndieKit supports many of the different [[Micropub]] post types, I ended up enabling Bookmarks too. 
+Since IndieKit supports many of the different [[Micropub]] post types, I ended up enabling [[Bookmarks]] too. 
 
 They are styled a little differently and are a good way to capture links to tools or code. I don’t use Bookmarks for articles or other people’s blog posts — I’ll write a short journal log if I want to do that. 
 
@@ -81,7 +86,7 @@ This one way to be reminded of content on the site, and further extend and refer
 
 I still need to troubleshoot uploading images. There have been a couple of times where I wanted to post a screenshot, which I think would be the main use case. 
 
-I also haven’t figured out full templating. Bookmarks use a `bookmark-of` front matter property, and it would make templating simpler to just use the `link` property I use for notes. 
+I also haven’t figured out full templating. Bookmarks use a `bookmark-of` front matter property, and it would make templating simpler to just use the `link` property I use for notes. `categories` is the default 
 
 And feeds. All my feeds need some work I think. 
 
