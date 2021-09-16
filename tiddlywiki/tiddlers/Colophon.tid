@@ -1,0 +1,25 @@
+created: 20210907053909500
+creator: Boris Mann
+modified: 20210916054154526
+modifier: Boris Mann
+tags: 
+title: Colophon
+type: text/vnd.tiddlywiki
+
+This is a TiddlyWiki which gets [[run on NodeJS|TiddlyWiki on NodeJS]].
+
+It is published via Github Actions.
+
+!! Updates
+
+<$list filter="[tag[Colophon]!sort[created]]">
+<li><$view field="created" format="date" template="MMM DDth, YYYY"/> <$link>{{!!title}}</$link></li>
+</$list>
+
+!! To Do
+
+{{ To Do List }}
+
+!! Done 
+
+{{ Done List }}

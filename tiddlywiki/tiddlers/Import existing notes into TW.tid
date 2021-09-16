@@ -1,0 +1,11 @@
+created: 20210916033704100
+creator: Boris Mann
+modified: 20210916033851290
+modifier: Boris Mann
+tags: [[To Do]] Jekyll Markdown
+title: Import existing notes into TW
+type: text/vnd.tiddlywiki
+
+There are 222 items in the notes folder of the site. Plus a handful more in my journal section.
+
+I'll probably want to import them as their native Markdown to start, so will need the [[Markdown Plugin]] installed.
