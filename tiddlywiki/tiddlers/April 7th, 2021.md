@@ -1,0 +1,1 @@
+Wardley doesn’t think that [Telesat’s LEO space Internet is going to work](https://twitter.com/swardley/status/1379788175246262284). Canadian company, big investment from Canadian government. 

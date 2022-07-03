@@ -1,0 +1,10 @@
+created: 20220703080200032
+draft.of: Notes to Convert
+draft.title: Notes to Convert
+modified: 20220703080748387
+tags: 
+title: Draft of 'Notes to Convert'
+
+<$list filter="[contains:title[2019]]">
+<li><$link>{{!!title}}</$link></li>
+</$list>

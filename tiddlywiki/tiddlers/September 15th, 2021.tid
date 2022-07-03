@@ -1,6 +1,6 @@
 created: 20210916030119146
 creator: Boris Mann
-modified: 20210916040253575
+modified: 20220703090549603
 modifier: Boris Mann
 tags: Journal
 title: September 15th, 2021
@@ -10,7 +10,7 @@ Well, I haven't done anything in my [[BMC]] website here for a long time, becaus
 
 Since I'm diving deep into [[TiddlyWiki]] these days, I thought I'd try running a TW for the notes section of my website.
 
-Documenting and updating a [[Colophon]] is a long standing tradition for me, in the 20+ years of publishing my own writing on the web. The [[bmannconsulting colophon|https://bmannconsulting.com/colophon/]] is the version for the whole website over that time. Especially for self-programmable interface like TW, I've gotten in even more of a habit of writing down the changes I make over time.
+Documenting and updating a [[Colophon]] is a long standing tradition for me, in the 20+ years of publishing my own writing on the web. The [[bmannconsulting colophon|Site Colophon]] is the version for the whole website over that time. Especially for self-programmable interface like TW, I've gotten in even more of a habit of writing down the changes I make over time.
 
 For now, when I [[run this on my local machine under NodeJS|TiddlyWiki on NodeJS]], I'll be checking in the whole folder into Git. I'll need to do some of the following:
 
@@ -19,5 +19,7 @@ For now, when I [[run this on my local machine under NodeJS|TiddlyWiki on NodeJS
 * [[Merge in content from twtips]]
 
 Other things that are part of [[Initial site setup]]:
+
+---
 
 {{ Initial site setup }}

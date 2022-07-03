@@ -1,14 +1,14 @@
 created: 20210907053909500
 creator: Boris Mann
-modified: 20210916054154526
+modified: 20220703073144512
 modifier: Boris Mann
 tags: 
 title: Colophon
 type: text/vnd.tiddlywiki
 
-This is a TiddlyWiki which gets [[run on NodeJS|TiddlyWiki on NodeJS]].
+This is a TiddlyWiki which gets [[run on NodeJS|TiddlyWiki on NodeJS]], or via [[TiddlyDesktop]].
 
-It is published via Github Actions.
+The plan is to publish via Github Actions as part of my main [[bmannconsulting]] site.
 
 !! Updates
 

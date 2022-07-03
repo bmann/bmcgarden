@@ -5,3 +5,4 @@ _site
 vendor
 .obsidian
 assets
+tiddlywiki/output/*
