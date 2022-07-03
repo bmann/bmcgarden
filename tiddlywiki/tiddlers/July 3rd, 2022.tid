@@ -1,7 +1,8 @@
 created: 20220703074343974
-modified: 20220703085534403
+modified: 20220703204119582
 tags: Journal
 title: July 3rd, 2022
+type: text/vnd.tiddlywiki
 
 It's just past 12:30am and I'm finishing a play session of some <<tag [[Cloud Gaming]]>> -- [[Tiny Tina's Wonderlands]] (TTW).
 
@@ -18,3 +19,9 @@ I've started by [[Importing all the notes]].
 OK, it's almost 2am -- time for bed. But...this is energizing. As is stashing things in my [[Quine App]] for [[twgroceries]].
 
 Because this is in individual tiddler mode, I'm not sure if I can easily use the Quine app. I can turn it into a single file wiki and then drag and drop back into this checked in source code. <<tag [[To Do]]>>[[Investigate using Quine App with these notes]].
+
+---
+
+Technically it's still July 3rd, it's just...the afternoon now.
+
+I've checked in and pushed this code to my github repo, but briefly had to do a detour of [[Setting up Github push with ssh keys]]
