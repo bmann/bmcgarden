@@ -1,8 +1,13 @@
 created: 20220703085101211
-modified: 20220703085514582
+modified: 20220703153313599
 tags: [[To Do]] [[Quine App]]
 title: Investigate using Quine App with these notes
+type: text/vnd.tiddlywiki
 
-Run the command to output a single file wiki, put it in the [[Quine|Quine App]] iCloud folder, then I can take notes on mobile.
+Run the command to output a single file wiki:
+
+<<{ [[Building a single file wiki from individual tiddlers]]>>
+
+Put it in the [[Quine|Quine App]] iCloud folder, then I can take notes on mobile.
 
 Then drag and drop tiddlers back onto this source wiki.
