@@ -1,7 +1,3 @@
----
-date: 2020-10-03
----
-
 I did end up ordering a [[Mac Mini]] as a new home desktop PC, so now I need to order RAM.
 
 I had [previously]({% link _logs/2020-09-26-journal.md %}) looked up OWC RAM, and I can order direct from them. Are there local places in Vancouver? Listed as resellers, [dmac don't list the 2018/2020 Mac Mini](https://www.dmac.ca/mac-mini-mac-pro) and [Simply doesn't seem to list the right RAM either](https://www.simply.ca/collections/ram).[[Why don't small businesses keep their websites up to date???::rmn]] OK, guess I order [direct from OWC](https://eshop.macsales.com/shop/mac-mini), Total cost was $258CAD including shipping and duties.
@@ -13,22 +9,5 @@ External storage is a whole other thing. I looked up the [[Filecoin]] [guide to 
 
 Like I said, researching the right combination of external enclosures and drives and such is for another time. I've never really stored a lot of media on drives / at home.
 
----
-
-Biked over to Hinge Park and hung out with @cambel and @catthekin:
-
-<blockquote class="twitter-tweet" data-lang="en" author="@cambel">
-<p lang="en" dir="ltr">Caught up with ⁦@catthekin in way too long today. Along with pro photographer ⁦@bmann</p>&mdash; Campbell Macdonald (@cambel) <a href="https://twitter.com/cambel/status/1312601138642841602">October 3, 2020</a>
-</blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-We sort of talked about [[Fifth Generation Management]], but only in between other topics.
-
----
-
-Messed around with a [[Fission]] [timing log](https://talk.fission.codes/t/timing-log-of-publishing-with-fission/1077) of publishing this site.
-
----
-
-[[Path of Exile]] now has a MacOS client! 26GB download, and hard to find the links required.
+<<tag [[October 3rd, 2020]]>>
 

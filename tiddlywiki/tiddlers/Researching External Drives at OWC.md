@@ -1,25 +1,3 @@
----
-title: Nov 14, 2020
-date: 2020-11-14
-category: Journal
----
-
-## Art Gallery and Downtown
-
-Rachael and I actually slept in a bit (for us) and had breakfast at home, and then went out to the Vancouver Art Gallery.
-
-I spent a lot of the week only being indoors, on way too many Zoom calls.
-
-You need to book an appointment ahead of time, and have to wear a mask in the gallery. There were maybe 4 other people we encountered wandering around during our booking slot. 
-
-The Victor Vasarely exhibition -- pop art -- was amazing. I [posted on social.coop](https://social.coop/@bmann/105210203333395681), including a painting that matches Rachael's new sweater. We'll see if I get around to posting more research and photos about Vasarely later.
-
-Then we went to The Bay. Much more crowded and feeling uncomfortable, although masks are required. Bought a 9x13" baking pan, and a quarter sheet with a grill/tray that will be for roasting various things.
-
-I suggested Miku for lunch. Yes, a bit high end and pricey -- but very delicious. Reflecting on how lucky and privileged we are to do things like this occasionally.
-
-## Researching External Drives at OWC
-
 I bought my RAM upgrade for the Mac Mini[^notinstalled] at OWC, and thought I'd look at their external drive options too.
 
 [^notinstalled]: Still not installed! The last Amazon delivery got me the right T6 "secure" size of screwdriver, and I got two of the flush fit screws off, but the other ones won't turn with the screwdriver. I don't really know what I'm going to do at this point. I had read elsewhere about someone in the same situation whose screws didn't turn out of the box, and took it in to Apple to help with having the screws removed. I'm super annoyed that I can't get this done!
