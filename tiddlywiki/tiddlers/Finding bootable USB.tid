@@ -1,0 +1,10 @@
+created: 20220704033518291
+modified: 20220704034540748
+tags: [[July 3rd, 2022]] Journal
+title: Finding bootable USB
+
+Finally switched over to searching using Google and found [[How to Create Windows 10 Bootable USB on Mac with or without Bootcamp]].
+
+Used [[UNetbootin]] -- but Disk Utility doesn't think it's bootable, so may need to try again.
+
+Also hooked up the [[OWC Mercury Elite Pro Dock]] to see if I can install Windows on it and boot from there.
