@@ -1,5 +1,5 @@
 created: 20220704033518291
-modified: 20220704055613049
+modified: 20220704083002190
 tags: [[July 3rd, 2022]] Journal [[yak shaving]] [[Mac Mini]]
 title: Finding bootable USB
 
@@ -42,4 +42,8 @@ Here are all the Mac startup key combinations: https://support.apple.com/en-ca/H
 
 Command-R is supposed to go into Recovery Mode. But, I may need to actually shutdown and use the power button to turn back on.
 
-I'm going ahead and trying [[PassFab 4WinKey]].
+I'm going ahead and trying [[PassFab 4WinKey]]. Later: it didn't complete burning at all.
+
+OK! Find another article on installing Windows to an external drive ... which is exactly what I want to do! https://eshop.macsales.com/blog/40947-tech-tip-how-to-use-boot-camp-on-an-external-drive/
+
+That will have to be for tomorrow. Or rather, today, because it's past midnight again...
