@@ -6,10 +6,7 @@ modified: 2021-02-24
 
 The main way to _Subscribe_ to this site is through a _Feed_. Don't know what a feed is? Learn more on the [About Feeds](https://aboutfeeds.com/) site.[^webfeeds]
 
-[^webfeeds]: Or dive into more thoughts on [[Web Feeds]]
-
 ## RSS Feeds
-
 
 **Notes** <a href="https://bmannconsulting.com/feed/notes.xml"><img src="https://bmannconsulting.com/assets/orange-square.svg" style="height: 1.1em;" class="inline"></a>
 
@@ -31,5 +28,4 @@ More frequent personal posts and social content like photos is on my [Micro.blog
 
 These are short Notes and Bookmarks, which you can view on the [Journal](/journal/) page. They are more like notes-to-self.
 
-
-
+[^webfeeds]: Or dive into more thoughts on [[Web Feeds]].
