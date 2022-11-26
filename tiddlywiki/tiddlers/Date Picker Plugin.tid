@@ -1,8 +1,0 @@
-created: 20210907070054124
-modified: 20210916054945252
-tags: plugin dates TiddlyWiki
-title: Date Picker Plugin
-type: text/vnd.tiddlywiki
-url: http://kixam.github.io/TW5-datePicker/
-
-Can use it to more easily do the [[Editing the created or modified dates]] using an input tag or a calendar picker.

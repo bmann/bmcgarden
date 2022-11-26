@@ -1,9 +1,0 @@
-created: 20210916033901704
-creator: Boris Mann
-modified: 20210916033959134
-modifier: Boris Mann
-tags: [[To Do]] [[Github Actions]]
-title: Static publish on Github via Github Actions
-type: text/vnd.tiddlywiki
-
-I'll have to figure out [[TiddlyWiki Static Publishing]] and how that will work alongside Jekyll publishing and the [[Fission Publish]] action.

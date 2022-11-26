@@ -1,9 +1,0 @@
-Thanks to a tip from Jacob, I’m registered for my first dose of vaccine using [TeleHippo](https://telehippo.com/).
-
-Apparently they partnered with BC Pharmacies and got this done.
-
-The form filling worked and got me a booking, so I’m glad it exists. But I shook my head at the “phone numbers only no spaces or dashes” and the two incompatible ways of entering in birthdates.
-
-Along with limited open data and collection timing by the PHO here in BC after 13 months, I really do wish we could have better government digital services.
-
-Meanwhile in California, a volunteer team is working to pull together vaccine availability. Simon Willison just joined the team and talked about [porting from Airtable to Django](https://simonwillison.net/2021/Apr/12/porting-vaccinateca-to-django/). 40M population vs our little 4M population province. Volunteers doing a great job. But still — volunteers!

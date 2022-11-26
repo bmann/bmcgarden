@@ -1,7 +1,0 @@
-[Green vs Brown Programming Languages](https://earthly.dev/blog/brown-green-language/):
-
-> but I distinctly remember Ruby being the hottest language back in 2007, and although it does have more competition today, Ruby is a better language now than it was then. Yet now it is dreaded. Part of the difference, it seems to me, is that now people have 14 years’ worth of rails apps to maintain. That makes Ruby is a lot less fun than when it was all new projects. So watch out Rust and Kotlin and Julia and Go: you too will eventually lose your halo.
-
-TLDR — older programming languages are more likely to have older codebase (brown) which are less fun to work on.
-
-Newer languages means new projects that are about building new stuff which is fun, rather than maintenance. 

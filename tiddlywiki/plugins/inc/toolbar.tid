@@ -1,7 +1,0 @@
-title: $:/plugins/tobibeer/inc/toolbar
-
-$:/plugins/tobibeer/inc/buttons/open
-
-$:/core/ui/Buttons/edit
-
-$:/core/ui/Buttons/delete

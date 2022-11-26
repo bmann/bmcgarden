@@ -1,5 +1,0 @@
-title: $:/plugins/tobibeer/inc/templates/tabs
-
-<div class="tb-inc-tab-content">
-<$macrocall $name="{" tiddler=<<currentTab>>/>
-</div>

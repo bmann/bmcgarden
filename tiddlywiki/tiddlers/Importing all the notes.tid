@@ -1,8 +1,0 @@
-created: 20220703081110999
-modified: 20220703081228194
-tags: Colophon
-title: Importing all the notes
-
-Drag and dropped the 222+ entries in the notes folder. Have to figure out how to track [[Notes to Convert]] -- they've all come in as Markdown, and have an `.md` suffix, but they don't fully exist until they've been edited seems like.
-
-See [[12 Factor Apps]] for a converted one.

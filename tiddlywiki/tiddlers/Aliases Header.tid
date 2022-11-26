@@ -1,9 +1,0 @@
-created: 20220704060059258
-list-after: $:/core/ui/ViewTemplate/title
-modified: 20220704060146280
-tags: $:/tags/ViewTemplate
-title: Aliases Header
-
-<$list filter='[<currentTiddler>has[aliases]]' variable=dummy>
-<div style="padding: 5px 0px 7px 20px">aka <$text text={{{ [enlist{!!aliases}join[, ]] }}}/></div>
-</$list>

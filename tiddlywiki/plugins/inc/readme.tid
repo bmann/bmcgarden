@@ -1,6 +1,0 @@
-title: $:/plugins/tobibeer/inc/readme
-
-Provides the macro `<<{>>` that allows to transclude tiddlers with an on-hover toolbar for editing.
-
-; documentation / examples / demos...
-: http://tobibeer.github.io/tw5-plugins#inc
