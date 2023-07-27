@@ -1,6 +1,0 @@
-{% assign journalposts = site.posts | where_exp: "post", "post.section == 'journal'" | sort: 'date' | reverse %}
-{% for item in journalposts limit: include.journallimit %}
-<div class="blog-entry" style="margin-bottom: 10px;">
-<span><a href="{{ item.url }}">{{ item.date | date: "%B %e, %Y" }}</a></span>
-</div>
-{% endfor %}

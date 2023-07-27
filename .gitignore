@@ -6,3 +6,4 @@ vendor
 .obsidian
 tiddlywiki/output/*
 .DS_Store
+_archive
