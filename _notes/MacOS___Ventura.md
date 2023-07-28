@@ -1,0 +1,21 @@
+---
+---
+
+- Venture Mac Mini Intel Setup Notes [[Jan 14th, 2023]]
+	- For some reason, the [[Asus VG289Q Monitor]] isn't doing 60Hz or HDR anymore, which I guess is a Ventura thing (it does do it when connected to the Macbook Air M1)
+	- Set the [[MacOS/Dock]] to left side display and throw out most of the icons on it
+	- Internet Accounts
+		- My two Google Accounts
+	- Chrome
+	- 1Password
+	- [[Missive]]
+	- [[Karabiner Elements]] for my keyboard
+	- [[LogSeq]]
+		- Since my logseq graph is in github, this meant Xcode tools install
+	- To Do
+		- Tailscale
+		- IPFS Desktop
+		- fission cli
+		-
+		-
+	-

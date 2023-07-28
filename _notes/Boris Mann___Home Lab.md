@@ -1,0 +1,27 @@
+---
+---
+
+- My [[Home Lab]]
+-
+- Hardware
+	- [[Mac Mini]] running [[MacOS/Ventura]]
+	- [[Asus VG289Q Monitor]] 28" 4K monitor
+	- [[Logitech G403 Hero Mouse]]
+	- [[HyperX Membrane Keyboard]] quieter, full size, and permanently wired
+	- [[Vantec USB3.1 NVMe Enclosure]] with Corsair 2TB NVMe, installed [[Nov 24th, 2020]]
+	- [[VisionTek/VT2900]] USB-C KVM Switch
+	- Work machine [[Apple/Macbook Air M1 2020]] named Altaria, 1TB drive, 16GB memory, running [[MacOS/Monterey]]
+	- [[HP Color LaserJet Pro M254dw]] printer
+- To research:
+	- [[Mini PC]] to replace the Mac Mini - or go all the way and get a [[Mac Studio]]
+- Unused
+	- [[OWC Mercury Elite Pro Dock]] with 2x 2TB SSD drives (installed [[February 9th, 2021]])
+	- Yeti Blue USB Microphone, which I also plug my Sennheiser Headset into
+	- Logitech Bluetooth Mouse
+	- [[Razer Core X Chroma]] #egpu enclosure with an AMD Radeon RX 5700 XT graphics card with 8GB RAM
+	- Asus Laptop
+	- Chromebook
+	- [[Royal Kludge]] [[RK71]] Keyboard
+	- Macbook Air 2013
+	- iMac
+	-

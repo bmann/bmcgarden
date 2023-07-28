@@ -1,0 +1,26 @@
+---
+---
+
+- Met with [[Emily McGill]] on [[Jan 11th, 2023]]
+	- Some quick notes on Emily’s background
+		- Compostable foodware in Vancouver
+		- International food testing
+		- Make it happen club during school
+		- Zero Waste Council
+		- [[Living Systems Network]]
+		- Member funded society
+		- Holocratic
+		- [[Holochain]] in 2017
+		- Property on Denman Island - #cohousing ?
+	- Links and concepts for Boris to share:
+		- [[Open Source Roots of Vancouver]]
+		- [[Christina Bowen]] and [[Social Roots]]
+		- [[Protocol Labs Network]] and [[Juan Benet]]’s PLv8 video around this
+			- Also mentioned the #[[Fission Wiki]]
+			- Here's the public entry for the #PLN https://talk.fission.codes/t/protocol-labs-network-pln/2311
+		- Original [[Vancouver Geek Dinner Wrap-up]] way back in 2004 and [[Committed to building Vancouver startup community]] from 2014
+		- [[Koii Network]] has some similarities to Holochain
+		- [[Networked Orgs and tooling]]
+			- Which has several links into [[Simon Wardley]] posts
+			- [[Wardley Maps]] are also an important  concept
+		-

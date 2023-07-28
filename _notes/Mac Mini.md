@@ -1,0 +1,11 @@
+---
+---
+
+- I bought a Mac Mini[^macmini2018] at the [beginning of October 2020]([[Oct 3rd, 2020]]).
+	- ![About this Mac](../assets/Screenshot_2023-07-09_at_11.02.52_AM_1688930511045_0.png)
+		- About this Mac screenshot [[Jul 9th, 2023]], running under [[MacOS/Ventura]]
+		- 32GB of RAM [ordered from OWC](https://eshop.macsales.com/item/OWC/2666DDR4S32P/); the saga of the screwdrivers means that I didn't complete installation until [Feb 2021](https://blog.bmannconsulting.com/2021/02/09/i-bought-this.html)
+- I have often used Norse Mythology as a naming scheme for computers, although I'm also currently using a Pokemon theme for portable devices. This current Mac Mini is named _Utgard_.[^utgard]
+- Footnotes
+	- [^macmini2018]: This is known as the Mac Mini (2018) edition. The [Apple Mac Mini page](https://www.apple.com/mac-mini/) now lists the new Mac Mini with the [[Apple/M1]] ARM chip.
+	- [^utgard]: See [Útgarðar on Wikipedia](https://en.wikipedia.org/wiki/%C3%9Atgar%C3%B0ar), where you can follow many other Norse mythology references

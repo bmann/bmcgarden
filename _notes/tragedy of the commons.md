@@ -1,0 +1,27 @@
+---
+---
+
+- This has become a common phrase that seems to indicate that the commons approach doesn’t work — that it’s a tragedy
+- What it is _actually saying_ is that tragedy occurs if the commons is unmanaged — that unrestricted access to a commons will deplete it
+- aka “good fences make good neighbours” — the tragedy is prevented by collective management, as proven by [[Ostrom]]
+- So the correct way to think about this phrase is:
+	- The tragedy of the commons being depleted is prevented by collective stewardship of the commons
+- Open source and the tragedy of the commons
+  id:: 63bb069a-929c-459a-8df8-6baa097dd466
+	- I have come to believe that the right way to think about open source projects and commons needs to be split between source code and other aspects of a project
+	- Source code is a non-rivalrous resource: there is a zero marginal cost for anyone to make infinite copies of source code
+	- Source code is [[Public Goods]]
+		- certainly when it is permissively licensed
+	- Contributor time is a scarce resource: time spent on maintaining dependencies, fixing bugs, adding features, writing documentation, reviewing issues, responding in community forums and chats, marketing and promoting the project
+	- Contributor time is rivalrous, time spent reviewing the issue you post or PR you send is time that isn’t spent maintaining dependencies
+	- In typical projects today anyone can post issues and consume the other community resources, and so non-excludable, the definition of [[Common Goods]]
+	- The commons of open source software is actually community
+	- For me, the question is, can the approach of [[Club Goods]] help support open source contributors: restrict access to community time so that it isn’t exhausted
+	- In practice, this might mean only contributors can:
+		- File issues
+		- Submit a PR
+		- Help direct / vote for future features
+		- Get live support (eg in a community chat)
+	- Becoming a contributor could mean everything from in-kind work on the project (expanding the resources of community time available) to donating to fund a project
+	- The key factor around donating is that there isn’t an expectation of “buying” hours of time — that would be [[Private Goods]]
+	-

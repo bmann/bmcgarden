@@ -1,0 +1,12 @@
+---
+---
+
+- [[Pace Layering Diagram]]
+- Original article is [[Pace Layering: How Complex Systems Learn and Keep Learning]] by [[Stewart Brand]]
+- The pace layers of human civilization that Brand identifies are, from fast to slow:
+	- Fashion/art
+	- Commerce
+	- Infrastructure
+	- Governance
+	- Culture
+	- Nature

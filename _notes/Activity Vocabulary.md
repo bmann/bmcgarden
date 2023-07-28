@@ -1,0 +1,18 @@
+---
+---
+
+- [[Activity Vocabulary W3C Recommendation]]
+- The [Object]([[Activity Vocabulary/Object]]) Types include:
+	- [[Activity Vocabulary/Article]]
+	- [Audio](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-audio)
+	- [Document](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-document)
+	- [Event](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-event)
+	- [Image](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-image)
+	- [[Activity Vocabulary/Note]]
+	- [Page](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-page)
+	- [Place](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-place)
+	- [Profile](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-profile)
+	- [Relationship](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-relationship)
+	- [Tombstone](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-tombstone)
+	- [Video](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-video)
+-

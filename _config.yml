@@ -13,46 +13,62 @@ url: "https://bmannconsulting.com" # the base hostname & protocol for your site,
 encoding: utf-8
 timezone: America/Vancouver
 
-exclude: ['.env', 'fission.yaml', 'gemset.nix', 'pages', 'fission.yaml', 'blog.code-workspace', 'netlify.toml', '_ignored', '.vscode', '.obsidian', "tiddlywiki"]
+# digital garden
 
-include: ['.well-known']
+# If you are using a host that cannot resolve URLs that do
+# not end with .html (such as Neocities), set this to 'true'.
+use_html_extension:  false
 
-markdown: CommonMarkGhPages
-# markdown: kramdown
+# Set to `true` to open non-internal links in new tabs, or
+# set to `false` to open non-internal links in current tab.
+open_external_links_in_new_tab: true
 
-commonmark:
-  options: ["SMART", "FOOTNOTES"]
-  extensions: ["strikethrough", "autolink", "table"]
+# Set to `true` to replace tweet URLs with Twitter embeds.
+# Note that doing so will negatively the reader's privacy
+# as their browser will communicate with Twitter's servers.
+embed_tweets: false
 
-# kramdown:
-#  input: GFM
-#  hard_wrap: false
-#  math_engine: mathjax
-#  smart_quotes: ["apos", "apos", "quot", "quot"]
-#  syntax_highlighter: rouge
+exclude: ['_includes/notes_graph.json', '.env', 'gemset.nix', 'pages', 'fission.yaml', 'blog.code-workspace', 'netlify.toml', '_ignored', '_archive', '.vscode', '.obsidian', "tiddlywiki"]
+
+include: ['.well-known', '_pages']
+
+# markdown: CommonMarkGhPages
+markdown: kramdown
+
+# commonmark:
+#  options: ["SMART", "FOOTNOTES"]
+#  extensions: ["strikethrough", "autolink", "table"]
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+  math_engine: mathjax
+  smart_quotes: ["apos", "apos", "quot", "quot"]
+  syntax_highlighter: rouge
 
 # Build settings
 theme: null
+
 plugins:
-#  - jekyll-feed 
-#  - jekyll-sitemap 
-#  - jekyll-last-modified-at
-  - jekyll-commonmark-ghpages
+  - jekyll-last-modified-at
+  # - jekyll-commonmark-ghpages
 
 sass:
-  style: compressed
+  sass_dir:          _sass
+  style:            :compressed
 
 # Default permalink
-permalink: /:path/:title/
+permalink: /:title/
 
 collections:
-    notes:
-      output: true
-      permalink: /:title/
-    logs:
-      output: true
-      permalink: /log/:slug/
+  notes:
+    output: true
+    permalink: /notes/:slug/
 
+collections:
+  notes:
+    output: true
+    permalink: /:slug
 
 defaults:
   - scope:
@@ -61,7 +77,6 @@ defaults:
     values:
       layout: post
       permalink: /blog/:year/:month/:day/:title/
-      content-type: post
       section: blog
   - scope:
       path: "_posts/archive/*"
@@ -69,17 +84,10 @@ defaults:
     values:
       layout: post
       permalink: /archive/:year/:month/:day/:title/
-      content-type: post
       section: archive
   - scope:
       path: "_notes/*"
-      type: notes
     values:
-      layout: post
-      content-type: notes
-  - scope:
-      path: "_logs/*"
-      type: logs
-    values:
-      layout: log
-      content-type: logs
+      layout: "note"
+      section: note
+
