@@ -8,3 +8,4 @@ tiddlywiki/output/*
 .DS_Store
 _archive
 pages
+_includes/notes_graph.json
