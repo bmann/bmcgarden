@@ -9,6 +9,6 @@ alias:: Wardley Mapping
 		- Remember, all models are wrong but some are useful
 - [[Learn Wardley Mapping]] is the best starting point, including compiled and downloadable versions of Wardley's book
 - Videos
-	- {{embed [[Wardley Maps in 90 Seconds]]}}
-	- {{embed [[Wardley Mapping in Brief]]}}
+	- [[Wardley Maps in 90 Seconds]]
+	- [[Wardley Mapping in Brief]]
 -

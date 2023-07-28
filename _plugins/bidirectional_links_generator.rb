@@ -5,9 +5,10 @@ class BidirectionalLinksGenerator < Jekyll::Generator
     graph_edges = []
 
     all_notes = site.collections['notes'].docs
-    all_pages = site.pages
+    # all_pages = site.pages # I don't care about linking in site pages
+    # TODO merge in posts, too
 
-    all_docs = all_notes + all_pages
+    all_docs = all_notes
 
     link_extension = !!site.config["use_html_extension"] ? '.html' : ''
 
