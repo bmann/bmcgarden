@@ -1,6 +1,0 @@
----
----
-
-alias:: Angel Investor
-
--

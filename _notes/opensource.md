@@ -1,6 +1,0 @@
----
----
-
-alias:: Open Source
-
--

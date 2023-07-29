@@ -1,7 +1,0 @@
----
----
-
-- Reading
-- To Read
-- Completed
--

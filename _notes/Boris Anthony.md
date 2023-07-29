@@ -1,7 +1,0 @@
----
----
-
-alias:: @bopuc
-tags:: #Person
-
--

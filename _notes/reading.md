@@ -1,4 +1,0 @@
----
----
-
-query-table:: true

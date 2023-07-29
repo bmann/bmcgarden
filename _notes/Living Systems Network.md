@@ -1,6 +1,0 @@
----
----
-
-link:: https://livingsystemsnetwork.ca/
-
--

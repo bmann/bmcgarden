@@ -1,6 +1,0 @@
----
----
-
-tags:: #author, #scifi
-
--

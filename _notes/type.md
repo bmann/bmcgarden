@@ -1,6 +1,0 @@
----
----
-
-- Blog
-- See also: #status
--

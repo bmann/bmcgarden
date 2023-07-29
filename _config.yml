@@ -28,7 +28,7 @@ open_external_links_in_new_tab: true
 # as their browser will communicate with Twitter's servers.
 embed_tweets: false
 
-exclude: ['_includes/notes_graph.json', '.env', 'gemset.nix', 'pages', 'fission.yaml', 'blog.code-workspace', 'netlify.toml', '_ignored', '_archive', '.vscode', '.obsidian', '.gitignore', '.github', 'README.md']
+exclude: ['_includes/notes_graph.json', '.env', 'gemset.nix', 'fission.yaml', 'blog.code-workspace', 'netlify.toml', '_ignored', '_archive', '.vscode', '.obsidian', '.gitignore', '.github', 'README.md']
 
 include: ['.well-known', '_pages']
 
@@ -51,7 +51,7 @@ theme: null
 
 plugins:
   - jekyll-last-modified-at
-  # - jekyll-commonmark-ghpages
+# - jekyll-commonmark-ghpages
 
 sass:
   sass_dir:          _sass
@@ -63,7 +63,10 @@ permalink: /:title/
 collections:
   notes:
     output: true
-    permalink: /notes/:slug
+    permalink: "/notes/:slug/"
+  journals:
+    output: true
+    permalink: "/journals/:name/"
 
 defaults:
   - scope:
@@ -71,18 +74,23 @@ defaults:
       type: posts
     values:
       layout: post
-      permalink: /blog/:year/:month/:day/:title
+      permalink: /blog/:year/:month/:day/:title/
       section: blog
   - scope:
       path: "_posts/archive/*"
       type: posts
     values:
       layout: post
-      permalink: /archive/:year/:month/:day/:title
+      permalink: /archive/:year/:month/:day/:title/
       section: archive
   - scope:
       path: "_notes/*"
     values:
       layout: "note"
       section: note
+  - scope:
+      path: "_journals/*"
+    values:
+      layout: post
+      section: journal
 

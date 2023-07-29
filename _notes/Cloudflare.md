@@ -1,6 +1,0 @@
----
----
-
-tags:: #organization, #CDN, #DNS
-
--
