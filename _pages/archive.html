@@ -4,31 +4,28 @@ title: Archive
 permalink: /archive/
 ---
 
-<style>
-.date-content a {
-    text-decoration: none;
-    color: #4183c4;
-}
-
-.date-content a:hover {
-    text-decoration: underline;
-    color: #4183c4;
-}
-</style>
+<p style="padding: 3em 1em; background: #f5f7ff; border-radius: 4px;">
+  The long term archive from Drupal and other systems, May 2012 and previous.
+</p>
 
 <main>
     {% assign postsByYear = 
     site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
     
     {% for year in postsByYear %}
+      {% assign yearnumber = year.name | plus: 0 %}
+      {% unless yearnumber > 2012 %}
       <h3 id="{{ year.name }}">{{ year.name }}</h3>
           <ul>
+          {% assign migrationdate = "May 21, 2012" | date: "%s" %}
           {% for post in year.items %}
-            {% unless post.section == 'journal' %}
+            {% assign timestamp = post.date | date: "%s" %}
+            {% unless timestamp > migrationdate %}
             <li id="date-content" style="padding-bottom: 0.6em; list-style: none;"><a href="{{ post.url }}" class="internal-link">{{ post.title }}</a></li>
             {% endunless %}
           {% endfor %}
           </ul>
+      {% endunless %}
     {% endfor %}
     
         <br/>

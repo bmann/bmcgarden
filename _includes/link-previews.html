@@ -1,9 +1,19 @@
 <!-- That file is not particularly elegant. This will need a refactor at some point. -->
 <style>
-  content a.internal-link {
-    border-color: #8b88e6;
-    background-color: #efefff;
+
+  {% comment %}
+  content a.internal-link:before {
+    position: relative;
+    content: "[[ ";
+    color: #aaaaaa;
   }
+
+  content a.internal-link:after {
+    position: relative;
+    content: " ]]";
+    color: #aaaaaa;
+  }
+  {% endcomment %}
 
   #tooltip-wrapper {
     background: white;

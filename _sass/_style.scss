@@ -24,9 +24,21 @@ body {
 }
 
 time {
-  display: block;
   color: $color-subtext;
   margin: 0.5em 0 1em;
+}
+
+div.date {
+  margin-top: 1em;
+}
+
+cite {
+  margin: 0 0 0 0.5em;
+  padding: 0 0 0 0;
+}
+
+cite::before {
+  content: "\2014 "
 }
 
 footer {
@@ -46,8 +58,7 @@ img {
 
 blockquote {
   padding: 1.5em;
-  margin: 0;
-  font-size: 0.88em;
+  margin: 0.5em 0 0 0;
   background: $color-box-background;
   border-radius: $border-radius;
 
