@@ -1,17 +1,15 @@
 ---
-layout: page
+layout: default
 title: Home
 id: home
 permalink: /
 ---
 
-# Welcome! 🌱
+# Boris Mann's Homepage
 
-<p style="padding: 3em 1em; background: #f5f7ff; border-radius: 4px;">
-  An experimental rebuild of my site running <a href="../notes/digital-garden-jekyll-template/" class="internal-link">Digital Garden Jekyll Template</a>.
+<p style="padding: 3em 2em; background: #f5f7ff; border-radius: 4px;">
+  Hi 👋 This is the newest iteration of my homepage and long term archive. I put long form tech blog posts here. 
 </p>
-
-The <a href="../blog/" class="internal-link">Blog</a> and long term <a href="../archive/" class="internal-link">Archive</a> are the same as they have been.
 
 ## Recent blog posts
 
@@ -30,6 +28,12 @@ The <a href="../blog/" class="internal-link">Blog</a> and long term <a href="../
         {% endif %}
     {% endfor %}
   </ul>
+
+  <a href="/blog/" class="internal-link">More »</a>
+
+  <h2>Digital Garden</h2>
+
+<p>As of July 2023, I moved my Digital Garden Notes to their own site. There's a <a class="internal-link" href="/notes/seeds/">Seeds page here</a> with links into various themes and recommended articles.</p>
 
   <h2>Personal microblog</h2>
 

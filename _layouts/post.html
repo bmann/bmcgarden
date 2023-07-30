@@ -17,8 +17,8 @@ layout: default
       {% if page.section == 'archive' %}<div style="font-size: 1em;">This is part of the long term <a href="{{ '/archive/' | relative_link }}" class="internal-link">Archive</a>, originally published on <time>{{ page.date | date: "%B %-d, %Y" }}</time></div>{% else %}<div style="font-size: 1em">Originally published <time>{{ page.date | date: "%B %-d, %Y" }}</time></div>{% endif %}
       </div>
       <div class="meta">
-        <p>Categories: {% for cat in page.categories %}<span>{{ cat }}</span>{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
-        <p>Tags: {% for tag in page.tags %}<a href="https://bmannconsulting.com/#/page/{{tag}}">#{{ tag }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+        <p>Categories: {% for cat in page.categories %}<a href="{{ site.tags_url }}/{{ cat }}" class="noteslink" target="_notes">{{ cat }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+        <p>Tags: {% for tag in page.tags %}<a href="{{ site.tags_url }}/{{ tag }}" class="noteslink" target="_notes">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
       </div>
       {% if page.backlinks.size > 0 %}
       <h3 style="margin-bottom: 1em">Notes mentioning this blog post</h3>
@@ -43,5 +43,7 @@ layout: default
     </side>
   </div>
 </article>
+
+<div style="font-size: 0.8em">Last modified at <time>{{ page.last_modified_at | date: "%B %-d, %Y" }}</time></div>
 
 <hr>

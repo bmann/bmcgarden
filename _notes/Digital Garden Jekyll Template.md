@@ -1,8 +1,8 @@
 ---
 ---
 
-- Github https://github.com/maximevaillancourt/digital-garden-jekyll-template
-- Example https://digital-garden-jekyll-template.netlify.app/
+- Github <https://github.com/maximevaillancourt/digital-garden-jekyll-template>
+- Example <https://digital-garden-jekyll-template.netlify.app/>
 - Author [[Maxime Vaillancourt]]
 
 The author [[Maxime Vaillancourt]] has a tutorial on [setting up your own digital garden](https://maximevaillancourt.com/blog/setting-up-your-own-digital-garden-with-jekyll).

@@ -5,13 +5,10 @@ class BidirectionalLinksGenerator < Jekyll::Generator
     graph_edges = []
 
     all_notes = site.collections['notes'].docs
-    # all_journals = site.collections['journals'].docs
-    # all_posts = site.posts
+    # all_posts = site.posts # unclear right syntax here
+    all_pages = site.pages
 
-    # all_pages = site.pages # I don't care about linking in site pages
-    # TODO merge in posts, too
-
-    all_docs = all_notes
+    all_docs = all_notes + all_pages
 
     link_extension = !!site.config["use_html_extension"] ? '.html' : ''
 
@@ -32,6 +29,8 @@ class BidirectionalLinksGenerator < Jekyll::Generator
         end
 
         new_href = "#{site.baseurl}#{note_potentially_linked_to.url}#{link_extension}"
+        # new_href = "#{site.tags_url}#{title_from_data}" #TODO is this how we can get a link over to my notes site?
+
         anchor_tag = "<a class='internal-link' href='#{new_href}'>\\1</a>"
 
         # Replace double-bracketed links with label using note title
@@ -53,6 +52,7 @@ class BidirectionalLinksGenerator < Jekyll::Generator
         current_note.content.gsub!(
           /\[\[(#{title_from_data})\]\]/i,
           anchor_tag
+          # "<a class='internal-link' href='https://notes.bmannconsulting.com/#page/#{title_from_data}'>\\1</a>" # this only works if there is a local note with the right title
         )
 
         # Replace double-bracketed links using note filename
@@ -68,11 +68,16 @@ class BidirectionalLinksGenerator < Jekyll::Generator
       # links by greying them out and changing the cursor
       current_note.content = current_note.content.gsub(
         /\[\[([^\]]+)\]\]/i, # match on the remaining double-bracket links
+        #<<~HTML.delete("\n") # replace with this HTML (\\1 is what was inside the brackets)
+        #  <span title='There is no note that matches this link.' class='invalid-link'>
+        #    <span class='invalid-link-brackets'>[[</span>
+        #    \\1
+        #    <span class='invalid-link-brackets'>]]</span></span>
+        #HTML
+
+        # This doesn't handle lots of cases, need a URI.escape
         <<~HTML.delete("\n") # replace with this HTML (\\1 is what was inside the brackets)
-          <span title='There is no note that matches this link.' class='invalid-link'>
-            <span class='invalid-link-brackets'>[[</span>
-            \\1
-            <span class='invalid-link-brackets'>]]</span></span>
+          <a href='https://notes.bmannconsulting.com/#/page/\\1' class='noteslink' target='_notes'>\\1</a>
         HTML
       )
     end

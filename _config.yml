@@ -1,10 +1,9 @@
-title: Digital Notes Garden
+title: "Boris Mann's Homepage"
 name: Boris Mann
-user_description: "Open Source. Community. Decentralized Web. Building dev tools at Fission. Cooks & eats."
-description: "Second Brain, Daily Notes, and long term archive of Boris Mann"
-notes_url: "https://bmannconsulting.com"
-notes_title: Notes, Articles, and Links
-notes_tagline: Information gardening
+user_description: "Open Source. Community. DWeb. Building edge computing at Fission with IPFS. Cooks & eats."
+description: "Homepage and long term archive, with a side of tech blogs"
+notes_url: "https://notes.bmannconsulting.com"
+tags_url: "https://notes.bmannconsulting.com/#/page"
 profile_pic: /assets/bmann_hair_orange_256x256.png
 favicon: /assets/bmann_hair_orange_256x256.png
 copyright_name: Boris Mann
