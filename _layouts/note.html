@@ -29,10 +29,13 @@ layout: default
       </div>
       {% else %}
 
-      <div style="font-size: 0.9em">
-        <p>
-          There are no notes linking to this note.
-        </p>
+      <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
+        <div class="backlink-box" style="background-color: #fff;">
+          View related content on notes.bmannconsulting.com/<a href="{{ site.tags_url }}/{{ page.title }}" target="_notes">{{ page.title }}</a>
+        </div>
+        <div class="backlink-box" style="background-color: #fff;">
+          Browse the <a href="{{ site.baseurl }}/notes/" class="internal-link">Local Notes Graph »</a>
+        </div>
       </div>
       {% endif %}
     </side>

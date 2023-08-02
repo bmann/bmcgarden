@@ -33,7 +33,7 @@ permalink: /
 
   <h2>Digital Garden</h2>
 
-<p>As of July 2023, I moved my Digital Garden Notes to their own site. There's a <a class="internal-link" href="/notes/seeds/">Seeds page here</a> with links into various themes and recommended articles.</p>
+<p>As of July 2023, I moved my Digital Garden Notes to their own site. There's a <a class="internal-link" href="/notes/seeds/">Seeds page</a> with links into various themes and recommended articles, or you can browse the minimal <a class="internal-link" href="/notes/">Notes graph</a>.</p>
 
   <h2>Personal microblog</h2>
 
