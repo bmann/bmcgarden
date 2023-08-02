@@ -28,6 +28,12 @@ time {
   margin: 0.5em 0 1em;
 }
 
+li.blog-entry time  {
+  color: $color-subtext;
+  font-size: 0.8em;
+  margin-left: 2em;
+}
+
 div.date {
   margin-top: 1em;
 }

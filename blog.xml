@@ -1,6 +1,4 @@
 ---
-layout: null
-permalink: /blog.xml 
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"
@@ -11,8 +9,6 @@ permalink: /blog.xml
 	<channel>
 		<title>{{ site.name | xml_escape }} - Blog Feed</title>
 		<description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>		
-		<sy:updatePeriod>{{ site.feed_update_period | default: "daily" | xml_escape }}</sy:updatePeriod>
-		<sy:updateFrequency>{{ site.feed_update_frequency | default: 1 | xml_escape }}</sy:updateFrequency>
 		<link>{{ site.url }}</link>
 		<atom:link href="{{ site.url }}{{ page.url }}" rel="self" type="application/rss+xml" />
 		<lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
@@ -23,13 +19,13 @@ permalink: /blog.xml
 		  {% if post.section == 'blog' and blogcount < feed_items %}
 			<item>
 				<title>{{ post.title | xml_escape }}</title>
-				{% if site.author.name %}
-					<dc:creator>{{ site.author.name | xml_escape }}</dc:creator>
+				{% if site.name %}
+					<dc:creator>{{ site.name | xml_escape }}</dc:creator>
 				{% endif %}
 				<description>{{ post.content | xml_escape }}</description>
-				<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
 				<link>{{ site.url }}{{ post.url }}</link>
-				<guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+				<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+				<guid isPermaLink="true">https://bmannconsulting-com.ipns.dweb.link{{ post.url }}</guid>
 			</item>
 		    {% assign blogcount = blogcount | plus: 1 %}
           {% elsif blogcount >= feed_items %}

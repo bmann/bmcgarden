@@ -10,6 +10,8 @@ The most recent 5 blog posts appear on the home page. The [blog index](/blog/) g
 
 There is a [Backlog](https://notes.bmannconsulting.com/#/page/bmc%2Fbacklog) of things in progress.
 
+This site is published to [[IPFS]] using [[Fission]] Github Actions.
+
 ## Time Passes
 
 End of December 2022, poured the whole site into [[LogSeq]]. There is an archived [snapshot of 2022 Simply Jekyll](https://2022.bmannconsulting.com).

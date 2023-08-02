@@ -29,7 +29,7 @@ embed_tweets: false
 
 exclude: ['_includes/notes_graph.json', '.env', 'gemset.nix', 'fission.yaml', 'blog.code-workspace', 'netlify.toml', '_ignored', '_archive', '.vscode', '.obsidian', '.gitignore', '.github', 'README.md']
 
-include: ['.well-known', '_pages']
+include: ['.well-known', '_pages', '_redirects']
 
 # markdown: CommonMarkGhPages
 markdown: kramdown

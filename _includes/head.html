@@ -5,7 +5,7 @@
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title }}{% endif %}">
   <meta property="og:site_name" content="{{ site.title }}">
   <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
-  <link rel="stylesheet" href="{{ 'styles.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}">
   <link rel="alternate" type="application/atom+xml" title="Blog Feed for bmannconsulting.com" href="{{ site.url }}/blog.xml" />
   
   {% comment %}<!-- Littlefoot footnotes https://github.com/goblindegook/littlefoot -->{% endcomment %}

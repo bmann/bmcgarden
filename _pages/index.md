@@ -20,7 +20,7 @@ permalink: /
     {% for blog in recentblogs %}
         {% if blog.section == 'blog' and blogcount < bloglimit %}
           <li class="blog-entry" style="margin-bottom: 5px;">
-            <a class="internal-link" href="{{ blog.url }}">{{ blog.title }}</a>
+            <a class="internal-link" href="{{ blog.url }}">{{ blog.title }}</a> <time>{{ blog.date | date: "%B %-d, %Y" }}</time>
           </li>
             {% assign blogcount = blogcount | plus: 1 %}
         {% elsif blogcount >= bloglimit %}
