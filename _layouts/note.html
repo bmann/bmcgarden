@@ -26,6 +26,11 @@ layout: default
         <div style="font-size: 0.9em">{{ backlink.excerpt | strip_html | truncatewords: 20 }}</div>
         </div>
       {% endfor %}
+      {% if page.seed %}
+      <div class="backlink-box" style="background-color: #fff;">
+        Original article <a href="{{ page.link }}">{{ page.title }}</a>, by {{ page.author }}. <a href="{{ page.noteslink }}" class="noteslink" target="_notes">{{ page.title }}</a>
+      </div>
+      {% endif %}
       </div>
       {% else %}
 
