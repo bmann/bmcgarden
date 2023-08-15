@@ -1,5 +1,4 @@
 ---
-date: 2023-08-15T16:12:10.268-08:00
 title: The Future of Open Source
 categories:
     - opensource

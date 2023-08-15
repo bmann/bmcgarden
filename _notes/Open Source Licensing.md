@@ -63,6 +63,33 @@ I have extensive links at [[BSL]], including the version that [[Hashicorp]] uses
 
 CAL is pretty unique because it's a permissive license with a catch, that goes beyond the [[AGPL]], where the users of the software are required to be given everything that is needed to "use and modify" the software. Basically, anything you need to host the software has to be supplied. This restriction, of maintaining user autonomy, did pass the [[OSI]] approval process in February 2019.
 
+### Cross License Collaboratives
+
+<https://xlcollaborative.com/> [[XLC]]
+
+> Maintain your projects’ licenses and create shared moneymaking opportunity without any company, foundation, or dictator.
+
+Labeled as [[XLC]] for short, Kyle Mitchell has [written a couple of posts about XLC back in 2019](https://writing.kemitchell.com/series/cross-license-collaboratives).
+
+I'm going to quote the [landing page for the XLC in full](https://xlcollaborative.com/):
+
+> Cross license collaboratives are co-op-like networks of contributors to online projects that can…
+>
+> * change the license terms for their projects democratically, without getting permission from every contributor
+> * gift or sell commercial licenses and other licenses, sharing proceeds equally
+> * welcome new contributors from all over the world
+> …all without the overhead of a company, foundation, or other legal organization.
+>
+> Contributors can start a collaborative for their project by adopting a new kind of plain-language contributor license agreement. You can read the latest version online or browse other formats and versions.
+>
+> Unlike other contributor license agreements, the cross license collaborative agreement is _decentralized_ and _peer-to-peer_. No single contributor or organization gets any special licensing powers. Rather, every contributor licenses _every other contributor_, subject to rules about how new licensing decisions will be made.
+
+There is also an [XLC introduction with some illustrations](https://xlcollaborative.com/introduction). From that page is this useful paragraph about how you can combine XLC with one of the previous licenses, to share licensing revenue:
+
+> Cross license collaborative governance rules also require sharing of any proceeds related to licensing. If the collaborative makes its project available under a share-alike or noncommercial licensing, and then chooses to sell an exception for closed or commercial use, they must share the license fee with all contributors.
+
+What is not specified in this license is quite how to recognize new contributors, how to share value. aka all the hard stuff. But I _love_ this conceptually. It's "co-op like" without the overhead of creating a formal co-op organization rooted in some particular jurisdiction. "An open source peer co-op" might be a good short form, where "collaborative" is probably the right word so it doesn't trick people into thinking it is a co-op.
+
 ## Permissive License, Fenced Community
 
 What if you permissively license software, but restrict access to scarce community resources around an open source project?
