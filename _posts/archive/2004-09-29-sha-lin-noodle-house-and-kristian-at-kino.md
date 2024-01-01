@@ -1,9 +1,0 @@
---- 
-layout: post
-title: Sha Lin Noodle House and Kristian at Kino
-created: 1096446337
-categories: 
-- Food
-- Vancouver
----
-<div style="FLOAT: right; MARGIN-BOTTOM: 10px; MARGIN-LEFT: 10px"><a title="photo sharing" href="http://www.flickr.com/photos/boris/621933/"><img style="BORDER-RIGHT: rgb(0,0,0) 2px solid; BORDER-TOP: rgb(0,0,0) 2px solid; BORDER-LEFT: rgb(0,0,0) 2px solid; BORDER-BOTTOM: rgb(0,0,0) 2px solid" src="http://www.flickr.com/photos/621933_550bbd136c_m.jpg" /></a> <br /><span style="MARGIN-TOP: 0px; FONT-SIZE: 0.9em"><a href="http://www.flickr.com/photos/boris/621933/">Pan-fried Vegetable Dumpling - Inside</a> <br />Originally uploaded by <a href="http://www.flickr.com/people/boris/">bmann</a>. </span></div><p>Kate and I went for dinner at the Sha Lin Noodle House (Broadway close to Cambie). We went last time way back in February when Kate had just arrived in Vancouver, with Mary and Evan.</p><br clear="all" /><!--break--><p>The dumplings were as good as we remembered, but we couldn't find the garlic gai-lan (Chinese broccoli) on the menu anymore, so had to settle for regular broccoli. Still tasty, and nice and garlicky.</p><p>I didn't remember how big the dumplings were, so also ended up with a hot &amp; sour soup. Very tasty, not too thick (lots of places dump cornstarch in until the broth is more like mud) and lots and lots of good &quot;stuff&quot; in the broth: fresh cilantro on top, oyster mushrooms, tofu.</p><p>Check out the <a href="http://www.flickr.com/photos/boris/tags/shalinnoodlehouse/show/">slideshow </a>to see all the food.</p><p>Pleasantly full, and with a few dumplings left over for later, we headed off to the Kino Cafe to listen to Kristian perform with the Ian Ross Quartet -- jazz-y pleasant listening music + beer + lots of conversation.</p>

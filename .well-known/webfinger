@@ -17,17 +17,20 @@
     },
     {
       "rel": "http://webfinger.net/rel/profile-page",
+      "type":"text/html",
+      "href":"https://cosocial.ca/@boris"},
+    {
+      "rel": "self",
+      "type" :"application/activity+json",
+      "href": "https://cosocial.ca/users/boris"
+    },
+    {
+      "rel": "http://ostatus.org/schema/1.0/subscribe",
+      "template":"https://cosocial.ca/authorize_interaction?uri={uri}"
+    },
+    {
+      "rel": "http://webfinger.net/rel/profile-page",
       "href": "https://bmann.ca"
     }
-  ],
-
-  "subject":"acct:boris@bmannconsulting.com",
-  "aliases":[
-    "https://cosocial.ca/@boris",
-    "https://cosocial.ca/users/boris"],
-  "links":[
-    {"rel":"http://webfinger.net/rel/profile-page","type":"text/html","href":"https://cosocial.ca/@boris"},
-    {"rel":"self","type":"application/activity+json","href":"https://cosocial.ca/users/boris"},
-    {"rel":"http://ostatus.org/schema/1.0/subscribe","template":"https://cosocial.ca/authorize_interaction?uri={uri}"}
   ]
 }
