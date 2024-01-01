@@ -3,30 +3,17 @@ layout: page
 title: Daily Journal
 permalink: /journal/
 ---
-
-
-  
   <main>
-      {% assign postsByYear = 
-      site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
-      
-      {% for year in postsByYear %}
-        <h3 id="{{ year.name }}">{{ year.name }}</h3>
-            <ul>
-            {% for post in year.items %}
-              {% if post.title == 'Migration' %}
-                {% break %}
-              {% endif %}
-              {% unless post.section == 'journal' %}
-              <li id="date-content" style="padding-bottom: 0.6em; list-style: none;"><a href="{{ post.url }}" class="internal-link">{{ post.title }}</a></li>
-              {% endunless %}
-            {% endfor %}
-            </ul>
-            {% if year.name == '2012' %}
-              {% break %}
-            {% endif %}
+     
+    <ul>
+      {% assign journals = site.notes | reverse %}
+      {% for journal in journals %}
+        {% if journal.section == "journal" %}
+        <li class="blog-entry" style="margin-bottom: 5px;">
+          <a class="internal-link" href="{{ journal.url }}">{{ journal.title }}</a>
+        </li>
+        {% endif %}
       {% endfor %}
-      
-          <br/>
-          <br/>
+    </ul>
+
   </main>

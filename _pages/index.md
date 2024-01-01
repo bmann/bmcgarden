@@ -4,28 +4,16 @@ title: Home
 id: home
 permalink: /
 ---
+<style>
+  .microblog_timeline, .callout {padding: 2em 1.5em; background: #f5f7ff;}
+</style>
+# Hi 👋 Welcome to Boris Mann's Homepage
 
-# Boris Mann's Homepage
-
-<p style="padding: 3em 2em; background: #f5f7ff; border-radius: 4px;">
-  Hi 👋 This is the newest iteration of my homepage and long term archive. I put long form tech blog posts here. 
-</p>
-
-## Recent blog posts
-
-  {% assign blogcount = 0 %}
-  {% assign bloglimit = 5 %}
-  {% assign recentblogs = site.posts | sort: 'date' | reverse %}
   <ul>
-    {% for blog in recentblogs %}
-        {% if blog.section == 'blog' and blogcount < bloglimit %}
-          <li class="blog-entry" style="margin-bottom: 5px;">
-            <a class="internal-link" href="{{ blog.url }}">{{ blog.title }}</a> <time>{{ blog.date | date: "%B %-d, %Y" }}</time>
-          </li>
-            {% assign blogcount = blogcount | plus: 1 %}
-        {% elsif blogcount >= bloglimit %}
-            {% break %}
-        {% endif %}
+    {% for blog in site.posts limit:5 %}
+      <li class="blog-entry" style="margin-bottom: 5px;">
+        <a class="internal-link" href="..{{ blog.url }}">{{ blog.title }}</a> <time>{{ blog.date | date: "%B %-d, %Y" }}</time>
+      </li>
     {% endfor %}
   </ul>
 
@@ -35,12 +23,22 @@ permalink: /
 
 {% assign notehtml = '' %}
 {% assign recentnotes = site.notes | sort: 'last_modified_at' | reverse %}
-{% for note in recentnotes limit:3 %}
-  {% assign notehtml = notehtml | append: "<a class='internal-link' href='" | append: note.url | append: "'>" | append: note.title | append: "</a>" %}
-  {% unless forloop.last %}{% assign notehtml = notehtml | append: ", " %}{% endunless %}
+{% assign notecount = 0 %}
+{% for note in recentnotes %}
+  {% if note.section != 'journal' %}
+    {% assign notehtml = notehtml | append: "<a class='internal-link' href='" | append: note.url | append: "'>" | append: note.title | append: "</a>" %}
+    {% assign notecount = notecount | plus:1 %}
+    {% if notecount < 3 %}
+      {% assign notehtml = notehtml | append: ", " %}
+    {% else %}
+      {% break %}
+    {% endif %}
+  {% endif %}
 {% endfor %}
 
-<p>As of July 2023, I moved my Digital Garden Notes to their own site. There's a <a class="internal-link" href="/notes/seeds/">Seeds page</a> with links into various themes and recommended articles, or you can browse the minimal <a class="internal-link" href="/notes/">Notes graph</a>. These are the three most recently modified notes: {{ notehtml }}.</p>
+<p>As of July 2023, I moved my Digital Garden Notes to their own site. There's a <a class="internal-link" href="../notes/seeds/">Seeds page</a> with links into various themes and recommended articles, or you can browse the minimal <a class="internal-link" href="../notes/">Notes graph</a>.</p>
+
+<p>These are the three most recently modified notes: {{ notehtml }}.</p>
 
 <div style="margin-top: 0.5em">
 {% assign seednotes = site.notes | where_exp: "note", "note.seed" %}

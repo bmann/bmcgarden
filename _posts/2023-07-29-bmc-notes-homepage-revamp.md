@@ -9,7 +9,7 @@ tags:
     - Digital Garden
 ---
 
-This is very much a blogging about blogging (and Digital Garden) post. I've written many words in many places since the <a href="{% link _posts/blog/2021-03-14-moa-party.md %}" class="internal-link">last post</a>. Many of those words have been into LogSeq, which I flipped the switch on at the beginning of this year to run this whole site, including my (lapsed) tech [blog]({{ '/blog/' | relative_link }}), and long term [archive]({{ '/archive/' | relative_link }}).
+This is very much a blogging about blogging (and Digital Garden) post. I've written many words in many places since the last post. Many of those words have been into LogSeq, which I flipped the switch on at the beginning of this year to run this whole site, including my (lapsed) tech [blog]({{ '/blog/' | relative_link }}), and long term [archive]({{ '/archive/' | relative_link }}).
 
 I wanted to have one grand intertwingled set of both Digital Garden style Note and Journal pages, as well as all of my archive of posts.
 
