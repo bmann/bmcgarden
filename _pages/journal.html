@@ -6,13 +6,11 @@ permalink: /journal/
   <main>
      
     <ul>
-      {% assign journals = site.notes | reverse %}
+      {% assign journals = site.journals | reverse %}
       {% for journal in journals %}
-        {% if journal.section == "journal" %}
         <li class="blog-entry" style="margin-bottom: 5px;">
           <a class="internal-link" href="{{ journal.url }}">{{ journal.title }}</a>
         </li>
-        {% endif %}
       {% endfor %}
     </ul>
 

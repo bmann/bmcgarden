@@ -6,11 +6,11 @@ It fits into a category of [[selfhosting]] -- you provide the server either at h
 
 The [about page](https://www.cloudron.io/about.html) also uses the term [[private cloud]].
 
-It's designed to run on Ubuntu LTS versions. 
+It's designed to run on Ubuntu LTS versions. The server interface will take care of keeping the Ubuntu operating system packages maintained.
 
 I run [[Commons Computer]] as my personal Cloudron instance.
 ## License
-The Cloudron code itself is source-available, with a [subscription license](https://www.cloudron.io/legal/license.html) required if you want to self host more than 2 apps and have full access to all features like email.
+The Cloudron code itself is source-available, with a [subscription license](https://www.cloudron.io/legal/license.html) required if you want to self host more than 2 apps and have full access to all features like email. Paying for the license means the team supports you in the forums and will help troubleshoot via email.
 
 The team creates, contributes to, and directly supports a [number of open source packages](https://www.cloudron.io/opensource.html). All of the app packages that are deployed on Cloudron are open source.
 
@@ -42,7 +42,7 @@ A bare metal server will be able to host many more apps than a VPS, but it's als
 
 #### Hostinger VPS
 
-![[hostinger-vps-plans-screenshot.png]]
+![](/assets/hostinger-vps-plans-screenshot.png)
 
 For the difference in price, I'd recommend at least the KVM 4 with 16GB RAM. Those are USD prices. You can use my referral code for one-click Cloudron installs on a [Hostinger VPS](https://hostinger.com?REFERRALCODE=1BORIS58)
 #### Home Hosting
@@ -64,13 +64,26 @@ Example starter pricing: Postmark $15USD/month, Mailgun is free for up to 10,000
 ## Apps
 The [Cloudron store lists all the apps they support](https://www.cloudron.io/store/index.html). It uses [[Docker]] images to package apps, but then runs centrally managed services like database, redis, files, email, etc.
 
-## Things to use Cloudron for
+There are many "open source clones" of various commercial services:
 
-Discourse
+* Dropbox: use Nextcloud for file syncing and sharing.
+* Google Email & Calendar: SoGo or Nextcloud both have webmail that can sync contacts and calendars
+* Airtable, Typeform: NocoDB has both Airtable-like interfaces for spreadsheet style data storage, as well as a survey mode that could be used instead of Typeform.
+* Figma: Penpot
+* 1Password, LastPass: Vaultwarden is the self-hostable backend that connects with Bitwarden apps
+* Zoom, Google Meet: Jitsi does video-based. Nextcloud Talk is another alternative.
+* Slack, Microsoft Teams: Mattermost chat
+* Help Scout, Shared Email Inbox: FreeScout
+* Mailchimp: Listmonk
 
-Mastodon
+And there are open source apps that are themselves well-known that can be complicated to install or maintain:
+* Mastodon, ActivityPub enabled micro-blogging
+* Discourse, forum and community server
+* Gitlab, self hosted Github alternate. Gitea, a simpler "forge" software is also available
+* Peertube, ActivityPub enabled video platform. Can sync with or import from YouTube
+* Wordpress, self-hosted version that is setup and maintained for you
+* MediaWiki, the wiki platform that powers Wikipedia and other sites (DokuWiki, HedgeDoc, WikiJS, Confluence, BookStack, and Outline are other supported apps that are wiki variants with slightly different specializations)
 
-Nextcloud
+---
 
-Email
-
+The [Cloudron forum](https://forum.cloudron.io/) has lots of great discussions on apps, setup and use cases, as well as wishlists for new apps, and more.

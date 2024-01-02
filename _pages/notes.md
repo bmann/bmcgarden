@@ -4,7 +4,7 @@ title: Notes
 permalink: /notes/
 ---
 
-The [[Digital Garden Jekyll Template]] that this site is powered by can have full wikilinks and backlinks, but I'm only hosting a few Notes-style pages here. The [[Seeds]] page has an overview of links into my main Notes site.
+I'm slowly building out local notes here. [[Wikilinks]] on pages here, as well as sidebar tags, link out to my [[LogSeq]] pages at [notes.bmannconsulting.com](https://notes.bmannconsulting.com).
 
 ## Graph of Local Notes
 

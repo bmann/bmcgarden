@@ -1,6 +1,8 @@
 ---
 ---
-My digital garden is hosted at <https://notes.bmannconsulting.com>. Below are some pathways into the garden, and seeds of ideas and concepts. You can also browse the [note representing this page directly](https://notes.bmannconsulting.com/#/page/boris%20mann%20digital%20notes%20garden).
+I have a lapsed [[LogSeq]] site at <https://notes.bmannconsulting.com>. [[Wikilinks]] (represented by square brackets) that don't have local pages link out to external notes.
+
+Below are some pathways into the garden, and seeds of ideas and concepts. 
 
 ## Recent
 

@@ -1,5 +1,18 @@
 ---
 ---
+
+## January 2024
+
+Removed blog posts going back to 2012 and pre-2012 archive. They are available via a snapshot at [2023.bmannconsulting.com](https://2023.bmannconsulting.com).
+
+Published via [[Fission]] Github Action, and then grabbed the [[IPFS]] hash `bafybeidfdwz5tak24oukds2hrf3xahl5rp5by4a6idwv2ucsmo6uaafgoa` and used [[Cloudflare]] IPFS Gateway to keep it around.
+
+Using [[Obsidan]] to edit on desktop, including Daily Journals.
+
+Added in a [[Journal]] section and a journal post type.
+
+The plan is to add [[Indiekit]] for remote posting.
+
 ## July 2023
 
 Trimmed blog & archive posts out of [[LogSeq]] and moved them into [[Digital Garden Jekyll Template]]. Notes, running [[LogSeq]], have moved to <a href="{{ site.notes_url }}">{{ site.notes_url }}</a>. Wikilinks that don't have local links link out to the Notes site. Sidebar tags for blog posts also link out to the Notes site.
@@ -167,3 +180,4 @@ Comments from this period are currently offline.
 December 2001 - 2003
 
 Bits and pieces of static HTML and various PHP scripts, including [Pmachine](http://en.wikipedia.org/wiki/EllisLab) as a personal blog that ran concurrrently with installs of PHPNuke and later my Drupal site.
+

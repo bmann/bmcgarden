@@ -63,6 +63,9 @@ collections:
   notes:
     output: true
     permalink: "/notes/:slug/"
+  journals:
+    output: true
+    permalink: "/journal/:slug/"
 
 defaults:
   - scope:
@@ -73,14 +76,13 @@ defaults:
       permalink: /blog/:year/:month/:day/:title/
       section: blog
   - scope:
-      path: "_notes/*.md"
+      path: "_notes/*"
     values:
       layout: "note"
       section: note
   - scope:
-      path: "_notes/journal/*"
+      path: "_journals/*"
     values:
       layout: "note"
       section: journal
-      permalink: /journal/:slug/
 

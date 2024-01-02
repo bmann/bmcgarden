@@ -5,10 +5,16 @@ id: home
 permalink: /
 ---
 <style>
-  .microblog_timeline, .callout {padding: 2em 1.5em; background: #f5f7ff;}
+  .microblog_timeline, .callout {padding: 0.25em 0.25em 1em 1em; background: #f5f7ff; border-radius: 25px;}
+  .wrapper {
+    max-width: 46em;
+  }
 </style>
 # Hi 👋 Welcome to Boris Mann's Homepage
 
+<p>I'm interested in [[Open Source Licensing]], community, co-operative models. Pooling capital and collaboration. I'm the founder of [[Fission]]. In Canada I help run the [[CoSocial]] Community Co-op. In Vancouver, I'm one of the organizers of [[DWebYVR]]. I like to cook & eat and have a [[FoodWiki]].</p>
+
+{% comment %}
   <ul>
     {% for blog in site.posts limit:5 %}
       <li class="blog-entry" style="margin-bottom: 5px;">
@@ -18,8 +24,9 @@ permalink: /
   </ul>
 
   <a href="/blog/" class="internal-link">More »</a>
+{% endcomment %}
 
-  <h2>Digital Garden</h2>
+  <h2>Digital Garden 🌱</h2>
 
 {% assign notehtml = '' %}
 {% assign recentnotes = site.notes | sort: 'last_modified_at' | reverse %}
@@ -28,7 +35,7 @@ permalink: /
   {% if note.section != 'journal' %}
     {% assign notehtml = notehtml | append: "<a class='internal-link' href='" | append: note.url | append: "'>" | append: note.title | append: "</a>" %}
     {% assign notecount = notecount | plus:1 %}
-    {% if notecount < 3 %}
+    {% if notecount < 5 %}
       {% assign notehtml = notehtml | append: ", " %}
     {% else %}
       {% break %}
@@ -36,10 +43,11 @@ permalink: /
   {% endif %}
 {% endfor %}
 
-<p>As of July 2023, I moved my Digital Garden Notes to their own site. There's a <a class="internal-link" href="../notes/seeds/">Seeds page</a> with links into various themes and recommended articles, or you can browse the minimal <a class="internal-link" href="../notes/">Notes graph</a>.</p>
+<p>Browse the local <a class="internal-link" href="../notes/">Notes graph</a>. I have some <a class="internal-link" href="../notes/seeds/">Seeds</a> to get you started.</p>
 
-<p>These are the three most recently modified notes: {{ notehtml }}.</p>
+<p>These are the five most recently modified local notes: {{ notehtml }}.</p>
 
+{% comment %}
 <div style="margin-top: 0.5em">
 {% assign seednotes = site.notes | where_exp: "note", "note.seed" %}
 {% for seednote in seednotes %}
@@ -49,21 +57,12 @@ permalink: /
     </div>
 {% endfor %}
 </div>
+{% endcomment %}
 
   <h2>Personal microblog</h2>
 
-  Most recent post from my more [personal blog »](https://blog.bmannconsulting.com)
+  Most recent post from my more [personal blog](https://blog.bmannconsulting.com), which is cross-posted to my [[Mastodon]] account <a href="https://cosocial.ca/@boris" rel="me">@boris@cosocial.ca</a>.
 
   <script type="text/javascript" src="https://micro.blog/sidebar.js?username=boris&count=1"></script>
 
   <hr />
-
-
-<style>
-  .wrapper {
-    max-width: 46em;
-  }
-  .microblog_post {
-    padding: 0px 30px 10px 20px;
-  }
-</style>
