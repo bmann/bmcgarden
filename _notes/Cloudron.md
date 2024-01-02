@@ -23,7 +23,9 @@ A number of app packages they support installing (e.g. Atlassian Confluence, Out
 
 Total: $31USD per month, $372USD per year.
 
-For many services like email ($5-$10/user/month), file sharing ($5-$10/user/month), calendaring ($5-$10/user/month), you can quickly see that ~5 users of a hosted service will be more expensive than the hosting costs of a Cloudron powered server, and potentially 5 times cheaper. 
+For many services like email ($5-$10/user/month), file sharing ($5-$10/user/month), calendaring ($5-$10/user/month), you can quickly see that ~5 users of a hosted service will be more expensive than the hosting costs of a Cloudron powered server. If we benchmark $10/user/service as a typical service cost, Cloudron hosting can be much cheaper.
+
+10 users = $100/month, vs $30 Cloudron costs. 
 
 That does assume someone willing to do basic Cloudron admin. You don't need to use the command line, but you do need to be familiar with DNS, email, and other services with API keys and relatively technical settings.
 ### Backup
