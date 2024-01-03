@@ -14,7 +14,9 @@ The Cloudron code itself is source-available, with a [subscription license](http
 
 The team creates, contributes to, and directly supports a [number of open source packages](https://www.cloudron.io/opensource.html). All of the app packages that are deployed on Cloudron are open source.
 
-A number of app packages they support installing (e.g. Atlassian Confluence, Outline, Cal.com) have various non-commercial / subscription required licenses as well.
+A number of app packages they support installing (e.g. Atlassian Confluence, Outline, Cal.com) have various non-commercial / subscription required licenses as well.[^licensing]
+
+[^licensing]: I have a whole page on [[Open Source Licensing]]. There will definitely be people who don’t like Cloudron because it’s “not open source”. If anything, I don’t think they’re charging ENOUGH. It would be interesting to see if license holders “voted” for the software packages they want to allocate resources to.
 ## Cost
 
 * Cloudron license: $15/month, paid annually
@@ -66,7 +68,7 @@ Example starter pricing: Postmark $15USD/month, Mailgun is free for up to 10,000
 ## Apps
 The [Cloudron store lists all the apps they support](https://www.cloudron.io/store/index.html). It uses [[Docker]] images to package apps, but then runs centrally managed services like database, redis, files, email, etc.
 
-There are many "open source clones" of various commercial services:
+There are many "open source clones" of various commercial services. Listing them this way may help people find apps that are new to them or figure out what to look for to meet the needs that they have:
 
 * Dropbox: use Nextcloud for file syncing and sharing.
 * Google Email & Calendar: SoGo or Nextcloud both have webmail that can sync contacts and calendars
@@ -79,6 +81,7 @@ There are many "open source clones" of various commercial services:
 * Mailchimp: Listmonk
 
 And there are open source apps that are themselves well-known that can be complicated to install or maintain:
+
 * Mastodon, ActivityPub enabled micro-blogging
 * Discourse, forum and community server
 * Gitlab, self hosted Github alternate. Gitea, a simpler "forge" software is also available
@@ -86,6 +89,12 @@ And there are open source apps that are themselves well-known that can be compli
 * Wordpress, self-hosted version that is setup and maintained for you
 * MediaWiki, the wiki platform that powers Wikipedia and other sites (DokuWiki, HedgeDoc, WikiJS, Confluence, BookStack, and Outline are other supported apps that are wiki variants with slightly different specializations)
 
----
+## Forum
 
 The [Cloudron forum](https://forum.cloudron.io/) has lots of great discussions on apps, setup and use cases, as well as wishlists for new apps, and more.
+
+## Alternatives
+
+[[Yunohost]]
+
+[[Easypanel]]
