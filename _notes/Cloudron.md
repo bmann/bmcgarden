@@ -48,7 +48,7 @@ A bare metal server will be able to host many more apps than a VPS, but it's als
 
 ![](/assets/hostinger-vps-plans-screenshot.png)
 
-For the difference in price, I'd recommend at least the KVM 4 with 16GB RAM. Those are USD prices. You can use my referral code for one-click Cloudron installs on a [Hostinger VPS](https://hostinger.com?REFERRALCODE=1BORIS58)
+For the difference in price, I'd recommend at least the KVM 4 with 16GB RAM. Those are USD prices. You can use my referral code for one-click Cloudron installs on a [Hostinger VPS](https://hostinger.com/vps-hosting?REFERRALCODE=1BORIS58)
 #### Home Hosting
 I'd love to try running a Cloudron install at home, but it all seems quite a bit trickier. You're still looking at a ~$500 mini server purchase, which is like 2 - 3 years of VPS hosting costs!
 
@@ -95,6 +95,4 @@ The [Cloudron forum](https://forum.cloudron.io/) has lots of great discussions o
 
 ## Alternatives
 
-[[Yunohost]]
-
-[[Easypanel]]
+[[Co-op Cloud]]

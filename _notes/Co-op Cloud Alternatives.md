@@ -1,3 +1,6 @@
+---
+---
+
 [[Co-op Cloud]] has done a great job of listing out their opinions of the pros / cons of other server / app management software. 
 
 Copy / pasted from their [FAQ](https://docs.coopcloud.tech/intro/faq/) so I can easily reference.

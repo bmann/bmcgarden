@@ -3,15 +3,27 @@ layout: page
 title: Daily Journal
 permalink: /journal/
 ---
-  <main>
-     
-    <ul>
-      {% assign journals = site.journals | reverse %}
-      {% for journal in journals %}
-        <li class="blog-entry" style="margin-bottom: 5px;">
-          <a class="internal-link" href="{{ journal.url }}">{{ journal.title }}</a>
-        </li>
+<style>
+  article p:last-of-type {
+    display:inline;
+  }
+  a.permalink {
+    all: unset;
+    cursor: pointer;
+    font-size: x-small;
+  }
+  a.permalink::after {
+    all: unset;
+  }
+</style>
+    {% assign postsByDay = 
+      site.journals | group_by_exp:"post", "post.date | date: '%B %e, %Y'" | reverse %}
+      
+      {% for day in postsByDay %}
+        <h2 style="padding-bottom: 0.25em;">{{ day.name }}</h2>
+            {% for post in day.items %}
+              <article style="padding: 0 0 1em 0.5em">
+                  {{ post.content }}&nbsp;<a class="permalink" href="{{ post.url }}">{{ post.date | date: '%l:%M%P' }}</a>
+              </article>
+            {% endfor %}
       {% endfor %}
-    </ul>
-
-  </main>
