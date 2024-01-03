@@ -1,5 +1,5 @@
 ---
 title: "{{date:MMMM Do, YYYY}}"
-date: YYYY-MM-DD
+date: "{{date:YYYY-MM-DD}}"
 section: journal
 ---
