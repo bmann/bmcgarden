@@ -5,11 +5,11 @@ class BidirectionalLinksGenerator < Jekyll::Generator
     graph_edges = []
 
     all_notes = site.collections['notes'].docs
-    # all_posts = site.posts # unclear right syntax here
+    all_posts = site.posts.docs # unclear right syntax here
     all_pages = site.pages
     all_journals = site.collections['journals'].docs
 
-    all_docs = all_notes + all_pages + all_journals
+    all_docs = all_notes + all_pages + all_journals + all_posts
 
     link_extension = !!site.config["use_html_extension"] ? '.html' : ''
 

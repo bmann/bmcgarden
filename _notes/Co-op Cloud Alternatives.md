@@ -62,6 +62,7 @@ _**@boris commentary:** I took a look at Yunohost and found it scary from a secu
 - 👎 [Requires 512MB RAM for a single app](https://github.com/caprover/caprover/issues/28).
 - 👎 [Backup/restore is "experimental"](https://caprover.com/docs/backup-and-restore.html), and doesn't currently help with backing up Docker volumes.
 - 👎 Exposes its bespoke management interface to the internet via HTTPS by default.
+
 ## [[Ansible]]
 
 ### Pros
@@ -71,6 +72,7 @@ _**@boris commentary:** I took a look at Yunohost and found it scary from a secu
 
 - 👎 Upstream libre software communities aren't publishing Ansible roles.
 - 👎 Lots of manual work involved in things like app isolation, backups, updates.
+
 ## [[Kubernetes]]
 
 ### Pros
@@ -92,5 +94,7 @@ _**@boris commentary:** I took a look at Yunohost and found it scary from a secu
 - 👎 Manual work required for process monitoring.
 - 👎 Secret storage not available yet.
 - 👎 [Swarm is the new best practice](https://github.com/BretFisher/ama/issues/8#issuecomment-367575011).
+
+--- 
 
 I'll skip the the "doing it manually" old school version of server + app maintenance.
