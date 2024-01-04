@@ -12,11 +12,8 @@
 		<link>{{ site.url }}</link>
 		<atom:link href="{{ site.url }}{{ page.url }}" rel="self" type="application/rss+xml" />
 		<lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-		{% assign feed_items 50 %}
 		{% assign sortedblog = site.journals | sort: 'date' | reverse %}
-		{% assign blogcount = 0 %}
-		{% for post in sortedblog  %}
-		  {% if blogcount < feed_items %}
+		{% for post in sortedblog limit:50 %}
 			<item>
 				{% if site.name %}
 					<dc:creator>{{ site.name | xml_escape }}</dc:creator>
@@ -26,10 +23,6 @@
 				<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
 				<guid isPermaLink="true">https://bmannconsulting-com.ipns.dweb.link{{ post.url }}</guid>
 			</item>
-		    {% assign blogcount = blogcount | plus: 1 %}
-          {% elsif blogcount >= feed_items %}
-            {% break %}
-          {% endif %}
 		{% endfor %}
 	</channel>
 </rss>
