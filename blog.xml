@@ -25,7 +25,7 @@
 				<description>{{ post.content | xml_escape }}</description>
 				<link>{{ site.url }}{{ post.url }}</link>
 				<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-				<guid isPermaLink="true">https://bmannconsulting-com.ipns.dweb.link{{ post.url }}</guid>
+				<guid isPermaLink="true">https://bmannconsulting.com{{ post.url }}</guid>
 			</item>
 		    {% assign blogcount = blogcount | plus: 1 %}
           {% elsif blogcount >= feed_items %}
