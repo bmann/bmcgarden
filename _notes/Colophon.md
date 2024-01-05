@@ -1,4 +1,6 @@
 ---
+tags:
+  - BMC
 ---
 
 ## January 2024
@@ -7,18 +9,13 @@ Removed blog posts going back to 2012 and pre-2012 archive. They are available v
 
 Published via [[Fission]] Github Action, and then grabbed the [[IPFS]] hash `bafybeidfdwz5tak24oukds2hrf3xahl5rp5by4a6idwv2ucsmo6uaafgoa` and used [[Cloudflare]] IPFS Gateway to keep it around.
 
-Using [[Obsidan]] to edit on desktop and mobile, including Daily Journals.
+Using [[Obsidian]] to edit on desktop and mobile, including Daily Journals.
 
 Added in a [[Journal]] section and a journal post type.
 
 Made a journal feed linked at [[feeds]]. The journal feed uses Micro.blog to cross post to Mastodon.
 
-- [ ] Journal feed modification to truncate and include link back to journal post. Will Microblog respect 500 characters?
-- [ ] Update front page to have recent journal entries. 
-- [ ] Display “via” frontmatter [[via]]
-- [ ] Turn off linking out to notes
-- [ ] Tags? Something like “if tag same as Note, then link” or “on Note, list all pages with same tag”. Even with a “blank” [[Wiki]] page, you get all the notes tagged with wiki displaying. 
-- [ ] Test run of re-importing LogSeq
+To Do: [[BMC]]
 
 ## July 2023
 

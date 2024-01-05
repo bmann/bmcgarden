@@ -83,6 +83,6 @@ defaults:
   - scope:
       path: "_journals/*"
     values:
-      layout: "note"
+      layout: "journal"
       section: journal
 

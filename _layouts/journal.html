@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<article>
+  <div>
+    {% if page.link %}
+    <h1> Link: <a href="{{ page.link }}">{{ page.link }}</a></h1>
+    {% else %}
+    <h1 style="text-transform:capitalize;">{{ page.title }}</h1>
+    {% endif %}
+    <time datetime="page.date | date_to_xmlschema">
+      Posted {{ page.date | date: "%B %-d, %Y" }}
+    </time>
+  </div>
+
+  <div id="notes-entry-container">
+    <content>
+      {{ content }}
+    </content>
+
+    <side style="font-size: 0.9em">
+
+      
+
+      <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
+        <div class="meta backlink-box">
+          <p>Tags: {% for tag in page.tags %}<a href="{{ site.url }}/notes/{{ tag | downcase }}">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+        </div>
+
+        {% if page.via %}
+        <div class="meta backlink-box">
+          Via: <a href="{{ page.via }}">{{ page.via | remove: 'https://' | remove: 'http://' }}</a>
+        </div>
+        {% endif %}
+
+        <div class="backlink-box" style="background-color: #fff;">
+          Browse the <a href="{{ site.baseurl }}/notes/" class="internal-link">Local Notes Graph »</a>
+        </div>
+      </div>
+
+
+    </side>
+
+  </div>
+</article>

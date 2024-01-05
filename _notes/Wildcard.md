@@ -1,4 +1,5 @@
 ---
+link: https://merki.ca/blog/what-is-a-wildcard-person
 ---
 
 Robert Merki does a great job of defining a Wildcard person:
