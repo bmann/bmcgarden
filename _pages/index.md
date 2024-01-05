@@ -9,6 +9,21 @@ permalink: /
   .wrapper {
     max-width: 46em;
   }
+
+  time {
+    
+  }
+
+  a.journal-link {
+    all: unset;
+    cursor: pointer;
+    text-decoration: underline;
+    
+  }
+  a.journal-link::after {
+    all: unset;
+  }
+
 </style>
 # Hi 👋 Welcome to Boris Mann's Homepage
 
@@ -43,26 +58,30 @@ permalink: /
   {% endif %}
 {% endfor %}
 
-<p>Browse the local <a class="internal-link" href="../notes/">Notes graph</a>. I have some <a class="internal-link" href="../notes/seeds/">Seeds</a> to get you started.</p>
+Browse the local <a class="internal-link" href="../notes/">Notes graph</a>.
 
-<p>These are the five most recently modified local notes: {{ notehtml }}.</p>
+These are the five most recently modified local notes: {{ notehtml }}.
 
-{% comment %}
-<div style="margin-top: 0.5em">
-{% assign seednotes = site.notes | where_exp: "note", "note.seed" %}
-{% for seednote in seednotes %}
-    <div>
-      <div style="margin-bottom: 0.5em;">{{ seednote.content }}</div>
-      <cite><a href="{{ seednote.link }}">{{ seednote.title }} by {{ seednote.author }}</a></cite>
-    </div>
+## Journal Entries
+
+The last few days of [Journal](/journal) entries:
+
+{% comment %}<!-- https://stackoverflow.com/questions/46672231/in-jekyll-how-to-show-posts-from-last-week -->{% endcomment %}
+  {% assign timeframe = 172800 %}
+<ul style="list-style-type: none;">
+  {% for post in site.journals %}
+    {% assign post_in_seconds = post.date | date: "%s" | plus: 0 %}
+    {% assign recent_posts = "now" | date: "%s" | minus: timeframe  %}
+
+    {% if post_in_seconds > recent_posts %}
+<li style="padding-bottom: 0.5em;"><a href="{{ post.url }}" class="journal-link"><time datetime="page.date | date_to_xmlschema">{{ post.date | date: '%A %l:%M%P' }}</time></a>&nbsp;{{ post.content | strip_html | truncatewords: 30 }}&nbsp;</li>
+    {% endif %}
 {% endfor %}
-</div>
-{% endcomment %}
+</ul>
 
-  <h2>Personal microblog</h2>
+<hr />
 
-  Most recent post from my more [personal blog](https://blog.bmannconsulting.com), which is cross-posted to my [[Mastodon]] account <a href="https://cosocial.ca/@boris" rel="me">@boris@cosocial.ca</a>.
-
-  <script type="text/javascript" src="https://micro.blog/sidebar.js?username=boris&count=1"></script>
-
-  <hr />
+<!-- 
+<a href="https://cosocial.ca/@boris" rel="me">@boris@cosocial.ca</a>
+<a href="https://toolsforthought.social/@boris" rel="me">@boris@toolsforthought.social</a>
+--> 

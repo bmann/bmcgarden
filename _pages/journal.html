@@ -15,6 +15,10 @@ permalink: /journal/
   a.permalink::after {
     all: unset;
   }
+
+  .wrapper {
+    max-width: 46em;
+  }
 </style>
     {% assign postsByDay = 
       site.journals | group_by_exp:"post", "post.date | date: '%B %e, %Y'" | reverse %}
