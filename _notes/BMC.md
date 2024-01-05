@@ -6,11 +6,12 @@ Yes, I registered it in late 2000 and could have picked a way more interesting w
 
 ## To Do
 
-- [ ] Journal feed modification to truncate and include link back to journal post. Will Microblog respect 500 characters?
+- [ ] Journal feed modifications
 	- Maybe not? I think things are coming through OK
 	- I should consider linking back to the actual journal entry. Hmm, or maybe appending a hashtag like `BMCJournal` for context
 	- could also do tags-as-hashtags and append them
 	- Maybe: do something special if link exists
+	- Figure out how to make sure that full path image links are included
 - [ ] Update front page to have recent journal entries. 
 - [x] Display “via” frontmatter [[via]]
 - [x] Turn off linking out to notes
