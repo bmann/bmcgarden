@@ -19,7 +19,7 @@ The little sub heading says “¿Por qué no los dos?”, which of course transl
 
 ![Why don’t we have both meme little girl](/assets/memes/why_not_both.jpeg)
 
-Well played [[Robin Berjon]].
+Well played [[Robin Berjon]]. Let’s make sure to capture the meme origin here in my notes [[Why not both]].
 
 The meat of the article is that both protocols are great in their own way. 
 
