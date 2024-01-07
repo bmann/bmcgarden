@@ -27,7 +27,7 @@ My <https://bmann.ca> landing page links to all my social accounts[^all], and [@
 
 [Tech Blog](https://bmannconsulting.com/blog/) posts I’m not auto cross posting. In part because they come across as just title plus link without any context in [[Micro.blog]]’s feed cross posting. 
 
-[[Fedica]] is a commercial service that does cross posting. The Fedica model supports 8 accounts even at the free account tier, which is great! But, even at paid tiers, you can only use one account per network, so right away it doesn’t support my three Mastodon accounts. And yeah, I have a pile of company and project accounts I run for work on the [Fission Mastodon Server l](https://fission.social/@fission).
+[[Fedica]] is a commercial service that does cross posting. The Fedica model supports 8 accounts even at the free account tier, which is great! But, even at paid tiers, you can only use one account per network, so right away it doesn’t support my three Mastodon accounts. And yeah, I have a pile of company and project accounts I run for work on the [Fission Mastodon Server](https://fission.social/@fission). 
 
 There’s a whole other discussion to be had here about the affordances of each network[^affordances] that fights against cross-posting. No hashtags on Bluesky or Micro.blog. No quote posting on Mastodon. And different character count lengths and embedding support.
 
