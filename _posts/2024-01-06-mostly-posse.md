@@ -17,17 +17,17 @@ It’s also why it starts with my three Mastodon accounts.
 
 My <https://bmann.ca> landing page links to all my social accounts[^all], and [@bmann.ca is my Bluesky username](https://bsky.bmann.ca).
 
-[^all]: Technically not all of them. I have Instagram and Facebook accounts that I don’t use. I have a Swarm/Foursquare account. I will add my [[Noosphere]] DID I guess! Maybe I will go in and at least list all my accounts 😅
+[^all]: Technically not all of them. I have Instagram and Facebook accounts that I don’t use. I have a Swarm/Foursquare account. Maybe I will eventually list _all_ my accounts for completeness 😅
 
 * I use [@boris@cosocial.ca](https://cosocial.ca/@boris) as my main Mastodon account. It receives cross-posts from my [personal blog](https://blog.bmannconsulting.com). Food photos, local Vancouver adventures, travel.
 
 * [@boris@fission.social](https://fission.social/@boris) is my work account - decentralized compute [@everywherecomputer@fission.social](https://fission.social/@everywherecomputer), [[IPFS]] and protocol discussions
 
-* [@boris@toolsforthought.social](https://toolsforthought.social/@boris) is hooked up to my [journal feed](https://bmannconsulting.com](https://bmannconsulting.com/) (you’re reading a journal entry here). The journal items also get cross-posted to [@bmannconsulting.com on Bluesky](https://bsky.app/profile/bmannconsulting.com)
+* [@boris@toolsforthought.social](https://toolsforthought.social/@boris) is hooked up to my [journal posts](https://bmannconsulting.com/journal/). The journal items also get cross-posted to [@bmannconsulting.com on Bluesky](https://bsky.app/profile/bmannconsulting.com)
 
 [Tech Blog](https://bmannconsulting.com/blog/) posts I’m not auto cross posting. In part because they come across as just title plus link without any context in [[Micro.blog]]’s feed cross posting. 
 
-[[Fedica]] is a commercial service that does cross posting. The Fedica model supports 8 accounts even at the free account tier, which is great! But, even at paid tiers, you can only use one account per network, so right away it doesn’t support my three Mastodon accounts. And yeah, I have a pile of company and project accounts I run for work on the [Fission Mastodon Server](https://fission.social/@fission). 
+[[Fedica]] is a commercial service that does cross posting that I’m experimenting with for blog post announcements. The Fedica model supports 8 accounts even at the free account tier, which is great! But, even at paid tiers, you can only use one account per network, so right away it doesn’t support my three Mastodon accounts. And yeah, I have a pile of company and project accounts I run for work on the [Fission Mastodon Server](https://fission.social/@fission). 
 
 There’s a whole other discussion to be had here about the affordances of each network[^affordances] that fights against cross-posting. No hashtags on Bluesky or Micro.blog. No quote posting on Mastodon. And different character count lengths and embedding support.
 
