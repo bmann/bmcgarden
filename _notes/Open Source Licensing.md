@@ -1,4 +1,7 @@
 ---
+tags:
+  - opensource
+  - licensing
 ---
 
 > The [[wikilinks]] on this page go to my main Digital Garden notes, linking to further related notes and articles.
