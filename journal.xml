@@ -18,7 +18,7 @@
 				{% if site.name %}
 					<dc:creator>{{ site.name | xml_escape }}</dc:creator>
 				{% endif %}
-				<description>{{ post.content | xml_escape | replace: 'src=&quot;/', 'src=&quot;https://bmannconsulting.com/' }}</description>
+				<description>{{ post.content | xml_escape | replace: 'src=&quot;/', 'src=&quot;https://bmannconsulting.com/' | replace: 'href=&quot;/', 'href=&quot;https://bmannconsulting.com/'  }}</description>
 				<link>{{ site.url }}{{ post.url }}</link>
 				<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
 				<guid isPermaLink="true">https://bmannconsulting.com{{ post.url }}</guid>
