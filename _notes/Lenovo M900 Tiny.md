@@ -1,9 +1,9 @@
 ---
-title: Lenovo ThinkCentre M900 Tiny Desktop PC
+title: Lenovo ThinkCentre M900 Tiny
 aliases: 
-permalink: /lenovo-m900-tiny/
 tags:
   - minipc
+  - Lenovo
 ---
 Ordered from Amazon, refurbished.
 
