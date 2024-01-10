@@ -4,8 +4,10 @@ tags:
   - selfhosting
   - opensource
 link: https://rallly.co
+aliases:
+  - Rally
 ---
-Website: <https://rally.co>
+Website: <https://rallly.co>
 
 > Rallly is an open-source scheduling and collaboration tool designed to make organizing events and meetings easier.
 

@@ -5,6 +5,6 @@ My personal shared [[Cloudron]] install. The [Discourse forum at commonscomputer
 
 ## Apps
 
-### [[Rally]]
+### [[Rallly]]
 
 <https://rally.commonscomputer.com>
