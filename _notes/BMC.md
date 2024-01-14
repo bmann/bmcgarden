@@ -72,4 +72,5 @@ Ok, experiment with [[Fedica]] paid service. Could actually do that BEFORE makin
 - [ ] Journal feed: consider linking back to the actual journal entry. ~~Hmm, or maybe appending a hashtag like `BMCJournal` for context~~
 - [ ] Journal feed: do tags-as-hashtags and append them
 - [ ] Journal feed: do something special if link exists and append it
+- [ ] Rewrite feeds as [[JSON Feed]] as that is what [[Micro.blog]] actually works with
 
