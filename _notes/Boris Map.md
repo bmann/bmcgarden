@@ -1,3 +1,6 @@
+---
+---
+
 I made a map called "Boris Starred" using [[Facilmap]] and changed the read-only link to <https://facilmap.org/boris>.
 
 It has a Starred layer, and a [[FoodWiki]] layer.

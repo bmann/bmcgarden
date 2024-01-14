@@ -17,3 +17,5 @@ The [spec is at version 1.1](https://www.jsonfeed.org/version/1.1/) as of August
 ## Jekyll JSON Feed Templates
 
 https://github.com/georgemandis/jekyll-json-feeds
+
+These are Version 1.0 templates that need to be slightly updated.

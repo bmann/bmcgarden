@@ -1,0 +1,33 @@
+---
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+>
+	<channel>
+		<title>{{ site.name | xml_escape }} - Journal Feed</title>
+		<description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>		
+		<link>{{ site.url }}</link>
+		<atom:link href="{{ site.url }}{{ page.url }}" rel="self" type="application/rss+xml" />
+		<lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+		{% assign sortedblog = site.journals | sort: 'date' | reverse %}
+		{% for post in sortedblog limit:50 %}
+			<item>
+				{% if site.name %}
+					<dc:creator>{{ site.name | xml_escape }}</dc:creator> 
+				{% endif %}
+				<title>{{ post.content | strip_html | xml_escape  | truncate:250 }}</title>{% comment %} Fedica reads from title {% endcomment %}
+				<description>{{ post.content | xml_escape | replace: 'src=&quot;/', 'src=&quot;https://bmannconsulting.com/' | replace: 'href=&quot;/', 'href=&quot;https://bmannconsulting.com/'  }}</description>
+				{% if post.link %}
+					<link>{{ post.link }}</link>
+				{% else %}
+				<link>{{ site.url }}{{ post.url }}</link>
+				{% endif %}
+				<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+				<guid isPermaLink="true">https://bmannconsulting.com{{ post.url }}</guid>
+			</item>
+		{% endfor %}
+	</channel>
+</rss>

@@ -1,12 +1,13 @@
 title: "Boris Mann's Homepage"
-name: Boris Mann
+name: "Boris Mann's Homepage"
 user_description: "Open Source. Community. DWeb. Building edge computing at Fission with IPFS. Cooks & eats."
-description: "Homepage and long term archive, with a side of tech blogs"
+description: "Daily journals with links and asides, digital garden notes, and occasional long form blogs"
 notes_url: "https://notes.bmannconsulting.com"
 tags_url: "https://notes.bmannconsulting.com/#/page"
 profile_pic: /assets/bmann_hair_orange_256x256.png
 favicon: /assets/bmann_hair_orange_256x256.png
 copyright_name: Boris Mann
+author: Boris Mann
 url: "https://bmannconsulting.com"
 baseurl: ''
 encoding: utf-8
