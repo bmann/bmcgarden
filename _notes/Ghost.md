@@ -58,3 +58,7 @@ But it doesn’t feel as much like a community platform any more.
 I still recommend it if what you need matches what Ghost offers out of the box: both blogging and newsletter sending, and/or paid membership management.
 
 But, because of the way it’s managed as a project, it’s going to be hard to build on top of for anything other than basic plugins or API integrations. 
+
+## Other Notes
+
+I wrote some comparison pages and have a whole set of inter-linked notes about Ghost over at [my old LogSeq site](https://notes.bmannconsulting.com/#/page/ghost).
