@@ -1,3 +1,4 @@
 /archive/* https://2023.bmannconsulting.com/archive/:splat 301
 /blog/* https://2023.bmannconsulting.com/blog/:splat 301
+/.well-known/webfinger?resource=acct:bmannconsulting.com@bmannconsulting.com https://fed.brid.gy/.well-known/webfinger?resource=acct:bmannconsulting.com@bmannconsulting.com 302
 /* /404.html 404
