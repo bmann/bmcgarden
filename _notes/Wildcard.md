@@ -8,7 +8,6 @@ Robert Merki does a great job of defining a Wildcard person:
 >
 > These people thrive in early stage startups, and not all have the desire to be CEO. Most just enjoy the challenge of doing new stuff.
 > 
-> https://merki.ca/blog/what-is-a-wildcard-person
+> <https://merki.ca/blog/what-is-a-wildcard-person>
 
 I consider myself a Wildcard and tend to be good at identifying them.
-
