@@ -8,7 +8,7 @@
 >
 	<channel>
 		<title>{{ site.name | xml_escape }} - Journal Feed</title>
-		<description>A journal feed built for Fedica to cross-post</description>{% comment %} See https://bmannconsulting.com/notes/fedica/ for cross-posting rules {% endcomment %}		
+		<description>A journal feed built for Fedica to cross-post, Mastodon flavoured</description>{% comment %} See https://bmannconsulting.com/notes/fedica/ for cross-posting rules {% endcomment %}		
 		<link>{{ site.url }}</link>
 		<atom:link href="{{ site.url }}{{ page.url }}" rel="self" type="application/rss+xml" />
 		<lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
@@ -16,15 +16,14 @@
 		{% for post in sortedblog limit:50 %}
 			<item>
 				<dc:creator>Boris Mann</dc:creator>
-				{% assign description = post.content | strip_html %}
+				{% assign description = post.content | replace: "<blockquote>", "〖" | replace: "</blockquote>", "〗 " | strip_html %}
 				{% if post.link %}
-					{% assign description = description | append: " " | append: post.link %}
+					{% assign description = description | append: " " | append: post.link %}	
 				{% endif %}
-				{% if description.size > 250 %}
-					<description>{{ post.content | xml_escape }}</description>
-				{% else %}
-					<description>{{ description | xml_escape }}</description>
-				{% endif %}
+				{% comment %} Capture: we loop through all of the tags and make a list of hashtags separated by spaces {% endcomment %}
+				{% capture taglist %}{% for tag in post.tags %} #{{ tag }}{% endfor %}{% endcapture %}
+				{% assign description = description | append: taglist %}
+				<description>{{ description | xml_escape }}</description>
 				<link>{{ site.url }}{{ post.url }}</link>
 				<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
 				<guid isPermaLink="true">https://bmannconsulting.com{{ post.url }}</guid>

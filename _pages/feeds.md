@@ -10,3 +10,5 @@ permalink: /feeds/
 Long form <a href="{{ '/blog/' | relative_link }}" class="internal-link">blog</a> posts <a href="{{ '/blog.xml' | relative_link }}" class="internal-link">bmannconsulting.com/blog.xml</a>
 
 A full list of social accounts is available at <a href="https://bmann.ca">bmann.ca</a>. You can read a blog post about <a class="internal-link" href="../blog/2024/01/06/mostly-posse/">posting and syndication</a>.
+
+I've used [[Micro.blog]] for cross-posting, and as of January 15th, 2024, am using [[Fedica]]'s RSS cross-posting features.
