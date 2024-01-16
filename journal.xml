@@ -13,7 +13,7 @@
 		<atom:link href="{{ site.url }}{{ page.url }}" rel="self" type="application/rss+xml" />
 		<lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
 		{% assign sortedblog = site.journals | sort: 'date' | reverse %}
-		{% for post in sortedblog limit:50 %}
+		{% for post in sortedblog limit:20 %}
 			<item>
 				<dc:creator>{{ site.name | xml_escape }}</dc:creator>
 				<description>{{ post.content | xml_escape | replace: 'src=&quot;/', 'src=&quot;https://bmannconsulting.com/' | replace: 'href=&quot;/', 'href=&quot;https://bmannconsulting.com/'  }}</description>
