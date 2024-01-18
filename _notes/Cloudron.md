@@ -1,6 +1,8 @@
 ---
+tags:
+  - BringYourOwnServer
 ---
-**[Cloudron](https://www.cloudron.io/?refcode=b90d0ee382ac47ba) is a complete solution for running apps on your own server.
+[Cloudron](https://www.cloudron.io/?refcode=b90d0ee382ac47ba) is a complete solution for running apps on your own server.
 
 It fits into a category of [[selfhosting]] -- you provide the server either at home or in the cloud, and  Cloudron helps you manage the entire server including installing and updating apps, managing DNS, running email, backups, operating system updates, user accounts, and so on.
 
