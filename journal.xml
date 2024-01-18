@@ -18,7 +18,7 @@
 				<dc:creator>{{ site.name | xml_escape }}</dc:creator>
 				<description>{{ post.content | xml_escape | replace: 'src=&quot;/', 'src=&quot;https://bmannconsulting.com/' | replace: 'href=&quot;/', 'href=&quot;https://bmannconsulting.com/'  }}</description>
 				{% if post.link %}
-				<link>{{ post.link }}</link>
+				<link>{{ post.link | xml_escape }}</link>
 				{% else %}
 				<link>{{ site.url }}{{ post.url }}</link>
 				{% endif %}
