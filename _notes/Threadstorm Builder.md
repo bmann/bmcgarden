@@ -6,6 +6,15 @@ In our post Twitter era, both [[ActivityPub]] and [[ATProtocol]] would be good c
 
 [^threadstorm]: OK OK, this is a terrible phrase, but in my defense, I came up with in 2 seconds when I realized I didn't want to call it a "Tweetstorm" any longer, I will absolutely not say "Tootstorm", and "Skeetstorm" is also incredibly bad. Threads is the more generic cross platform way of what to call these things. Except, for, you know [[Threads.net]] is a thing.
 
+There are a whole bunch of people who have adopted Twitter as their Digital Garden. So as well as being a builder, it should make it easy to transclude (quote post) and generally maintain and weave long running threads over time (mentioned below as a feature).
+
+I say here Twitter in particular (and continue that the below because that’s when it was originally written). How we can we think about this as cross platform, and supporting crossposting?
+
+A variety of platforms ([[Farcaster]]’s Warpcast client is one) support rich embedding of Tweets when a Twitter link is included. What does cross platform quote posts look like?
+
+One of the things we looked at with [[Moa Party]] was translating @-mentions across platforms. This might be a feature for [[Fedica]] to think about supporting: opt-in linking / verification of your accounts across platforms.
+
+Below is the cut and paste of the original.
 ## Description
 
 People write tweetstorms because they’re “easier” than whatever their blog setup is. And the constraints of 280 characters at a time makes for both careful sentence construction and flow.
