@@ -1,0 +1,6 @@
+---
+aliases:
+  - VGR
+tags:
+  - person
+---
