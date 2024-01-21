@@ -289,7 +289,7 @@ Looking at [[Coolify]] again, it needs Debian as the "admin", and also it is sti
 
 ## Cloudron Install
 
-OK, let's [install Cloudron](https://www.cloudron.io/get.html).
+OK, let's [install Cloudron](https://www.cloudron.io/get.html). It has a [Home Server Installation in the docs](https://docs.cloudron.io/installation/home-server/).
 
 Found my public IP address. Let's see if I can connect to it after a reboot.
 
@@ -317,11 +317,21 @@ OK, none of this is going to work until I port forward. Let's go look at Unifi R
 
 Port forwarding for tcp/80 and tcp/443 setup to the internal IP address of the server. Confirm that I can get to the Cloudron setup page from the public address.
 
----
+## Cloudron Install Part 2
 
 OK, I turned off that Unifi local DNS of `home.bmann.ca`, and undid all of the private DNS settings. Accessing Cloudron from the public IP address, and it is being forwarded to the server.
 
 Now setting this as the domain, with Cloudflare API key. I'm in, Cloudron installed.
 
-Enabling Dynamic DNS under Network settings.
+Enabling [Dynamic DNS](https://docs.cloudron.io/networking/#dynamic-dns) under Network settings -- Cloudron will use my Cloudflare API key to update the public address if my home connection IP changes.
+
+Setting up backup. [[Commons Computer]] uses my Digital Ocean account, but I recall that I have a [[Storj]] account, which is decentralized file storage. There is a free tier, and even at the paid tier it has 25GB included for free. I upgraded to a pro paid account by sending some STORJ tokens via Ethereum[^tokens].
+
+[^tokens]: went to [Uniswap](https://app.uniswap.org), swapped some Ethereum for 100 STORJ (about $60USD). Sent 50 STORJ to the receiving address Storj gave me, once it was confirmed they credited me 55 STORJ (10% bonus for paying with tokens).
+
+OK, we're up and running. I don't really have a plan for this machine, other than it's _inside_ my home. Let's setup a `home` group for permissions, which just has my `boris` user in it. I might give some other people accounts on Cloudron, but they shouldn't have access to this home group.
+
+I guess I'll start by just creating a [[Surfer]] app running, for static file serving and WebDAV, right at the base domain <https://home.bmann.ca>.
+
+
 
