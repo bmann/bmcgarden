@@ -1,11 +1,14 @@
 ---
 title: Lenovo ThinkCentre M900 Tiny
-aliases: 
 tags:
   - minipc
   - Lenovo
 ---
-Ordered from [Amazon, refurbished](https://www.amazon.ca/Lenovo-ThinkCentre-Quad-Core-i5-6500T-Graphics/dp/B07ZPBDFGD/)
+Follow along with setup: [[Lenovo m900 Tiny Setup]]
+
+---
+
+Ordered from [Amazon, refurbished](https://www.amazon.ca/Lenovo-ThinkCentre-Quad-Core-i5-6500T-Graphics/dp/B07ZPBDFGD/), January 2024
 
 * Quad-Core i5-6500T
 * 16 GB DDR4
