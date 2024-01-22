@@ -5,17 +5,21 @@ tags:
 
 ## January 2024
 
-Removed blog posts going back to 2012 and pre-2012 archive. They are available via a snapshot at [2023.bmannconsulting.com](https://2023.bmannconsulting.com).
+The site is still powered by [[Digital Garden Jekyll Template]]. Using [[Obsidian]] to edit on desktop and mobile, with git for syncing. Obsidian wikilinks are compatible with the Jekyll template processing. The only manual thing is that image links need to be relative Markdown links rather than wikilinks.
 
-Published via [[Fission]] Github Action, and then grabbed the [[IPFS]] hash `bafybeidfdwz5tak24oukds2hrf3xahl5rp5by4a6idwv2ucsmo6uaafgoa` and used [[Cloudflare]] IPFS Gateway to keep it around.
-
-Using [[Obsidian]] to edit on desktop and mobile, including Daily Journals.
+[[notes|Notes]] are slowly building. Links marked with `[[` wikilinks still point to the old [[LogSeq]] notes site, which is slowly being imported.
 
 Added in a [[Journal]] section and a journal post type.
 
-Made a journal feed linked at [[feeds]]. The journal feed uses Micro.blog to cross post to Mastodon.
+Made a journal feed linked at [[feeds]]. As of January 15th, 2024, am using [[Fedica]]'s RSS cross-posting features to post those feeds.
 
 To Do: [[BMC]]
+
+### Archive of 2023
+
+Removed blog posts going back to 2012 and pre-2012 archive. They are available via a snapshot at [2023.bmannconsulting.com](https://2023.bmannconsulting.com).
+
+Published via [[Fission]] Github Action, and then grabbed the [[IPFS]] hash `bafybeidfdwz5tak24oukds2hrf3xahl5rp5by4a6idwv2ucsmo6uaafgoa` and used [[Cloudflare]] IPFS Gateway to keep it around.
 
 ## July 2023
 

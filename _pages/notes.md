@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Notes
+title: Digital Garden Notes 🌱
 permalink: /notes/
 ---
 
