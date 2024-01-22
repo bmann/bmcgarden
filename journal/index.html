@@ -1,0 +1,71 @@
+---
+layout: page
+title: Daily Journal 📓
+pagination: 
+  enabled: true
+---
+
+<style>
+  a.permalink::after, a.u-url::after {
+    all: unset;
+  }
+
+.wrapper {
+    max-width: 46em;
+
+}
+
+.post-header {
+    display: flex;
+}
+.post-header .meta .date {
+    margin-right: 30px;
+    width: 64px;
+    text-align: center;
+}
+.post-header .meta .date .day {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    line-height: 0.45em;
+    font-size: 3em;
+    display: block;
+    margin-bottom: 20px;
+    color: black;
+}
+.post-header .meta .date .rest {
+    display: block;
+    font-size: 0.75em;
+}
+
+.post-header h1.title {
+    margin: -10px 0 0 0;
+}
+</style>
+
+{% comment %}<!-- https://stackoverflow.com/questions/46672231/in-jekyll-how-to-show-posts-from-last-week -->{% endcomment %}
+
+{% assign sortedjournals = site.journals | reverse %}
+{% for post in sortedjournals %}
+
+<div class="post-header" style="padding-top: 1em;">
+	<div class="meta">
+		<div class="date">
+			<time datetime="{{ post.date | date_to_xmlschema }}" class="day dt-published">{{ post.date | date: "%d"}}</time>
+			<span class="rest">{{ post.date | date: "%b %Y"}}</span>
+      <span class="rest"><a href="{{ post.url }}" class="u-url">{{ post.date | date: "%l:%M%P"}}</a></span>
+      
+		</div>
+	</div>
+	<div class="matter">
+		
+		<span class="description e-content">
+	  		
+     {{ post.content }}
+			
+		</span>
+    <hr />
+	</div>
+</div>
+
+{% endfor %}
+

@@ -13,8 +13,6 @@ permalink: /
   a.journal-link {
     all: unset;
     cursor: pointer;
-    text-decoration: underline;
-    
   }
   a.journal-link::after {
     all: unset;
@@ -25,7 +23,9 @@ permalink: /
 
 I'm interested in [[Open Source Licensing]], community, co-operative models. Pooling capital and collaboration. I'm the founder of [[Fission]]. In Canada I help run the [[CoSocial]] Community Co-op. In Vancouver, I'm one of the organizers of [[DWebYVR]]. I like to cook & eat and have a [[FoodWiki]].
 
-## Blog Posts
+The [[Feeds]] page has ways to subscribe. My personal Mastodon account is <a href="https://cosocial.ca/@boris" rel="me">@boris@cosocial.ca</a>. Journal items are cross-posted to <a href="https://toolsforthought.social/@boris" rel="me">@boris@toolsforthought.social</a>.
+
+## [Blog Posts 🖊](../blog/)
 
   <ul>
     {% for blog in site.posts limit:3 %}
@@ -35,9 +35,7 @@ I'm interested in [[Open Source Licensing]], community, co-operative models. Poo
     {% endfor %}
   </ul>
 
-  Choose <a href="/feeds/" class="internal-link">feeds to subscribe to »</a>
-
-## Digital Garden 🌱
+## [Digital Garden 🌱](../notes/)
 
 {% assign notehtml = '' %}
 {% assign recentnotes = site.notes | sort: 'last_modified_at' | reverse %}
@@ -54,25 +52,19 @@ I'm interested in [[Open Source Licensing]], community, co-operative models. Poo
   {% endif %}
 {% endfor %}
 
-Browse the local <a class="internal-link" href="../notes/">Notes graph</a>. These are the ten most recently modified local notes: {{ notehtml }}.
+These are the ten most recently modified local notes: {{ notehtml }}.
 
-## Journal Entries
-
-The last five [Journal](/journal) entries:
-
-{% comment %}<!-- https://stackoverflow.com/questions/46672231/in-jekyll-how-to-show-posts-from-last-week -->{% endcomment %}
+## [Journal Entries 📓](../journal/)
 
 {% assign journalposts = site.journals | reverse %}
 
-<ul>
-  {% for post in journalposts limit: 5 %}
-<li style="padding-bottom: 0.5em;"><a href="{{ post.url }}" class="journal-link"><time datetime="post.date | date_to_xmlschema">{{ post.date | date: '%A %l:%M%P' }}</time></a>&nbsp;{{ post.content | strip_html | truncate: 500 }}&nbsp;</li>
+  {% assign linksposted = 0 %}
+  {% for post in journalposts %}
+    {% if post.link %}
+<p style="padding-bottom: 0.5em;">{{ post.content | strip_html | truncate: 100 }}&nbsp;<a href="{{ post.url }}" class="journal-link" style="font-size: x-small">#</a><br /><a href="{{ post.link }}">{{ post.link }}</a></p>
+    {% assign linksposted = linksposted | plus: 1 %}
+    {% endif %}
+  {% if linksposted >= 5 %}{% break %}{% endif %}
 {% endfor %}
-</ul>
 
 <hr />
-
-<!-- 
-<a href="https://cosocial.ca/@boris" rel="me">@boris@cosocial.ca</a>
-<a href="https://toolsforthought.social/@boris" rel="me">@boris@toolsforthought.social</a>
---> 

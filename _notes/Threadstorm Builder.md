@@ -1,3 +1,6 @@
+---
+---
+
 I wrote up the design for this many years ago now, when I called it a [Tweetstorm Builder and Blog](https://talk.fission.codes/t/tweetstorm-builder-and-blog/433). I'm copying that write up here.
 
 In our post Twitter era, both [[ActivityPub]] and [[ATProtocol]] would be good choices. [[Micropub]] really isn't widely used and I think tying it more social platforms makes more sense.
