@@ -1,7 +1,7 @@
 ---
 title: InterPlanetary File System (IPFS)
+tags:
 ---
-
 IPFS is the InterPlanetary File System.
 
 As mentioned in the [[Colophon]], this site is published to IPFS using the [[Fission]] Github Action. The action builds the static representation from the Markdown source using [[Jekyll]], calculates a top level [[CID]] hash aka Content IDentitifier, updates the [[DNSLink]] for the bmannconsulting.com domain, and has the Fission server cache a copy.
@@ -16,4 +16,5 @@ You can peek at the IPFS file system underneath, by linking to one of the annual
 
 InterPlanetary Naming Service (IPNS) can use a name that points to IPFS hashes. This website you're browsing now is already being served over Fission's IPFS Gateway. If you're running [[Brave]], it can cache and browse sites, so you'd actually be able to browse it through localhost.
 
-Since we already looked at Web3Storage, let's browse via IPNS using their gateway. You'll see <a href="https://w3s.link/ipns/bmannconsulting.com" target="_ipfs">w3s.link/ipns/bmannconsulting.com</a> redirect to <a href="https://bmannconsulting-com.ipns.dweb.link/" target="_ipfs">bmannconsulting-com.ipns.dweb.link</a>
+Since we already looked at Web3Storage, let's browse via IPNS using their gateway. You'll see <a href="https://w3s.link/ipns/bmannconsulting.com" target="_ipfs">w3s.link/ipns/bmannconsulting.com</a> redirect to <a href="https://bmannconsulting-com.ipns.dweb.link/" target="_ipfs">bmannconsulting-com.ipns.dweb.link</a>.
+

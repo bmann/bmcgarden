@@ -157,7 +157,7 @@ echo "options nct6683 force=1" >> /etc/modprobe.d/sensors.conf
 
 OK, you really do need to be `root`, so `sudo su` it is.
 
-### Jan 21st
+### Fan Screaming
 
 The fans are screaming this morning, so trying this again. This is applied after reboot, running `pwmconfig` now gives some output:
 
@@ -279,6 +279,16 @@ System Information
 ```
 
 Looks like [updated BIOS from July 2022 is available](https://pcsupport.lenovo.com/ca/en/products/desktops-and-all-in-ones/thinkcentre-m-series-desktops/thinkcentre-m900/downloads/ds105487), but I need to boot back into Windows to apply.
+
+### Fan BIOS Update 
+
+Unplugged everything from the living room and brought it back to plug in monitor and booted into Windows. 
+
+Applied the updated BIOS and grabbed a few other drivers from the Lenovo site. 
+
+Sitting at around 1000 rpm and not really audible when sitting on top of the desk. Brought it back out to the front of the apartment. 
+
+Silent? Can’t hear it? Fingers crossed that fixed it!
 ## Server Management Install
 
 Decision point: [[Cloudron]] or something else?
@@ -333,5 +343,7 @@ OK, we're up and running. I don't really have a plan for this machine, other tha
 
 I guess I'll start by just creating a [[Surfer]] app running, for static file serving and WebDAV, right at the base domain <https://home.bmann.ca>.
 
+## Custom IPFS App
 
+I’m going to add [[IPFS Self Hosting]] as a custom app. 
 
