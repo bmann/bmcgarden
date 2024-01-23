@@ -14,5 +14,6 @@ Some things I've been thinking about recently:
 
 * [[pooling capital and collaboration]]
 * [[Open source is no longer a radical act]]
+* [[self-hosting is selfish]]
 
 There's a [[Colophon]] that covers how the website itself is built. [[BMC]] is a bit of a todo around website things.
