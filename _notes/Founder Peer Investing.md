@@ -1,3 +1,6 @@
+---
+---
+
 What if we helped educate founders and build the next generation of angel investors by investing small amounts into each others companies?
 
 I pitched Ian Vanagas, author of [[Smart Young BC]], on this concept, and mentioned it to the [[Novus]] organizers. 

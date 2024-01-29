@@ -1,3 +1,6 @@
+---
+---
+
 This is the label for the tag / set of concepts I mean when thinking about the evolution of venture investment.
 
 I’m not going to stop recommending [[When Tailwinds Vanish]] as a baseline in thinking about the types of businesses that get funded when “is a digital business” or “uses technology” is ubiquitous. 

@@ -5,6 +5,7 @@ tags:
   - opensource
   - blogging
   - CloudronApp
+  - app
 link: https://ghost.org
 github: https://github.com/TryGhost/Ghost
 ---

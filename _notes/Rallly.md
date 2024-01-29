@@ -3,6 +3,7 @@ tags:
   - CloudronApp
   - selfhosting
   - opensource
+  - app
 link: https://rallly.co
 aliases:
   - Rally

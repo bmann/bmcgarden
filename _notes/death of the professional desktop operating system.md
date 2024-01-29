@@ -1,3 +1,6 @@
+---
+---
+
 When I say professional desktop operating system, I mean Windows and MacOS on laptops and desktop computers.[^linux] 
 
 [^linux]: And yes, the graphical Linux desktop experience as well. The low level Linux OS lives on in many appliance, mobile, and embedded devices. This also means it will never be the Year of Linux on the Desktop, because the desktop is going away.
