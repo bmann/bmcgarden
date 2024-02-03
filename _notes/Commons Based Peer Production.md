@@ -1,3 +1,6 @@
+---
+---
+
 
 Blog post by me from 2018: [Commons Based Peer Production](https://2023.bmannconsulting.com/blog/2018/10/11/commons-based-peer-production/)
 

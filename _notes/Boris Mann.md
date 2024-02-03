@@ -1,10 +1,9 @@
 ---
 permalink: /about/
 aliases:
-  - Boris Mann
+  - About
 title: About Boris Mann
 ---
-
 Hi, I'm Boris Mann!
 
 <!-- copy/paste from home page -->
