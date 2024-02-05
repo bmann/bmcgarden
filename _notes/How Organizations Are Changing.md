@@ -2,6 +2,7 @@
 tags:
   - article
   - management
+  - networkedorgs
 link: https://swardley.medium.com/how-organisations-are-changing-cf80f3e2300
 author:
   - "[[Simon Wardley]]"

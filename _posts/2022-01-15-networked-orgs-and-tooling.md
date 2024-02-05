@@ -1,13 +1,15 @@
 ---
 tags:
   - management
-  - article
-published: 2022-01-15
-link: https://talk.fission.codes/t/networked-orgs-and-tooling/2402
-author:
-  - "[[Boris Mann]]"
+  - networkedorgs
+title: Networked Orgs and Tooling
+date: 2022-01-15T20:51:39
+categories:
+  - NetworkedOrgs
 ---
-Originally written by me in the [[Fission]] [Discourse forum](https://talk.fission.codes/t/networked-orgs-and-tooling/2402), posted January 2022. My focus on tooling is in part because the affordances of tools is what influences the day-to-day praxis of organizations.
+Originally written by me in the Fission [Discourse forum](https://talk.fission.codes/t/networked-orgs-and-tooling/2402), posted January 2022. My focus on tooling is in part because the affordances of tools is what influences the day-to-day praxis of organizations.
+
+[[NetworkedOrgs]] is my local notes page that connects more related articles and resources.
 
 ---
 
@@ -179,4 +181,13 @@ Wardley has refreshed his look at traditional vs next gen organizations in [[How
 
 I think you’ll see a lot of PLN in there, and broadly speaking networked organizations. He has other writing on organizational capabilities and different stages of organizational maturity, but I’ll leave it there for now.
 
-I’ve suggested that I’d like PLN to learn Wardley Mapping together. I’m actively looking to join a peer group who goes through some paid training on Wardley Mapping, and then helps critique each other’s mapping strategies for the areas their organization is targeting.
+I’ve suggested that I’d like PLN to learn [[Wardley Mapping]] together. I’m actively looking to join a peer group who goes through some paid training on Wardley Mapping, and then helps critique each other’s mapping strategies for the areas their organization is targeting
+
+## Update February 2024
+This post ends a little abruptly! There are some further good links and discussion in the original [forum post](https://talk.fission.codes/t/networked-orgs-and-tooling/2402).
+
+I'm retroactively publishing this as a blog post, with many of the links re-pointed to local note posts that I've imported.
+
+This very much fits into my [[pooling capital and collaboration]] theme.
+
+[[co-op]] structures aren't naturally networked orgs, but one of the principles is to work with and support other co-operatives, so co-ops could benefit from thinking of themselves more as part of a network.

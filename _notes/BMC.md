@@ -26,10 +26,11 @@ Yes, I registered it in late 2000 and could have picked a way more interesting w
 - [x] Change date formatting for journal pages to include / highlight time posted rather than just day
 - [ ] Reconsider slugs for journal. Maybe: `YYYY/MMDD/HHmm`.
 - [ ] Main journal page will grow forever. Have to figure out daily or monthly pages. Pagination?
-- [ ] Look at design from current <https://blog.bmannconsulting.com> for fancy dates 
+- [x] Look at design from current <https://blog.bmannconsulting.com> for fancy dates 
 - [x] Add blog posts to home page 
 - [x] Reverse chron sort for journal pages? Or at least home page journal listing?
 - [ ] Write code to loop through `aliases` and generate `_redirects` lines (this is a good idea!)
+- [x] Adding links, author, and publish date for notes tagged as article (February 4, 2024)
 
 ## Feed Affordances
 
