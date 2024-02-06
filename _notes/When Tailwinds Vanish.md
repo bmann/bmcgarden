@@ -4,8 +4,9 @@ tags:
   - venture
 link: https://blog.johnluttig.com/p/when-tailwinds-vanish
 published: 2020-04-22
+author:
+  - John Luttig
 ---
-
 [When Tailwinds Vanish](https://blog.johnluttig.com/p/when-tailwinds-vanish) has been a baseline article that I’ve shared with a lot of people. 
 
 I’ve picked out a bunch of quotes below that fit my thesis of deep tech startups, because that’s my interest and preference and the path we’re following with [[Fission]].

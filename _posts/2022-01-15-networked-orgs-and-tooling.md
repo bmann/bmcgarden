@@ -191,3 +191,7 @@ I'm retroactively publishing this as a blog post, with many of the links re-poin
 This very much fits into my [[pooling capital and collaboration]] theme.
 
 [[co-op]] structures aren't naturally networked orgs, but one of the principles is to work with and support other co-operatives, so co-ops could benefit from thinking of themselves more as part of a network.
+
+On tools, there's probably something to say about [[Open Collective]]. Self-hosted git forges are emerging. "Sharing" engineering resources -- both from a cost/funding perspective and a coordination perspective is very hard, and [[Open Source Licensing]] needs an evolution.
+
+Stay tuned!

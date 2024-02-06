@@ -1,6 +1,6 @@
 ---
 aliases:
-  - VGR
+  - vgr
 tags:
   - person
 ---
