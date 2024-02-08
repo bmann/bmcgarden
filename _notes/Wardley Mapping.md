@@ -1,3 +1,5 @@
+---
+---
 Wardley Maps are a method created by [[Simon Wardley]] to review and develop strategy around business and markets. 
 
 One of the base concepts is that new innovations go from invention / genesis where everything is custom and bespoke through to commodity / utility. 

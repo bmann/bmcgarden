@@ -5,9 +5,7 @@ tags:
   - iOS
 link: https://warpcast.com
 ---
-Website: <https://warpcast.com>
-
-A Twitter-like social network app built on top of the [[Farcaster]] protocol by the creators of the Farcaster protocol. 
+A Twitter-like social network app built on top of the [[Farcaster]] protocol, by the creators of the Farcaster protocol. 
 
 ## Warps
 

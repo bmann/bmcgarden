@@ -6,7 +6,10 @@ layout: default
   <div>
     <h1 style="text-transform:capitalize;">{{ page.title }}</h1>
     {% if page.link %}
-    <strong><a href="{{ page.link }}">{{ page.link | truncate: 42 }}</a></strong>{% if page.author %}, by {{ page.author }}{% endif %}{% if page.published %}, {{ page.published | date: "%B %-d, %Y" }}{% endif %}<br />
+    <strong><a href="{{ page.link }}">{{ page.link | remove: "https://" | truncate: 42 }}</a></strong>{% if page.author %}, by {{ page.author }}{% endif %}{% if page.published %}, {{ page.published | date: "%B %-d, %Y" }}{% endif %}<br />
+    {% endif %}
+    {% if page.github %}
+    <strong>Github: <a href="{{ page.github }}">@{{ page.github | remove: "https://github.com/" }}</a></strong><br />
     {% endif %}
     {% unless page.published %}
     <time datetime="{{ page.last_modified_at | date_to_xmlschema }}">
