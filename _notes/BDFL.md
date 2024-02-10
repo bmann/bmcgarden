@@ -14,6 +14,8 @@ Benevolent Dictator For Life
 
 > **Benevolent dictator for life** (**BDFL**) is a title given to a small number of open-source software development leaders, typically project founders who retain the final say in disputes or arguments within the community. The phrase originated in 1995 with reference to [Guido van Rossum](https://en.m.wikipedia.org/wiki/Guido_van_Rossum "Guido van Rossum"), creator of the Python programming language.
 
+I wanted to capture this snippet because it links to [[ESR]]'s post. From my POV, I've only ever known it as BDFL.
+
 > BDFL should not be confused with the more common term for open-source leaders, "benevolent dictator", which was popularized by [Eric S. Raymond](https://en.m.wikipedia.org/wiki/Eric_S._Raymond "Eric S. Raymond")'s essay "[Homesteading the Noosphere](https://en.m.wikipedia.org/wiki/Homesteading_the_Noosphere "Homesteading the Noosphere")" (1999)
 
 [BDFL on Wikipedia](https://en.m.wikipedia.org/wiki/Benevolent_dictator_for_life)
