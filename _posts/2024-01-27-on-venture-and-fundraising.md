@@ -3,6 +3,8 @@ tags:
   - futureofventure
 title: On venture and fundraising
 date: 2024-01-27T11:57:00
+categories:
+  - Investing
 ---
 I’ve been hesitating about whether in my new journal setup[^journal], I would write about / share items around venture capital and fundraising. 
 

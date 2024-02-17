@@ -1,11 +1,12 @@
 ---
 title: Mostly POSSE
 date: 2024-01-06, 11:07:48 -08:00
-aliases: 
 tags:
   - blogging
   - POSSE
   - crossposting
+categories:
+  - BMC
 ---
 An overview of my social accounts and posting. It can be summarized as mostly [[POSSE]].[^overload]
 
