@@ -7,6 +7,8 @@ tags:
   - email
   - opensource
   - e2ee
+aliases:
+  - DeltaChat
 ---
 Chat application that uses email for delivery
 
