@@ -28,4 +28,17 @@ From github README:
 
 Note: the [pricing](https://coolify.io/pricing) is gated on managing a number of other servers to deploy to: you have to “bring your own server”.
 
+## Build Packs Supported
+
+> Coolify uses [[Nixpacks]] as build pack by default. Nixpacks detect what kind of application are you trying to deploy and builds it accordingly.
+
+- Nixpacks
+- Dockerfile
+- Docker Image
+
+## Apps
+
+<https://coolify.io/docs/one-click-services>
+
+
 See also: [[CapRover]]
