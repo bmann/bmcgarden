@@ -1,3 +1,6 @@
+---
+---
+
 Designing software while very much thinking about how it will be deployed and operated.
 
 Design is trade-offs, so one one end one has software optimized for smaller, individual users, vs cloud operators and devops.

@@ -1,3 +1,6 @@
+---
+---
+
 This is a term I'm exploring around software that installs on your own server, that then fully manages it and offers other capabilities around it.
 
 [[Cloudron]] and [[Coolify]] are two examples of this.
