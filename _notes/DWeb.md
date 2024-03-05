@@ -16,3 +16,13 @@ Also the name of the Internet Archive supported DWeb movement. <https://getdweb.
 
 [[DWebYVR]] is the Vancouver regional node.
 
+## Principles
+
+The [DWeb Principles](https://getdweb.net/principles/) go into detail in the following 5 areas:
+
+1. Technology for Human Agency
+2. Distributed Benefits
+3. Mutual Respect
+4. Humanity
+5. Ecological Awareness
+
