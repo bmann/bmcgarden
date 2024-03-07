@@ -22,6 +22,10 @@ Here's a list of some of the photo sharing software I'm aware of, and/or use mys
 * [[Immich]] - labeled as photo backup, this is a self-hosted solution that is installable on [[Cloudron]]
 * [[iCloud Photos]] - I currently have a family plan and don't really think about photo storage / sync any more. They are all available on all my devices.
 
+I share most of my every day photos on my [[Micro.blog]] account, or on one of several Mastodon accounts. Images on [[FoodWiki]] are hotlinked to Micro.blog uploads. There are tons of photos that I just don't share, even though I would be fine to have them in public.
+
+My photos are all taken on my iPhone, and through iCloud, are synched everywhere. My long term archive before I switched to a paid iCloud, is on Amazon Photos.
+
 Personally, I'd like to get to [[Forever Photos with Content Addressing]].
 
 [^googlephotos]: I'm not listing Google Photos. I experimented with it, but I don't trust anything like this to Google. And, I could never figure out how to link to ANYTHING in Google Photos in a way that I could actually USE the photos.
