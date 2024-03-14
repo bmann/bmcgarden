@@ -28,3 +28,10 @@ From the [Protocol Overview](https://atproto.com/guides/overview)
 > - re-use of existing data models from the dweb protocol family and network primitives from the web platform
 
 From the [Specification](https://atproto.com/specs/atp)
+
+## PDS
+
+Personal Data Server. Similar in concept to [[Personal Data Store]], except this is the software server and can host multiple user accounts.
+
+* Github [bluesky-social/pds](https://github.com/bluesky-social/pds)
+* Discord [AT Protocol PDS Admins](https://discord.gg/UWS6FFdhMe)
