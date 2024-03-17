@@ -22,3 +22,7 @@ More in the [Radicle Protocol Guide](https://radicle.xyz/guides/protocol), some 
 > Radicle adopts a local-first, peer-to-peer (P2P) architecture, which draws inspiration from Secure Scuttlebutt (SSB) and Bitcoin’s [Lightning Network](https://en.wikipedia.org/wiki/Lightning_Network).
 
 > Peer connections in Radicle are secured thanks to a [Noise protocol](http://www.noiseprotocol.org/noise.html) handshake. Radicle uses the [Noise XK](https://noiseexplorer.com/patterns/XK/) pattern specifically, just like the Lightning Network with the Node ID as the _static key_. This requires nodes to know the Node IDs of their peers before connecting to them, which takes place through the exchange of peer information over the gossip protocol.
+
+## Experimenting
+
+My repository ID is `rad:z2mhGieNQ2Q22sHpW6FLoLmnUS1ax`. It's the source code for the contents of this site.

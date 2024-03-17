@@ -1,3 +1,6 @@
+---
+---
+
 I recently [[2024-03-04_0743|shared that Ente is open sourcing their back end]] and lots of people are asking about what the options for (open) photo sharing. [[Ente]] is a hosted service, but their client software and now their backend software is open source, but it's not really designed for [[Self-hosting]].
 
 I'm calling this photo sharing, but a lot of this ends up looking like sync or backup or related use cases.

@@ -1,3 +1,6 @@
+---
+---
+
 ## 2024
 
 This is actually my first time at EthDenver! There are several people who thought I'd been here in the past :)
