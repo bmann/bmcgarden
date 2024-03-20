@@ -39,3 +39,9 @@ Interesting reviews
 > If, like me, you see it as an entirely new way to be more productive when working, then the price is downright cheap. I paid less for Vision Pro than I did for my Apple Pro Display XDR, and I can use it while sitting on the _couch_.
 
 > The three biggest gripes people have with Vision Pro are price, size/weight, and battery life. These are three problems the tech world has been solving since the dawn of computing. Time will fix all three very easily. So it’s not a matter of whether Vision Pro will be successful. It’s just a matter of how long it takes for mass adoption. In a few short years, Spatial Computing will be a Fortune 100 company within Apple, just as Apple Watch is now.
+
+### [Hugo Barra, former Head of Oculus at Meta](https://hugo.blog/2024/03/11/vision-pro/)
+
+Very very good breakdown from a knowledgeable insider. 
+
+> Vision Pro is an over-engineered “devkit” // Hardware bleeds genius & audacity but software story is disheartening // What we got wrong at Oculus that Apple got right // Why Meta could finally have its Android moment
