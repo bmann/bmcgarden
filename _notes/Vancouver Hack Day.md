@@ -19,4 +19,6 @@ Tech covered:
 * [[LoFi]]
 * [[Enhance]]
 
+More notes on [DWebYVR Wiki](https://dwebyvr.org/wiki/Vancouver_Hack_Day)
+
 ## July 2024
