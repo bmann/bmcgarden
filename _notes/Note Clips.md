@@ -5,7 +5,7 @@ What if you could open your [[Digital Garden]] / Second Brain / Spatial Canvas /
 
 [[TiddlyWiki]] has had this as a built in functionality for a long time. Founder [[Jeremy Ruston]] demos it here:
 
-https://www.youtube.com/watch?v=axgRphzRPMU
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/axgRphzRPMU?si=yNeJTy5o2k125UDa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 This showcases two TiddlyWiki websites which are aware of the native “tiddler” format and so can import and drop in tiddler links within those systems. 
 
