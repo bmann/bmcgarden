@@ -4,6 +4,10 @@ tags:
   - community
   - search
   - webring
+  - app
+  - GoLang
+  - AGPL
+  - opensource
 author:
   - Alex Cobleigh
 github: https://github.com/cblgh/lieu
