@@ -13,7 +13,7 @@ Maybe attending [[DWeb Camp]] 2024
 
 ## July
 
-A week long series of events around the [[IETF120]] meeting in Vancouver. 
+A week long series of events around the [IETF120](https://www.ietf.org/how/meetings/120/) meeting in Vancouver. 
 
 Sponsor [[Our Networks]]
 
