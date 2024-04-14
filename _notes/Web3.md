@@ -1,7 +1,7 @@
 ---
 ---
 
-My definition of web3 from a technical perspective is that it is composed of self-verifying data structures, cryptography, and distributed systems. 
+My definition of web3 from a technical perspective is that it is composed of <mark>self-verifying data structures, cryptography, and distributed systems</mark>. 
 
 These are all active areas of research in computer science and information theory. 
 
