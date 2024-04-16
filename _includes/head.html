@@ -4,7 +4,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title }}{% endif %}">
   <meta property="og:site_name" content="{{ site.title }}">
-  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
   <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}">
   <link rel="alternate" type="application/atom+xml" title="Blog Feed for bmannconsulting.com" href="{{ site.url }}/blog.xml" />
   <link rel="alternate" type="application/atom+xml" title="Journal Feed for bmannconsulting.com" href="{{ site.url }}/journal.xml" />
@@ -35,7 +34,25 @@
 
   {% if page.image %}
   <meta property="og:image" content="{{ site.url }}{{ page.image }}">
+  <meta property="fc:frame:image" content="{{ site.url }}{{ page.image }}">
+  <meta property="fc:frame:image:aspect_ratio" content="1:1">
+  {% else %}
+  <meta property="og:image" content="{{ site.url }}/assets/bmann_hair_orange_256x256.png">
+  <meta property="fc:frame:image" content="{{ site.url }}/assets/bmann_hair_orange_256x256.png">
+  <meta property="fc:frame:image:aspect_ratio" content="1:1">
   {% endif %}
+
+  <!-- Open Frames -->
+  <meta property="fc:frame" content="vNext">
+  <meta property="fc:frame:button:1" content="🌱 Home">
+  <meta property="fc:frame:button:1:action" content="link">
+  <meta property="fc:frame:button:1:target" content="https://bmannconsulting.com">
+  <meta property="fc:frame:button:2" content="🦋 Bluesky">
+  <meta property="fc:frame:button:2:action" content="link">
+  <meta property="fc:frame:button:2:target" content="https://bsky.bmann.ca">
+  <meta property="fc:frame:button:3" content="💬 Drips">
+  <meta property="fc:frame:button:3:action" content="link">
+  <meta property="fc:frame:button:3:target" content="https://www.drips.network/app/bmann.eth">
   
   <title>
     {% if page.id == "home" %}
