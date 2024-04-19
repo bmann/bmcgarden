@@ -1,3 +1,6 @@
+---
+---
+
 Notes on making a cross-tool drag and drop capability. 
 
 What if you could open your [[Digital Garden]] / Second Brain / Spatial Canvas / Notes website in a browser, and open any other web page, and drag and drop content into your own site?

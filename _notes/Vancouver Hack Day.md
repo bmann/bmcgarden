@@ -1,3 +1,6 @@
+---
+---
+
 I’m organizing a couple hack days in Vancouver as part of the [[DWebYVR]] group. 
 ## What’s a hack day?
 
