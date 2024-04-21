@@ -48,7 +48,7 @@
   <!-- Open Frames Custom -->
   <meta property="fc:frame" content="vNext">
   {% if page.frame.image %}
-  <meta property="fc:frame:image" content="{{ page.frame.image }}">
+  <meta property="fc:frame:image" content="{{ site.url }}{{ page.frame.image }}">
   <meta property="fc:frame:image:aspect_ratio" content="{{ page.frame.image-aspect-ratio }}">
   {% endif %}
   {% if page.frame.button1 %}

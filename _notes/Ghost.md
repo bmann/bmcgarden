@@ -8,6 +8,7 @@ tags:
   - app
 link: https://ghost.org
 github: https://github.com/TryGhost/Ghost
+image: /assets/2024/ghost_logo_black.jpg
 frame:
   image: /assets/2024/ghost_logo_black.jpg
   image-aspect-ratio: "1:1"
