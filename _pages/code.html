@@ -1,0 +1,25 @@
+---
+layout: page
+title: Code Repositories 💾
+permalink: /code/
+---
+
+<p style="padding: 1.5em 1em; background: #f5f7ff; border-radius: 25px;">
+  Notes on the site with a link to a code repository. Usually refers to apps and other open source code.
+</p>
+  <main>
+      {% assign codenotes = site.notes %}
+      <ul>
+      {% for post in site.notes %}
+        {% if post.github %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a> - <a href="{{ post.github }}">@{{ post.github | remove: "https://github.com/" }}</a>
+        </li>
+        {% elsif post.git %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a> - <a href="{{ post.git }}">{{ post.git | remove: "https://" }}</a>
+        </li>
+        {% endif %}
+      {% endfor %}
+      </ul>      
+    <br/>
+    <br/>
+  </main>

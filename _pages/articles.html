@@ -5,15 +5,12 @@ permalink: /articles/
 ---
 
 <p style="padding: 1.5em 1em; background: #f5f7ff; border-radius: 25px;">
-  Articles are important long reads where I have local comments and quotes I refer back to.
+  Articles are important long reads where I have local comments and quotes I refer back to. My general rule is that if I mention an article to two different people, I should probably make a local page for it.
 </p>
-
-
-  
   <main>
-      {% assign postsByYear = 
-      site.notes | group_by_exp:"post", "post.published | date: '%Y'" %}
-      
+      {% assign postsByYear = site.notes | group_by_exp:"post", "post.published | date: '%Y'" %}
+      {% assign postsByYear = postsByYear | sort: "name" | reverse %}
+
       {% for year in postsByYear %}
         <h3 id="{{ year.name }}">{{ year.name }}</h3>
             <ul>
@@ -21,14 +18,9 @@ permalink: /articles/
               {% unless post.tags contains "article" %}
                 {% break %}
               {% endunless %}
-              {% unless post.section == 'journal' %}
               <li id="date-content" style="padding-bottom: 0.6em; list-style: none;">Source: <a href="{{ post.link }}">{{ post.title }}</a> by {{ post.author }} Local: <a href="{{ post.url }}" class="internal-link">#</a></li>
-              {% endunless %}
             {% endfor %}
             </ul>
-            {% if year.name == '2012' %}
-              {% break %}
-            {% endif %}
       {% endfor %}
       
           <br/>

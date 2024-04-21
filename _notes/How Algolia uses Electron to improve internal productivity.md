@@ -5,6 +5,7 @@ tags:
   - networkedorgs
   - Algolia
   - orgdesign
+  - article
 published: 2016-10-26
 author:
   - Algolia

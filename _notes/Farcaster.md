@@ -17,14 +17,11 @@ From the [docs overview](https://docs.farcaster.xyz/learn/what-is-farcaster/over
 > Since Farcaster is public and decentralized, anyone can build an app to read and write data. Users own their accounts and relationships with other users and are free to move between different apps.
 
 [[Warpcast]] is the original app built and run by the team that designed the Farcaster protocol. 
-
 ## Frames
 
-<https://warpcast.notion.site/Farcaster-Frames-4bd47fe97dc74a42a48d3a234636d8c5>
+Frames extend the [[OpenGraph]] standard and turn static embeds into interactive experiences. 
 
-Frames extend the [[OpenGraph]] standard and turn static embeds into interactive experiences. The diagram below shows the difference between a standard OG and a Frame OG inside Warpcast.
-
-### Creating the initial frame
+Example:
 
 ```html
 <meta property="fc:frame" content="vNext" />
@@ -35,4 +32,6 @@ Frames extend the [[OpenGraph]] standard and turn static embeds into interactive
 <meta property="fc:frame:button:4" content="Blue" />
 ```
 
-If you share the URL in a cast, it will show up as a frame. To test that the frame works without casting, try the [Warpcast Embed Tools](https://warpcast.com/~/developers/embeds).
+If you share the URL of a page in a cast that has these meta tags, it will show up as a frame. 
+
+See [[Farcaster Frames]] and [[Open Frames]]

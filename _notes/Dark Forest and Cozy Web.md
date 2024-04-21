@@ -8,6 +8,7 @@ tags:
 published: 2020-02-08
 author:
   - Maggie Appleton
+image: /assets/2024/darkforest-cozyweb-maggie-appleton.png
 ---
 Maggie Appleton’s illustration of this term is amazing - visit her article to check it out. 
 

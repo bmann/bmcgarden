@@ -8,9 +8,19 @@ tags:
   - app
 link: https://ghost.org
 github: https://github.com/TryGhost/Ghost
+frame:
+  image: /assets/2024/ghost_logo_black.jpg
+  image-aspect-ratio: "1:1"
+  button2:
+    label: "Github"
+    action: "link"
+    target: https://github.com/TryGhost/Ghost
+  button1:
+    label: "Home"
+    action: "link"
+    target: "https://ghost.org"
+  
 ---
-GitHub <https://github.com/TryGhost/Ghost>
-
 A blogging and membership based newsletter app. [[MIT]] licensed open source. 
 
 Maintained by the [non-profit Ghost Foundation](https://ghost.org/about/), who also run a paid managed hosting service at <http://ghost.org>.

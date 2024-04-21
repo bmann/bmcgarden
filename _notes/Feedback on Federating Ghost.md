@@ -1,3 +1,6 @@
+---
+image: /assets/2024/ghost_logo_black.jpg
+---
 A [survey](https://tally.so/r/m67X4P) asking for feedback on Federating [[Ghost]]
 
 > ActivityPub support is one of our [most requested features](https://forum.ghost.org/t/federate-over-activitypub/1989) of all time, and so we're currently taking some time to think about how this could work inside Ghost.
@@ -34,5 +37,9 @@ The [[Threadiverse]] is the name for Reddit-style top posts plus comments. This 
 I would interact with more Ghost sites in the "comments" if I didn't have to create new accounts all the time!
 
 I already recommend [[Ghost]] and could now consider using it for use cases that look more like community servers use cases.
+
+---
+
+I linked to [[2024-04-21_0804|Matthew Bogart's write up answering this survey]].
 
 

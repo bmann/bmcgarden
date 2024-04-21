@@ -24,8 +24,12 @@
   <meta property="og:title" content="{{ site.title }}">
   <meta property="og:type" content="website">
   {% endif %}
-
-  {% if page.date %}
+  
+  {% if page.published %}
+  <link rel="canonical" href="{{ page.link }}" />
+  <meta property="article:published_time" content="{{ page.published | date_to_xmlschema }}">
+  <meta property="article:author" content="{{ page.author }}">
+  {% elsif page.date %}
   <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
   <meta property="article:author" content="{{ site.url }}/">
   {% endif %}
@@ -42,7 +46,16 @@
   <meta property="fc:frame:image:aspect_ratio" content="1:1">
   {% endif %}
 
-  <!-- Open Frames -->
+{% if page.frame %}
+  <!-- Open Frames Custom -->
+  <meta property="fc:frame" content="vNext">
+  {% if page.frame.button1 %}
+  <meta property="fc:frame:button:1" content="{{ page.frame.button1.label }}">
+  <meta property="fc:frame:button:1:action" content="{{ page.frame.button1.action }}">
+  <meta property="fc:frame:button:1:target" content="{{ page.frame.button1.target }}">
+  {% endif %}
+{% else %}
+  <!-- Open Frames Default -->
   <meta property="fc:frame" content="vNext">
   <meta property="fc:frame:button:1" content="🌱 Home">
   <meta property="fc:frame:button:1:action" content="link">
@@ -53,7 +66,7 @@
   <meta property="fc:frame:button:3" content="💬 Drips">
   <meta property="fc:frame:button:3:action" content="link">
   <meta property="fc:frame:button:3:target" content="https://www.drips.network/app/bmann.eth">
-  
+{% endif %}
   <title>
     {% if page.id == "home" %}
       {{ site.title }}
