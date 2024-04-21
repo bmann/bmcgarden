@@ -68,8 +68,10 @@
   {% endif %}
 {% else %}
   <!-- Open Frames Default -->
+  {% unless page.image %}
   <meta property="fc:frame:image" content="{{ site.url }}/assets/bmann_hair_orange_256x256.png">
   <meta property="fc:frame:image:aspect_ratio" content="1:1">
+  {% endunless %}
   <meta property="fc:frame" content="vNext">
   <meta property="fc:frame:button:1" content="🌱 Home">
   <meta property="fc:frame:button:1:action" content="link">
