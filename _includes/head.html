@@ -49,10 +49,24 @@
 {% if page.frame %}
   <!-- Open Frames Custom -->
   <meta property="fc:frame" content="vNext">
+  {% if page.frame.image %}
+  <meta property="fc:frame:image" content="{{ page.frame.image }}">
+  <meta property="fc:frame:image:aspect_ratio" content="{{ page.frame.image-aspect-ratio }}">
+  {% endif %}
   {% if page.frame.button1 %}
   <meta property="fc:frame:button:1" content="{{ page.frame.button1.label }}">
   <meta property="fc:frame:button:1:action" content="{{ page.frame.button1.action }}">
   <meta property="fc:frame:button:1:target" content="{{ page.frame.button1.target }}">
+  {% endif %}
+  {% if page.frame.button2 %}
+  <meta property="fc:frame:button:2" content="{{ page.frame.button2.label }}">
+  <meta property="fc:frame:button:2:action" content="{{ page.frame.button2.action }}">
+  <meta property="fc:frame:button:2:target" content="{{ page.frame.button2.target }}">
+  {% endif %}
+  {% if page.frame.button3 %}
+  <meta property="fc:frame:button:3" content="{{ page.frame.button3.label }}">
+  <meta property="fc:frame:button:3:action" content="{{ page.frame.button3.action }}">
+  <meta property="fc:frame:button:3:target" content="{{ page.frame.button3.target }}">
   {% endif %}
 {% else %}
   <!-- Open Frames Default -->
@@ -60,9 +74,9 @@
   <meta property="fc:frame:button:1" content="🌱 Home">
   <meta property="fc:frame:button:1:action" content="link">
   <meta property="fc:frame:button:1:target" content="https://bmannconsulting.com">
-  <meta property="fc:frame:button:2" content="🦋 Bluesky">
+  <meta property="fc:frame:button:2" content="🔖 Tagged{% for tag in page.tags %} #{{ tag }}{% endfor %}">
   <meta property="fc:frame:button:2:action" content="link">
-  <meta property="fc:frame:button:2:target" content="https://bsky.bmann.ca">
+  <meta property="fc:frame:button:2:target" content="https://bmannconsulting.com/notes/">
   <meta property="fc:frame:button:3" content="💬 Drips">
   <meta property="fc:frame:button:3:action" content="link">
   <meta property="fc:frame:button:3:target" content="https://www.drips.network/app/bmann.eth">

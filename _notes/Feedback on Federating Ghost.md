@@ -1,5 +1,8 @@
 ---
 image: /assets/2024/ghost_logo_black.jpg
+tags:
+  - Ghost
+  - ActivityPub
 ---
 A [survey](https://tally.so/r/m67X4P) asking for feedback on Federating [[Ghost]]
 
@@ -37,9 +40,18 @@ The [[Threadiverse]] is the name for Reddit-style top posts plus comments. This 
 I would interact with more Ghost sites in the "comments" if I didn't have to create new accounts all the time!
 
 I already recommend [[Ghost]] and could now consider using it for use cases that look more like community servers use cases.
-
----
+# Updates
 
 I linked to [[2024-04-21_0804|Matthew Bogart's write up answering this survey]].
+
+## Ghost + Bluesky's ATProtocol
+
+I guess John O'Nolan has a cross poster, since he [posted the same thing to Bluesky](https://bsky.app/profile/bmann.ca/post/3kqlzleitr223). Would my answer be different for [[ATProtocol]]?
+
+I'd like to see [[Bluesky]] support a blog Lexicon with full posts.
+
+Login linking would be similar.
+
+Could you make a custom feed for premium content??? I think so, and I think it's worth a write up: [[Bluesky Custom Feeds for Premium Content]]
 
 

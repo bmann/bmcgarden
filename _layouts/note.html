@@ -7,6 +7,8 @@ layout: default
     <h1 style="text-transform:capitalize;">{{ page.title }}</h1>
     {% if page.link %}
     <strong><a href="{{ page.link }}">{{ page.link | remove: "https://" | truncate: 42 }}</a></strong>{% if page.author %}, by {{ page.author }}{% endif %}{% if page.published %}, {{ page.published | date: "%B %-d, %Y" }}{% endif %}<br />
+    {% elsif page.wikipedia %}
+    <strong>wikipedia:</strong>&nbsp;<a href="{{ page.wikipedia }}">{{ page.wikipedia | remove: "https://" | truncate: 42 }}</a><br />
     {% endif %}
 
     {% unless page.published %}
