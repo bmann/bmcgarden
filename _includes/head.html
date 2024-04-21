@@ -74,13 +74,23 @@
   <meta property="fc:frame:image:aspect_ratio" content="1:1">
   {% endif %}
   <meta property="fc:frame" content="vNext">
+  {% if page.link %}
+  <meta property="fc:frame:button:1" content="🔗 Source">
+  <meta property="fc:frame:button:1:action" content="link">
+  <meta property="fc:frame:button:1:target" content="{{ page.link }}">
+  {% elsif page.wikipedia %}
+  <meta property="fc:frame:button:1" content="📖 Wikipedia">
+  <meta property="fc:frame:button:1:action" content="link">
+  <meta property="fc:frame:button:1:target" content="{{ page.wikipedia }}">
+  {% else %}
   <meta property="fc:frame:button:1" content="🌱 Home">
   <meta property="fc:frame:button:1:action" content="link">
   <meta property="fc:frame:button:1:target" content="https://bmannconsulting.com">
+  {% endif %}
   <meta property="fc:frame:button:2" content="🔖 Explore">
   <meta property="fc:frame:button:2:action" content="link">
   <meta property="fc:frame:button:2:target" content="https://bmannconsulting.com/notes/">
-  <meta property="fc:frame:button:3" content="💬 Drips">
+  <meta property="fc:frame:button:3" content="💰 Drips">
   <meta property="fc:frame:button:3:action" content="link">
   <meta property="fc:frame:button:3:target" content="https://www.drips.network/app/bmann.eth">
 {% endif %}
