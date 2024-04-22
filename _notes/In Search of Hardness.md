@@ -3,7 +3,7 @@ tags:
   - article
   - protocol
 author:
-  - "[[Venkatesh Rao]]"
+  - Venkatesh Rao
 published: 2023-12-16
 link: https://studio.ribbonfarm.com/p/in-search-of-hardness
 ---

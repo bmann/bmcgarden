@@ -15,10 +15,11 @@ permalink: /articles/
         <h3 id="{{ year.name }}">{{ year.name }}</h3>
             <ul>
             {% for post in year.items %}
-              {% unless post.tags contains "article" %}
+              {% unless post.published %}
+                {% comment %} post.tags contains "article" is not working here! {% endcomment %}
                 {% break %}
               {% endunless %}
-              <li id="date-content" style="padding-bottom: 0.6em; list-style: none;"><a href="{{ post.link }}">{{ post.title }}</a> by {{ post.author }} <a title="Local Permalink" href="{{ post.url }}" class="internal-link">#</a></li>
+              <li id="date-content" style="padding-bottom: 0.6em; list-style: none;"><a href="{{ post.link }}">{{ post.title }}</a>{% if post.author %} by {{ post.author }}{% endif %} <a title="Local Permalink" href="{{ post.url }}" class="internal-link">#</a></li>
             {% endfor %}
             </ul>
       {% endfor %}

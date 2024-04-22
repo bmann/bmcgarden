@@ -31,8 +31,8 @@ Yes, I registered it in late 2000 and could have picked a way more interesting w
 - [x] Reverse chron sort for journal pages? Or at least home page journal listing?
 - [x] Write code to loop through `aliases` and generate `_redirects` lines (this is a good idea!)
 - [x] Adding links, author, and publish date for notes tagged as article (February 4, 2024)
-- [ ] Look at displaying `transclusion` property [[2024-03-17-digital-garden-transclusion|Digital Garden Transclusion]]; will need rendering of [[Obsidian#Transclusion]]
-- [ ] Special treatment for `wikipedia` property
+- [ ] Look at displaying `transclusion` property [[2024-03-17-digital-garden-transclusion|Digital Garden Transclusion]]; will need rendering of [[Obsidian]] Transclusion
+- [x] Special treatment for `wikipedia` property
 
 ## Feed Affordances
 

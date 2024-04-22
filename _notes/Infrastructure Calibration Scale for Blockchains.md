@@ -3,7 +3,7 @@ link: https://forum.summerofprotocols.com/t/infrastructure-calibration-scale-for
 tags:
   - blockchain
 author:
-  - "[[Venkatesh Rao]]"
+  - Venkatesh Rao
 published: 2024-03-05
 ---
 Posted by [[Venkatesh Rao]] to the [[Summer of Protocols]] forum, considering what the future infrastructure scale of blockchains are.

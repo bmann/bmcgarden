@@ -1,0 +1,26 @@
+---
+layout: page
+title: Authors 👤
+permalink: /authors/
+---
+
+<p style="padding: 1.5em 1em; background: #f5f7ff; border-radius: 25px;">
+  Authors and their <a href="/articles/" class="internal-link">articles</a>.
+</p>
+  <main>
+      {% assign postsByAuthor = site.notes | group_by_exp:"post", "post.author" %}
+
+      {% for author in postsByAuthor %}
+        {% if author.name %}
+        <h3 id="{{ author.name }}">{{ author.name }}</h3>
+            <ul>
+            {% for post in author.items %}
+              <li id="date-content" style="padding-bottom: 0.6em; list-style: none;"><a href="{{ post.link }}">{{ post.title }}</a>{% if post.published %}, published {{ post.published | date: "%B %Y"}}{% endif %} <a title="Local Permalink" href="{{ post.url }}" class="internal-link">#</a></li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+      {% endfor %}
+      
+          <br/>
+          <br/>
+  </main>

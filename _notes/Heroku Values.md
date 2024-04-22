@@ -1,7 +1,7 @@
 ---
 link: https://gist.github.com/adamwiggins/5687294
 author:
-  - "[[Adam Wiggins]]"
+  - Adam Wiggins
 tags:
   - heroku
   - startup

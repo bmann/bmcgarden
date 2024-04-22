@@ -1,7 +1,7 @@
 ---
 link: http://snarkmarket.com/2010/4890
 author:
-  - "[[Robin Sloan]]"
+  - Robin Sloan
 published: 2010-01-18
 tags:
   - article

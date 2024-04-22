@@ -6,7 +6,7 @@ tags:
   - BC
   - article
 author:
-  - "[[Ian Vanagas]]"
+  - Ian Vanagas
 ---
 By Ian Vanagas. [Subscribe for updates and related content](https://smartyoungbc.substack.com/).
 

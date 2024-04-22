@@ -5,7 +5,7 @@ tags:
   - article
   - management
 author:
-  - "[[Simon Wardley]]"
+  - Simon Wardley
 aliases:
   - Commandos, Infantry, and Police
 ---

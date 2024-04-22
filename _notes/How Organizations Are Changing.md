@@ -5,7 +5,7 @@ tags:
   - networkedorgs
 link: https://swardley.medium.com/how-organisations-are-changing-cf80f3e2300
 author:
-  - "[[Simon Wardley]]"
+  - Simon Wardley
 published: 2021-05-24
 ---
 Wardley revisits his 2011 analysis of traditional vs next gen organizational behaviours.
