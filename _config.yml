@@ -46,6 +46,8 @@ kramdown:
   smart_quotes: ["apos", "apos", "quot", "quot"]
   syntax_highlighter: rouge
 
+excerpt_separator: <!--more-->
+
 # Build settings
 theme: null
 

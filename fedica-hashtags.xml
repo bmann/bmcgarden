@@ -19,12 +19,11 @@
 				{% comment %} Capture: we loop through all of the tags and make a list of hashtags separated by spaces {% endcomment %}
 				{% capture taglist %}{% for tag in post.tags %} #{{ tag }}{% endfor %}{% endcapture %}
 				{% if post.excerpt %} 
-					{% assign description = post.excerpt %}
+					{% assign description = post.excerpt | markdownify | append: taglist %}
 				{% else %}
-					{% assign description = post.content %}
+					{% assign description = post.content | append: taglist %}
 				{% endif %}
-				{% assign description = description | append: taglist %}
-				<description>{{ description | xml_escape | replace: 'src=&quot;/', 'src=&quot;https://bmannconsulting.com/' | replace: 'href=&quot;/', 'href=&quot;https://bmannconsulting.com/' }}</description>
+				<description>{{ description | xml_escape | replace: 'src=&quot;/', 'src=&quot;https://bmannconsulting.com/' | replace: 'href=&quot;/', 'href=&quot;https://bmannconsulting.com/'  }}</description>
 				{% if post.link %}
 				<link>{{ post.link | xml_escape }}</link>
 				{% else %}

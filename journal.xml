@@ -15,9 +15,9 @@
 		{% assign sortedblog = site.journals | sort: 'date' | reverse %}
 		{% for post in sortedblog limit:20 %}
 			<item>
-				<dc:creator>{{ site.name | xml_escape }}</dc:creator>
+				<dc:creator>Boris Mann</dc:creator>
 				{% if post.excerpt %} 
-					{% assign description = post.excerpt %}
+					{% assign description = post.excerpt | markdownify %}
 				{% else %}
 					{% assign description = post.content %}
 				{% endif %}

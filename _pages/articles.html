@@ -18,7 +18,7 @@ permalink: /articles/
               {% unless post.tags contains "article" %}
                 {% break %}
               {% endunless %}
-              <li id="date-content" style="padding-bottom: 0.6em; list-style: none;">Source: <a href="{{ post.link }}">{{ post.title }}</a> by {{ post.author }} Local: <a href="{{ post.url }}" class="internal-link">#</a></li>
+              <li id="date-content" style="padding-bottom: 0.6em; list-style: none;"><a href="{{ post.link }}">{{ post.title }}</a> by {{ post.author }} <a title="Local Permalink" href="{{ post.url }}" class="internal-link">#</a></li>
             {% endfor %}
             </ul>
       {% endfor %}
