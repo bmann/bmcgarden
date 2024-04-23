@@ -21,10 +21,9 @@ permalink: /
 </style>
 # Hi 👋 Welcome to Boris Mann's Homepage
 
-I'm interested in [[Open Source Licensing]], community, co-operative models. Pooling capital and collaboration. I'm the founder of [[Fission]]. In Canada I help run the [[CoSocial]] Community Co-op. In Vancouver, I'm one of the organizers of [[DWebYVR]]. I like to cook & eat and have a [[FoodWiki]].
+I'm interested in [[Open Source Licensing]], community, co-operative models. Pooling capital and collaboration. In Canada I help run the [[CoSocial]] Community Co-op. In Vancouver, I'm one of the organizers of [[DWebYVR]]. I like to cook & eat and have a [[FoodWiki]].
 
-The [[Feeds]] page has ways to subscribe. My personal Mastodon account is <a href="https://cosocial.ca/@boris" rel="me">@boris@cosocial.ca</a>. Journal items are cross-posted to <a href="https://toolsforthought.social/@boris" rel="me">@boris@toolsforthought.social</a>.
-
+The [[Feeds]] page has ways to subscribe.
 ## [Blog Posts 🖊](../blog/)
 
   <ul>
@@ -68,3 +67,5 @@ These are the ten most recently modified local notes: {{ notehtml }}.
 {% endfor %}
 
 <hr />
+
+My personal Mastodon account is <a href="https://cosocial.ca/@boris" rel="me">@boris@cosocial.ca</a>. Journal items are cross-posted to <a href="https://toolsforthought.social/@boris" rel="me">@boris@toolsforthought.social</a>. All of my social profiles are [listed at bmann.ca](https://bmann.ca).
