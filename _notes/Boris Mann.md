@@ -20,11 +20,11 @@ Some things I've been thinking about recently:
 * [[self-hosting is selfish]]
 * [[Three Definitions of Open Source]]
 
+I have a [[Now]] page.
+
 There's a [[Colophon]] that covers how the website itself is built. [[BMC]] is a bit of a todo around website things.
 ## Meeting
 
-I'm happy to [meet in person in Vancouver](https://cal.commonscomputer.com/boris/vancouver) or do an [intro video call](https://cal.commonscomputer.com/boris/30min). I'm working out of [[Z Space]] most days[^caldotcom].
+I'm happy to [meet in person in Vancouver](https://cal.commonscomputer.com/boris/vancouver) or do an [intro video call](https://cal.commonscomputer.com/boris/30min).[^caldotcom] I'm working out of [[Z Space]] most days.
 
 [^caldotcom]: [[Commons Computer]] self-hosted [[Cal.com]] instance.
-
-I may occasionally available in my [[lobby|Video Lobby]].

@@ -21,9 +21,10 @@ permalink: /
 </style>
 # Hi 👋 Welcome to Boris Mann's Homepage
 
-I'm interested in [[Open Source Licensing]], community, co-operative models. Pooling capital and collaboration. In Canada I help run the [[CoSocial]] Community Co-op. In Vancouver, I'm one of the organizers of [[DWebYVR]]. I like to cook & eat and have a [[FoodWiki]].
+I'm interested in [[Open Source]], community, co-operative models. Pooling capital and collaboration. In Canada I help run the [[CoSocial]] Community Co-op. In Vancouver, I'm one of the organizers of [[DWebYVR]]. I like to cook & eat and have a [[FoodWiki]].
 
-The [[Feeds]] page has ways to subscribe.
+The [[Feeds]] page has ways to subscribe, and my [[Boris Mann|About]] page has more of what I'm up to and ways to get in touch.
+
 ## [Blog Posts 🖊](../blog/)
 
   <ul>

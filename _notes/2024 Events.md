@@ -8,6 +8,7 @@
 
 ## October
 
+Exploring [[Causal Islands Berlin]]
 ## September
 
 ## August
