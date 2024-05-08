@@ -5,8 +5,6 @@ tags:
   - AI
 link: https://rabbit.tech
 ---
-Website: <https://rabbit.tech>
-
 Tagline: the future of human-machine interface
 ## r1
 

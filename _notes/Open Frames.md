@@ -1,7 +1,7 @@
 ---
 github: https://github.com/open-frames
 ---
-An open specification for 
+An open specification for [[Farcaster Frames]].
 
 From the [specification repo](https://github.com/open-frames/standard):
 
