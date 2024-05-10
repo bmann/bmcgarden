@@ -65,6 +65,6 @@ jobs:
           ### Flags accepted can be found here https://jekyllrb.com/docs/configuration/options/#build-command-options
 
       - name: 🚀 fission publish
-        uses: fission-suite/publish-action@v1
+        uses: fission-codes/publish-action@v1
         with:
             machine_key: ${{ secrets.FISSION_KEY }}
