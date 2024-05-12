@@ -7,4 +7,5 @@ tags:
 title: James Walker
 aliases:
   - James Walker
+  - "@walkah"
 ---

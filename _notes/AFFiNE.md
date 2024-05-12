@@ -36,3 +36,21 @@ Additionally, OctoBase can function as a standalone server database, or it can b
 AGPL licensed 
 
 [toeverything/OctoBase](https://github.com/toeverything/octobase)
+
+## Self Hosting
+
+The [Affine Self Host docs](https://docs.affine.pro/docs/self-host-affine) talks about steps to take to run Docker / Docker Compose.
+
+### Portainer Setup
+
+I have a demo running on my test install of [[Portainer]].
+
+I used the [compose file on Github](https://github.com/toeverything/AFFiNE/blob/canary/.github/deployment/self-host/compose.yaml) and added `version: '0.1'` to the top and pasted that into Portainer's "stacks" interface.
+
+I used the interface to add env variables for admin email and password.
+
+Once the stack was deployed, I went to `$MYIP:3010` and created a new cloud workspace.
+
+It is currently very unclear what the costs will be for self-hosted. There is a [Github issue with many items marked offtopic](https://github.com/toeverything/AFFiNE/issues/6156) -- which also includes details on what to edit in the database to remove restrictions. Github Discussions has a couple of topics on self hosting -- [5975](https://github.com/toeverything/AFFiNE/discussions/5975), [6299](https://github.com/toeverything/AFFiNE/discussions/6299).
+
+[[Outline]] has a no-charge community edition with limited features, as does [[Cal.com]].
