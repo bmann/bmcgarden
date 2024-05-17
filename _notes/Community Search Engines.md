@@ -9,18 +9,19 @@ These communities are formed by:
 * Digital spaces, such as a Discord server
 
 These are often communities of interest, but can also considered to be trust relationships: if you are connected to a group of people you may extend trust to other recommendations they make. 
-
-## Summer of Protocols
-
-I have applied to the [[Summer of Protocols]] with [[walkah]], see the [RFC in the forum](https://forum.summerofprotocols.com/t/pig-community-search-engines-event-chat-artifacts-as-research-building-block/879).
-
 ## Reading 
 
-[[Dark Forest and Cozy Web]]
+[[Dark Forest and Cozy Web]]: communities are moving to cozy web spaces, and/or have need for members only content. The open internet has degraded search incentivized by click throughs to show ads, and commercial social platforms
 
 [[The Brazilianization of the Internet]]: forming communities, which can be considered a kind of commons, do exclude or make [[cozyweb]] spaces. Does this cause a kind of elitism, and/or further deteriorate public spaces?
 
 [[How Algolia uses Electron to improve internal productivity]]: I’m still inspired by this description of Algolia implementing company wide search across internal tools, with desktop integration. This should be a tool for organizations of all kinds.
+
+## Local
+
+[[Proto Apps]]
+
+[[Open Social Protocols]]
 ## Tools
 
 [[Lieu]] is an example of some code that helps build community search engines and webrings.
