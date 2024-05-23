@@ -15,6 +15,6 @@ Causal Islands LA is the first community edition of the 2023 conference held in 
 
 ## ​Sponsorship & Collaboration
 
-​Co-organized with [[Mai Ishikawa Sutton]], with media support from [[DWeb]].
+​Co-hosted with [[Mai Ishikawa Sutton]], with media support from [[DWeb]].
 
 [[Fission]] sponsored the venue.

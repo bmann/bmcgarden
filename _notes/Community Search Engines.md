@@ -1,6 +1,5 @@
 ---
 ---
-
 Community Search Engines is the label for a set of approaches to interconnect communities. 
 
 These communities are formed by:
@@ -19,9 +18,11 @@ These are often communities of interest, but can also considered to be trust rel
 
 ## Local
 
-[[Proto Apps]]
+I applied to [[SoP 2024 Application]] with some ideas around this that has some longer writing.
 
-[[Open Social Protocols]]
+Part of community is "flow" ([[Stock and Flow]]) and [[Proto Apps]] is how I think social graphs / communities / flows of information form.
+
+[[Open Social Protocols]] is what are part of the building blocks for all of this.
 ## Tools
 
 [[Lieu]] is an example of some code that helps build community search engines and webrings.

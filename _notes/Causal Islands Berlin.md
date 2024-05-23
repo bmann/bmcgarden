@@ -4,7 +4,6 @@ tags:
   - event
   - berlin
 ---
-
 Initiated by [[Orion Reed]], we're exploring a September/October/November 2024 event.
 
 * The future of computing
