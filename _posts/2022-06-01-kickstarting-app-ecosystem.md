@@ -74,4 +74,9 @@ And I think I’ll end my somewhat context-free stream of consciousness here. St
 
 I originally [posted this to my Micro.blog June 1st, 2022](https://blog.bmannconsulting.com/2022/06/02/kickstarting-an-app.html).
 
-The device I pre-ordered hasn’t shipped yet. [Tom Critchlow reviewed the reMarkable and made a few suggestions](https://tomcritchlow.com/2024/02/09/remarkable-notes/)
+The device I pre-ordered hasn’t shipped yet. [Tom Critchlow reviewed the reMarkable and made a few suggestions](https://tomcritchlow.com/2024/02/09/remarkable-notes/) that are similar to what I’ve suggested above. 
+
+## Update May 2024
+
+I can now reveal that I bought into the founder’s edition of [[Daylight Computer]]. It’s an e-ink tablet made to be a piece of calm technology. More soon! 
+
