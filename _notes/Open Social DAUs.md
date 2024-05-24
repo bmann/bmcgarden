@@ -1,10 +1,10 @@
 If we hope to see [[Open Social Protocols]] succeed -- that is, be available and widely adopted as open protocols that many people, apps, organizations, and more can use and interoperate between -- we need to track what the Daily Active Users (DAUs) look like.
 
-Looking at some of Dan Romero's comments around Farcaster, his goal is 10M DAU as having large global impact. That translates to somewhere in the range of 100M to 500M accounts.
+Looking at some of [[Dan Romero]]'s comments around Farcaster, his goal is 10M DAU as having large global impact. That translates to somewhere in the range of 100M to 500M accounts.
 
 Likely of use will be looking at [[Social Platform DAUs]] to compare and contrast.
 
-## ActivityPub
+## [[ActivityPub]]
 
 [FediDB](https://fedidb.org/) is the main dashboard. It only tracks Monthly Active Users (MAU), which will be a much higher number than DAU. [Powered by a crawler](https://fedidb.org/crawler.html) that retrieves self-reported data from instance servers
 
@@ -16,7 +16,7 @@ Likely of use will be looking at [[Social Platform DAUs]] to compare and contras
 * Does not currently seem to include [[Threads]], or maybe that just shows up under "Other" since it's per user opt-in
 * 72% Mastodon
 
-## ATProtocol
+## [[ATProtocol]]
 
 A couple of independent dashboards:
 * [Jazco Stats](https://bsky.jazco.dev/stats) - clear and simple, charts for daily likers / posters / followers, goes back to May 2023
@@ -28,7 +28,7 @@ A couple of independent dashboards:
 * edavis shows Daily/Weekly/Monthly active across all actions, not just posting, which looks to be around ~300K
 * edavis seems to show ~1.2M monthly active -- which would make it bigger than ActivityPub
 
-## Farcaster
+## [[Farcaster]]
 
 [Farcaster.network Dashboard](https://farcaster.network/)
 
