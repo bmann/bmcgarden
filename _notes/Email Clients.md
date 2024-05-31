@@ -1,3 +1,11 @@
+---
+tags:
+  - email
+  - WIP
+  - MacOS
+  - iOS
+---
+
 I’m a long time [[Missive]] user for work, and I’m looking for a new email client and/or new email workflows to adopt.  
 
 I host my email on a paid Google plan, but am exploring different options like self hosting with [[Cloudron]], or picking a paid [[Fastmail]] account. 
@@ -14,10 +22,18 @@ Below, some clients that I’m trying out.
 * Needs to have great snooze support — send an email with a “snooze” reminder that puts it back in the inbox after 2 business days if no one has replied 
 
 Everything else is nice to have, but basically I’m picky about the look / feel. 
+
+## [[Missive]]
+
+I could stay with Missive, but a single user plan is also $14/user/month paid annually, and doesn't include integrations or rules.
 ## [Shortwave](https://www.shortwave.com/)
 
 Freemium plans but includes “Sent with Shortwave” for every email. 
 
-Paid plans are $7/user/annually for personal inboxes (gmail.com or .edu), or $14/user/annually for Google Workspace account support. 
+Paid plans are $7/user/month paid annually for personal inboxes (gmail.com or .edu), or $14/user/month paid annually for Google Workspace account support. 
 
 Has some AI features for search and compose. 
+
+## [[Spark Mail]]
+
+Has newer team / AI plans, but base price is free, or an individual annual price of $60 which seems reasonable.

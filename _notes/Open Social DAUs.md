@@ -1,3 +1,6 @@
+---
+---
+
 If we hope to see [[Open Social Protocols]] succeed -- that is, be available and widely adopted as open protocols that many people, apps, organizations, and more can use and interoperate between -- we need to track what the Daily Active Users (DAUs) look like.
 
 Looking at some of [[Dan Romero]]'s comments around Farcaster, his goal is 10M DAU as having large global impact. That translates to somewhere in the range of 100M to 500M accounts.

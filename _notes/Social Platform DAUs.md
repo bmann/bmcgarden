@@ -1,3 +1,6 @@
+---
+---
+
 Since I put together [[Open Social DAUs]], it's useful to compare this with current social platforms.
 
 In contrast to [[Open Social Protocols]], I'll define Social Platforms as those that are proprietary systems run by one company. These systems all "compete" with each other, in the sense that people can only spend so much time looking at so many different apps and networks.

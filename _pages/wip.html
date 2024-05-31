@@ -1,0 +1,20 @@
+---
+layout: page
+title: Work in Progress 🚧
+permalink: /wip/
+---
+
+<p style="padding: 1.5em 1em; background: #f5f7ff; border-radius: 25px;">
+  🚧🚧🚧 Work in Progress 🚧🚧🚧 These notes are highly unfinished and may contain fragments.
+</p>
+  <main>
+      <ul>
+      {% assign wipnotes = site.notes | where_exp: "note", "note.tags contains 'WIP'" %}
+      {% for wip in wipnotes %}
+        <li><a href="{{ wip.url }}">{{ wip.title }}</a>
+        </li>
+      {% endfor %}
+      </ul>      
+    <br/>
+    <br/>
+  </main>
