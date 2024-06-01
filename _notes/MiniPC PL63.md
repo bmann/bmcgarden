@@ -27,3 +27,7 @@ This thing is tiny! Smaller and lighter than the [[Lenovo M900 Tiny]].
 This is the Thunderbolt 4 model. I plugged it into my [[VisionTek VT2900]] and it worked right away.
 
 First time on Windows 11. I sure am declining a lot of things. Lots of updates and rebooting. 
+
+## Drivers
+
+The Canadian page for drivers is on the [ASUS website](https://www.asus.com/ca-en/displays-desktops/mini-pcs/pl-series/mini-pc-pl63/helpdesk_download/?model2Name=Mini-PC-PL63).
