@@ -4,6 +4,8 @@ tags:
   - Vancouver
   - event
   - startup
+aliases:
+  - VSW2024
 ---
 I organized the first version of this in 2014, called Startup Week Vancouver at the time.
 

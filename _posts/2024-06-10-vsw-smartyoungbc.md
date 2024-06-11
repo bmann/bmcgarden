@@ -16,7 +16,7 @@ Thanks to the VSW organizers for being resilient and keeping things going for a 
 
 Ian's presentation was really good. He turned his [10K word research essay](https://smartyoungbc.com) into a presentation, walked the group through it, then had some guiding questions for people to discuss in small group break out sessions.
 
-![](smartyoungbc-daniel.jpeg)
+![](/assets/2024/smartyoungbc-daniel.jpeg)
 
 _Thanks [Daniel for the photo](https://x.com/Shalinsky/status/1798853716927545663), I promise there was a roomful of people in front of us :)_
 
@@ -24,9 +24,11 @@ Ian defines "Young" as "16 to 26". He himself is 27, and so has "aged out" of th
 
 "Smart" should not be taken too pedantically here either. This doesn't mean High IQ, it means [weird nerds](https://x.com/RuxandraTeslo/status/1799454547082981619), [ambitious people](https://x.com/readswithravi/status/1799179147027116520), and just generally with people who stand up and put energy into GSD[^gsd].
 
-For those looking for "next steps", check out and support what [[Novus]] is doing. And for something that's a little broader than "tech startup" showcasing what ambitious people are building across art, tech, and science, attend and support the first [[Minimum Viable Demos]] event coming up June 30th.
+For those looking for next steps, check out and support what [[Novus]] is doing.
 
-And, as you come across people, activities, or other suggestions that highlight the concept, [tag things with #smartyoungbc](https://x.com/search?q=%23smartyoungbc).
+And for something that's a little broader than "tech startup" showcasing what ambitious people are building across art, tech, and science, attend and support the first [[Minimum Viable Demos]] event coming up June 30th.
+
+As you come across people, activities, or other suggestions that highlight the concept, [tag things with #smartyoungbc](https://x.com/search?q=%23smartyoungbc).
 
 Stay tuned for future Smart Young BC workshops. With the presentation and small group break out, we can likely run the same format multiple times, and inspire people to take action. [Go subscribe »](https://www.smartyoungbc.com/)
 
@@ -56,14 +58,14 @@ I briefly talked about neurodiversity[^nd] and mental health, probably something
 
 I met a number of great people in and around these talks and at an after party or two. Here's a high level description of a couple of encounters:
 * how to stay in Canada while building a business; [[Startup Visa]] is still not very well known (and the angel investor part of it needs work)
-* a team exploring a program inspired by Google's Summer of Code, focused on the Province of BC
+* a team exploring a program inspired by Google's Summer of Code, focused on onboarding more open source builders in the Province of BC
 * a startup exploring international fruit importing
 * someone who heard me talk about neurodiversity and mental health, and had the courage to come up and ask for more resources around this
 * a connected pet hardware startup which needs local hardware/software expertise
 * a [[SRED]] software platform that might be possible to open source[^oss]
 * several software developers looking to connect with other technical builders[^dev]
 
-I'm looking forward to the meetings I'm going to have with many of the people who already followed up.
+I'm looking forward to the meetings I'm going to have with many of the people who already followed up. Thanks for connecting[^bmann]!
 
 ---
 
@@ -73,11 +75,15 @@ Building a [[Venture Sized Business]] is part of the venture capital business mo
 
 Having attempted a venture-funded deep tech software startup with [[Fission]], and being a believer in moonshots as part of the formula for long term regional and national success, I _also_ want to see us rally around big goals.
 
-See you next year!
+I'm spending some time refreshing my [[Startup]] resources and getting an update on funding and other parts of the ecosystem. I'm encouraged by a lot of the energy from [[Vancouver Startup Week]], but building an innovation ecosystem can't just happen one week per year. We have a lot of work to do.
+
+With that in mind, think about what you, personally, are going to work on, who you can collaborate with, what you need help with, and we'll see you at next year's Vancouver Startup Week for an update. Cheers!
+
+[^bmann]: See https://bmann.ca for every single one of my social profiles
 
 [^remote]: I flat out tell people that they should not work for a Vancouver company. They're mostly not competitive in salary or ambition. If I have to choose between having someone stay in Vancouver -- or leaving completely for elsewhere -- I want them to stay and have an awesome well paid ambitious job where they live locally and work remote.
 
-[^nd]: I'm almost certain that I am neurodiverse, and I think this is one of the first times I've talked about it publicly. I once joked "I'm too busy coping to get diagnosed", and definitely feel at times that aspects of my weird brain are sometimes a super power, except when it isn't. When I was young man, I never heard the term neurodiverse, and never conceived that there would be a different way to relate to the world. I'm still learning and growing around this even now.
+[^nd]: I'm almost certain that I am neurodiverse, and I think this is one of the first times I've talked about it publicly. I once joked "I'm too busy coping to get diagnosed", and definitely feel at times that aspects of my weird brain are sometimes a super power, except when it isn't. When I was a young man, I never heard the term neurodiverse, and never conceived that there would be a different way to relate to the world. I'm still learning and growing around this even now.
 
 [^sorry]: It was a low energy week for me where I did get a few things done, but just putting one foot in front of the other was about all that I managed. I can "put on a face" for public events and have energy for it in the moment, but need small group or alone time. It's good to share emotional & mental health things, actually!
 
