@@ -8,7 +8,7 @@
 
 ## October
 
-Exploring [[Causal Islands Berlin]]
+[[Causal Islands Berlin]]
 ## September
 
 ## August
@@ -17,27 +17,23 @@ Maybe attending [[DWeb Camp]] 2024
 
 ## July
 
-A week long series of events around the [IETF120](https://www.ietf.org/how/meetings/120/) meeting in Vancouver. 
-
-Sponsor [[Our Networks]]
-
-Organizer [[Vancouver Hack Day]] or whatever we're going to call the Sunday event :)
+A week long series of events around the [IETF120](https://www.ietf.org/how/meetings/120/) meeting in Vancouver, called [[LOCALHOST]]
+* I'm sponsoring [[Our Networks]]
+* Organizer [[Vancouver Hack Day]] or whatever we're going to call the Sunday event :)
 
 ## June
 
 Organizer [[Smart Young BC VSW 2024]] as part of [[Vancouver Startup Week]]
 
+Attendee, sponsor [[Minimum Viable Demos]]
+
+TBD [[Vancouver Hack Day]] with [[David Luecke]]
 ## May
 
-Maybe attending, May 30 - 31 [Local-First Conf](https://www.localfirstconf.com/), Berlin
+May 30 - 31 [Local-First Conf](https://www.localfirstconf.com/), Berlin
 
-Maybe attending, May 24-26 [ETHBerlin](https://ethberlin.org/)
-
-TBD [[Vancouver Hack Day]]
-
+May 24-26 [ETHBerlin](https://ethberlin.org/)
 ## April
-
-Attendee [[Novus]] Pure Demos
 
 Organizer [[Vancouver Hack Day]] at [[Z Space]]
 

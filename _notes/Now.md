@@ -13,7 +13,7 @@ Going to see about [[Causal Islands]] regional events. First up, [[Causal Island
 
 I'm in a new co-working space in Gastown, [[Z Space]]. Still based in Vancouver.
 
-Here is a list of some [[2024 Events]] that I'm keeping track of / organizing / might attend. [[Localhost]]
+Here is a list of some [[2024 Events]] that I'm keeping track of / organizing / might attend. [[LOCALHOST]]
 
 ---
 

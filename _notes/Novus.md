@@ -3,6 +3,7 @@ tags:
   - Vancouver
   - organization
   - startup
+link: https://novus.build
 ---
 A weekly meetup, for builders, by builders.
 

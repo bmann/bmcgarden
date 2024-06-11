@@ -1,6 +1,5 @@
 ---
 ---
-
 _Startup and small business operations and efficiency_
 
 **"Startup"** is this weird phrase that means lots of different things. For me, one of the things that it means is really internalizing a couple of different concepts.

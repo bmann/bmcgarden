@@ -5,7 +5,7 @@ tags:
   - event
   - startup
 ---
-I organized the first version of this in 2014, called Startup Week Vancouver.
+I organized the first version of this in 2014, called Startup Week Vancouver at the time.
 
 Other people stepped up in following years, including founding the Vancouver Startup Society as a non-profit association to run it.
 ## 2024
