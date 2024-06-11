@@ -35,7 +35,7 @@ May 30 - 31 [Local-First Conf](https://www.localfirstconf.com/), Berlin
 May 24-26 [ETHBerlin](https://ethberlin.org/)
 ## April
 
-Organizer [[Vancouver Hack Day]] at [[Z Space]]
+Organizer [[Vancouver Hack Day]] at [[Z-Space]]
 
 ## March
 

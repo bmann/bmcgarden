@@ -11,7 +11,7 @@ I'm talking to lots of people, exploring a few different things.
 
 Going to see about [[Causal Islands]] regional events. First up, [[Causal Islands Berlin]].
 
-I'm in a new co-working space in Gastown, [[Z Space]]. Still based in Vancouver.
+I'm in a new co-working space in Gastown, [[Z-Space]]. Still based in Vancouver.
 
 Here is a list of some [[2024 Events]] that I'm keeping track of / organizing / might attend. [[LOCALHOST]]
 
