@@ -28,7 +28,7 @@ open_external_links_in_new_tab: true
 # as their browser will communicate with Twitter's servers.
 embed_tweets: false
 
-exclude: ['_includes/notes_graph.json', '.env', 'gemset.nix', 'fission.yaml', 'blog.code-workspace', 'netlify.toml', '_ignored', '_archive', '.vscode', '.obsidian', '.gitignore', '.github', 'README.md', "_template", ".obsidian"]
+exclude: ['_includes/notes_graph.json', 'caret', '.env', 'gemset.nix', 'fission.yaml', 'blog.code-workspace', 'netlify.toml', '_ignored', '_archive', '.vscode', '.obsidian', '.gitignore', '.github', 'README.md', "_template", ".obsidian"]
 
 include: ['.well-known', '_pages', '_redirects']
 
