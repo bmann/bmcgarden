@@ -11,7 +11,7 @@ permalink: /wip/
       <ul>
       {% assign wipnotes = site.notes | where_exp: "note", "note.tags contains 'WIP'" %}
       {% for wip in wipnotes %}
-        <li><a href="{{ wip.url }}">{{ wip.title }}</a>
+        <li><a href="{{ wip.url }}" class="internal-link">{{ wip.title }}</a>
         </li>
       {% endfor %}
       </ul>      

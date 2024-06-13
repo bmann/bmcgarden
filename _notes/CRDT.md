@@ -1,5 +1,5 @@
 ---
 tags:
-  - abbreviation
+  - acronym
 ---
 Conflict-free Replicated Data Type
