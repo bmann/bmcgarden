@@ -36,9 +36,9 @@ Open, share-alike (or rather, "parity") license aka copyleft, where software may
 
 Non-commercial license, where the software may be used for any purpose except for-profit. For profit companies need to buy a license.
 
-### Big Time License
+### [[Big Time License]]
 
-<https://bigtimelicense.com> [[Big Time]]
+<https://bigtimelicense.com> 
 
 > A public license that makes software free for noncommercial and small-business use, with a guarantee that fair, reasonable, and nondiscriminatory paid-license terms will be available for everyone else
 
@@ -93,22 +93,16 @@ There is also an [XLC introduction with some illustrations](https://xlcollaborat
 
 What is not specified in this license is quite how to recognize new contributors, how to share value. aka all the hard stuff. But I _love_ this conceptually. It's "co-op like" without the overhead of creating a formal co-op organization rooted in some particular jurisdiction. "An open source peer co-op" might be a good short form, where "collaborative" is probably the right word so it doesn't trick people into thinking it is a co-op.
 
-## Permissive License, Fenced Community
+## Conclusions
 
-What if you permissively license software, but restrict access to scarce community resources around an open source project?
+Ideologically, I prefer permissive licenses. But, seemingly, we need to go to non-commercial licenses like [[Big Time License]] in order to preserve the ability to charge licenses to large corporations.
 
-**Public Goods** are those that can't be depleted. The lines of code and even the compiled binary that make up open source software can be infinitely copied at zero marginal cost. No one loses anything if one more or 1,000 more people download the bits representing code.
-
-**Common Goods** are those that can be depleted, that are finite. For open source software, this is people time. Time spent reading and responding to an issue, whether it's a bug report, a feature request, or even a contribution of new code. Updating dependencies and making a new release. Writing documentation. Chatting in a community chat space. All of this takes people time, and there are only so many maintainers on a project spending time doing these talks.
-
-What if it was required to contribute: either by helping with these tasks -- from code maintenance to community tasks, or by paying to support the project, so contributors could have their hours compensated. And more paid contributors could be brought on, with more external contributions.
-
-Especially with modern open source software and the open nature of Github's public social spaces, we've completely normalized using up the scarce resource of maintainer time.
-
+I have some other thoughts about [[Permissive Licenses and Fenced Community]].
 ## Blog Posts & Presentations
 
 A variety of blog posts & presentations on the concepts around open source and evolving licenses:
 
+* June 2024, Presentation: [[Open Source Beyond Licensing - The Evolution Ahead]]
 * August 2020, Blog [Public vs Common Goods in Open Source](https://blog.bmannconsulting.com/2020/08/11/public-vs-common.html)
 * July 2020, Presentation: [Open Source: Licensing, Business Models, Community](https://talk.fission.codes/t/open-source-licensing-community-and-business-models-outlier-ventures-basecamp/786)
 * October 2019, Presentation: [Open Source Licensing Evolution](https://noti.st/bmann/aOkl8w/open-source-licensing-evolution)
