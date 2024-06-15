@@ -1,7 +1,7 @@
 ---
 title: Networked Organizations
 aliases:
-  - NetworkedOrgs
+  - Networked Organizations
 ---
 aka _networkedorgs_
 
