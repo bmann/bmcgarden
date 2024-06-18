@@ -1,5 +1,6 @@
 ---
 permalink: /borisfund/
+title: Boris Fund
 ---
 I’m running a personal, independent [[Open Collective]] in order to further my interest in [[pooling capital and collaboration]].
 
