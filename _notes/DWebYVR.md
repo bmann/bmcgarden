@@ -6,7 +6,6 @@ Find out more on the wiki at <https://dwebyvr.org>. Look for upcoming events on 
 
 [[Open source is no longer a radical act]]. Let's collaborate to build and grow together.
 
-## Coworking
+## Discord Chat
 
-
-## Tech Social
+`#dweb-vancouver` channel on [DWeb Discord](https://discord.gg/zFh7h7Yh9z)
