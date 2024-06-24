@@ -30,3 +30,8 @@ Create a repo [dwebyvr/localhost_vancouver_webring](https://github.com/DWebYVR/l
 * make a website directory and index.html as the source
 * realize that Surfer already installed on [[Commons Computer]] -> [localhost.dwebyvr.org](https://localhost.dwebyvr.org)
 
+Back to Portainer Ubuntu
+* add a `lieu` user, [[Ubuntu]] `useradd`
+* create `/home/lieu`
+* install git `apt-get install git`
+
