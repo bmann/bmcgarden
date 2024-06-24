@@ -1,5 +1,7 @@
 ---
-permalink: /notes/vanhackday-june2024
+tags:
+  - Vancouver
+  - event
 ---
 Personal notes for [[Vancouver Hack Day]] June event.
 
@@ -35,3 +37,17 @@ Back to Portainer Ubuntu
 * create `/home/lieu`
 * install git `apt-get install git`
 
+Make an index.html file with ULs to have a public source for URLs
+* checked into repo
+* Manually published 
+* File an issue to automate this via GitHub Actions
+
+Made spaghetti lunch to stretch sandwiches 
+
+Made coffee for many people. 
+
+David demo’d [[LoFi]] work he’s doing 
+
+I went off to [[Daylight Computer]] meetup. It was in [[Anjan Katta]]’s parents backyard. 
+
+Came back for end of day demos 
