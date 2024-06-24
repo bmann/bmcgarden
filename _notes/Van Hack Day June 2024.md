@@ -1,5 +1,7 @@
 ---
-permalink: /notes/vanhackday-june2024
+tags:
+  - Vancouver
+  - event
 ---
 Personal notes for [[Vancouver Hack Day]] June event.
 
@@ -30,3 +32,17 @@ Create a repo [dwebyvr/localhost_vancouver_webring](https://github.com/DWebYVR/l
 * make a website directory and index.html as the source
 * realize that Surfer already installed on [[Commons Computer]] -> [localhost.dwebyvr.org](https://localhost.dwebyvr.org)
 
+Make an index.html file with ULs to have a public source for URLs
+* checked into repo
+* Manually published 
+* File an issue to automate this via GitHub Actions
+
+Made spaghetti lunch to stretch sandwiches 
+
+Made coffee for many people. 
+
+David demo’d [[LoFi]] work he’s doing 
+
+I went off to [[Daylight Computer]] meetup. It was in [[Anjan Katta]]’s parents backyard. 
+
+Came back for end of day demos 
