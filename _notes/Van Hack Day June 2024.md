@@ -46,7 +46,7 @@ Made spaghetti lunch to stretch sandwiches
 
 Made coffee for many people. 
 
-David demo’d [[LoFi]] work he’s doing 
+David demo’d [[Local First]] work he’s doing 
 
 I went off to [[Daylight Computer]] meetup. It was in [[Anjan Katta]]’s parents backyard. 
 

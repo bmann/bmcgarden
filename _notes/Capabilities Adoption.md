@@ -7,7 +7,7 @@ Capabilities adoption needs a lot more education and promotion.
 
 ## Interest in Capabilities
 
-There are currently three communities that are interested / active in capabilities: [[LoFi|Local First]], Crypto/Blockchain, and Capabilities enthusiasts.
+There are currently three communities that are interested / active in capabilities: [[Local First|Local First]], Crypto/Blockchain, and Capabilities enthusiasts.
 
 ![Whiteboard diagram of a Venn overlap of Localfirst, Capabilities, and Crypto Blockchains](/assets/2024/capabilities_venn.jpg)
 
@@ -31,7 +31,7 @@ What do we want to accomplish out of having an in person conference?
 * discussion about?
 * interop / plug fest
 
-Feels [[LoFi|Local First]] and [[Causal Islands]] related. TODO: do a scan of events coming up.
+Feels [[Local First|Local First]] and [[Causal Islands]] related. TODO: do a scan of events coming up.
 
 ## Resources
 

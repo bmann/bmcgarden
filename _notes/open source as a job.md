@@ -1,6 +1,7 @@
 ---
 tags:
   - opensource
+  - WIP
 ---
 On the topic of sustainability in open source, what if being a maintainer meant being able to work full time on an open source codebase. 
 

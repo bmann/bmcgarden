@@ -37,7 +37,7 @@ Register: [Sunday, April 7th, 2024](https://lu.ma/vancouver-hack-day-april2024),
 Tech covered:
 * [[Bluesky]] [[ATProtocol]] and maybe some [[Farcaster#Frames]]
 * [[Everywhere Computer]] 
-* [[LoFi]]
+* [[Local First]]
 * [[Enhance]]
 
 

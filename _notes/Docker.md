@@ -1,3 +1,6 @@
+---
+---
+
 ## Bridge vs Host
 
 Bridge means you need to use a reverse proxy to map to particular ports. Host means making it available on the same network stack as the host running Docker, so you need to use different ports
