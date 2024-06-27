@@ -55,4 +55,4 @@ In discussion, I mentioned [[Situational Awareness]] set of essays as American p
 <iframe src="/assets/2024/06/26/open-source-beyond-licensing/" width="100%" height="650px">
 </iframe>
 * [Full screen presentation](/assets/2024/06/26/open-source-beyond-licensing/)
-* [PDF](/assets/2024-06-26-Open Source Beyond Licensing.pdf)
+* [PDF](/assets/2024/2024-06-26-Open Source Beyond Licensing.pdf)
