@@ -48,6 +48,8 @@ The presentation below is exported from Keynote and the links are clickable, but
 Not included in the presentation, but [[Open Source is a restaurant]] is a useful related read on how think about paying for open source.
 
 The concept of [[open source as a job]] is predicated on more global participation in software.
+
+In discussion, I mentioned [[Situational Awareness]] set of essays as American propaganda, but important to understand for AI future directions.
 ### Presentation
 
 <iframe src="/assets/2024/06/26/open-source-beyond-licensing/" width="100%" height="650px">
