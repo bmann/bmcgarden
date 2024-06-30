@@ -30,6 +30,8 @@ Organized with [[David Luecke]]
 Charged $10, ordered in lunch
 
 [[Van Hack Day June 2024]]
+
+![](/assets/2024/hacking-at-zspace.jpg)
 ## April 2024
 
 Register: [Sunday, April 7th, 2024](https://lu.ma/vancouver-hack-day-april2024), from 10am all day @ [[Z-Space]]
