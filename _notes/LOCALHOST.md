@@ -15,10 +15,10 @@ Organized by me, [[Dawn Walker]], [[Chad Kohalyk]], and the [[DWebYVR]] communit
 Saturday July 20th and Sunday July 21st, free to attend.
 ## Proto Apps
 
-I'm organizing an invite only [[Proto Apps]] session with some folks coming in from out of town, Monday - Wednesday during the day.
+I'm organizing an invite only [[Proto Apps]] session with some folks coming in from out of town, Tuesday - Wednesday during the day.
 ## LOCALHOST Social
 
-TBD on Thursday, ideally with Bryan Newbold presenting on Bluesky / [[ATProtocol]].
+On Thursday, hosted at [Osito](https://www.osito.ca/). Bryan Newbold presenting on Bluesky / [[ATProtocol]], and an overview of the [[IETF]], plus drinks, snacks, and meeting people. 
 ## Our Networks
 
 [[Our Networks]] is at the end of the week, on Saturday.
