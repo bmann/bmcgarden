@@ -1,0 +1,1 @@
+The main custom app that ships with [[Daylight Computer]]. It's the on device target for the [[Daylight Capture]] smartphone app.
