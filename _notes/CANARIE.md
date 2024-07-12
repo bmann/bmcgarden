@@ -36,7 +36,7 @@ Includes 12 business incubators / accelerators.
 
 ## DAIR Cloud Program
 
-Uses AWS. For profit only, 2-3 month waitlist. 
+[Uses AWS](https://www.canarie.ca/). For profit only, 2-3 month waitlist. 
 
 ## Priorities
 
