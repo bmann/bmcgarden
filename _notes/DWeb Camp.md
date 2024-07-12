@@ -5,7 +5,7 @@ tags:
   - dweb
   - california
 ---
-Annual event for [[DWeb]] adjacent people to gather from around the world and camp together
+Annual event for [[DWeb]] adjacent people to gather from around the world and camp together.
 ## 2024
 
 August 7th - 11th, Campo Navarro, CA
@@ -17,17 +17,24 @@ Fly down from Vancouver
 
 ### Aug 7th
 
-Car pool to 
+Car pool to camp.
 
+### Aug 10th
+
+I'm helping to run [[Emergent Day]] aka the [[unconference]] part of DWeb Camp.
 ### Aug 11th
 
-Return to SF
+Volunteer take down day
+### Aug 12th Monday
 
-### Aug 12th - 14th
+10am - 1pm Travel time back to SF
 
-Plan some SF meetups!
+### Aug 13th Tuesday
 
-[[Causal Islands]] perhaps?
+Causal Islands / DWeb / Something event in the evening
+### Aug 14th Wednesday
+
+
 ### Aug 15th-16th-17th
 
 Return to Vancouver
