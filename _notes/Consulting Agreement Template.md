@@ -152,7 +152,7 @@ The following materials will not form part of the Work Product (see section 11 o
 
 ## D. Subcontracting.
 
-Subcontracting ____________ is or is not permitted.
+Subcontracting <mark>{is or is not}</mark> permitted.
 
 Add anything else around subcontracting that isn’t already covered in Section 13.
 
