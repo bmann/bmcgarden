@@ -72,6 +72,8 @@ When this Agreement ends for any reason:
 2. the Consultant will immediately deliver to the Client all material in its possession or control that includes any Work Product (defined in section 11), the Client’s Confidential Information (defined in section 10) or any material supplied to the Consultant by the Client, and
     
 3. sections 9, 10, 11, 12, 15 and 16 will survive the end of this Agreement.
+
+
 ## 10. Confidentiality
 
 1. “Confidential Information” means all information (whether in oral, written or electronic form) relating to the business, technology, personnel, marketing, customers, finances, products or services of the Client, and includes confidential information received by the Client from third parties, but excludes any information that:
