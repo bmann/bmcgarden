@@ -8,7 +8,9 @@ This is a consulting agreement template that was originally created at Contractu
 
 You can either use it yourself to sell your consulting services, or ask consultants you work with to use it as a template to define how to work together.
 
-Sections that are <mark>marked</mark>
+Sections that are <mark>marked</mark> should get edited / customized.
+
+There is a [GDoc version you can make a copy of here](https://docs.google.com/document/d/1oVh5zUna4TJqUBwqhCpJHXZ2jggOmd6V1sxaIxu9gBY/edit).
 # Template
 
 This Consulting Agreement (“Agreement”) is effective as of <mark>{Contract Start Date}</mark> and is between the following parties:
