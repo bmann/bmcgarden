@@ -1,4 +1,4 @@
-I'm prototyping [[Community Search Engines]] by building one for Vancouver.
+I'm prototyping [[Community Search Engine]] by building one for Vancouver.
 
 ---
 

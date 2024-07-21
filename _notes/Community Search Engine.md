@@ -1,6 +1,10 @@
 ---
+aliases:
+  - Community Search Engines
+tags:
+  - search
 ---
-Community Search Engines is the label for a set of approaches to interconnect communities. 
+Community Search Engine is the label for a set of approaches to interconnect communities. 
 
 These communities are formed by:
 

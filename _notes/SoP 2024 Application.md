@@ -3,7 +3,7 @@ link: https://forum.summerofprotocols.com/t/pig-community-search-engines-event-c
 tags:
   - sop24
 ---
-I applied to the Summer of Protocols 2024 program with this RFC plus a private personal submission that [[walkah]] and I sent in. It was not accepted. I now call this [[Community Search Engines]].
+I applied to the Summer of Protocols 2024 program with this RFC plus a private personal submission that [[walkah]] and I sent in. It was not accepted. I now call this [[Community Search Engine]].
 # Community Search Engines: Event & Chat Artifacts as Research Building Block
 
 ## Team member names
