@@ -41,7 +41,7 @@ So what if we started collecting resources from our friends and communities? Fro
 
 ## Add yourself and your Vancouver resources
 
-The next step is to get people to add themselves, their Vancouver organizations and resources. You can do that by [adding your personal links to the index.html file](https://github.com/DWebYVR/localhost_vancouver_webring/tree/main/website).[^gitub]
+The next step is to get people to add themselves, their Vancouver organizations and resources. You can do that by [adding your personal links to the index.html file](https://github.com/DWebYVR/localhost_vancouver_webring/tree/main/website).[^github]
 
 [^github]: This is a fairly technical barrier today -- making a pull request in Github. [Here's an issue to make it available to less technical users](https://github.com/DWebYVR/localhost_vancouver_webring/issues/12).
 
