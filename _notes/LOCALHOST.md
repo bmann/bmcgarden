@@ -13,6 +13,11 @@ Organized by me, [[Dawn Walker]], [[Chad Kohalyk]], and the [[DWebYVR]] communit
 ## IETF Hackathon
 
 Saturday July 20th and Sunday July 21st, free to attend.
+
+### Sunday Notes
+
+[MIMI](https://datatracker.ietf.org/wg/mimi/about/) - More Instant Messaging Interop. Relevant for [[MLS]], [[ATProtocol|ATProto]]
+
 ## Proto Apps
 
 I'm organizing an invite only [[Proto Apps]] session with some folks coming in from out of town, Tuesday - Wednesday during the day.
