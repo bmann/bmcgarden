@@ -19,7 +19,7 @@ Right now, it's just a customized install of [[Lieu]] running things. Here's how
 * Graham got Lieu deployed on [[Railway]], which is what runs [the search page and queries](https://search.dwebvancouver.org)
 * We still have some work to do to schedule re-indexing of links in the webring
 
-You can try the search here by using this form. There are relatively few sources so far, and my site has the most content on it, so you're likely to find a page here for now. Flip to "outgoing"
+You can try the search here by using this form. There are relatively few sources so far, and my site has the most content on it, so you're likely to find a page here for now.
 
 <form method="GET" action="https://search.dwebvancouver.org">
 	<p style="margin-bottom: 10px;"><input type="search" minlength="1" required="" name="q" placeholder="Your search query here" id="search" size="50"></p>
