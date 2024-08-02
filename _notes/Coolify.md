@@ -40,5 +40,10 @@ Note: the [pricing](https://coolify.io/pricing) is gated on managing a number of
 
 <https://coolify.io/docs/one-click-services>
 
+## Install Tips
+
+You have to set [[Cloudflare]] encryption settings to "Full" to have a wildcard domain work with Coolify.
+
+---
 
 See also: [[CapRover]]
