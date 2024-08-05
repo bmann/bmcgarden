@@ -32,3 +32,9 @@ I'm happy to [meet in person in Vancouver](https://cal.commonscomputer.com/boris
 ## Bio
 
 An ever growing list of [[Bio]] notes of various lengths.
+
+## QR Code
+
+![](/assets/2024/bmann_vcard_qrcode.png)
+
+A QR code that encodes my info in a vCard, created using [[Go QR]].

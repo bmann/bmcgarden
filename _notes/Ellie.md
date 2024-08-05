@@ -6,4 +6,5 @@ tags:
   - hardware
   - LA
 ---
-Building [Y3Ksystems](https://x.com/Y3Ksystems)
+Building [Y3Ksystems](https://x.com/Y3Ksystems) and [Torrance Computer Supply](https://computer.supply)
+
