@@ -3,6 +3,7 @@ tags:
   - opensource
   - app
   - spreadsheet
+  - python
 github: https://github.com/gristlabs/grist-core/
 ---
 Open source, Apache licensed cloud spreadsheet. Not quite an Airtable clone, but similar capabilities. Some of the layout and linking makes it feel like Filemaker.
@@ -28,6 +29,18 @@ There is a [user-created packaging of Grist](https://git.cloudron.io/walski/gris
 8. Data is **portable**, allowing lossless export in a well-supported format, and common export/import options.
 9. Comprehensive **documentation** and learning materials.
 10. **High quality** implementation, well-tested, with a focus on reliability and performance.
+
+## Python and Excel Formulas
+
+From the [function reference](https://support.getgrist.com/functions/):
+
+> Grist formulas support most Excel functions, as well as the Python programming language.
+> 
+> The table below lists Grist-specific functions, and the suite of the included Excel-like functions. In addition, the entire [Python standard library](https://docs.python.org/3/library/) is available. For more about using formulas in Grist, see [Intro to Formulas](https://support.getgrist.com/formulas/).
+> 
+> [Grist uses Python (version 3.11)](https://support.getgrist.com/python/) for formulas. You can use nearly all features of Python (see [Python documentation](https://docs.python.org/3.11/)).
+
+Also a new [AI Formula assistant](https://support.getgrist.com/ai-assistant/).
 ## Grist Labs
 
 From Github README:
