@@ -6,4 +6,4 @@ tags:
   - startup
   - legal
 ---
-Offering startup legal focused on founders in Canada through [[Ascent Foundry]]
+Offering startup legal focused on founders in Canada through [[Ascent]]

@@ -4,6 +4,7 @@ tags:
   - Canada
   - legal
   - organization
+  - foundry
 link: https://ascent.ca
 twitter: https://x.com/ascent_hi
 LinkedIn: https://www.linkedin.com/company/ascent-ca/

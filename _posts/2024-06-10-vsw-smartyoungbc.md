@@ -57,7 +57,7 @@ I briefly talked about neurodiversity[^nd] and mental health, probably something
 ---
 
 I met a number of great people in and around these talks and at an after party or two. Here's a high level description of a couple of encounters:
-* a catch up with John Edgar who is building [[Ascent Foundry]]
+* a catch up with John Edgar who is building [[Ascent]]
 * how to stay in Canada while building a business; [[Startup Visa]] is still not very well known (and the angel investor part of it needs work)
 * a team exploring a program inspired by Google's Summer of Code, focused on onboarding more open source builders in the Province of BC
 * a startup exploring international fruit importing

@@ -14,5 +14,5 @@ The advisory agreement is written in the context of a company in the Province of
 
 It is available in the [Full Stack Github repo](https://github.com/FullStackFoundry/common-seed-termsheets/blob/master/bc-advisory-agreement.md).
 
-TODO: talk to [[Ascent Foundry]] about getting an updated template made available.
+TODO: talk to [[Ascent]] about getting an updated template made available.
 
