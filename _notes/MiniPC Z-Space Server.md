@@ -1,3 +1,26 @@
+## September 9th, 2024
+
+I'm probably going to pave over this server again!
+
+Had been looking at [[Unraid]] as a good baseline, including the way it can host Windows VMs.
+
+### Ventoy
+
+Found [[Ventoy]] and am going to attempt to pave over the Corsair 2TB USB-C NVMe drive I have.
+
+Used `wget` to download the ventoy stuff and unpack it. None of the web gui stuff will work ATM because we have the server in a DMZ and I don't remember it's internal alternate IP address.
+
+`networkctl status` is great for looking at all your network settings.
+
+![screenshot of networkctl status command](/assets/2024/networkctl-status.png)
+
+To get a list of disks / partitions under Ubuntu, use `lsblk`:
+
+```
+sudo lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL
+```
+
+OK, Ventoy installed. I thought [[Unraid]] would have an ISO, but the whole point is to have bootable USB, so they don't support that. I guess I'll go buy a USB key for this!
 ## August 1st, 2024
 
 [[MiniPC PL63]] got wiped and Ubuntu Server installed. 
