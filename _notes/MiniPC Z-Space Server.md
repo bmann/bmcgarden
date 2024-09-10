@@ -21,6 +21,21 @@ sudo lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL
 ```
 
 OK, Ventoy installed. I thought [[Unraid]] would have an ISO, but the whole point is to have bootable USB, so they don't support that. I guess I'll go buy a USB key for this!
+
+### Unraid
+Going to try out [[Unraid]].
+
+Bought 2x [Lexar JumpDrive D400 128GB](https://www.lexar.com/product/lexar-jumpdrive-dual-drive-d400-usb-3-1-type-c/) from London Drugs and used the MacOS installer.
+
+Spent like 20 minutes trying to get it to boot with various settings on [[MiniPC PL63]], found various hints on forums that turning off ASUS Fast Boot makes things works.
+
+It also helps if you didn't accidentally swap the empty USB key for the formatted one!
+
+Actually getting Unraid installed was pretty much all automatic. I ended up buying a basic license for it, and am now poking around the web interface.
+
+It looks like a very robust system, BUT, I don't think it's a good fit for the [[MiniPC PL63]], which only has Thunderbolt 4 as expansion. The Unraid devs strongly recommend against USB-C connected storage.
+
+Their home page has this very interesting [LincStation N1 NAS](https://www.lincplustech.com/products/lincstation-n1-network-attached-storage) as one example, listed at $399USD.
 ## August 1st, 2024
 
 [[MiniPC PL63]] got wiped and Ubuntu Server installed. 
