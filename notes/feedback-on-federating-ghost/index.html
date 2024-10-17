@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <link rel="canonical" href="https://bmannconsulting.com/notes/feedback-on-federating-ghost/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A survey asking for feedback on Federating [[Ghost]]  ActivityPub support is one of our most requested features of all time, and so we're currently taking so...">
+  <meta property="og:site_name" content="Boris Mann's Homepage">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="alternate" type="application/atom+xml" title="Blog Feed for bmannconsulting.com" href="https://bmannconsulting.com/blog.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Journal Feed for bmannconsulting.com" href="https://bmannconsulting.com/journal.xml" />
+  
+  
+  <link rel="stylesheet" href="https://unpkg.com/littlefoot/dist/littlefoot.css" />
+
+  
+  <meta property="og:description" content="A survey asking for feedback on Federating [[Ghost]]  ActivityPub support is one of our most requested features of all time, and so we're currently taking so..."/>
+  
+
+  
+  <meta property="og:title" content="Feedback on federating ghost">
+  <meta property="og:type" content="article">
+  
+  
+  
+  <meta property="article:published_time" content="2024-10-16T22:19:08-07:00">
+  <meta property="article:author" content="https://bmannconsulting.com/">
+  
+
+  <meta property="og:url" content="https://bmannconsulting.com/notes/feedback-on-federating-ghost/" />
+
+  
+  <meta property="og:image" content="https://bmannconsulting.com/assets/2024/ghost_logo_black.jpg">
+  
+
+
+  <!-- Open Frames Default -->
+  
+  <meta property="fc:frame:image" content="https://bmannconsulting.com/assets/2024/ghost_logo_black.jpg">
+  <meta property="fc:frame:image:aspect_ratio" content="1:1">
+  
+  <meta property="fc:frame" content="vNext">
+  
+  <meta property="fc:frame:button:1" content="🌱 Home">
+  <meta property="fc:frame:button:1:action" content="link">
+  <meta property="fc:frame:button:1:target" content="https://bmannconsulting.com">
+  
+  <meta property="fc:frame:button:2" content="🔖 Explore">
+  <meta property="fc:frame:button:2:action" content="link">
+  <meta property="fc:frame:button:2:target" content="https://bmannconsulting.com/notes/">
+  <meta property="fc:frame:button:3" content="💰 Drips">
+  <meta property="fc:frame:button:3:action" content="link">
+  <meta property="fc:frame:button:3:target" content="https://www.drips.network/app/bmann.eth">
+
+  <title>
+    
+      Feedback on federating ghost &mdash; Boris Mann's Homepage
+    
+  </title>
+</head>
+
+  <body>
+    <nav><div>
+    <a class="internal-link" href="/"><b>Boris Mann's Homepage</b></a>
+</div>
+</nav>
+    <div class="wrapper">
+      <main><article>
+  <div>
+    <h1 style="text-transform:capitalize;">Feedback on federating ghost</h1>
+    
+
+    
+    <time datetime="2024-10-16T22:18:40-07:00">
+      Last updated on October 16, 2024
+    </time>
+    
+
+    <ul>
+    
+    </ul>
+  </div>
+
+  <div id="notes-entry-container">
+    <content>
+      <html><body>
+<p>A <a href="https://tally.so/r/m67X4P" target="_blank">survey</a> asking for feedback on Federating <a class="internal-link" href="/notes/ghost/">Ghost</a></p>
+
+<blockquote>
+  <p>ActivityPub support is one of our <a href="https://forum.ghost.org/t/federate-over-activitypub/1989" target="_blank">most requested features</a> of all time, and so we're currently taking some time to think about how this could work inside Ghost.</p>
+
+  <p>Because it's an open technology rather than a specific app experience, there are lots of different potential ways ActivityPub could be used in Ghost. We have some ideas, but we're curious to hear how you imagine this working in Ghost.</p>
+</blockquote>
+
+<h2 id="with-as-much-detail-as-you-can-give-how-would-you-expect-activitypub-functionality-to-work-in-ghost-if-it-existed">With as much detail as you can give, how would you expect ActivityPub functionality to work in Ghost, if it existed?</h2>
+
+<p>Signing up for a Ghost site account as a user could also be done by “Logging in with ActivityPub”.</p>
+
+<p>So, someone with an existing AP account could login with that account. This would create a local account, where you "auth" with your remote account.</p>
+
+<p>Alternately, existing member accounts can "link to an AP account". This leaves things open for connecting to multiple servers and networks.</p>
+
+<h3 id="following-ghost-content">Following Ghost Content</h3>
+
+<p>From a user perspective, there should be a "main" Ghost account to follow, <code class="language-plaintext highlighter-rouge">@name@website.com</code>. The publisher should be able to choose tags to expose like <code class="language-plaintext highlighter-rouge">@tag@website.com</code>.</p>
+
+<p>Replying to a posted article would appear as a comment on the article. If someone doesn't have a linked Ghost account, the publisher could choose whether or not to show it.</p>
+
+<p>Optional: if a person without a linked Ghost account replies with their AP account, send a DM that says "thanks for your comment! if you link your AP account, we'll publish your reply as a comment". There are a bunch of paths here for onboarding as well as moderation.</p>
+
+<p>Favorites and Boosts could also flow back, a bit like Web Mentions. This would be stored in the Ghost database, and could be used to sort or otherwise display content.</p>
+<h3 id="premium-content">Premium Content</h3>
+
+<p>Could we get DMs / private mentions of full articles for premium content?</p>
+
+<h3 id="threadiverse">Threadiverse</h3>
+
+<p>The <a href="https://notes.bmannconsulting.com/#/page/Threadiverse" class="noteslink" target="_blank">Threadiverse</a> is the name for Reddit-style top posts plus comments. This seems to fit the article-or-newsletter-plus-comments that Ghost specializes in. Following this pattern would be better than thinking of Ghost as microblogging.</p>
+
+<h2 id="if-ghost-had-this-what-would-be-the-biggest-benefit-to-you-personally">If Ghost had this, what would be the biggest benefit to you, personally?</h2>
+
+<p>I would interact with more Ghost sites in the "comments" if I didn't have to create new accounts all the time!</p>
+
+<p>I already recommend <a class="internal-link" href="/notes/ghost/">Ghost</a> and could now consider using it for use cases that look more like community servers use cases.</p>
+<h1 id="updates">Updates</h1>
+
+<p>I linked to <a class="internal-link" href="/journal/2024-04-21-0804/">Matthew Bogart's write up answering this survey</a>.</p>
+
+<h2 id="ghost--blueskys-atprotocol">Ghost + Bluesky's ATProtocol</h2>
+
+<p>I guess John O'Nolan has a cross poster, since he <a href="https://bsky.app/profile/bmann.ca/post/3kqlzleitr223" target="_blank">posted the same thing to Bluesky</a>. Would my answer be different for <a class="internal-link" href="/notes/atprotocol/">ATProtocol</a>?</p>
+
+<p>I'd like to see <a class="internal-link" href="/notes/bluesky/">Bluesky</a> support a blog Lexicon with full posts.</p>
+
+<p>Login linking would be similar.</p>
+
+<p>Could you make a custom feed for premium content??? I think so, and I think it's worth a write up: <a class="internal-link" href="/notes/bluesky-custom-feeds-for-premium-content/">Bluesky Custom Feeds for Premium Content</a></p>
+
+</body></html>
+    </content>
+
+    <side style="font-size: 0.9em">
+      <h3 style="margin-bottom: 1em">Notes mentioning this note</h3>
+      
+
+      <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
+        <div class="backlink-box" style="background-color: #fff;">
+          View related content on notes.bmannconsulting.com/<a href="https://notes.bmannconsulting.com/#/page/Feedback on federating ghost" target="_notes">Feedback on federating ghost</a>
+        </div>
+        <div class="backlink-box" style="background-color: #fff;">
+          Browse the <a href="/notes/" class="internal-link">Local Notes Graph »</a>
+        </div>
+      </div>
+      
+    </side>
+  </div>
+</article>
+</main>
+      <footer><a href="/blog/" class="internal-link">Blog</a> | <a href="/journal/" class="internal-link">Journal</a> | <a href="/notes/" class="internal-link">Notes</a> | <a href="/feeds/" class="internal-link">Feeds</a> | 👉&nbsp;Social Profiles&nbsp;<a href='https://bmann.ca' title='Links to all of my social profiles and accounts'>bmann.ca</a> </footer>
+    </div>
+
+    <!-- That file is not particularly elegant. This will need a refactor at some point. -->
+<style>
+
+  
+
+  #tooltip-wrapper {
+    background: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    font-size: 0.8em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 100ms;
+  }
+
+  #tooltip-wrapper:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+		background-image: linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, 1) 90%);
+		width: 100%;
+		height: 75px;
+  }
+</style>
+
+<div style="opacity: 0; display: none;" id='tooltip-wrapper'>
+  <div id='tooltip-content'>
+  </div>
+</div>
+
+<iframe style="display: none; height: 0; width: 0;" id='link-preview-iframe' src="">
+</iframe>
+
+<script>
+  var opacityTimeout;
+  var contentTimeout;
+  var transitionDurationMs = 100;
+
+  var iframe = document.getElementById('link-preview-iframe')
+  var tooltipWrapper = document.getElementById('tooltip-wrapper')
+  var tooltipContent = document.getElementById('tooltip-content')
+
+  var linkHistories = {};
+
+  function hideTooltip() {
+    opacityTimeout = setTimeout(function() {
+      tooltipWrapper.style.opacity = 0;
+      contentTimeout = setTimeout(function() {
+        tooltipContent.innerHTML = '';
+        tooltipWrapper.style.display = 'none';
+      }, transitionDurationMs + 1);
+    }, transitionDurationMs)
+  }
+
+  function showTooltip(event) {
+    var elem = event.target;
+    var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
+    var top = window.pageYOffset || document.documentElement.scrollTop
+
+    if (event.target.host === window.location.host) {
+      if (!linkHistories[event.target.href]) {
+        iframe.src = event.target.href
+        iframe.onload = function() {
+          tooltipContentHtml = ''
+          tooltipContentHtml += '<div style="font-weight: bold;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
+          tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
+
+          tooltipContent.innerHTML = tooltipContentHtml
+          linkHistories[event.target.href] = tooltipContentHtml
+
+          tooltipWrapper.style.display = 'block';
+          setTimeout(function() {
+            tooltipWrapper.style.opacity = 1;
+          }, 1)
+        } 
+      } else {
+        tooltipContent.innerHTML = linkHistories[event.target.href]
+        tooltipWrapper.style.display = 'block';
+        setTimeout(function() {
+          tooltipWrapper.style.opacity = 1;
+        }, 1)
+      }
+
+
+      tooltipWrapper.style.left = elem_props.left - (tooltipWrapper.offsetWidth / 2) + (elem_props.width / 2) + "px";
+      if ((window.innerHeight - elem_props.top) < (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top - tooltipWrapper.offsetHeight - 10 + "px";
+      } else if ((window.innerHeight - elem_props.top) > (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top + 35 + "px";
+      }
+
+      if ((elem_props.left + (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = "10px";
+      } else if ((document.body.clientWidth - elem_props.left - (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = document.body.clientWidth - tooltipWrapper.offsetWidth - 20 + "px";
+      }
+    }
+  }
+
+  function setupListeners(linkElement) {
+    linkElement.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+      showTooltip(event);
+    });
+
+    tooltipWrapper.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+    });
+  }
+
+  document.querySelectorAll('content a').forEach(setupListeners);
+</script>
+
+    <script
+  src="https://unpkg.com/littlefoot/dist/littlefoot.js"
+  type="application/javascript"
+></script>
+<script type="application/javascript">
+  littlefoot.littlefoot() // Pass any littlefoot settings here.
+</script>
+  </body>
+</html>

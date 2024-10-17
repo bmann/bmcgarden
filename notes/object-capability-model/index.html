@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <link rel="canonical" href="https://bmannconsulting.com/notes/object-capability-model/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The object-capability model is a computer security model. A capability1 describes a transferable right to perform one (or more) operations on a given object....">
+  <meta property="og:site_name" content="Boris Mann's Homepage">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="alternate" type="application/atom+xml" title="Blog Feed for bmannconsulting.com" href="https://bmannconsulting.com/blog.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Journal Feed for bmannconsulting.com" href="https://bmannconsulting.com/journal.xml" />
+  
+  
+  <link rel="stylesheet" href="https://unpkg.com/littlefoot/dist/littlefoot.css" />
+
+  
+  <meta property="og:description" content="The object-capability model is a computer security model. A capability1 describes a transferable right to perform one (or more) operations on a given object...."/>
+  
+
+  
+  <meta property="og:title" content="Object Capability model">
+  <meta property="og:type" content="article">
+  
+  
+  
+  <meta property="article:published_time" content="2024-10-16T22:19:08-07:00">
+  <meta property="article:author" content="https://bmannconsulting.com/">
+  
+
+  <meta property="og:url" content="https://bmannconsulting.com/notes/object-capability-model/" />
+
+  
+  <meta property="og:image" content="https://bmannconsulting.com/assets/bmann_hair_orange_256x256.png">
+  
+
+
+  <!-- Open Frames Default -->
+  
+  <meta property="fc:frame:image" content="https://bmannconsulting.com/assets/bmann_hair_orange_256x256.png">
+  <meta property="fc:frame:image:aspect_ratio" content="1:1">
+  
+  <meta property="fc:frame" content="vNext">
+  
+  <meta property="fc:frame:button:1" content="📖 Wikipedia">
+  <meta property="fc:frame:button:1:action" content="link">
+  <meta property="fc:frame:button:1:target" content="https://en.wikipedia.org/wiki/Object-capability_model">
+  
+  <meta property="fc:frame:button:2" content="🔖 Explore">
+  <meta property="fc:frame:button:2:action" content="link">
+  <meta property="fc:frame:button:2:target" content="https://bmannconsulting.com/notes/">
+  <meta property="fc:frame:button:3" content="💰 Drips">
+  <meta property="fc:frame:button:3:action" content="link">
+  <meta property="fc:frame:button:3:target" content="https://www.drips.network/app/bmann.eth">
+
+  <title>
+    
+      Object Capability model &mdash; Boris Mann's Homepage
+    
+  </title>
+</head>
+
+  <body>
+    <nav><div>
+    <a class="internal-link" href="/"><b>Boris Mann's Homepage</b></a>
+</div>
+</nav>
+    <div class="wrapper">
+      <main><article>
+  <div>
+    <h1 style="text-transform:capitalize;">Object Capability model</h1>
+    
+    <strong>wikipedia:</strong>&nbsp;<a href="https://en.wikipedia.org/wiki/Object-capability_model">en.wikipedia.org/wiki/Object-capability...</a><br />
+    
+
+    
+    <time datetime="2024-10-16T22:18:40-07:00">
+      Last updated on October 16, 2024
+    </time>
+    
+
+    <ul>
+    
+    </ul>
+  </div>
+
+  <div id="notes-entry-container">
+    <content>
+      <html><body>
+<p>The <strong>object-capability model</strong> is a computer security model. A capability<sup id="fnref:capability-based-security" role="doc-noteref"><a href="#fn:capability-based-security" class="footnote" rel="footnote">1</a></sup> describes a transferable right to perform one (or more) operations on a given object. It can be obtained by the following combination:</p>
+
+<ul>
+  <li>An unforgeable reference (in the sense of object references or protected pointers) that can be sent in messages.</li>
+  <li>A message that specifies the operation to be performed.</li>
+</ul>
+
+<p>The security model relies on not being able to forge references.</p>
+
+<ul>
+  <li>Objects can interact only by sending messages on references.</li>
+  <li>A reference can be obtained by:</li>
+</ul>
+
+<ol>
+  <li>Initial conditions: In the initial state of the computational world being described, object A may already have a reference to object B.</li>
+  <li>Parenthood: If A creates B, at that moment A obtains the only reference to the newly created B.</li>
+  <li>Endowment: If A creates B, B is born with that subset of A's references with which A chose to endow it.</li>
+  <li>Introduction: If A has references to both B and C, A can send to B a message containing a reference to C. B can retain that reference for subsequent use.</li>
+</ol>
+
+<p>In the object-capability model, <em>all</em> computation is performed following the above rules.</p>
+
+<p>Advantages that motivate <a href="https://en.wikipedia.org/wiki/Object_(computer_science)" title="Object (computer science)" target="_blank">object-oriented programming</a>, such as encapsulation or <a href="https://en.wikipedia.org/wiki/Information_hiding" title="Information hiding" target="_blank">information hiding</a>, <a href="https://en.wikipedia.org/wiki/Modularity_(programming)" title="Modularity (programming)" target="_blank">modularity</a>, and <a href="https://en.wikipedia.org/wiki/Separation_of_concerns" title="Separation of concerns" target="_blank">separation of concerns</a>, correspond to security goals such as <a href="https://en.wikipedia.org/wiki/Principle_of_least_privilege" title="Principle of least privilege" target="_blank">least privilege</a> and <a href="https://en.wikipedia.org/wiki/Privilege_separation" title="Privilege separation" target="_blank">privilege separation</a> in capability-based programming.</p>
+
+<p>The object-capability model was first proposed by <a href="https://en.wikipedia.org/wiki/Jack_Dennis" title="Jack Dennis" target="_blank">Jack Dennis</a> and Earl C. Van Horn in 1966<sup id="fnref:dennis_vanhorn" role="doc-noteref"><a href="#fn:dennis_vanhorn" class="footnote" rel="footnote">2</a></sup></p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:capability-based-security" role="doc-endnote">
+      <p><a class="internal-link" href="/notes/capability-based-security/">Capability-based security</a> <a href="#fnref:capability-based-security" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+    <li id="fn:dennis_vanhorn" role="doc-endnote">
+      <p> J.B. Dennis, E.C. Van Horn. <a href="http://srl.cs.jhu.edu/pubs/SRL2003-03.pdf" target="_blank">“Programming Semantics for Multiprogrammed Computations.” (PDF)</a> Communications of the ACM, 9(3):143–155, March 1966. <a href="#fnref:dennis_vanhorn" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+  </ol>
+</div>
+</body></html>
+    </content>
+
+    <side style="font-size: 0.9em">
+      <h3 style="margin-bottom: 1em">Notes mentioning this note</h3>
+      
+      <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
+      
+        <div class="backlink-box">
+        <a class="internal-link" href="/notes/capabilities-adoption/">Capabilities adoption</a><br>
+        <div style="font-size: 0.9em">Capabilities adoption needs a lot more education and promotion. Interest in Capabilities There are currently three communities that are interested...</div>
+        </div>
+      
+      
+      </div>
+      
+    </side>
+  </div>
+</article>
+</main>
+      <footer><a href="/blog/" class="internal-link">Blog</a> | <a href="/journal/" class="internal-link">Journal</a> | <a href="/notes/" class="internal-link">Notes</a> | <a href="/feeds/" class="internal-link">Feeds</a> | 👉&nbsp;Social Profiles&nbsp;<a href='https://bmann.ca' title='Links to all of my social profiles and accounts'>bmann.ca</a> </footer>
+    </div>
+
+    <!-- That file is not particularly elegant. This will need a refactor at some point. -->
+<style>
+
+  
+
+  #tooltip-wrapper {
+    background: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    font-size: 0.8em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 100ms;
+  }
+
+  #tooltip-wrapper:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+		background-image: linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, 1) 90%);
+		width: 100%;
+		height: 75px;
+  }
+</style>
+
+<div style="opacity: 0; display: none;" id='tooltip-wrapper'>
+  <div id='tooltip-content'>
+  </div>
+</div>
+
+<iframe style="display: none; height: 0; width: 0;" id='link-preview-iframe' src="">
+</iframe>
+
+<script>
+  var opacityTimeout;
+  var contentTimeout;
+  var transitionDurationMs = 100;
+
+  var iframe = document.getElementById('link-preview-iframe')
+  var tooltipWrapper = document.getElementById('tooltip-wrapper')
+  var tooltipContent = document.getElementById('tooltip-content')
+
+  var linkHistories = {};
+
+  function hideTooltip() {
+    opacityTimeout = setTimeout(function() {
+      tooltipWrapper.style.opacity = 0;
+      contentTimeout = setTimeout(function() {
+        tooltipContent.innerHTML = '';
+        tooltipWrapper.style.display = 'none';
+      }, transitionDurationMs + 1);
+    }, transitionDurationMs)
+  }
+
+  function showTooltip(event) {
+    var elem = event.target;
+    var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
+    var top = window.pageYOffset || document.documentElement.scrollTop
+
+    if (event.target.host === window.location.host) {
+      if (!linkHistories[event.target.href]) {
+        iframe.src = event.target.href
+        iframe.onload = function() {
+          tooltipContentHtml = ''
+          tooltipContentHtml += '<div style="font-weight: bold;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
+          tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
+
+          tooltipContent.innerHTML = tooltipContentHtml
+          linkHistories[event.target.href] = tooltipContentHtml
+
+          tooltipWrapper.style.display = 'block';
+          setTimeout(function() {
+            tooltipWrapper.style.opacity = 1;
+          }, 1)
+        } 
+      } else {
+        tooltipContent.innerHTML = linkHistories[event.target.href]
+        tooltipWrapper.style.display = 'block';
+        setTimeout(function() {
+          tooltipWrapper.style.opacity = 1;
+        }, 1)
+      }
+
+
+      tooltipWrapper.style.left = elem_props.left - (tooltipWrapper.offsetWidth / 2) + (elem_props.width / 2) + "px";
+      if ((window.innerHeight - elem_props.top) < (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top - tooltipWrapper.offsetHeight - 10 + "px";
+      } else if ((window.innerHeight - elem_props.top) > (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top + 35 + "px";
+      }
+
+      if ((elem_props.left + (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = "10px";
+      } else if ((document.body.clientWidth - elem_props.left - (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = document.body.clientWidth - tooltipWrapper.offsetWidth - 20 + "px";
+      }
+    }
+  }
+
+  function setupListeners(linkElement) {
+    linkElement.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+      showTooltip(event);
+    });
+
+    tooltipWrapper.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+    });
+  }
+
+  document.querySelectorAll('content a').forEach(setupListeners);
+</script>
+
+    <script
+  src="https://unpkg.com/littlefoot/dist/littlefoot.js"
+  type="application/javascript"
+></script>
+<script type="application/javascript">
+  littlefoot.littlefoot() // Pass any littlefoot settings here.
+</script>
+  </body>
+</html>

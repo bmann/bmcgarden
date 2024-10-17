@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <link rel="canonical" href="https://bmannconsulting.com/notes/lenovo-m900-tiny-setup/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="I’m going to go over a lot of the yak shaving I  did to set up the [[Lenovo M900 Tiny]].Different SpecsAs noted [[2024-01-19_1306]], I received a different s...">
+  <meta property="og:site_name" content="Boris Mann's Homepage">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="alternate" type="application/atom+xml" title="Blog Feed for bmannconsulting.com" href="https://bmannconsulting.com/blog.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Journal Feed for bmannconsulting.com" href="https://bmannconsulting.com/journal.xml" />
+  
+  
+  <link rel="stylesheet" href="https://unpkg.com/littlefoot/dist/littlefoot.css" />
+
+  
+  <meta property="og:description" content="I’m going to go over a lot of the yak shaving I  did to set up the [[Lenovo M900 Tiny]].Different SpecsAs noted [[2024-01-19_1306]], I received a different s..."/>
+  
+
+  
+  <meta property="og:title" content="Lenovo m900 tiny setup">
+  <meta property="og:type" content="article">
+  
+  
+  
+  <meta property="article:published_time" content="2024-10-16T22:19:08-07:00">
+  <meta property="article:author" content="https://bmannconsulting.com/">
+  
+
+  <meta property="og:url" content="https://bmannconsulting.com/notes/lenovo-m900-tiny-setup/" />
+
+  
+  <meta property="og:image" content="https://bmannconsulting.com/assets/bmann_hair_orange_256x256.png">
+  
+
+
+  <!-- Open Frames Default -->
+  
+  <meta property="fc:frame:image" content="https://bmannconsulting.com/assets/bmann_hair_orange_256x256.png">
+  <meta property="fc:frame:image:aspect_ratio" content="1:1">
+  
+  <meta property="fc:frame" content="vNext">
+  
+  <meta property="fc:frame:button:1" content="🌱 Home">
+  <meta property="fc:frame:button:1:action" content="link">
+  <meta property="fc:frame:button:1:target" content="https://bmannconsulting.com">
+  
+  <meta property="fc:frame:button:2" content="🔖 Explore">
+  <meta property="fc:frame:button:2:action" content="link">
+  <meta property="fc:frame:button:2:target" content="https://bmannconsulting.com/notes/">
+  <meta property="fc:frame:button:3" content="💰 Drips">
+  <meta property="fc:frame:button:3:action" content="link">
+  <meta property="fc:frame:button:3:target" content="https://www.drips.network/app/bmann.eth">
+
+  <title>
+    
+      Lenovo m900 tiny setup &mdash; Boris Mann's Homepage
+    
+  </title>
+</head>
+
+  <body>
+    <nav><div>
+    <a class="internal-link" href="/"><b>Boris Mann's Homepage</b></a>
+</div>
+</nav>
+    <div class="wrapper">
+      <main><article>
+  <div>
+    <h1 style="text-transform:capitalize;">Lenovo m900 tiny setup</h1>
+    
+
+    
+    <time datetime="2024-10-16T22:18:40-07:00">
+      Last updated on October 16, 2024
+    </time>
+    
+
+    <ul>
+    
+    </ul>
+  </div>
+
+  <div id="notes-entry-container">
+    <content>
+      <html><body>
+<p>I’m going to go over a lot of the yak shaving I  did to set up the <a class="internal-link" href="/notes/lenovo-m900-tiny/">Lenovo M900 Tiny</a>.</p>
+
+<h2 id="different-specs">Different Specs</h2>
+
+<p>As noted <a class="internal-link" href="/journal/2024-01-19-1306/">2024-01-19_1306</a>, I received a different spec. Booting into windows and the overview showed me:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Processor Intel(R) Core(TM) i5-6600T CPU @ 2.70GHz   2.71 GHz
+Installed RAM 8.00 GB (7.89 GB usable)
+</code></pre></div></div>
+
+<p>Looking at the hard drive, it's 1TB.</p>
+
+<p>And my <a href="https://www.amazon.ca/gp/product/B07ZPBDFGD/ref=ppx_od_dt_b_asin_title_s00?ie=UTF8&amp;th=1" target="_blank">Amazon order</a> was supposed to be "Quad-Core i5-6500T, 16 GB DDR4, 480 GB SSD Intel Graphics, USB WiFi, Windows 10 pro 64 Bit"</p>
+
+<p>There also isn't any Wifi in the one I received.</p>
+
+<p>So, half the RAM, faster processor, twice the hard drive space, and no Wifi. I will probably just keep it, but feels like less RAM will be a challenge.</p>
+
+<h2 id="initial-unboxing">Initial Unboxing</h2>
+
+<p>This is going to sit right next to my <a href="https://notes.bmannconsulting.com/#/page/Unifi%20Dream%20Machine" class="noteslink" target="_blank">Unifi Dream Machine</a> router plugged in via Ethernet, which is right at the front of our apartment. There’s a portable monitor there, but it only has USB-C as video input.</p>
+
+<p>This m900 has two DisplayPort connections and…a VGA connector. Maybe I can use my old projector as a screen? But no, I don’t have a female VGA cable, just male-to-male. Maybe this USB B (projector side) to USB-A will …just work if I plug it in?</p>
+
+<p>What kind of adapters do I have? Should I plug it into the TV temporarily???</p>
+
+<p>I had to take it into my back office (which only has wireless and this only has Ethernet) to plug it into the DisplayPort of my monitor.</p>
+
+<p>I’ll unplug the monitor from the USB-C KVM Switch (because I’m only going to have modern machines that all have USB-C, right), and also get my desktop keyboard and mouse out of the switch and directly into the m900.</p>
+
+<p>I’m booting into Windows and it wants the Internet.</p>
+
+<p>OK, can I plug it into my MacBook Air and bridge into its wifi? My USB-C adapter dongle doesn’t have Ethernet. Does the one I gave to Rachael have Ethernet? It does!</p>
+
+<p>Is this even going to work? (searches for Mac Internet Sharing) Yes this is built into System Preferences -&gt; Sharing. Do I know which interface this Ethernet adapter is? No, just enable them all.</p>
+
+<p>OK, it works!</p>
+
+<p>Now we have various times of ignoring all the Microsoft upsells and ask for information (this is Windows 10 Pro) and we get to a desktop. I have a Microsoft Account with some paid family plan stuff so I’m in.</p>
+
+<p>Updates, turn on Remote Desktop. Let’s see if this works? It does not, because of the Ethernet to Mac sharing wifi, the m900 is double NAT-d.</p>
+
+<p>Read some stuff about dual booting Ubuntu and Windows. Actually I search for it - in Microsoft Edge so I guess this is Bing - and it gives me sort of a ChatGPT interface with the answer. The links go to the most horrendous ad-filled pages but I kind of squint at the info.</p>
+
+<p>I don’t really need Windows on here but let’s keep it around just in case. Shrink the C partition to 200GB, leaving 750GB for Ubuntu. The wording in this dialog is bad. “Shrink by” is asking you how much smaller. “Shrink to” would make more sense to me.</p>
+
+<p>Download a server image and <a href="https://unetbootin.github.io/" target="_blank">unetboot</a>. Apparently Ubuntu recommends <a href="https://rufus.ie/en/" target="_blank">Rufus</a> for this.</p>
+
+<p>Burn image to USB key. I ordered a new USB key at the same time as the m900, knowing at least I would need a spare or so for this.</p>
+
+<p>Attempt to follow instructions on disabling UEFI secure boot.</p>
+
+<h2 id="installing-ubuntu">Installing Ubuntu</h2>
+
+<p>Researched various Lenovo things. <code class="language-plaintext highlighter-rouge">F12</code> is what you need to press in order to get into firmware and boot settings.</p>
+
+<p>Selected the USB key to boot from.</p>
+
+<p>Chose the <a href="https://canonical-subiquity.readthedocs-hosted.com/en/latest/tutorial/screen-by-screen.html" target="_blank">Ubuntu Server install</a></p>
+
+<p>Got to the storage section and the 750GB unformatted part of the drive wasn't visible. The <a href="https://canonical-subiquity.readthedocs-hosted.com/en/latest/explanation/configure-storage.html#configure-storage" target="_blank">server storage guide</a> says:</p>
+
+<blockquote>
+  <p>The installer cannot edit partition tables. You can use existing partitions or reformat a drive entirely, but you cannot, for example, remove a large partition and replace it with two smaller ones.</p>
+</blockquote>
+
+<p>Went into the help menu and got into the terminal. Thought about it for a bit and looked at some partition formatting links (all of the defaults show a graphical editor), and decided to boot back into Windows.</p>
+
+<p>In Windows, formatted the the 750GB, then booted back into the installer.</p>
+
+<p>Used LVM, made <code class="language-plaintext highlighter-rouge">/</code> root of 30GB, swap of 20GB, remaining as <code class="language-plaintext highlighter-rouge">/home</code></p>
+
+<p>Install was very quick. Named the server <code class="language-plaintext highlighter-rouge">tinyhome</code>.</p>
+
+<p>There's an option to add SSH keys from Github. Entered my username and it fetched a couple of keys.</p>
+
+<p>Rebooted to Grub menu, then on to commandline login. Can I get it to automatically boot into Ubuntu? It's going to be running headless.</p>
+
+<p>Read some <a href="https://ubuntuforums.org/showthread.php?t=1195275" target="_blank">background on Grub settings</a>. Tried to get it to boot into Ubuntu / last saved OS by default with a short 3 second time out.</p>
+
+<p><code class="language-plaintext highlighter-rouge">sudoedit /etc/default/grub</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">sudo update-grub</code></p>
+
+<p>None of the things I applied and rebooted did anything other than bring me back to a menu with a 30s countdown that defaults to Ubuntu. OK fine!</p>
+
+<p>Moved to living room and rebooted. Had previously set the router to give this device the same IP address.</p>
+
+<p>Logged in with my ssh keys. Success!</p>
+
+<p>Oh oh. Revving, <strong>screaming</strong> fan noises that ramp up and down. Searched a bunch of things, and now…fan noises have gone away.</p>
+
+<p>Need to do more research, because having it screaming in the corner of the living room is not going to be OK.<sup id="fnref:livingroom" role="doc-noteref"><a href="#fn:livingroom" class="footnote" rel="footnote">1</a></sup></p>
+
+<h2 id="fan-control-in-ubuntu">Fan Control in Ubuntu</h2>
+
+<p>Found page on <a href="https://askubuntu.com/questions/22108/how-to-control-fan-speed" target="_blank">controlling fan speed in Ubuntu</a>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sensors-detect version 3.6.0
+
+# System: LENOVO 10FLS02D00 [ThinkCentre M900]
+# Board: LENOVO 30D0
+# Kernel: 5.15.0-91-generic x86_64
+# Processor: Intel(R) Core(TM) i5-6600T CPU @ 2.70GHz (6/94/3)
+
+This program will help you determine which kernel modules you need
+to load to use lm_sensors most effectively. It is generally safe
+and recommended to accept the default answers to all questions,
+unless you know what you're doing.
+
+Some south bridges, CPUs or memory controllers contain embedded sensors.
+Do you want to scan for them? This is totally safe. (YES/no):
+
+Driver `coretemp':
+  * Chip `Intel digital thermal sensor' (confidence: 9)
+Driver `nct6683':
+  * ISA bus, address 0xa20, Chip `Nuvoton NCT6683D eSIO' (confidence: 9)
+
+To load everything that is needed, add this to /etc/modules:
+
+#----cut here----
+
+# Chip drivers
+
+coretemp
+nct6683
+
+#----cut here----
+
+If you have some drivers built into your kernel, the list above will
+contain too many modules. Skip the appropriate ones!
+
+Do you want to add these lines automatically to /etc/modules? (yes/NO)
+</code></pre></div></div>
+
+<p>Ran <code class="language-plaintext highlighter-rouge">pwmconfig</code>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/usr/sbin/pwmconfig: There are no pwm-capable sensor modules installed
+</code></pre></div></div>
+
+<p>Did some research. Found <a href="https://github.com/vmatare/thinkfan/discussions/215" target="_blank">this thread</a> with this comment from January 2023:</p>
+
+<blockquote>
+  <p>On an M900 I had to force the kernel to load the nct6683 driver as stated here: <a href="https://bugs.launchpad.net/ubuntu/+source/lm-sensors/+bug/1858369" target="_blank">https://bugs.launchpad.net/ubuntu/+source/lm-sensors/+bug/1858369</a></p>
+</blockquote>
+
+<p>So apparently I can force a kernel module to load, but getting various permission errors.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo "options nct6683 force=1" &gt;&gt; /etc/modprobe.d/sensors.conf
+</code></pre></div></div>
+
+<p>OK, you really do need to be <code class="language-plaintext highlighter-rouge">root</code>, so <code class="language-plaintext highlighter-rouge">sudo su</code> it is.</p>
+
+<h3 id="fan-screaming">Fan Screaming</h3>
+
+<p>The fans are screaming this morning, so trying this again. This is applied after reboot, running <code class="language-plaintext highlighter-rouge">pwmconfig</code> now gives some output:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Found the following PWM controls:
+
+   hwmon2/pwm2           current value: 243
+
+/usr/sbin/pwmconfig: line 180: hwmon2/pwm2: Permission denied
+
+Giving the fans some time to reach full speed...
+
+Found the following fan sensors:
+
+   hwmon2/fan2_input     current speed: 7017 RPM
+</code></pre></div></div>
+
+<p>The fans really are too loud, and 7017 RPM is a lot.</p>
+
+<p>Research links:</p>
+<ul>
+  <li>older ubuntu, very extensive <a href="https://ubuntuforums.org/archive/index.php/t-42737.html" target="_blank">https://ubuntuforums.org/archive/index.php/t-42737.html</a>
+</li>
+  <li>odroid related <a href="https://forum.odroid.com/viewtopic.php?t=41911" target="_blank">https://forum.odroid.com/viewtopic.php?t=41911</a>
+</li>
+  <li>archlinux <a href="https://bbs.archlinux.org/viewtopic.php?id=225349" target="_blank">https://bbs.archlinux.org/viewtopic.php?id=225349</a>
+</li>
+</ul>
+
+<p>Running <code class="language-plaintext highlighter-rouge">sensors</code>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nct6683-isa-0a20
+
+Adapter: ISA adapter
+
+VIN0:             1.42 V  (min =  +0.00 V, max =  +0.00 V)
+
+VIN1:             1.02 V  (min =  +0.00 V, max =  +0.00 V)
+
+VIN3:           704.00 mV (min =  +0.00 V, max =  +0.00 V)
+
+VIN0:             1.42 V  (min =  +0.00 V, max =  +0.00 V)
+
+fan2:           6936 RPM  (min =  500 RPM)
+
+PECI 0.0:        +28.5°C  (low  =  +0.0°C)
+
+                          (high = +99.0°C, hyst =  +0.0°C)
+
+                          (crit =  +0.0°C)  sensor = Intel PECI
+
+PCH CHIP:         +0.0°C  (low  =  +0.0°C)
+
+                          (high =  +0.0°C, hyst =  +0.0°C)
+
+                          (crit =  +0.0°C)
+
+Diode 0 (curr):  +28.5°C  (low  =  +0.0°C)
+
+                          (high =  +0.0°C, hyst =  +0.0°C)
+
+                          (crit =  +0.0°C)  sensor = thermal diode
+
+Diode 1 (curr): +121.5°C  (low  =  +0.0°C)
+
+                          (high = +50.0°C, hyst =  +0.0°C)
+
+                          (crit =  +0.0°C)  sensor = thermal diode
+
+intrusion0:     OK
+
+beep_enable:    disabled
+
+  
+
+acpitz-acpi-0
+
+Adapter: ACPI interface
+
+temp1:        +27.8°C  (crit = +119.0°C)
+
+temp2:        +29.8°C  (crit = +119.0°C)
+
+  
+
+coretemp-isa-0000
+
+Adapter: ISA adapter
+
+Package id 0:  +29.0°C  (high = +84.0°C, crit = +100.0°C)
+
+Core 0:        +26.0°C  (high = +84.0°C, crit = +100.0°C)
+
+Core 1:        +26.0°C  (high = +84.0°C, crit = +100.0°C)
+
+Core 2:        +24.0°C  (high = +84.0°C, crit = +100.0°C)
+
+Core 3:        +27.0°C  (high = +84.0°C, crit = +100.0°C)
+</code></pre></div></div>
+
+<p>Temperatures aren't high, but fan2 is at 6900-7000+ RPM.</p>
+
+<p>So kernel driver is <a href="https://www.kernel.org/doc/Documentation/hwmon/nct6683" target="_blank">https://www.kernel.org/doc/Documentation/hwmon/nct6683</a></p>
+
+<p>Maybe I need to flash BIOS? Found something that relates to <a href="https://support.lenovo.com/ca/en/solutions/ht500771-fan-control-issue-thinkcentre-thinkstation" target="_blank">M900 BIOS and fan control issues</a></p>
+
+<p>Checking BIOS under Ubuntu with <code class="language-plaintext highlighter-rouge">dmidecode | less</code>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>BIOS Information
+        Vendor: LENOVO
+        Version: FWKTBFA  
+        Release Date: 06/23/2022
+        Address: 0xF0000
+        Runtime Size: 64 kB
+        ROM Size: 16 MB
+
+System Information
+        Manufacturer: LENOVO
+        Product Name: 10FLS02D00
+        Version: ThinkCentre M900
+        Serial Number: XXXXXXX
+</code></pre></div></div>
+
+<p>Looks like <a href="https://pcsupport.lenovo.com/ca/en/products/desktops-and-all-in-ones/thinkcentre-m-series-desktops/thinkcentre-m900/downloads/ds105487" target="_blank">updated BIOS from July 2022 is available</a>, but I need to boot back into Windows to apply.</p>
+
+<h3 id="fan-bios-update">Fan BIOS Update</h3>
+
+<p>Unplugged everything from the living room and brought it back to plug in monitor and booted into Windows.</p>
+
+<p>Applied the updated BIOS and grabbed a few other drivers from the Lenovo site.</p>
+
+<p>Sitting at around 1000 rpm and not really audible when sitting on top of the desk. Brought it back out to the front of the apartment.</p>
+
+<p>Silent? Can’t hear it? Fingers crossed that fixed it!</p>
+<h2 id="server-management-install">Server Management Install</h2>
+
+<p>Decision point: <a class="internal-link" href="/notes/cloudron/">Cloudron</a> or something else?</p>
+
+<p>Looking at <a class="internal-link" href="/notes/coolify/">Coolify</a> again, it needs Debian as the "admin", and also it is still quite a new system. I would probably try the hosted Coolify at $5/month as the admin controller.</p>
+
+<p><a class="internal-link" href="/notes/easypanel/">Easypanel</a> is proprietary, but maybe not that different from <a class="internal-link" href="/notes/cloudron/">Cloudron</a>?</p>
+
+<h2 id="cloudron-install">Cloudron Install</h2>
+
+<p>OK, let's <a href="https://www.cloudron.io/get.html" target="_blank">install Cloudron</a>. It has a <a href="https://docs.cloudron.io/installation/home-server/" target="_blank">Home Server Installation in the docs</a>.</p>
+
+<p>Found my public IP address. Let's see if I can connect to it after a reboot.</p>
+
+<p>Connected via the <code class="language-plaintext highlighter-rouge">home.bmann.ca</code> "local" DNS setting that I put into the Unifi router settings.</p>
+
+<p>On the Domain Settings screen. Not really sure what to pick here. I guess I can pick either manual or wildcard. Or, I can use Cloudflare API and let it manage parts of <code class="language-plaintext highlighter-rouge">bmann.ca</code> that are already being managed by <a class="internal-link" href="/notes/commons-computer/">Commons Computer</a> install.</p>
+
+<p><a href="https://docs.cloudron.io/networking/#private-dns" target="_blank">Cloudron Private DNS settings</a></p>
+
+<p>OK, sure, let's go straight to advanced mode and setup some local addresses.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>local-zone: bmann.ca." typetransparent
+local-data: "home.bmann.ca. A 192.168.1.67"
+local-data: "my.home.bmann.ca. A 192.168.1.67"
+</code></pre></div></div>
+
+<p>Sure, let's setup Cloudflare and see what happens. Make a new API token with access to <code class="language-plaintext highlighter-rouge">bmann.ca</code>, setup <code class="language-plaintext highlighter-rouge">home.bmann.ca</code> as the domain, and <code class="language-plaintext highlighter-rouge">my.home.bmann.ca</code> would be where the panel ends up.</p>
+
+<p>Get an error: <code class="language-plaintext highlighter-rouge">queryNs ECONNREFUSED bmann.ca</code>, search for cloudron: <a href="https://forum.cloudron.io/topic/2008/queryns-econnrefused-cloudron-intra-example-org" target="_blank">https://forum.cloudron.io/topic/2008/queryns-econnrefused-cloudron-intra-example-org</a></p>
+
+<p>Doesn't like NoOp either <code class="language-plaintext highlighter-rouge">Unable to detect IPv4. API server (ipv4.api.cloudron.io) unreachable</code></p>
+
+<p>OK, none of this is going to work until I port forward. Let's go look at Unifi Router.</p>
+
+<p>Port forwarding for tcp/80 and tcp/443 setup to the internal IP address of the server. Confirm that I can get to the Cloudron setup page from the public address.</p>
+
+<h2 id="cloudron-install-part-2">Cloudron Install Part 2</h2>
+
+<p>OK, I turned off that Unifi local DNS of <code class="language-plaintext highlighter-rouge">home.bmann.ca</code>, and undid all of the private DNS settings. Accessing Cloudron from the public IP address, and it is being forwarded to the server.</p>
+
+<p>Now setting this as the domain, with Cloudflare API key. I'm in, Cloudron installed.</p>
+
+<p>Enabling <a href="https://docs.cloudron.io/networking/#dynamic-dns" target="_blank">Dynamic DNS</a> under Network settings – Cloudron will use my Cloudflare API key to update the public address if my home connection IP changes.</p>
+
+<p>Setting up backup. <a class="internal-link" href="/notes/commons-computer/">Commons Computer</a> uses my Digital Ocean account, but I recall that I have a <a class="internal-link" href="/notes/storj/">Storj</a> account, which is decentralized file storage. There is a free tier, and even at the paid tier it has 25GB included for free. I upgraded to a pro paid account by sending some STORJ tokens via Ethereum<sup id="fnref:tokens" role="doc-noteref"><a href="#fn:tokens" class="footnote" rel="footnote">2</a></sup>.</p>
+
+<p>OK, we're up and running. I don't really have a plan for this machine, other than it's <em>inside</em> my home. Let's setup a <code class="language-plaintext highlighter-rouge">home</code> group for permissions, which just has my <code class="language-plaintext highlighter-rouge">boris</code> user in it. I might give some other people accounts on Cloudron, but they shouldn't have access to this home group.</p>
+
+<p>I guess I'll start by just creating a <a href="https://notes.bmannconsulting.com/#/page/Surfer" class="noteslink" target="_blank">Surfer</a> app running, for static file serving and WebDAV, right at the base domain <a href="https://home.bmann.ca" target="_blank">https://home.bmann.ca</a>.</p>
+
+<h2 id="custom-ipfs-app">Custom IPFS App</h2>
+
+<p>I’m going to add <a href="https://notes.bmannconsulting.com/#/page/IPFS%20Self%20Hosting" class="noteslink" target="_blank">IPFS Self Hosting</a> as a custom app.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:livingroom" role="doc-endnote">
+      <p>It's in the living room, because that's where the cable connector for my Internet comes out, and where the router is plugged in. <a href="#fnref:livingroom" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+    <li id="fn:tokens" role="doc-endnote">
+      <p>went to <a href="https://app.uniswap.org" target="_blank">Uniswap</a>, swapped some Ethereum for 100 STORJ (about $60USD). Sent 50 STORJ to the receiving address Storj gave me, once it was confirmed they credited me 55 STORJ (10% bonus for paying with tokens). <a href="#fnref:tokens" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+  </ol>
+</div>
+</body></html>
+    </content>
+
+    <side style="font-size: 0.9em">
+      <h3 style="margin-bottom: 1em">Notes mentioning this note</h3>
+      
+      <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
+      
+        <div class="backlink-box">
+        <a class="internal-link" href="/notes/lenovo-m900-tiny/">Lenovo ThinkCentre M900 Tiny</a><br>
+        <div style="font-size: 0.9em">Follow along with setup: [[Lenovo m900 Tiny Setup]] Ordered from Amazon, refurbished, January 2024 Quad-Core i5-6500T 16 GB DDR4 480...</div>
+        </div>
+      
+      
+      </div>
+      
+    </side>
+  </div>
+</article>
+</main>
+      <footer><a href="/blog/" class="internal-link">Blog</a> | <a href="/journal/" class="internal-link">Journal</a> | <a href="/notes/" class="internal-link">Notes</a> | <a href="/feeds/" class="internal-link">Feeds</a> | 👉&nbsp;Social Profiles&nbsp;<a href='https://bmann.ca' title='Links to all of my social profiles and accounts'>bmann.ca</a> </footer>
+    </div>
+
+    <!-- That file is not particularly elegant. This will need a refactor at some point. -->
+<style>
+
+  
+
+  #tooltip-wrapper {
+    background: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    font-size: 0.8em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 100ms;
+  }
+
+  #tooltip-wrapper:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+		background-image: linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, 1) 90%);
+		width: 100%;
+		height: 75px;
+  }
+</style>
+
+<div style="opacity: 0; display: none;" id='tooltip-wrapper'>
+  <div id='tooltip-content'>
+  </div>
+</div>
+
+<iframe style="display: none; height: 0; width: 0;" id='link-preview-iframe' src="">
+</iframe>
+
+<script>
+  var opacityTimeout;
+  var contentTimeout;
+  var transitionDurationMs = 100;
+
+  var iframe = document.getElementById('link-preview-iframe')
+  var tooltipWrapper = document.getElementById('tooltip-wrapper')
+  var tooltipContent = document.getElementById('tooltip-content')
+
+  var linkHistories = {};
+
+  function hideTooltip() {
+    opacityTimeout = setTimeout(function() {
+      tooltipWrapper.style.opacity = 0;
+      contentTimeout = setTimeout(function() {
+        tooltipContent.innerHTML = '';
+        tooltipWrapper.style.display = 'none';
+      }, transitionDurationMs + 1);
+    }, transitionDurationMs)
+  }
+
+  function showTooltip(event) {
+    var elem = event.target;
+    var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
+    var top = window.pageYOffset || document.documentElement.scrollTop
+
+    if (event.target.host === window.location.host) {
+      if (!linkHistories[event.target.href]) {
+        iframe.src = event.target.href
+        iframe.onload = function() {
+          tooltipContentHtml = ''
+          tooltipContentHtml += '<div style="font-weight: bold;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
+          tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
+
+          tooltipContent.innerHTML = tooltipContentHtml
+          linkHistories[event.target.href] = tooltipContentHtml
+
+          tooltipWrapper.style.display = 'block';
+          setTimeout(function() {
+            tooltipWrapper.style.opacity = 1;
+          }, 1)
+        } 
+      } else {
+        tooltipContent.innerHTML = linkHistories[event.target.href]
+        tooltipWrapper.style.display = 'block';
+        setTimeout(function() {
+          tooltipWrapper.style.opacity = 1;
+        }, 1)
+      }
+
+
+      tooltipWrapper.style.left = elem_props.left - (tooltipWrapper.offsetWidth / 2) + (elem_props.width / 2) + "px";
+      if ((window.innerHeight - elem_props.top) < (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top - tooltipWrapper.offsetHeight - 10 + "px";
+      } else if ((window.innerHeight - elem_props.top) > (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top + 35 + "px";
+      }
+
+      if ((elem_props.left + (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = "10px";
+      } else if ((document.body.clientWidth - elem_props.left - (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = document.body.clientWidth - tooltipWrapper.offsetWidth - 20 + "px";
+      }
+    }
+  }
+
+  function setupListeners(linkElement) {
+    linkElement.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+      showTooltip(event);
+    });
+
+    tooltipWrapper.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+    });
+  }
+
+  document.querySelectorAll('content a').forEach(setupListeners);
+</script>
+
+    <script
+  src="https://unpkg.com/littlefoot/dist/littlefoot.js"
+  type="application/javascript"
+></script>
+<script type="application/javascript">
+  littlefoot.littlefoot() // Pass any littlefoot settings here.
+</script>
+  </body>
+</html>

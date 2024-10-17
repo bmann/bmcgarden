@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <link rel="canonical" href="https://bmannconsulting.com/notes/ipfs/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="IPFS is the InterPlanetary File System.As mentioned in the [[Colophon]], this site is published to IPFS using the [[Fission]] Github Action. The action build...">
+  <meta property="og:site_name" content="Boris Mann's Homepage">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="alternate" type="application/atom+xml" title="Blog Feed for bmannconsulting.com" href="https://bmannconsulting.com/blog.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Journal Feed for bmannconsulting.com" href="https://bmannconsulting.com/journal.xml" />
+  
+  
+  <link rel="stylesheet" href="https://unpkg.com/littlefoot/dist/littlefoot.css" />
+
+  
+  <meta property="og:description" content="IPFS is the InterPlanetary File System.As mentioned in the [[Colophon]], this site is published to IPFS using the [[Fission]] Github Action. The action build..."/>
+  
+
+  
+  <meta property="og:title" content="InterPlanetary File System (IPFS)">
+  <meta property="og:type" content="article">
+  
+  
+  
+  <meta property="article:published_time" content="2024-10-16T22:19:08-07:00">
+  <meta property="article:author" content="https://bmannconsulting.com/">
+  
+
+  <meta property="og:url" content="https://bmannconsulting.com/notes/ipfs/" />
+
+  
+  <meta property="og:image" content="https://bmannconsulting.com/assets/bmann_hair_orange_256x256.png">
+  
+
+
+  <!-- Open Frames Default -->
+  
+  <meta property="fc:frame:image" content="https://bmannconsulting.com/assets/bmann_hair_orange_256x256.png">
+  <meta property="fc:frame:image:aspect_ratio" content="1:1">
+  
+  <meta property="fc:frame" content="vNext">
+  
+  <meta property="fc:frame:button:1" content="🌱 Home">
+  <meta property="fc:frame:button:1:action" content="link">
+  <meta property="fc:frame:button:1:target" content="https://bmannconsulting.com">
+  
+  <meta property="fc:frame:button:2" content="🔖 Explore">
+  <meta property="fc:frame:button:2:action" content="link">
+  <meta property="fc:frame:button:2:target" content="https://bmannconsulting.com/notes/">
+  <meta property="fc:frame:button:3" content="💰 Drips">
+  <meta property="fc:frame:button:3:action" content="link">
+  <meta property="fc:frame:button:3:target" content="https://www.drips.network/app/bmann.eth">
+
+  <title>
+    
+      InterPlanetary File System (IPFS) &mdash; Boris Mann's Homepage
+    
+  </title>
+</head>
+
+  <body>
+    <nav><div>
+    <a class="internal-link" href="/"><b>Boris Mann's Homepage</b></a>
+</div>
+</nav>
+    <div class="wrapper">
+      <main><article>
+  <div>
+    <h1 style="text-transform:capitalize;">InterPlanetary File System (IPFS)</h1>
+    
+
+    
+    <time datetime="2024-10-16T22:18:40-07:00">
+      Last updated on October 16, 2024
+    </time>
+    
+
+    <ul>
+    
+    </ul>
+  </div>
+
+  <div id="notes-entry-container">
+    <content>
+      <html><body>
+<p>IPFS is the InterPlanetary File System.</p>
+
+<p>As mentioned in the <a class="internal-link" href="/notes/colophon/">Colophon</a>, this site is published to IPFS using the <a class="internal-link" href="/notes/fission/">Fission</a> Github Action. The action builds the static representation from the Markdown source using <a href="https://notes.bmannconsulting.com/#/page/Jekyll" class="noteslink" target="_blank">Jekyll</a>, calculates a top level <a href="https://notes.bmannconsulting.com/#/page/CID" class="noteslink" target="_blank">CID</a> hash aka Content IDentitifier, updates the <a href="https://notes.bmannconsulting.com/#/page/DNSLink" class="noteslink" target="_blank">DNSLink</a> for the bmannconsulting.com domain, and has the Fission server cache a copy.</p>
+
+<p>You can see that the DNSLink for the domain using this DNS checker <a href="https://dnsrecords.io/_dnslink.bmannconsulting.com" target="_blank">https://dnsrecords.io/_dnslink.bmannconsulting.com</a>, which in turn is just an alias to a Fission app, which has the actual hash <a href="https://dnsrecords.io/_dnslink.bmcgarden.fission.app" target="_blank">https://dnsrecords.io/_dnslink.bmcgarden.fission.app</a>.<sup id="fnref:dnsrecords" role="doc-noteref"><a href="#fn:dnsrecords" class="footnote" rel="footnote">1</a></sup> You can take the CID that you find there, of the form <code class="language-plaintext highlighter-rouge">bafybeicxxtumkkha75i26livxe5a3iqklqfo42d7qytk2f4ob37bs3jpqa</code> and plug that in anywhere that understands IPFS and get the contents of that cyberboats page.</p>
+
+<p>You can peek at the IPFS file system underneath, by linking to one of the annual blog folders, like 2020 blog posts <a href="https://bmannconsulting.com/blog/2020/" target="_blank">https://bmannconsulting.com/blog/2020/</a>. Since we're browsing in there, we can also get the CID for the <a href="/blog/2020/01/03/cyberboats/" target="_blank">cyberboats</a> blog post, and plug it into any other gateway, like the <a href="https://notes.bmannconsulting.com/#/page/Web3Storage" class="noteslink" target="_blank">Web3Storage</a> one: <a href="https://bafybeicz677flygp3v6zei4xkt3pcp6npuwk5dp2awqq3hxnxhgukhrpky.ipfs.dweb.link/" target="_blank">https://bafybeicz677flygp3v6zei4xkt3pcp6npuwk5dp2awqq3hxnxhgukhrpky.ipfs.dweb.link/</a> <sup id="fnref:unstyled" role="doc-noteref"><a href="#fn:unstyled" class="footnote" rel="footnote">2</a></sup></p>
+
+<p>InterPlanetary Naming Service (IPNS) can use a name that points to IPFS hashes. This website you're browsing now is already being served over Fission's IPFS Gateway. If you're running <a href="https://notes.bmannconsulting.com/#/page/Brave" class="noteslink" target="_blank">Brave</a>, it can cache and browse sites, so you'd actually be able to browse it through localhost.</p>
+
+<p>Since we already looked at Web3Storage, let's browse via IPNS using their gateway. You'll see <a href="https://w3s.link/ipns/bmannconsulting.com" target="_blank">w3s.link/ipns/bmannconsulting.com</a> redirect to <a href="https://bmannconsulting-com.ipns.dweb.link/" target="_blank">bmannconsulting-com.ipns.dweb.link</a>.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:dnsrecords" role="doc-endnote">
+      <p>DNS Records is a great service! An online DNS checker / explorer. It also does social previews in things like Slack or Discord chat, so a great way to just type in a link and get the results in the preview <a href="https://dnsrecords.io/" target="_blank">https://dnsrecords.io/</a> <a href="#fnref:dnsrecords" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+    <li id="fn:unstyled" role="doc-endnote">
+      <p>Yeah, this is unstyled, because it's trying to fetch a CSS file that is no longer referenced correctly. I could hardcode it to use the full path, but then it will point to a different version of the stylesheet. To figure out! <a href="#fnref:unstyled" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+  </ol>
+</div>
+</body></html>
+    </content>
+
+    <side style="font-size: 0.9em">
+      <h3 style="margin-bottom: 1em">Notes mentioning this note</h3>
+      
+      <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
+      
+        <div class="backlink-box">
+        <a class="internal-link" href="/notes/colophon/">Colophon</a><br>
+        <div style="font-size: 0.9em">January 2024 The site is still powered by [[Digital Garden Jekyll Template]]. Using [[Obsidian]] to edit on desktop and mobile,...</div>
+        </div>
+      
+        <div class="backlink-box">
+        <a class="internal-link" href="/notes/fission/">Fission</a><br>
+        <div style="font-size: 0.9em">We shut down Fission as of April 2024. Read the farewall. Imagine us individually as a swarm of bees, and...</div>
+        </div>
+      
+        <div class="backlink-box">
+        <a class="internal-link" href="/notes/forever-photos-with-content-addressing/">Forever photos with content addressing</a><br>
+        <div style="font-size: 0.9em">I'd like to bring my long term archive exported from [[Flickr]] back online. My wish is that I could publish...</div>
+        </div>
+      
+        <div class="backlink-box">
+        <a class="internal-link" href="/notes/ghost/">Ghost</a><br>
+        <div style="font-size: 0.9em">A blogging and membership based newsletter app. [[MIT]] licensed open source. Maintained by the non-profit Ghost Foundation, who also run...</div>
+        </div>
+      
+        <div class="backlink-box">
+        <a class="internal-link" href="/notes/noosphere/">Noosphere</a><br>
+        <div style="font-size: 0.9em">The Noosphere Protocol is part of an effort to bootstrap a new kind of content web. Noosphere, like its namesake, is a...</div>
+        </div>
+      
+        <div class="backlink-box">
+        <a class="internal-link" href="/notes/web-recorder/">Web recorder</a><br>
+        <div style="font-size: 0.9em">About the goal of Webrecorder has been to build quality open source tools enable 'web archiving for all' to allow...</div>
+        </div>
+      
+        <div class="backlink-box">
+        <a class="internal-link" href="/notes/web3/">Web3</a><br>
+        <div style="font-size: 0.9em">My definition of web3 from a technical perspective is that it is composed of self-verifying data structures, cryptography, and distributed...</div>
+        </div>
+      
+        <div class="backlink-box">
+        <a class="internal-link" href="/notes/libp2p/">Libp2p</a><br>
+        <div style="font-size: 0.9em">libp2p is a modular networking framework bundled together as a full stack of protocols for peer-to-peer systems. It is the...</div>
+        </div>
+      
+      
+      </div>
+      
+    </side>
+  </div>
+</article>
+</main>
+      <footer><a href="/blog/" class="internal-link">Blog</a> | <a href="/journal/" class="internal-link">Journal</a> | <a href="/notes/" class="internal-link">Notes</a> | <a href="/feeds/" class="internal-link">Feeds</a> | 👉&nbsp;Social Profiles&nbsp;<a href='https://bmann.ca' title='Links to all of my social profiles and accounts'>bmann.ca</a> </footer>
+    </div>
+
+    <!-- That file is not particularly elegant. This will need a refactor at some point. -->
+<style>
+
+  
+
+  #tooltip-wrapper {
+    background: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    font-size: 0.8em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 100ms;
+  }
+
+  #tooltip-wrapper:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+		background-image: linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, 1) 90%);
+		width: 100%;
+		height: 75px;
+  }
+</style>
+
+<div style="opacity: 0; display: none;" id='tooltip-wrapper'>
+  <div id='tooltip-content'>
+  </div>
+</div>
+
+<iframe style="display: none; height: 0; width: 0;" id='link-preview-iframe' src="">
+</iframe>
+
+<script>
+  var opacityTimeout;
+  var contentTimeout;
+  var transitionDurationMs = 100;
+
+  var iframe = document.getElementById('link-preview-iframe')
+  var tooltipWrapper = document.getElementById('tooltip-wrapper')
+  var tooltipContent = document.getElementById('tooltip-content')
+
+  var linkHistories = {};
+
+  function hideTooltip() {
+    opacityTimeout = setTimeout(function() {
+      tooltipWrapper.style.opacity = 0;
+      contentTimeout = setTimeout(function() {
+        tooltipContent.innerHTML = '';
+        tooltipWrapper.style.display = 'none';
+      }, transitionDurationMs + 1);
+    }, transitionDurationMs)
+  }
+
+  function showTooltip(event) {
+    var elem = event.target;
+    var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
+    var top = window.pageYOffset || document.documentElement.scrollTop
+
+    if (event.target.host === window.location.host) {
+      if (!linkHistories[event.target.href]) {
+        iframe.src = event.target.href
+        iframe.onload = function() {
+          tooltipContentHtml = ''
+          tooltipContentHtml += '<div style="font-weight: bold;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
+          tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
+
+          tooltipContent.innerHTML = tooltipContentHtml
+          linkHistories[event.target.href] = tooltipContentHtml
+
+          tooltipWrapper.style.display = 'block';
+          setTimeout(function() {
+            tooltipWrapper.style.opacity = 1;
+          }, 1)
+        } 
+      } else {
+        tooltipContent.innerHTML = linkHistories[event.target.href]
+        tooltipWrapper.style.display = 'block';
+        setTimeout(function() {
+          tooltipWrapper.style.opacity = 1;
+        }, 1)
+      }
+
+
+      tooltipWrapper.style.left = elem_props.left - (tooltipWrapper.offsetWidth / 2) + (elem_props.width / 2) + "px";
+      if ((window.innerHeight - elem_props.top) < (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top - tooltipWrapper.offsetHeight - 10 + "px";
+      } else if ((window.innerHeight - elem_props.top) > (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top + 35 + "px";
+      }
+
+      if ((elem_props.left + (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = "10px";
+      } else if ((document.body.clientWidth - elem_props.left - (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = document.body.clientWidth - tooltipWrapper.offsetWidth - 20 + "px";
+      }
+    }
+  }
+
+  function setupListeners(linkElement) {
+    linkElement.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+      showTooltip(event);
+    });
+
+    tooltipWrapper.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+    });
+  }
+
+  document.querySelectorAll('content a').forEach(setupListeners);
+</script>
+
+    <script
+  src="https://unpkg.com/littlefoot/dist/littlefoot.js"
+  type="application/javascript"
+></script>
+<script type="application/javascript">
+  littlefoot.littlefoot() // Pass any littlefoot settings here.
+</script>
+  </body>
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <link rel="canonical" href="https://bmannconsulting.com/journal/2024-04-21-1024/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A log of some blog coding that I did, including more Frames support, canonical links, article and code filtered listing pages, and this excerpt field.">
+  <meta property="og:site_name" content="Boris Mann's Homepage">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="alternate" type="application/atom+xml" title="Blog Feed for bmannconsulting.com" href="https://bmannconsulting.com/blog.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Journal Feed for bmannconsulting.com" href="https://bmannconsulting.com/journal.xml" />
+  
+  
+  <link rel="stylesheet" href="https://unpkg.com/littlefoot/dist/littlefoot.css" />
+
+  
+  <meta property="og:description" content="A log of some blog coding that I did, including more Frames support, canonical links, article and code filtered listing pages, and this excerpt field."/>
+  
+
+  
+  <meta property="og:title" content="April 21st, 2024">
+  <meta property="og:type" content="article">
+  
+  
+  
+  <meta property="article:published_time" content="2024-04-21T10:24:06-07:00">
+  <meta property="article:author" content="https://bmannconsulting.com/">
+  
+
+  <meta property="og:url" content="https://bmannconsulting.com/journal/2024-04-21-1024/" />
+
+  
+  <meta property="og:image" content="https://bmannconsulting.com/assets/bmann_hair_orange_256x256.png">
+  
+
+
+  <!-- Open Frames Default -->
+  
+  <meta property="fc:frame:image" content="https://bmannconsulting.com/assets/bmann_hair_orange_256x256.png">
+  <meta property="fc:frame:image:aspect_ratio" content="1:1">
+  
+  <meta property="fc:frame" content="vNext">
+  
+  <meta property="fc:frame:button:1" content="🌱 Home">
+  <meta property="fc:frame:button:1:action" content="link">
+  <meta property="fc:frame:button:1:target" content="https://bmannconsulting.com">
+  
+  <meta property="fc:frame:button:2" content="🔖 Explore">
+  <meta property="fc:frame:button:2:action" content="link">
+  <meta property="fc:frame:button:2:target" content="https://bmannconsulting.com/notes/">
+  <meta property="fc:frame:button:3" content="💰 Drips">
+  <meta property="fc:frame:button:3:action" content="link">
+  <meta property="fc:frame:button:3:target" content="https://www.drips.network/app/bmann.eth">
+
+  <title>
+    
+      April 21st, 2024 &mdash; Boris Mann's Homepage
+    
+  </title>
+</head>
+
+  <body>
+    <nav><div>
+    <a class="internal-link" href="/"><b>Boris Mann's Homepage</b></a>
+</div>
+</nav>
+    <div class="wrapper">
+      <main><article>
+  <div>
+    
+    <h1>10:24am</h1>
+    
+    <time datetime="page.date | date_to_xmlschema">Sunday, April 21, 2024</time>
+  </div>
+
+  <div id="notes-entry-container">
+    <content>
+      <p>Going through some open tabs and made a bunch of updates. Now took myself to the coffee shop to work on some blog coding.</p>
+
+<p><strong>Custom Frames Support</strong></p>
+
+<p>I added <a class="internal-link" href="/notes/farcaster-frames/">Farcaster Frames</a> support to the site, using just default settings similar to what is already inserted into page headers for <a class="internal-link" href="/notes/opengraph/">OpenGraph</a>.</p>
+
+<p>Using the <a class="internal-link" href="/notes/ghost/">Ghost</a> page as an example, I'm modifying the <a href="https://github.com/bmann/bmcgarden/blob/archivetrim/_includes/head.html#L45">head template</a> so that I can put in custom frame data per notes page.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">frame</span><span class="pi">:</span>
+  <span class="na">image</span><span class="pi">:</span> <span class="s">/assets/2024/ghost_logo_black.jpg</span>
+  <span class="na">image-aspect-ratio</span><span class="pi">:</span> <span class="s2">"</span><span class="s">1:1"</span>
+  <span class="na">button2</span><span class="pi">:</span>
+    <span class="na">label</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Github"</span>
+    <span class="na">action</span><span class="pi">:</span> <span class="s2">"</span><span class="s">link"</span>
+    <span class="na">target</span><span class="pi">:</span> <span class="s">https://github.com/TryGhost/Ghost</span>
+  <span class="na">button1</span><span class="pi">:</span>
+    <span class="na">label</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Home"</span>
+    <span class="na">action</span><span class="pi">:</span> <span class="s2">"</span><span class="s">link"</span>
+    <span class="na">target</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://ghost.org"</span>
+</code></pre></div></div>
+
+<p><a class="internal-link" href="/notes/obsidian/">Obsidian</a> doesn't support these kind of nested header properties, so I need to do it in source code view.</p>
+
+<p>Yes, there would be some way to create this in a way that loops through a button array.</p>
+
+<p><strong>Canonical Link</strong></p>
+
+<p>I take notes on articles. I keep a local copy of the article and capture when it was published, who the author was, and usually clip some quotes and make some comments of my own.</p>
+
+<p>I want people to go read the original! And I don't want to "steal" search traffic or attention from the original. In fact, I want to boost it! Reading <a href="https://en.wikipedia.org/wiki/Canonical_link_element">Wikipedia on the canonical link</a>, this not really what it's meant for.</p>
+
+<p>Regardless, adding some header meta data. This is the part of thinking for <a class="internal-link" href="/notes/community-search-engine/">Community Search Engine</a> that has to happen.</p>
+
+<p><strong>Articles Page</strong></p>
+
+<p>Turns out I had an unfinished <a href="/articles/">articles</a> page! Fixed a couple of things with it, including getting year sorting done correctly. Design of it still needs a lot of work.</p>
+
+<p><strong>Code Page</strong></p>
+
+<p>Let's make a page with all the notes that have a code repository / git link! Here's <a href="/code/">code</a>.</p>
+
+<p>Oh fun, of course I have some people entries, and if I have their Github profile filled out, they'll show up on this page.</p>
+
+<p>There aren't that many entries on here because I have more in the old Logseq notes with <a href="https://notes.bmannconsulting.com/#/page/github">github</a> and <a href="https://notes.bmannconsulting.com/#/page/git">git</a> properties.</p>
+
+<p>And separately, I'd like to capture my <a href="https://github.com/bmann?tab=stars">1.4K starred repos on Github</a>. The "signal" of me adding a notes page is stronger than "merely" starring on Github, but it should at least contribute to a personal search index (which again leads into <a class="internal-link" href="/notes/community-search-engine/">Community Search Engine</a> too).</p>
+
+<p><strong>Excerpt for Journals</strong></p>
+
+<p>This is a very long journal post! My RSS automated cross posting with <a class="internal-link" href="/notes/fedica/">Fedica</a> would attempt to turn this into a very very long set of threaded posts.</p>
+
+<p>I'll add an excerpt field which will get used in the RSS feed if it excepts.</p>
+
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="cp">{%</span><span class="w"> </span><span class="nt">if</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">excerpt</span><span class="w"> </span><span class="cp">%}</span>
+  <span class="cp">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">excerpt</span><span class="w"> </span><span class="cp">%}</span>
+<span class="cp">{%</span><span class="w"> </span><span class="nt">else</span><span class="w"> </span><span class="cp">%}</span>
+  <span class="cp">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">content</span><span class="w"> </span><span class="cp">%}</span>
+<span class="cp">{%</span><span class="w"> </span><span class="nt">endif</span><span class="w"> </span><span class="cp">%}</span>
+
+</code></pre></div></div>
+
+    </content>
+
+  </div>
+</article>
+</main>
+      <footer><a href="/blog/" class="internal-link">Blog</a> | <a href="/journal/" class="internal-link">Journal</a> | <a href="/notes/" class="internal-link">Notes</a> | <a href="/feeds/" class="internal-link">Feeds</a> | 👉&nbsp;Social Profiles&nbsp;<a href='https://bmann.ca' title='Links to all of my social profiles and accounts'>bmann.ca</a> </footer>
+    </div>
+
+    <!-- That file is not particularly elegant. This will need a refactor at some point. -->
+<style>
+
+  
+
+  #tooltip-wrapper {
+    background: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    font-size: 0.8em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 100ms;
+  }
+
+  #tooltip-wrapper:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+		background-image: linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, 1) 90%);
+		width: 100%;
+		height: 75px;
+  }
+</style>
+
+<div style="opacity: 0; display: none;" id='tooltip-wrapper'>
+  <div id='tooltip-content'>
+  </div>
+</div>
+
+<iframe style="display: none; height: 0; width: 0;" id='link-preview-iframe' src="">
+</iframe>
+
+<script>
+  var opacityTimeout;
+  var contentTimeout;
+  var transitionDurationMs = 100;
+
+  var iframe = document.getElementById('link-preview-iframe')
+  var tooltipWrapper = document.getElementById('tooltip-wrapper')
+  var tooltipContent = document.getElementById('tooltip-content')
+
+  var linkHistories = {};
+
+  function hideTooltip() {
+    opacityTimeout = setTimeout(function() {
+      tooltipWrapper.style.opacity = 0;
+      contentTimeout = setTimeout(function() {
+        tooltipContent.innerHTML = '';
+        tooltipWrapper.style.display = 'none';
+      }, transitionDurationMs + 1);
+    }, transitionDurationMs)
+  }
+
+  function showTooltip(event) {
+    var elem = event.target;
+    var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
+    var top = window.pageYOffset || document.documentElement.scrollTop
+
+    if (event.target.host === window.location.host) {
+      if (!linkHistories[event.target.href]) {
+        iframe.src = event.target.href
+        iframe.onload = function() {
+          tooltipContentHtml = ''
+          tooltipContentHtml += '<div style="font-weight: bold;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
+          tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
+
+          tooltipContent.innerHTML = tooltipContentHtml
+          linkHistories[event.target.href] = tooltipContentHtml
+
+          tooltipWrapper.style.display = 'block';
+          setTimeout(function() {
+            tooltipWrapper.style.opacity = 1;
+          }, 1)
+        } 
+      } else {
+        tooltipContent.innerHTML = linkHistories[event.target.href]
+        tooltipWrapper.style.display = 'block';
+        setTimeout(function() {
+          tooltipWrapper.style.opacity = 1;
+        }, 1)
+      }
+
+
+      tooltipWrapper.style.left = elem_props.left - (tooltipWrapper.offsetWidth / 2) + (elem_props.width / 2) + "px";
+      if ((window.innerHeight - elem_props.top) < (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top - tooltipWrapper.offsetHeight - 10 + "px";
+      } else if ((window.innerHeight - elem_props.top) > (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top + 35 + "px";
+      }
+
+      if ((elem_props.left + (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = "10px";
+      } else if ((document.body.clientWidth - elem_props.left - (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = document.body.clientWidth - tooltipWrapper.offsetWidth - 20 + "px";
+      }
+    }
+  }
+
+  function setupListeners(linkElement) {
+    linkElement.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+      showTooltip(event);
+    });
+
+    tooltipWrapper.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+    });
+  }
+
+  document.querySelectorAll('content a').forEach(setupListeners);
+</script>
+
+    <script
+  src="https://unpkg.com/littlefoot/dist/littlefoot.js"
+  type="application/javascript"
+></script>
+<script type="application/javascript">
+  littlefoot.littlefoot() // Pass any littlefoot settings here.
+</script>
+  </body>
+</html>

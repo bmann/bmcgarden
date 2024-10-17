@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <link rel="canonical" href="https://bmannconsulting.com/notes/capability-based-security/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Capability-based security is a concept in the design of secure computing systems, one of the existing security models. A capability (known in some systems as...">
+  <meta property="og:site_name" content="Boris Mann's Homepage">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="alternate" type="application/atom+xml" title="Blog Feed for bmannconsulting.com" href="https://bmannconsulting.com/blog.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Journal Feed for bmannconsulting.com" href="https://bmannconsulting.com/journal.xml" />
+  
+  
+  <link rel="stylesheet" href="https://unpkg.com/littlefoot/dist/littlefoot.css" />
+
+  
+  <meta property="og:description" content="Capability-based security is a concept in the design of secure computing systems, one of the existing security models. A capability (known in some systems as..."/>
+  
+
+  
+  <meta property="og:title" content="Capability Based security">
+  <meta property="og:type" content="article">
+  
+  
+  
+  <meta property="article:published_time" content="2024-10-16T22:19:08-07:00">
+  <meta property="article:author" content="https://bmannconsulting.com/">
+  
+
+  <meta property="og:url" content="https://bmannconsulting.com/notes/capability-based-security/" />
+
+  
+  <meta property="og:image" content="https://bmannconsulting.com/assets/bmann_hair_orange_256x256.png">
+  
+
+
+  <!-- Open Frames Default -->
+  
+  <meta property="fc:frame:image" content="https://bmannconsulting.com/assets/bmann_hair_orange_256x256.png">
+  <meta property="fc:frame:image:aspect_ratio" content="1:1">
+  
+  <meta property="fc:frame" content="vNext">
+  
+  <meta property="fc:frame:button:1" content="📖 Wikipedia">
+  <meta property="fc:frame:button:1:action" content="link">
+  <meta property="fc:frame:button:1:target" content="https://en.wikipedia.org/wiki/Capability-based_security">
+  
+  <meta property="fc:frame:button:2" content="🔖 Explore">
+  <meta property="fc:frame:button:2:action" content="link">
+  <meta property="fc:frame:button:2:target" content="https://bmannconsulting.com/notes/">
+  <meta property="fc:frame:button:3" content="💰 Drips">
+  <meta property="fc:frame:button:3:action" content="link">
+  <meta property="fc:frame:button:3:target" content="https://www.drips.network/app/bmann.eth">
+
+  <title>
+    
+      Capability Based security &mdash; Boris Mann's Homepage
+    
+  </title>
+</head>
+
+  <body>
+    <nav><div>
+    <a class="internal-link" href="/"><b>Boris Mann's Homepage</b></a>
+</div>
+</nav>
+    <div class="wrapper">
+      <main><article>
+  <div>
+    <h1 style="text-transform:capitalize;">Capability Based security</h1>
+    
+    <strong>wikipedia:</strong>&nbsp;<a href="https://en.wikipedia.org/wiki/Capability-based_security">en.wikipedia.org/wiki/Capability-based_...</a><br />
+    
+
+    
+    <time datetime="2024-10-16T22:18:40-07:00">
+      Last updated on October 16, 2024
+    </time>
+    
+
+    <ul>
+    
+    </ul>
+  </div>
+
+  <div id="notes-entry-container">
+    <content>
+      <html><body>
+<p><strong>Capability-based security</strong> is a concept in the design of <a href="https://en.wikipedia.org/wiki/Computer_security" title="Computer security" target="_blank">secure computing</a> systems, one of the existing <a href="https://en.wikipedia.org/wiki/Computer_security_model" title="Computer security model" target="_blank">security models</a>. A <strong>capability</strong> (known in some systems as a <strong>key</strong>) is a communicable, unforgeable <a href="https://en.wikipedia.org/wiki/Access_token" title="Access token" target="_blank">token</a> of authority. It refers to a value that <a href="https://en.wikipedia.org/wiki/Reference_(computer_science)" title="Reference (computer science)" target="_blank">references</a> an <a href="https://en.wikipedia.org/wiki/Object_(computer_science)" title="Object (computer science)" target="_blank">object</a> along with an associated set of <a href="https://en.wikipedia.org/wiki/Access_control" title="Access control" target="_blank">access rights</a>. A <a href="https://en.wikipedia.org/wiki/User_(computing)" title="User (computing)" target="_blank">user</a> <a href="https://en.wikipedia.org/wiki/Computer_program" title="Computer program" target="_blank">program</a> on a <a href="https://en.wikipedia.org/wiki/Capability-based_operating_system" title="Capability-based operating system" target="_blank">capability-based operating system</a> must use a capability to access an object. Capability-based security refers to the principle of designing user programs such that they directly share capabilities with each other according to the <a href="https://en.wikipedia.org/wiki/Principle_of_least_privilege" title="Principle of least privilege" target="_blank">principle of least privilege</a>, and to the operating system infrastructure necessary to make such transactions efficient and secure. Capability-based security is to be contrasted with an approach that uses <a href="https://en.wikipedia.org/wiki/File-system_permissions" title="File-system permissions" target="_blank">traditional UNIX permissions</a> and <a href="https://en.wikipedia.org/wiki/Access-control_list" title="Access-control list" target="_blank">Access Control Lists</a>.</p>
+
+<p>Although most operating systems implement a facility which resembles capabilities, they typically do not provide enough support to allow for the exchange of capabilities among possibly mutually untrusting entities to be the primary means of granting and distributing access rights throughout the system. A capability-based system, in contrast, is designed with that goal in mind.</p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>Capabilities achieve their objective of improving system security by being used in place of forgeable <a href="https://en.wikipedia.org/wiki/Reference_(computer_science)" title="Reference (computer science)" target="_blank">references</a>. A forgeable reference (for example, a <a href="https://en.wikipedia.org/wiki/Path_(computing)" title="Path (computing)" target="_blank">path name</a>) identifies an object, but does not specify which access rights are appropriate for that object and the user program which holds that reference. Consequently, any attempt to access the referenced object must be validated by the operating system, based on the <a href="https://en.wikipedia.org/wiki/Ambient_authority" title="Ambient authority" target="_blank">ambient authority</a> of the requesting program, typically via the use of an <a href="https://en.wikipedia.org/wiki/Access-control_list" title="Access-control list" target="_blank">access-control list</a> (ACL). Instead, in a system with capabilities, the mere fact that a user program possesses that capability entitles it to use the referenced object in accordance with the rights that are specified by that capability. In theory, a system with capabilities removes the need for any access control list or similar mechanism by giving all entities all and only the capabilities they will actually need.</p>
+
+<p>A capability is typically implemented as a <a href="https://en.wikipedia.org/wiki/Privilege_(computing)" title="Privilege (computing)" target="_blank">privileged</a> <a href="https://en.wikipedia.org/wiki/Data_structure" title="Data structure" target="_blank">data structure</a> that consists of a section that specifies access rights, and a section that uniquely identifies the object to be accessed. The user does not access the data structure or object directly, but instead via a <a href="https://en.wikipedia.org/wiki/Handle_(computing)" title="Handle (computing)" target="_blank">handle</a>. In practice, it is used much like a <a href="https://en.wikipedia.org/wiki/File_descriptor" title="File descriptor" target="_blank">file descriptor</a> in a traditional operating system (a traditional handle), but to access every object on the system. Capabilities are typically stored by the operating system in a list, with some mechanism in place to prevent the program from directly modifying the contents of the capability (so as to forge access rights or change the object it points to). Some systems have also been based on <a href="https://en.wikipedia.org/wiki/Capability-based_addressing" title="Capability-based addressing" target="_blank">capability-based addressing</a> (hardware support for capabilities), such as <a href="https://en.wikipedia.org/wiki/Plessey_System_250" title="Plessey System 250" target="_blank">Plessey System 250</a>.</p>
+
+<p>Programs possessing capabilities can perform functions on them, such as passing them on to other programs, converting them to a less-privileged version, or deleting them. The operating system must ensure that only specific operations can occur to the capabilities in the system, in order to maintain the integrity of the security policy.</p>
+
+<p>Capabilities as discussed in this article should not be confused with Portable Operating System Interface (POSIX) Capabilities. The latter are coarse-grained privileges that cannot be transferred between processes.</p>
+
+<h2 id="implementations">Implementations</h2>
+
+<p>Notable research and commercial systems employing capability-based security include the following:</p>
+
+<ul>
+  <li>
+<a href="https://en.wikipedia.org/wiki/Tahoe-LAFS" title="Tahoe-LAFS" target="_blank">Tahoe-LAFS</a>, an open-source capability-based filesystem</li>
+  <li>
+<a href="https://en.wikipedia.org/wiki/GNOSIS" title="GNOSIS" target="_blank">GNOSIS</a>, an operating system developed at <a href="https://en.wikipedia.org/wiki/Tymshare" title="Tymshare" target="_blank">Tymshare</a>
+    <ul>
+      <li>
+<a href="https://en.wikipedia.org/wiki/KeyKOS" title="KeyKOS" target="_blank">KeyKOS</a>, successor to GNOSIS
+        <ul>
+          <li>EROS, The <a href="https://en.wikipedia.org/wiki/Extremely_Reliable_Operating_System" title="Extremely Reliable Operating System" target="_blank">Extremely Reliable Operating System</a>, successor to KeyKOS
+            <ul>
+              <li>
+<a href="https://en.wikipedia.org/wiki/CapROS" title="CapROS" target="_blank">CapROS</a>, a project to further develop the EROS code base for commercial use</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="https://en.wikipedia.org/wiki/Cambridge_CAP_computer" title="Cambridge CAP computer" target="_blank">Cambridge CAP computer</a></li>
+  <li>
+<a href="https://en.wikipedia.org/wiki/Hydra_(operating_system)" title="Hydra (operating system)" target="_blank">Hydra (operating system)</a>, part of the C.mmp project at Carnegie Mellon University</li>
+  <li>StarOS, part of the CM* project at <a href="https://en.wikipedia.org/wiki/Carnegie_Mellon_University" title="Carnegie Mellon University" target="_blank">Carnegie Mellon University</a>
+</li>
+  <li>IBM <a href="https://en.wikipedia.org/wiki/System/38" title="System/38" target="_blank">System/38</a> and <a href="https://en.wikipedia.org/wiki/AS/400" title="AS/400" target="_blank">AS/400</a>
+</li>
+  <li><a href="https://en.wikipedia.org/wiki/Intel_iAPX_432" title="Intel iAPX 432" target="_blank">Intel iAPX 432</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Plessey_250" title="Plessey 250" target="_blank">Plessey System 250</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Flex_machine" title="Flex machine" target="_blank">Flex</a></li>
+  <li>
+<a href="https://en.wikipedia.org/wiki/L4_microkernel_family" title="L4 microkernel family" target="_blank">L4 microkernel family</a>:
+    <ul>
+      <li>OKL4 from Open Kernel Labs</li>
+      <li>seL4 from NICTA</li>
+      <li>Fiasco.OC and NOVA from <a href="https://en.wikipedia.org/wiki/TU_Dresden" title="TU Dresden" target="_blank">TU Dresden</a>
+</li>
+    </ul>
+  </li>
+  <li>
+<a href="https://en.wikipedia.org/wiki/Amoeba_(operating_system)" title="Amoeba (operating system)" target="_blank">Amoeba</a> distributed operating system</li>
+  <li>
+<a href="https://en.wikipedia.org/wiki/FreeBSD" title="FreeBSD" target="_blank">FreeBSD</a> <a href="https://en.wikipedia.org/wiki/Capsicum_(Unix)" title="Capsicum (Unix)" target="_blank">Capsicum</a>
+</li>
+  <li><a href="https://en.wikipedia.org/wiki/Genode" title="Genode" target="_blank">Genode</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Google_Fuchsia" title="Google Fuchsia" target="_blank">Google Fuchsia</a></li>
+  <li>
+<a href="https://en.wikipedia.org/wiki/HarmonyOS" title="HarmonyOS" target="_blank">HarmonyOS</a> (<a href="https://en.wikipedia.org/wiki/HarmonyOS_NEXT" title="HarmonyOS NEXT" target="_blank">HarmonyOS NEXT</a>) derived from <a href="https://en.wikipedia.org/wiki/OpenHarmony" title="OpenHarmony" target="_blank">OpenHarmony</a> at customised level with capability-based like features via <a href="https://en.wikipedia.org/wiki/Access_token_manager" title="Access token manager" target="_blank">Access token manager</a>
+</li>
+  <li>[Phantom OS]</li>
+  <li>
+<a class="internal-link" href="/notes/webassembly/">WebAssembly</a> System Interface (WASI)</li>
+</ul>
+</body></html>
+    </content>
+
+    <side style="font-size: 0.9em">
+      <h3 style="margin-bottom: 1em">Notes mentioning this note</h3>
+      
+      <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
+      
+        <div class="backlink-box">
+        <a class="internal-link" href="/notes/capability-myths-demolished/">Capability myths demolished</a><br>
+        <div style="font-size: 0.9em">We address three common misconceptions aboutcapability-based systems: the Equivalence Myth (accesscontrol list systems and capability systems are formallyequivalent), the Confinement...</div>
+        </div>
+      
+        <div class="backlink-box">
+        <a class="internal-link" href="/notes/object-capability-model/">Object Capability model</a><br>
+        <div style="font-size: 0.9em">The object-capability model is a computer security model. A capability1 describes a transferable right to perform one (or more) operations on a given object....</div>
+        </div>
+      
+      
+      </div>
+      
+    </side>
+  </div>
+</article>
+</main>
+      <footer><a href="/blog/" class="internal-link">Blog</a> | <a href="/journal/" class="internal-link">Journal</a> | <a href="/notes/" class="internal-link">Notes</a> | <a href="/feeds/" class="internal-link">Feeds</a> | 👉&nbsp;Social Profiles&nbsp;<a href='https://bmann.ca' title='Links to all of my social profiles and accounts'>bmann.ca</a> </footer>
+    </div>
+
+    <!-- That file is not particularly elegant. This will need a refactor at some point. -->
+<style>
+
+  
+
+  #tooltip-wrapper {
+    background: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    font-size: 0.8em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 100ms;
+  }
+
+  #tooltip-wrapper:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+		background-image: linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, 1) 90%);
+		width: 100%;
+		height: 75px;
+  }
+</style>
+
+<div style="opacity: 0; display: none;" id='tooltip-wrapper'>
+  <div id='tooltip-content'>
+  </div>
+</div>
+
+<iframe style="display: none; height: 0; width: 0;" id='link-preview-iframe' src="">
+</iframe>
+
+<script>
+  var opacityTimeout;
+  var contentTimeout;
+  var transitionDurationMs = 100;
+
+  var iframe = document.getElementById('link-preview-iframe')
+  var tooltipWrapper = document.getElementById('tooltip-wrapper')
+  var tooltipContent = document.getElementById('tooltip-content')
+
+  var linkHistories = {};
+
+  function hideTooltip() {
+    opacityTimeout = setTimeout(function() {
+      tooltipWrapper.style.opacity = 0;
+      contentTimeout = setTimeout(function() {
+        tooltipContent.innerHTML = '';
+        tooltipWrapper.style.display = 'none';
+      }, transitionDurationMs + 1);
+    }, transitionDurationMs)
+  }
+
+  function showTooltip(event) {
+    var elem = event.target;
+    var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
+    var top = window.pageYOffset || document.documentElement.scrollTop
+
+    if (event.target.host === window.location.host) {
+      if (!linkHistories[event.target.href]) {
+        iframe.src = event.target.href
+        iframe.onload = function() {
+          tooltipContentHtml = ''
+          tooltipContentHtml += '<div style="font-weight: bold;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
+          tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
+
+          tooltipContent.innerHTML = tooltipContentHtml
+          linkHistories[event.target.href] = tooltipContentHtml
+
+          tooltipWrapper.style.display = 'block';
+          setTimeout(function() {
+            tooltipWrapper.style.opacity = 1;
+          }, 1)
+        } 
+      } else {
+        tooltipContent.innerHTML = linkHistories[event.target.href]
+        tooltipWrapper.style.display = 'block';
+        setTimeout(function() {
+          tooltipWrapper.style.opacity = 1;
+        }, 1)
+      }
+
+
+      tooltipWrapper.style.left = elem_props.left - (tooltipWrapper.offsetWidth / 2) + (elem_props.width / 2) + "px";
+      if ((window.innerHeight - elem_props.top) < (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top - tooltipWrapper.offsetHeight - 10 + "px";
+      } else if ((window.innerHeight - elem_props.top) > (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top + 35 + "px";
+      }
+
+      if ((elem_props.left + (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = "10px";
+      } else if ((document.body.clientWidth - elem_props.left - (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = document.body.clientWidth - tooltipWrapper.offsetWidth - 20 + "px";
+      }
+    }
+  }
+
+  function setupListeners(linkElement) {
+    linkElement.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+      showTooltip(event);
+    });
+
+    tooltipWrapper.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+    });
+  }
+
+  document.querySelectorAll('content a').forEach(setupListeners);
+</script>
+
+    <script
+  src="https://unpkg.com/littlefoot/dist/littlefoot.js"
+  type="application/javascript"
+></script>
+<script type="application/javascript">
+  littlefoot.littlefoot() // Pass any littlefoot settings here.
+</script>
+  </body>
+</html>

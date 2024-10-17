@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <link rel="canonical" href="https://bmannconsulting.com/blog/2024/01/05/why-not-both-protocols/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="I missed Berjon’s ActivityPub Over ATProto when it was published back in November 2023.It’s a design provocation of using the two protocols together:  With r...">
+  <meta property="og:site_name" content="Boris Mann's Homepage">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="alternate" type="application/atom+xml" title="Blog Feed for bmannconsulting.com" href="https://bmannconsulting.com/blog.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Journal Feed for bmannconsulting.com" href="https://bmannconsulting.com/journal.xml" />
+  
+  
+  <link rel="stylesheet" href="https://unpkg.com/littlefoot/dist/littlefoot.css" />
+
+  
+  <meta property="og:description" content="I missed Berjon’s ActivityPub Over ATProto when it was published back in November 2023.It’s a design provocation of using the two protocols together:  With r..."/>
+  
+
+  
+  <meta property="og:title" content="Why not both: an ActivityPub Server on an AT Protocol PDS">
+  <meta property="og:type" content="article">
+  
+  
+  
+  <meta property="article:published_time" content="2024-01-05T21:21:56-08:00">
+  <meta property="article:author" content="https://bmannconsulting.com/">
+  
+
+  <meta property="og:url" content="https://bmannconsulting.com/blog/2024/01/05/why-not-both-protocols/" />
+
+  
+  <meta property="og:image" content="https://bmannconsulting.com/assets/bmann_hair_orange_256x256.png">
+  
+
+
+  <!-- Open Frames Default -->
+  
+  <meta property="fc:frame:image" content="https://bmannconsulting.com/assets/bmann_hair_orange_256x256.png">
+  <meta property="fc:frame:image:aspect_ratio" content="1:1">
+  
+  <meta property="fc:frame" content="vNext">
+  
+  <meta property="fc:frame:button:1" content="🌱 Home">
+  <meta property="fc:frame:button:1:action" content="link">
+  <meta property="fc:frame:button:1:target" content="https://bmannconsulting.com">
+  
+  <meta property="fc:frame:button:2" content="🔖 Explore">
+  <meta property="fc:frame:button:2:action" content="link">
+  <meta property="fc:frame:button:2:target" content="https://bmannconsulting.com/notes/">
+  <meta property="fc:frame:button:3" content="💰 Drips">
+  <meta property="fc:frame:button:3:action" content="link">
+  <meta property="fc:frame:button:3:target" content="https://www.drips.network/app/bmann.eth">
+
+  <title>
+    
+      Why not both: an ActivityPub Server on an AT Protocol PDS &mdash; Boris Mann's Homepage
+    
+  </title>
+</head>
+
+  <body>
+    <nav><div>
+    <a class="internal-link" href="/"><b>Boris Mann's Homepage</b></a>
+</div>
+</nav>
+    <div class="wrapper">
+      <main><article>
+  <div>
+    <h1>Why not both: an ActivityPub Server on an AT Protocol PDS</h1>
+  </div>
+
+  <div id="notes-entry-container">
+    <content>
+      <p>I missed Berjon’s <a href="https://berjon.com/ap-at/">ActivityPub Over ATProto</a> when it was published back in November 2023.</p>
+
+<p>It’s a design provocation of using the two protocols together:</p>
+
+<blockquote>
+  <p>With relatively little work, we could run ActivityPub atop an AT Protocol PDS.</p>
+</blockquote>
+
+<p>The little sub heading says “¿Por qué no los dos?”, which of course translates to:</p>
+
+<p><img src="/assets/memes/why_not_both.jpeg" alt="Why don’t we have both meme little girl" /></p>
+
+<p>Well played <a class="internal-link" href="/notes/robin-berjon/">Robin Berjon</a>. Let’s make sure to capture the meme origin here in my notes <a class="internal-link" href="/notes/why-not-both/">Why not both</a>.</p>
+
+<p>The meat of the article is that both protocols are great in their own way.</p>
+
+<blockquote>
+  <p>Both the Activity* standards and ATProto break this siloing in different ways. ==Activity* are built around URLs and can sort of "socialise" more or less anything on the Web, which is great,== but they don't touch the underlying substrate. The expectation tends to be that either you run your own server (which isn't for everyone) or you have to join a federated server, which tends to put you at the mercy of an admin (and, as some people are unfortunately finding out, not all admins are great). ==ATProto, on its side, provides a good initial foundation for an extensible PDS designed around <a href="https://berjon.com/user-agency/">user agency</a> and <a href="https://subconscious.substack.com/p/credible-exit">credible exit</a>.== This means that your online presence can be custodially hosted (so you need not worry about running a server) but if you don't like your host, you can be guaranteed to be able to take your content elsewhere (verifiably) and nothing will change, you won't even need to update your handle or set up redirection.</p>
+</blockquote>
+
+<p>(highlights my own)</p>
+
+<p><a class="internal-link" href="/notes/pds/">PDS</a> stands for Personal Data Server. As an ATProtocol user, I either run my own PDS, or delegate authority to a service to run it on my behalf. But it’s me that’s in control, not an admin.</p>
+
+<p>So yeah, <del>running my own</del> having control over my own data server that can also talk ActivityPub sounds pretty great.</p>
+
+<p>There’s a discussion thread about Berjon’s post at the <a href="https://socialhub.activitypub.rocks/t/robin-berjon-running-activitypub-over-atproto/3707/3">ActivityPub SocialHub Forum</a> and a <a href="https://hachyderm.io/@hrefna/111580064413015748">mini thread</a> by <a href="https://hachyderm.io/@hrefna">@hrefna@hachyderm.io</a> who has been digging into AP nuances as well and is a great follow if you’re interested in protocols.</p>
+
+<p>I’ve got concerns about governance for both protocols. Another great Berjon post <a class="internal-link" href="/notes/internet-transition/">Internet Transition</a></p>
+
+<p>ActivityPub is a finalized spec and is stewarded by the W3C which at its core has large players. Folding in community group commentary is hard. But it’s work that has to be done, and Facebook Meta’s Threads going for interop here is important for everyone, never mind Medium, Wordpress.com, Flipboard, Mozilla, and others.</p>
+
+<p>I’m more of a fan of the pre-standards body open protocol work that Bluesky is doing with ATProtocol. Here it’s the opposite problem: Bluesky is the only “large” player — who isn’t very large, is very busy running one platform while they also evolve the protocol. The DID:PLC that allows for delegation of accounts needs to evolve into a consortium model.</p>
+
+<p>My belief is that both protocols offer a path forward for composable, user centric data. Social and messaging and media and moderation are part of virtually all multi-user apps. Building on top of vocabularies and lexicons, re-using a person’s data and social connections, and being able to interop is where the next generation of applications are heading.</p>
+
+<p>I’m the 22nd user on BlueSky. But I also helped found an ActivityPub-centric Canadian co-op, <a class="internal-link" href="/notes/cosocial/">CoSocial</a>.</p>
+
+<p>Why not both?</p>
+
+    </content>
+
+    <side style="font-size: 0.9em">
+      <div class="date">
+      <div style="font-size: 1em">Originally published <time>January 5, 2024</time></div>
+      </div>
+      <div class="meta">
+        <p>Categories: <a href="/notes/Protocols" class="internal-link">Protocols</a></p>
+        <p>Tags: <a href="/notes/ActivityPub" class="internal-link">ActivityPub</a>, <a href="/notes/ATProtocol" class="internal-link">ATProtocol</a>, <a href="/notes/standards" class="internal-link">standards</a></p>
+      </div>
+      
+
+      <div style="font-size: 0.9em">
+        
+      </div>
+      
+    </side>
+  </div>
+</article>
+
+<div style="font-size: 0.8em">Last modified at <time>October 16, 2024</time></div>
+
+<hr>
+</main>
+      <footer><a href="/blog/" class="internal-link">Blog</a> | <a href="/journal/" class="internal-link">Journal</a> | <a href="/notes/" class="internal-link">Notes</a> | <a href="/feeds/" class="internal-link">Feeds</a> | 👉&nbsp;Social Profiles&nbsp;<a href='https://bmann.ca' title='Links to all of my social profiles and accounts'>bmann.ca</a> </footer>
+    </div>
+
+    <!-- That file is not particularly elegant. This will need a refactor at some point. -->
+<style>
+
+  
+
+  #tooltip-wrapper {
+    background: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    font-size: 0.8em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 100ms;
+  }
+
+  #tooltip-wrapper:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+		background-image: linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, 1) 90%);
+		width: 100%;
+		height: 75px;
+  }
+</style>
+
+<div style="opacity: 0; display: none;" id='tooltip-wrapper'>
+  <div id='tooltip-content'>
+  </div>
+</div>
+
+<iframe style="display: none; height: 0; width: 0;" id='link-preview-iframe' src="">
+</iframe>
+
+<script>
+  var opacityTimeout;
+  var contentTimeout;
+  var transitionDurationMs = 100;
+
+  var iframe = document.getElementById('link-preview-iframe')
+  var tooltipWrapper = document.getElementById('tooltip-wrapper')
+  var tooltipContent = document.getElementById('tooltip-content')
+
+  var linkHistories = {};
+
+  function hideTooltip() {
+    opacityTimeout = setTimeout(function() {
+      tooltipWrapper.style.opacity = 0;
+      contentTimeout = setTimeout(function() {
+        tooltipContent.innerHTML = '';
+        tooltipWrapper.style.display = 'none';
+      }, transitionDurationMs + 1);
+    }, transitionDurationMs)
+  }
+
+  function showTooltip(event) {
+    var elem = event.target;
+    var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
+    var top = window.pageYOffset || document.documentElement.scrollTop
+
+    if (event.target.host === window.location.host) {
+      if (!linkHistories[event.target.href]) {
+        iframe.src = event.target.href
+        iframe.onload = function() {
+          tooltipContentHtml = ''
+          tooltipContentHtml += '<div style="font-weight: bold;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
+          tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
+
+          tooltipContent.innerHTML = tooltipContentHtml
+          linkHistories[event.target.href] = tooltipContentHtml
+
+          tooltipWrapper.style.display = 'block';
+          setTimeout(function() {
+            tooltipWrapper.style.opacity = 1;
+          }, 1)
+        } 
+      } else {
+        tooltipContent.innerHTML = linkHistories[event.target.href]
+        tooltipWrapper.style.display = 'block';
+        setTimeout(function() {
+          tooltipWrapper.style.opacity = 1;
+        }, 1)
+      }
+
+
+      tooltipWrapper.style.left = elem_props.left - (tooltipWrapper.offsetWidth / 2) + (elem_props.width / 2) + "px";
+      if ((window.innerHeight - elem_props.top) < (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top - tooltipWrapper.offsetHeight - 10 + "px";
+      } else if ((window.innerHeight - elem_props.top) > (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top + 35 + "px";
+      }
+
+      if ((elem_props.left + (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = "10px";
+      } else if ((document.body.clientWidth - elem_props.left - (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = document.body.clientWidth - tooltipWrapper.offsetWidth - 20 + "px";
+      }
+    }
+  }
+
+  function setupListeners(linkElement) {
+    linkElement.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+      showTooltip(event);
+    });
+
+    tooltipWrapper.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+    });
+  }
+
+  document.querySelectorAll('content a').forEach(setupListeners);
+</script>
+
+    <script
+  src="https://unpkg.com/littlefoot/dist/littlefoot.js"
+  type="application/javascript"
+></script>
+<script type="application/javascript">
+  littlefoot.littlefoot() // Pass any littlefoot settings here.
+</script>
+  </body>
+</html>

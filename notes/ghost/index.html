@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <link rel="canonical" href="https://bmannconsulting.com/notes/ghost/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A blogging and membership based newsletter app. [[MIT]] licensed open source.Maintained by the non-profit Ghost Foundation, who also run a paid managed hosti...">
+  <meta property="og:site_name" content="Boris Mann's Homepage">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="alternate" type="application/atom+xml" title="Blog Feed for bmannconsulting.com" href="https://bmannconsulting.com/blog.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Journal Feed for bmannconsulting.com" href="https://bmannconsulting.com/journal.xml" />
+  
+  
+  <link rel="stylesheet" href="https://unpkg.com/littlefoot/dist/littlefoot.css" />
+
+  
+  <meta property="og:description" content="A blogging and membership based newsletter app. [[MIT]] licensed open source.Maintained by the non-profit Ghost Foundation, who also run a paid managed hosti..."/>
+  
+
+  
+  <meta property="og:title" content="Ghost">
+  <meta property="og:type" content="article">
+  
+  
+  
+  <meta property="article:published_time" content="2024-10-16T22:19:08-07:00">
+  <meta property="article:author" content="https://bmannconsulting.com/">
+  
+
+  <meta property="og:url" content="https://bmannconsulting.com/notes/ghost/" />
+
+  
+  <meta property="og:image" content="https://bmannconsulting.com/assets/2024/ghost_logo_black.jpg">
+  
+
+
+  <!-- Open Frames Custom -->
+  <meta property="fc:frame" content="vNext">
+  
+  <meta property="fc:frame:image" content="https://bmannconsulting.com/assets/2024/ghost_logo_black.jpg">
+  <meta property="fc:frame:image:aspect_ratio" content="1:1">
+  
+  
+  <meta property="fc:frame:button:1" content="Home">
+  <meta property="fc:frame:button:1:action" content="link">
+  <meta property="fc:frame:button:1:target" content="https://ghost.org">
+  
+  
+  <meta property="fc:frame:button:2" content="Github">
+  <meta property="fc:frame:button:2:action" content="link">
+  <meta property="fc:frame:button:2:target" content="https://github.com/TryGhost/Ghost">
+  
+  
+
+  <title>
+    
+      Ghost &mdash; Boris Mann's Homepage
+    
+  </title>
+</head>
+
+  <body>
+    <nav><div>
+    <a class="internal-link" href="/"><b>Boris Mann's Homepage</b></a>
+</div>
+</nav>
+    <div class="wrapper">
+      <main><article>
+  <div>
+    <h1 style="text-transform:capitalize;">Ghost</h1>
+    
+    <strong><a href="https://ghost.org">ghost.org</a></strong><br />
+    
+
+    
+    <time datetime="2024-10-16T22:18:40-07:00">
+      Last updated on October 16, 2024
+    </time>
+    
+
+    <ul>
+    
+    <li><strong>github:</strong>&nbsp;<a href="https://github.com/TryGhost/Ghost">@TryGhost/Ghost</a></li>
+    
+    </ul>
+  </div>
+
+  <div id="notes-entry-container">
+    <content>
+      <html><body>
+<p>A blogging and membership based newsletter app. <a href="https://notes.bmannconsulting.com/#/page/MIT" class="noteslink" target="_blank">MIT</a> licensed open source.</p>
+
+<p>Maintained by the <a href="https://ghost.org/about/" target="_blank">non-profit Ghost Foundation</a>, who also run a paid managed hosting service at <a href="http://ghost.org" target="_blank">http://ghost.org</a>.</p>
+
+<h2 id="moving-paid-subscribers-from-substack">Moving Paid Subscribers from Substack</h2>
+
+<p>I’ve been recommending Ghost instead of <a class="internal-link" href="/notes/substack/">Substack</a> for a long time. <a href="https://citationneeded.news/substack-to-self-hosted-ghost/" target="_blank">Molly White wrote up her whole migration</a>, I’ve quoted a few sections below.</p>
+
+<p>On paid subscribers:</p>
+
+<blockquote>
+  <p>The good news is that you can migrate your Substack subscribers (paid and free) from Substack to another service. Substack uses Stripe for payment processing, and so as long as you continue to use Stripe (used by Ghost, Buttondown, beehiiv, etc.) you can swap out the newsletter platform without any interruption to them. This is huge — as someone who migrated from Patreon way back when and had to ask everyone in my (much smaller) subscriber base to manually re-subscribe, that's a nightmare.</p>
+</blockquote>
+
+<p>There’s a second step where you also need to ask Substack to remove themselves from your Stripe:</p>
+
+<blockquote>
+  <p>I needed to ask Substack to disconnect themselves from my Stripe account. <strong>This is critical</strong>: if you don't do this, subscriptions created through Substack will <em>continue</em> to send a 10% cut to Substack, even after you've left the platform!</p>
+</blockquote>
+
+<h2 id="pricing">Pricing</h2>
+
+<p>For self hosted Ghost, <a href="https://notes.bmannconsulting.com/#/page/Mailgun" class="noteslink" target="_blank">Mailgun</a> is going to be your biggest expense. It’s also the only thing that Ghost supports for sending email.</p>
+
+<p>Molly also include a bit on pricing:</p>
+
+<blockquote>
+  <p>After all of this, I have found myself with a roughly $103/mo setup: $28/mo for the VPS, $75/mo (plus overage tbd) for Mailgun. This is considerably cheaper than staying on Substack, and also slightly cheaper than both hosted Ghost and Buttondown.</p>
+</blockquote>
+
+<p>She wrote a lot of custom code and migration scripts as well as dealing with a lot of DNS and email settings. For most people, hosted Ghost would be an option.</p>
+
+<p>The other way to make this cheaper would be to work together with a number of people.</p>
+
+<p>eg <a class="internal-link" href="/notes/cloudron/">Cloudron</a> supports Ghost and you could share a server with a number of people. And also share a Mailgun account, which also gets cheaper in bulk. And some of those people could become experts in email and DNS.</p>
+<h2 id="headless-cms">Headless CMS</h2>
+
+<p>You can use Ghost as a headless CMS, which is what <a class="internal-link" href="/notes/fission/">Fission</a> does for <a href="https://fission.codes" target="_blank">https://fission.codes</a>. Everything is authored in Ghost, and then a GitHub Action pulls all the content from the Ghost API  and builds a static site with <a href="https://notes.bmannconsulting.com/#/page/Eleventy" class="noteslink" target="_blank">Eleventy</a>.</p>
+
+<p>This is getting less feasible over time and has a number of work arounds required especially for membership support. I’d pick a <a class="internal-link" href="/notes/headless-cms/">Headless CMS</a> instead.</p>
+
+<h2 id="ghost-annoyances">Ghost Annoyances</h2>
+
+<p>The Ghost Foundation has made it harder and harder to self host Ghost over time.</p>
+
+<p>I used to maintain a Heroku buildpack, we made an <a class="internal-link" href="/notes/ipfs/">IPFS</a> plugin at <a class="internal-link" href="/notes/fission/">Fission</a>, one used to be able to choose Postgres now only MySQL is supported.</p>
+
+<p>And of course, fair enough. The Ghost Foundation is doing the work of maintenance and they’re optimizing it for their needs, which is a managed hosting platform.</p>
+
+<p>But it doesn’t feel as much like a community platform any more.</p>
+
+<p>I still recommend it if what you need matches what Ghost offers out of the box: both blogging and newsletter sending, and/or paid membership management.</p>
+
+<p>But, because of the way it’s managed as a project, it’s going to be hard to build on top of for anything other than basic plugins or API integrations.</p>
+
+<h2 id="other-notes">Other Notes</h2>
+
+<p>I wrote some comparison pages and have a whole set of inter-linked notes about Ghost over at <a href="https://notes.bmannconsulting.com/#/page/ghost" target="_blank">my old LogSeq site</a>.</p>
+</body></html>
+    </content>
+
+    <side style="font-size: 0.9em">
+      <h3 style="margin-bottom: 1em">Notes mentioning this note</h3>
+      
+      <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
+      
+        <div class="backlink-box">
+        <a class="internal-link" href="/notes/bluesky-custom-feeds-for-premium-content/">Bluesky custom feeds for premium content</a><br>
+        <div style="font-size: 0.9em">[[Bluesky]] already has built in support for [[Bluesky#Custom Feeds custom feeds]]. Could this be used to create premium content feeds?...</div>
+        </div>
+      
+        <div class="backlink-box">
+        <a class="internal-link" href="/notes/feedback-on-federating-ghost/">Feedback on federating ghost</a><br>
+        <div style="font-size: 0.9em">A survey asking for feedback on Federating [[Ghost]] ActivityPub support is one of our most requested features of all time,...</div>
+        </div>
+      
+        <div class="backlink-box">
+        <a class="internal-link" href="/notes/startup/">Startup</a><br>
+        <div style="font-size: 0.9em">Startup and small business operations and efficiency Note: this page is undergoing major renovations. Skip to the bottom for other...</div>
+        </div>
+      
+        <div class="backlink-box">
+        <a class="internal-link" href="/notes/substack/">Substack</a><br>
+        <div style="font-size: 0.9em">Substack is an American online platform that provides publishing, payment, analytics, and design infrastructure to support subscription newsletters. It allows...</div>
+        </div>
+      
+        <div class="backlink-box">
+        <a class="internal-link" href="/notes/van-hack-day-june-2024/">Van hack day june 2024</a><br>
+        <div style="font-size: 0.9em">Personal notes for [[Vancouver Hack Day]] June event. Got into [[Z-Space]] around 8:30am, made a coffee Printed out more Z-Space...</div>
+        </div>
+      
+      
+      </div>
+      
+    </side>
+  </div>
+</article>
+</main>
+      <footer><a href="/blog/" class="internal-link">Blog</a> | <a href="/journal/" class="internal-link">Journal</a> | <a href="/notes/" class="internal-link">Notes</a> | <a href="/feeds/" class="internal-link">Feeds</a> | 👉&nbsp;Social Profiles&nbsp;<a href='https://bmann.ca' title='Links to all of my social profiles and accounts'>bmann.ca</a> </footer>
+    </div>
+
+    <!-- That file is not particularly elegant. This will need a refactor at some point. -->
+<style>
+
+  
+
+  #tooltip-wrapper {
+    background: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    font-size: 0.8em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 100ms;
+  }
+
+  #tooltip-wrapper:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+		background-image: linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, 1) 90%);
+		width: 100%;
+		height: 75px;
+  }
+</style>
+
+<div style="opacity: 0; display: none;" id='tooltip-wrapper'>
+  <div id='tooltip-content'>
+  </div>
+</div>
+
+<iframe style="display: none; height: 0; width: 0;" id='link-preview-iframe' src="">
+</iframe>
+
+<script>
+  var opacityTimeout;
+  var contentTimeout;
+  var transitionDurationMs = 100;
+
+  var iframe = document.getElementById('link-preview-iframe')
+  var tooltipWrapper = document.getElementById('tooltip-wrapper')
+  var tooltipContent = document.getElementById('tooltip-content')
+
+  var linkHistories = {};
+
+  function hideTooltip() {
+    opacityTimeout = setTimeout(function() {
+      tooltipWrapper.style.opacity = 0;
+      contentTimeout = setTimeout(function() {
+        tooltipContent.innerHTML = '';
+        tooltipWrapper.style.display = 'none';
+      }, transitionDurationMs + 1);
+    }, transitionDurationMs)
+  }
+
+  function showTooltip(event) {
+    var elem = event.target;
+    var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
+    var top = window.pageYOffset || document.documentElement.scrollTop
+
+    if (event.target.host === window.location.host) {
+      if (!linkHistories[event.target.href]) {
+        iframe.src = event.target.href
+        iframe.onload = function() {
+          tooltipContentHtml = ''
+          tooltipContentHtml += '<div style="font-weight: bold;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
+          tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
+
+          tooltipContent.innerHTML = tooltipContentHtml
+          linkHistories[event.target.href] = tooltipContentHtml
+
+          tooltipWrapper.style.display = 'block';
+          setTimeout(function() {
+            tooltipWrapper.style.opacity = 1;
+          }, 1)
+        } 
+      } else {
+        tooltipContent.innerHTML = linkHistories[event.target.href]
+        tooltipWrapper.style.display = 'block';
+        setTimeout(function() {
+          tooltipWrapper.style.opacity = 1;
+        }, 1)
+      }
+
+
+      tooltipWrapper.style.left = elem_props.left - (tooltipWrapper.offsetWidth / 2) + (elem_props.width / 2) + "px";
+      if ((window.innerHeight - elem_props.top) < (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top - tooltipWrapper.offsetHeight - 10 + "px";
+      } else if ((window.innerHeight - elem_props.top) > (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top + 35 + "px";
+      }
+
+      if ((elem_props.left + (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = "10px";
+      } else if ((document.body.clientWidth - elem_props.left - (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = document.body.clientWidth - tooltipWrapper.offsetWidth - 20 + "px";
+      }
+    }
+  }
+
+  function setupListeners(linkElement) {
+    linkElement.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+      showTooltip(event);
+    });
+
+    tooltipWrapper.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+    });
+  }
+
+  document.querySelectorAll('content a').forEach(setupListeners);
+</script>
+
+    <script
+  src="https://unpkg.com/littlefoot/dist/littlefoot.js"
+  type="application/javascript"
+></script>
+<script type="application/javascript">
+  littlefoot.littlefoot() // Pass any littlefoot settings here.
+</script>
+  </body>
+</html>

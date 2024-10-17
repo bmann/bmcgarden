@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <link rel="canonical" href="https://bmannconsulting.com/blog/2024/07/21/vancouver-community-search-engine-initial-launch/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Thanks to [[Graham Fleming]], we've got an initial launch of a Vancouver Community Search Engine. Visit search.dwebvancouver.org to search local community pe...">
+  <meta property="og:site_name" content="Boris Mann's Homepage">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="alternate" type="application/atom+xml" title="Blog Feed for bmannconsulting.com" href="https://bmannconsulting.com/blog.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Journal Feed for bmannconsulting.com" href="https://bmannconsulting.com/journal.xml" />
+  
+  
+  <link rel="stylesheet" href="https://unpkg.com/littlefoot/dist/littlefoot.css" />
+
+  
+  <meta property="og:description" content="Thanks to [[Graham Fleming]], we've got an initial launch of a Vancouver Community Search Engine. Visit search.dwebvancouver.org to search local community pe..."/>
+  
+
+  
+  <meta property="og:title" content="Vancouver Community Search Engine Initial Launch">
+  <meta property="og:type" content="article">
+  
+  
+  
+  <meta property="article:published_time" content="2024-07-21T05:50:57-07:00">
+  <meta property="article:author" content="https://bmannconsulting.com/">
+  
+
+  <meta property="og:url" content="https://bmannconsulting.com/blog/2024/07/21/vancouver-community-search-engine-initial-launch/" />
+
+  
+  <meta property="og:image" content="https://bmannconsulting.com/assets/bmann_hair_orange_256x256.png">
+  
+
+
+  <!-- Open Frames Default -->
+  
+  <meta property="fc:frame:image" content="https://bmannconsulting.com/assets/bmann_hair_orange_256x256.png">
+  <meta property="fc:frame:image:aspect_ratio" content="1:1">
+  
+  <meta property="fc:frame" content="vNext">
+  
+  <meta property="fc:frame:button:1" content="🌱 Home">
+  <meta property="fc:frame:button:1:action" content="link">
+  <meta property="fc:frame:button:1:target" content="https://bmannconsulting.com">
+  
+  <meta property="fc:frame:button:2" content="🔖 Explore">
+  <meta property="fc:frame:button:2:action" content="link">
+  <meta property="fc:frame:button:2:target" content="https://bmannconsulting.com/notes/">
+  <meta property="fc:frame:button:3" content="💰 Drips">
+  <meta property="fc:frame:button:3:action" content="link">
+  <meta property="fc:frame:button:3:target" content="https://www.drips.network/app/bmann.eth">
+
+  <title>
+    
+      Vancouver Community Search Engine Initial Launch &mdash; Boris Mann's Homepage
+    
+  </title>
+</head>
+
+  <body>
+    <nav><div>
+    <a class="internal-link" href="/"><b>Boris Mann's Homepage</b></a>
+</div>
+</nav>
+    <div class="wrapper">
+      <main><article>
+  <div>
+    <h1>Vancouver Community Search Engine Initial Launch</h1>
+  </div>
+
+  <div id="notes-entry-container">
+    <content>
+      <p>Thanks to <a class="internal-link" href="/notes/graham-fleming/">Graham Fleming</a>, we've got an initial launch of a Vancouver Community Search Engine. Visit <a href="https://search.dwebvancouver.org">search.dwebvancouver.org</a> to search local community people, organizations, events, communities.</p>
+
+<p>It will return "internal" results first, that appear on the websites of the links that have been submitted. Toggle to outgoing links to see content that matches your search that local resources link to.</p>
+
+<p>Right now, it's just a customized install of <a class="internal-link" href="/notes/lieu/">Lieu</a> running things. Here's how it works:</p>
+
+<ul>
+  <li>there is a website at <a href="https://localhost.dwebvancouver.org">localhost.dwebvancouver.org</a> that is the webring or directory listing of the web pages that are the source for the crawled pages<sup id="fnref:design" role="doc-noteref"><a href="#fn:design" class="footnote" rel="footnote">1</a></sup></li>
+  <li>people can add their personal websites and other links by <a href="https://github.com/DWebYVR/localhost_vancouver_webring/tree/main/website">making PRs to the index.html on Github</a></li>
+  <li>that page gets built and published to Github Pages whenever changes are made</li>
+  <li>Graham got Lieu deployed on <a class="internal-link" href="/notes/railway/">Railway</a>, which is what runs <a href="https://search.dwebvancouver.org">the search page and queries</a></li>
+  <li>We still have some work to do to schedule re-indexing of links in the webring</li>
+</ul>
+
+<p>You can try the search here by using this form. There are relatively few sources so far, and my site has the most content on it, so you're likely to find a page here for now.</p>
+
+<form method="GET" action="https://search.dwebvancouver.org">
+	<p style="margin-bottom: 10px;"><input type="search" minlength="1" required="" name="q" placeholder="Your search query here" id="search" size="50" /></p>
+	<button type="submit" style="padding: 2px 10px">Search the Vancouver Community</button>
+</form>
+
+<p>Design, indexing, the way search results are displayed and many other things can be improved, but we've got something to onboard people with for now.</p>
+
+<h2 id="search-is-broken">Search is broken</h2>
+
+<p>I've written a bit about what a <a class="internal-link" href="/notes/community-search-engine/">Community Search Engine</a> is and have been refining the idea, and need to test it with actual communities.</p>
+
+<p>The basic premise is that the search experience for <em>users</em> has been in decline for several years. Ever more SEO'd content and ads, less relevance and quality results for search users.</p>
+
+<p>So you ask your friends for recommendations. And maybe you use social media for that. But social media is in precipitous decline, mostly happening on corporate owned platforms with opaque algorithms and more paid ads.</p>
+
+<p>So what if we started collecting resources from our friends and communities? From acquaintances to people from your communities of interest, you have some known factors of recommended by people.</p>
+
+<h2 id="add-yourself-and-your-vancouver-resources">Add yourself and your Vancouver resources</h2>
+
+<p>The next step is to get people to add themselves, their Vancouver organizations and resources. You can do that by <a href="https://github.com/DWebYVR/localhost_vancouver_webring/tree/main/website">adding your personal links to the index.html file</a>.<sup id="fnref:github" role="doc-noteref"><a href="#fn:github" class="footnote" rel="footnote">2</a></sup></p>
+
+<p>Ideally, this will become a useful resource to search and browse, which is really about an intent: what should I use for accounting software in Canada? Can anyone recommend a lawyer? What home lab gear are you using?</p>
+
+<p>My own site here is only tangentially about Vancouver – I'm <em>in</em> the regional community, but have pointers to resources everywhere. Of course, my <a class="internal-link" href="/notes/foodwiki/">FoodWiki</a> has tons of Vancouver references that could be useful: I haven't added it as a link yet.</p>
+
+<p>I'll leave discussions about browsing and serendipity for another time. There are some ideas of how to include social posts from Twitter, Mastodon, or ATProtocol, or subscribe to RSS feeds, in a way to surface "new" content over time, as well as evergreen search over resources.</p>
+
+<p>Please add yourself, and let me know what you think about community search engines.</p>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:design" role="doc-endnote">
+      <p>Yes, the design is bad / unreadable :) There's an <a href="https://github.com/DWebYVR/localhost_vancouver_webring/issues/3">issue filed</a> if you'd like to get involved with some logo / brand and actual design of what a browseable directory of Vancouver resources should look like. Let me know! <a href="#fnref:design" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:github" role="doc-endnote">
+      <p>This is a fairly technical barrier today – making a pull request in Github. <a href="https://github.com/DWebYVR/localhost_vancouver_webring/issues/12">Here's an issue to make it available to less technical users</a>. <a href="#fnref:github" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+    </content>
+
+    <side style="font-size: 0.9em">
+      <div class="date">
+      <div style="font-size: 1em">Originally published <time>July 21, 2024</time></div>
+      </div>
+      <div class="meta">
+        <p>Categories: <a href="/notes/Community Search Engine" class="internal-link">Community Search Engine</a></p>
+        <p>Tags: <a href="/notes/Vancouver" class="internal-link">Vancouver</a>, <a href="/notes/DWebYVR" class="internal-link">DWebYVR</a></p>
+      </div>
+      
+
+      <div style="font-size: 0.9em">
+        
+      </div>
+      
+    </side>
+  </div>
+</article>
+
+<div style="font-size: 0.8em">Last modified at <time>October 16, 2024</time></div>
+
+<hr>
+</main>
+      <footer><a href="/blog/" class="internal-link">Blog</a> | <a href="/journal/" class="internal-link">Journal</a> | <a href="/notes/" class="internal-link">Notes</a> | <a href="/feeds/" class="internal-link">Feeds</a> | 👉&nbsp;Social Profiles&nbsp;<a href='https://bmann.ca' title='Links to all of my social profiles and accounts'>bmann.ca</a> </footer>
+    </div>
+
+    <!-- That file is not particularly elegant. This will need a refactor at some point. -->
+<style>
+
+  
+
+  #tooltip-wrapper {
+    background: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    font-size: 0.8em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 100ms;
+  }
+
+  #tooltip-wrapper:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+		background-image: linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, 1) 90%);
+		width: 100%;
+		height: 75px;
+  }
+</style>
+
+<div style="opacity: 0; display: none;" id='tooltip-wrapper'>
+  <div id='tooltip-content'>
+  </div>
+</div>
+
+<iframe style="display: none; height: 0; width: 0;" id='link-preview-iframe' src="">
+</iframe>
+
+<script>
+  var opacityTimeout;
+  var contentTimeout;
+  var transitionDurationMs = 100;
+
+  var iframe = document.getElementById('link-preview-iframe')
+  var tooltipWrapper = document.getElementById('tooltip-wrapper')
+  var tooltipContent = document.getElementById('tooltip-content')
+
+  var linkHistories = {};
+
+  function hideTooltip() {
+    opacityTimeout = setTimeout(function() {
+      tooltipWrapper.style.opacity = 0;
+      contentTimeout = setTimeout(function() {
+        tooltipContent.innerHTML = '';
+        tooltipWrapper.style.display = 'none';
+      }, transitionDurationMs + 1);
+    }, transitionDurationMs)
+  }
+
+  function showTooltip(event) {
+    var elem = event.target;
+    var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
+    var top = window.pageYOffset || document.documentElement.scrollTop
+
+    if (event.target.host === window.location.host) {
+      if (!linkHistories[event.target.href]) {
+        iframe.src = event.target.href
+        iframe.onload = function() {
+          tooltipContentHtml = ''
+          tooltipContentHtml += '<div style="font-weight: bold;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
+          tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
+
+          tooltipContent.innerHTML = tooltipContentHtml
+          linkHistories[event.target.href] = tooltipContentHtml
+
+          tooltipWrapper.style.display = 'block';
+          setTimeout(function() {
+            tooltipWrapper.style.opacity = 1;
+          }, 1)
+        } 
+      } else {
+        tooltipContent.innerHTML = linkHistories[event.target.href]
+        tooltipWrapper.style.display = 'block';
+        setTimeout(function() {
+          tooltipWrapper.style.opacity = 1;
+        }, 1)
+      }
+
+
+      tooltipWrapper.style.left = elem_props.left - (tooltipWrapper.offsetWidth / 2) + (elem_props.width / 2) + "px";
+      if ((window.innerHeight - elem_props.top) < (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top - tooltipWrapper.offsetHeight - 10 + "px";
+      } else if ((window.innerHeight - elem_props.top) > (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top + 35 + "px";
+      }
+
+      if ((elem_props.left + (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = "10px";
+      } else if ((document.body.clientWidth - elem_props.left - (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = document.body.clientWidth - tooltipWrapper.offsetWidth - 20 + "px";
+      }
+    }
+  }
+
+  function setupListeners(linkElement) {
+    linkElement.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+      showTooltip(event);
+    });
+
+    tooltipWrapper.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+    });
+  }
+
+  document.querySelectorAll('content a').forEach(setupListeners);
+</script>
+
+    <script
+  src="https://unpkg.com/littlefoot/dist/littlefoot.js"
+  type="application/javascript"
+></script>
+<script type="application/javascript">
+  littlefoot.littlefoot() // Pass any littlefoot settings here.
+</script>
+  </body>
+</html>

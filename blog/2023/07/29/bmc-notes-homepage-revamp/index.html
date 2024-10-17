@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <link rel="canonical" href="https://bmannconsulting.com/blog/2023/07/29/bmc-notes-homepage-revamp/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This is very much a blogging about blogging (and Digital Garden) post. I've written many words in many places since the last post. Many of those words have b...">
+  <meta property="og:site_name" content="Boris Mann's Homepage">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="alternate" type="application/atom+xml" title="Blog Feed for bmannconsulting.com" href="https://bmannconsulting.com/blog.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Journal Feed for bmannconsulting.com" href="https://bmannconsulting.com/journal.xml" />
+  
+  
+  <link rel="stylesheet" href="https://unpkg.com/littlefoot/dist/littlefoot.css" />
+
+  
+  <meta property="og:description" content="This is very much a blogging about blogging (and Digital Garden) post. I've written many words in many places since the last post. Many of those words have b..."/>
+  
+
+  
+  <meta property="og:title" content="Notes & Homepage Revamp">
+  <meta property="og:type" content="article">
+  
+  
+  
+  <meta property="article:published_time" content="2023-07-29T23:12:10-07:00">
+  <meta property="article:author" content="https://bmannconsulting.com/">
+  
+
+  <meta property="og:url" content="https://bmannconsulting.com/blog/2023/07/29/bmc-notes-homepage-revamp/" />
+
+  
+  <meta property="og:image" content="https://bmannconsulting.com/assets/bmann_hair_orange_256x256.png">
+  
+
+
+  <!-- Open Frames Default -->
+  
+  <meta property="fc:frame:image" content="https://bmannconsulting.com/assets/bmann_hair_orange_256x256.png">
+  <meta property="fc:frame:image:aspect_ratio" content="1:1">
+  
+  <meta property="fc:frame" content="vNext">
+  
+  <meta property="fc:frame:button:1" content="🌱 Home">
+  <meta property="fc:frame:button:1:action" content="link">
+  <meta property="fc:frame:button:1:target" content="https://bmannconsulting.com">
+  
+  <meta property="fc:frame:button:2" content="🔖 Explore">
+  <meta property="fc:frame:button:2:action" content="link">
+  <meta property="fc:frame:button:2:target" content="https://bmannconsulting.com/notes/">
+  <meta property="fc:frame:button:3" content="💰 Drips">
+  <meta property="fc:frame:button:3:action" content="link">
+  <meta property="fc:frame:button:3:target" content="https://www.drips.network/app/bmann.eth">
+
+  <title>
+    
+      Notes & Homepage Revamp &mdash; Boris Mann's Homepage
+    
+  </title>
+</head>
+
+  <body>
+    <nav><div>
+    <a class="internal-link" href="/"><b>Boris Mann's Homepage</b></a>
+</div>
+</nav>
+    <div class="wrapper">
+      <main><article>
+  <div>
+    <h1>Notes & Homepage Revamp</h1>
+  </div>
+
+  <div id="notes-entry-container">
+    <content>
+      <p>This is very much a blogging about blogging (and Digital Garden) post. I've written many words in many places since the last post. Many of those words have been into LogSeq, which I flipped the switch on at the beginning of this year to run this whole site, including my (lapsed) tech <a href="/blog/">blog</a>, and long term <a href="/archive/">archive</a>.</p>
+
+<p>I wanted to have one grand intertwingled set of both Digital Garden style Note and Journal pages, as well as all of my archive of posts.</p>
+
+<p>But LogSeq is not well suited to blog-style articles. And, the way that it publishes, <a href="https://notes.bmannconsulting.com/#/page/Jan%207th%2C%202023" class="noteslink" target="_notes">it packs everything into a single index.html file</a>, which for my 20 year archive of blog posts was gigantic. It got up to 40MB!<sup id="fnref:40MB" role="doc-noteref"><a href="#fn:40MB" class="footnote" rel="footnote">1</a></sup> So someone visiting the site would have to download 40MB … and only then be able to start interacting with the site.</p>
+
+<p>So, I've spent some vacation time this past week<sup id="fnref:foodwiki" role="doc-noteref"><a href="#fn:foodwiki" class="footnote" rel="footnote">2</a></sup> moving things around. LogSeq had 2000+ archive posts trimmed out of it, and now lives at the <a href="https://notes.bmannconsulting.com">notes.bmannconsulting.com</a> subdomain. That means that it's a bit smaller, but the <code class="language-plaintext highlighter-rouge">index.html</code> is still 9MB, and will only grow as a I add more pages. But it works for me, on both desktop and on my phone, using git to sync.</p>
+
+<p>I'm calling this site my Homepage. Which is what it is!<sup id="fnref:neocities" role="doc-noteref"><a href="#fn:neocities" class="footnote" rel="footnote">3</a></sup> It's the boring domain I picked a long time ago, and this root domain and other subdomains hanging off it is where all my stuff should be.</p>
+
+<ul>
+  <li>bmannconsulting.com: This site, my default domain that represents me and "my stuff". A homepage. With a blog. And an archive.</li>
+  <li><a href="https://blog.bmannconsulting.com">blog.bmannconsulting.com</a>: more personal posts, often around food and local stuff, runs on Micro.blog which powers cross-posting.<sup id="fnref:crosspost" role="doc-noteref"><a href="#fn:crosspost" class="footnote" rel="footnote">4</a></sup></li>
+  <li><a href="https://notes.bmannconsulting.com">notes.bmannconsulting.com</a>: LogSeq powered, default home page is the Daily Journals</li>
+</ul>
+
+<p>And "other stuff", that I can easily keep at subdomains, and maybe do more with in the future:</p>
+
+<ul>
+  <li><a href="https://twitter.bmannconsulting.com">twitter.bmannconsulting.com</a>: my Twitter archive, powered by <a href="https://www.zachleat.com/web/tweetback/">Tweetback</a><sup id="fnref:twitterarchive" role="doc-noteref"><a href="#fn:twitterarchive" class="footnote" rel="footnote">5</a></sup></li>
+  <li><a href="https://2022.bmannconsulting.com">2022.bmannconsulting.com</a>: a snapshot of late 2022 version of the website, Simply Jekyll edition<sup id="fnref:colophon" role="doc-noteref"><a href="#fn:colophon" class="footnote" rel="footnote">6</a></sup></li>
+</ul>
+
+<p>I'm not convinced I'm going to get back on the regular blog posting schedule. I've fallen off the wagon of RSS <em>reading</em>, myself, in part because I'm bouncing around multiple decentralized social networks<sup id="fnref:decentsocial" role="doc-noteref"><a href="#fn:decentsocial" class="footnote" rel="footnote">7</a></sup>, and in part as I said at the beginning – I'm writing a lot of words in a lot of places already.</p>
+
+<p>I may end up doing a weekly round up of the Daily Journal pages from my Notes site. That's usually where I clip links and articles and such. And there's a <a href="/feeds/">feeds</a> page here again, so my site should be subscribable.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:40MB" role="doc-endnote">
+      <p>The linked note has a screenshot that shows it at 18MB. You can go <a href="https://github.com/bmann/bmcnotes/blob/gh-pages/index.html">look at the gh-pages branch</a> to see how big the current version is. <a href="#fnref:40MB" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:foodwiki" role="doc-endnote">
+      <p>The FoodWiki has views &amp; food from around Nanaimo, starting on <a href="https://foodwiki.bmann.ca/July%252022nd%252C%25202023.html">July 22nd</a>. See what I mean? I'm writing a lot of words! <a href="#fnref:foodwiki" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:neocities" role="doc-endnote">
+      <p>Notwithstanding the <a href="https://bmann.ca">bmann.ca</a> one page kind of link tree thing I put together on Neocities. <a href="#fnref:neocities" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:crosspost" role="doc-endnote">
+      <p>Anything I post to Micro.blog ends up on Mastodon, Bluesky, Nostr, Tumblr, and even LinkedIn. <a href="#fnref:crosspost" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:twitterarchive" role="doc-endnote">
+      <p>I ran a <a href="https://hawksey.info/blog/2016/08/keeping-your-twitter-archive-fresh-and-freely-hosted-on-github-pages/">Twitter to Github Pages script for many years</a> that is still up at <a href="https://tweets.bmannconsulting.com">https://tweets.bmannconsulting.com</a>. You can see when the Twitter API finally died in June. Tweetback has the potential to interconnect <a href="#fnref:twitterarchive" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:colophon" role="doc-endnote">
+      <p>There's always a <a href="/notes/colophon/">Colophon</a> <a href="#fnref:colophon" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:decentsocial" role="doc-endnote">
+      <p>Or <a href="https://notes.bmannconsulting.com/#/page/decentsocial">DecentSocial</a> as the shorthand goes <a href="#fnref:decentsocial" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+    </content>
+
+    <side style="font-size: 0.9em">
+      <div class="date">
+      <div style="font-size: 1em">Originally published <time>July 29, 2023</time></div>
+      </div>
+      <div class="meta">
+        <p>Categories: <a href="/notes/BMC" class="internal-link">BMC</a></p>
+        <p>Tags: <a href="/notes/blogging" class="internal-link">blogging</a>, <a href="/notes/LogSeq" class="internal-link">LogSeq</a>, <a href="/notes/Digital Garden" class="internal-link">Digital Garden</a></p>
+      </div>
+      
+
+      <div style="font-size: 0.9em">
+        
+      </div>
+      
+    </side>
+  </div>
+</article>
+
+<div style="font-size: 0.8em">Last modified at <time>October 16, 2024</time></div>
+
+<hr>
+</main>
+      <footer><a href="/blog/" class="internal-link">Blog</a> | <a href="/journal/" class="internal-link">Journal</a> | <a href="/notes/" class="internal-link">Notes</a> | <a href="/feeds/" class="internal-link">Feeds</a> | 👉&nbsp;Social Profiles&nbsp;<a href='https://bmann.ca' title='Links to all of my social profiles and accounts'>bmann.ca</a> </footer>
+    </div>
+
+    <!-- That file is not particularly elegant. This will need a refactor at some point. -->
+<style>
+
+  
+
+  #tooltip-wrapper {
+    background: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    font-size: 0.8em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 100ms;
+  }
+
+  #tooltip-wrapper:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+		background-image: linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, 1) 90%);
+		width: 100%;
+		height: 75px;
+  }
+</style>
+
+<div style="opacity: 0; display: none;" id='tooltip-wrapper'>
+  <div id='tooltip-content'>
+  </div>
+</div>
+
+<iframe style="display: none; height: 0; width: 0;" id='link-preview-iframe' src="">
+</iframe>
+
+<script>
+  var opacityTimeout;
+  var contentTimeout;
+  var transitionDurationMs = 100;
+
+  var iframe = document.getElementById('link-preview-iframe')
+  var tooltipWrapper = document.getElementById('tooltip-wrapper')
+  var tooltipContent = document.getElementById('tooltip-content')
+
+  var linkHistories = {};
+
+  function hideTooltip() {
+    opacityTimeout = setTimeout(function() {
+      tooltipWrapper.style.opacity = 0;
+      contentTimeout = setTimeout(function() {
+        tooltipContent.innerHTML = '';
+        tooltipWrapper.style.display = 'none';
+      }, transitionDurationMs + 1);
+    }, transitionDurationMs)
+  }
+
+  function showTooltip(event) {
+    var elem = event.target;
+    var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
+    var top = window.pageYOffset || document.documentElement.scrollTop
+
+    if (event.target.host === window.location.host) {
+      if (!linkHistories[event.target.href]) {
+        iframe.src = event.target.href
+        iframe.onload = function() {
+          tooltipContentHtml = ''
+          tooltipContentHtml += '<div style="font-weight: bold;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
+          tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
+
+          tooltipContent.innerHTML = tooltipContentHtml
+          linkHistories[event.target.href] = tooltipContentHtml
+
+          tooltipWrapper.style.display = 'block';
+          setTimeout(function() {
+            tooltipWrapper.style.opacity = 1;
+          }, 1)
+        } 
+      } else {
+        tooltipContent.innerHTML = linkHistories[event.target.href]
+        tooltipWrapper.style.display = 'block';
+        setTimeout(function() {
+          tooltipWrapper.style.opacity = 1;
+        }, 1)
+      }
+
+
+      tooltipWrapper.style.left = elem_props.left - (tooltipWrapper.offsetWidth / 2) + (elem_props.width / 2) + "px";
+      if ((window.innerHeight - elem_props.top) < (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top - tooltipWrapper.offsetHeight - 10 + "px";
+      } else if ((window.innerHeight - elem_props.top) > (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top + 35 + "px";
+      }
+
+      if ((elem_props.left + (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = "10px";
+      } else if ((document.body.clientWidth - elem_props.left - (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = document.body.clientWidth - tooltipWrapper.offsetWidth - 20 + "px";
+      }
+    }
+  }
+
+  function setupListeners(linkElement) {
+    linkElement.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+      showTooltip(event);
+    });
+
+    tooltipWrapper.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+    });
+  }
+
+  document.querySelectorAll('content a').forEach(setupListeners);
+</script>
+
+    <script
+  src="https://unpkg.com/littlefoot/dist/littlefoot.js"
+  type="application/javascript"
+></script>
+<script type="application/javascript">
+  littlefoot.littlefoot() // Pass any littlefoot settings here.
+</script>
+  </body>
+</html>

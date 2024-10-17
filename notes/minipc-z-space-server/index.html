@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <link rel="canonical" href="https://bmannconsulting.com/notes/minipc-z-space-server/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="September 9th, 2024I'm probably going to pave over this server again!Had been looking at [[Unraid]] as a good baseline, including the way it can host Windows...">
+  <meta property="og:site_name" content="Boris Mann's Homepage">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="alternate" type="application/atom+xml" title="Blog Feed for bmannconsulting.com" href="https://bmannconsulting.com/blog.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Journal Feed for bmannconsulting.com" href="https://bmannconsulting.com/journal.xml" />
+  
+  
+  <link rel="stylesheet" href="https://unpkg.com/littlefoot/dist/littlefoot.css" />
+
+  
+  <meta property="og:description" content="September 9th, 2024I'm probably going to pave over this server again!Had been looking at [[Unraid]] as a good baseline, including the way it can host Windows..."/>
+  
+
+  
+  <meta property="og:title" content="Minipc z Space server">
+  <meta property="og:type" content="article">
+  
+  
+  
+  <meta property="article:published_time" content="2024-10-16T22:19:08-07:00">
+  <meta property="article:author" content="https://bmannconsulting.com/">
+  
+
+  <meta property="og:url" content="https://bmannconsulting.com/notes/minipc-z-space-server/" />
+
+  
+  <meta property="og:image" content="https://bmannconsulting.com/assets/bmann_hair_orange_256x256.png">
+  
+
+
+  <!-- Open Frames Default -->
+  
+  <meta property="fc:frame:image" content="https://bmannconsulting.com/assets/bmann_hair_orange_256x256.png">
+  <meta property="fc:frame:image:aspect_ratio" content="1:1">
+  
+  <meta property="fc:frame" content="vNext">
+  
+  <meta property="fc:frame:button:1" content="🌱 Home">
+  <meta property="fc:frame:button:1:action" content="link">
+  <meta property="fc:frame:button:1:target" content="https://bmannconsulting.com">
+  
+  <meta property="fc:frame:button:2" content="🔖 Explore">
+  <meta property="fc:frame:button:2:action" content="link">
+  <meta property="fc:frame:button:2:target" content="https://bmannconsulting.com/notes/">
+  <meta property="fc:frame:button:3" content="💰 Drips">
+  <meta property="fc:frame:button:3:action" content="link">
+  <meta property="fc:frame:button:3:target" content="https://www.drips.network/app/bmann.eth">
+
+  <title>
+    
+      Minipc z Space server &mdash; Boris Mann's Homepage
+    
+  </title>
+</head>
+
+  <body>
+    <nav><div>
+    <a class="internal-link" href="/"><b>Boris Mann's Homepage</b></a>
+</div>
+</nav>
+    <div class="wrapper">
+      <main><article>
+  <div>
+    <h1 style="text-transform:capitalize;">Minipc z Space server</h1>
+    
+
+    
+    <time datetime="2024-10-16T22:18:40-07:00">
+      Last updated on October 16, 2024
+    </time>
+    
+
+    <ul>
+    
+    </ul>
+  </div>
+
+  <div id="notes-entry-container">
+    <content>
+      <html><body>
+<h2 id="september-9th-2024">September 9th, 2024</h2>
+
+<p>I'm probably going to pave over this server again!</p>
+
+<p>Had been looking at <a href="https://notes.bmannconsulting.com/#/page/Unraid" class="noteslink" target="_blank">Unraid</a> as a good baseline, including the way it can host Windows VMs.</p>
+
+<h3 id="ventoy">Ventoy</h3>
+
+<p>Found <a class="internal-link" href="/notes/ventoy/">Ventoy</a> and am going to attempt to pave over the Corsair 2TB USB-C NVMe drive I have.</p>
+
+<p>Used <code class="language-plaintext highlighter-rouge">wget</code> to download the ventoy stuff and unpack it. None of the web gui stuff will work ATM because we have the server in a DMZ and I don't remember it's internal alternate IP address.</p>
+
+<p><code class="language-plaintext highlighter-rouge">networkctl status</code> is great for looking at all your network settings.</p>
+
+<p><img src="/assets/2024/networkctl-status.png" alt="screenshot of networkctl status command"></p>
+
+<p>To get a list of disks / partitions under Ubuntu, use <code class="language-plaintext highlighter-rouge">lsblk</code>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL
+</code></pre></div></div>
+
+<p>OK, Ventoy installed. I thought <a href="https://notes.bmannconsulting.com/#/page/Unraid" class="noteslink" target="_blank">Unraid</a> would have an ISO, but the whole point is to have bootable USB, so they don't support that. I guess I'll go buy a USB key for this!</p>
+
+<h3 id="unraid">Unraid</h3>
+<p>Going to try out <a href="https://notes.bmannconsulting.com/#/page/Unraid" class="noteslink" target="_blank">Unraid</a>.</p>
+
+<p>Bought 2x <a href="https://www.lexar.com/product/lexar-jumpdrive-dual-drive-d400-usb-3-1-type-c/" target="_blank">Lexar JumpDrive D400 128GB</a> from London Drugs and used the MacOS installer.</p>
+
+<p>Spent like 20 minutes trying to get it to boot with various settings on <a class="internal-link" href="/notes/minipc-pl63/">MiniPC PL63</a>, found various hints on forums that turning off ASUS Fast Boot makes things works.</p>
+
+<p>It also helps if you didn't accidentally swap the empty USB key for the formatted one!</p>
+
+<p>Actually getting Unraid installed was pretty much all automatic. I ended up buying a basic license for it, and am now poking around the web interface.</p>
+
+<p>It looks like a very robust system, BUT, I don't think it's a good fit for the <a class="internal-link" href="/notes/minipc-pl63/">MiniPC PL63</a>, which only has Thunderbolt 4 as expansion. The Unraid devs strongly recommend against USB-C connected storage.</p>
+
+<p>Their home page has this very interesting <a href="https://www.lincplustech.com/products/lincstation-n1-network-attached-storage" target="_blank">LincStation N1 NAS</a> as one example, listed at $399USD.</p>
+<h2 id="august-1st-2024">August 1st, 2024</h2>
+
+<p><a class="internal-link" href="/notes/minipc-pl63/">MiniPC PL63</a> got wiped and Ubuntu Server installed.</p>
+
+<p>The interface for partitioning drives, now with Logical Volume Manager, is just as confusing as ever. It sets aside 100GB for a default install and leaves the bulk of the drive empty.</p>
+
+<p>The import keys from GitHub experience is really nice.</p>
+
+<p>Jonno had previously setup a VLAN to be a DMZ where the Z-Brain server is running, on <code class="language-plaintext highlighter-rouge">192.168.1.x</code>.</p>
+
+<p>Configured the MiniPC to be on that same network. It routes through a UniFi 4 port Switch. Had to also configure the port that it plugs into on the switch to automatically route that VLAN rather than the default one. Otherwise the machine is on the default VLAN and gets an IP from there.</p>
+
+<p>Much searching of network interface commands for Ubuntu. <code class="language-plaintext highlighter-rouge">networkctl</code> is installed by default and the one you want.</p>
+
+<p>Port forwarding is configured on external IP address to forward to the internal DMZ IP address. So, we only open ports (22, 80, 443) that we want to let through to the server. We still have one public IP address available.</p>
+
+<p>Tested ssh from all IP addresses, internal and external, all worked.</p>
+
+<p>Installed <a class="internal-link" href="/notes/coolify/">Coolify</a> by generating a public/private key pair and copying the private key to authorized keys in the root account of the machine. Used the external public IP address and Coolify connected and installed everything else remotely.</p>
+
+<p>Did a test install of Ghost, which worked, and used Coolify's default temp domain thing. Need to map <a class="internal-link" href="/notes/bringyourown-computer/">BringYourOwn.Computer</a> as the default domain for it.</p>
+
+<p>Probably also need to look at S3 Storage and backup options. Trying to use my <a class="internal-link" href="/notes/storj/">Storj</a> account – but this mostly only works for backups, as it doesn't support public files.</p>
+
+<hr>
+<p>I mapped BYOC domain and couldn't get anything working. The dreaded "too many redirects" no matter what I did. You have to set <a href="https://notes.bmannconsulting.com/#/page/Cloudflare" class="noteslink" target="_blank">Cloudflare</a> encryption settings to "Full", and then everything will start working.</p>
+
+<p>Succeeded at a test install of <a href="https://notes.bmannconsulting.com/#/page/Docmost" class="noteslink" target="_blank">Docmost</a>, a new-to-me wiki package that looks pretty good.</p>
+</body></html>
+    </content>
+
+    <side style="font-size: 0.9em">
+      <h3 style="margin-bottom: 1em">Notes mentioning this note</h3>
+      
+      <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
+      
+        <div class="backlink-box">
+        <a class="internal-link" href="/notes/bringyourown-computer/">Bringyourown.computer</a><br>
+        <div style="font-size: 0.9em">A fun domain I own. Meant to be about the [[Bring Your Own Server]] movement I've been tracking. See [[MiniPC...</div>
+        </div>
+      
+      
+      </div>
+      
+    </side>
+  </div>
+</article>
+</main>
+      <footer><a href="/blog/" class="internal-link">Blog</a> | <a href="/journal/" class="internal-link">Journal</a> | <a href="/notes/" class="internal-link">Notes</a> | <a href="/feeds/" class="internal-link">Feeds</a> | 👉&nbsp;Social Profiles&nbsp;<a href='https://bmann.ca' title='Links to all of my social profiles and accounts'>bmann.ca</a> </footer>
+    </div>
+
+    <!-- That file is not particularly elegant. This will need a refactor at some point. -->
+<style>
+
+  
+
+  #tooltip-wrapper {
+    background: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    font-size: 0.8em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 100ms;
+  }
+
+  #tooltip-wrapper:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+		background-image: linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, 1) 90%);
+		width: 100%;
+		height: 75px;
+  }
+</style>
+
+<div style="opacity: 0; display: none;" id='tooltip-wrapper'>
+  <div id='tooltip-content'>
+  </div>
+</div>
+
+<iframe style="display: none; height: 0; width: 0;" id='link-preview-iframe' src="">
+</iframe>
+
+<script>
+  var opacityTimeout;
+  var contentTimeout;
+  var transitionDurationMs = 100;
+
+  var iframe = document.getElementById('link-preview-iframe')
+  var tooltipWrapper = document.getElementById('tooltip-wrapper')
+  var tooltipContent = document.getElementById('tooltip-content')
+
+  var linkHistories = {};
+
+  function hideTooltip() {
+    opacityTimeout = setTimeout(function() {
+      tooltipWrapper.style.opacity = 0;
+      contentTimeout = setTimeout(function() {
+        tooltipContent.innerHTML = '';
+        tooltipWrapper.style.display = 'none';
+      }, transitionDurationMs + 1);
+    }, transitionDurationMs)
+  }
+
+  function showTooltip(event) {
+    var elem = event.target;
+    var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
+    var top = window.pageYOffset || document.documentElement.scrollTop
+
+    if (event.target.host === window.location.host) {
+      if (!linkHistories[event.target.href]) {
+        iframe.src = event.target.href
+        iframe.onload = function() {
+          tooltipContentHtml = ''
+          tooltipContentHtml += '<div style="font-weight: bold;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
+          tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
+
+          tooltipContent.innerHTML = tooltipContentHtml
+          linkHistories[event.target.href] = tooltipContentHtml
+
+          tooltipWrapper.style.display = 'block';
+          setTimeout(function() {
+            tooltipWrapper.style.opacity = 1;
+          }, 1)
+        } 
+      } else {
+        tooltipContent.innerHTML = linkHistories[event.target.href]
+        tooltipWrapper.style.display = 'block';
+        setTimeout(function() {
+          tooltipWrapper.style.opacity = 1;
+        }, 1)
+      }
+
+
+      tooltipWrapper.style.left = elem_props.left - (tooltipWrapper.offsetWidth / 2) + (elem_props.width / 2) + "px";
+      if ((window.innerHeight - elem_props.top) < (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top - tooltipWrapper.offsetHeight - 10 + "px";
+      } else if ((window.innerHeight - elem_props.top) > (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top + 35 + "px";
+      }
+
+      if ((elem_props.left + (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = "10px";
+      } else if ((document.body.clientWidth - elem_props.left - (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = document.body.clientWidth - tooltipWrapper.offsetWidth - 20 + "px";
+      }
+    }
+  }
+
+  function setupListeners(linkElement) {
+    linkElement.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+      showTooltip(event);
+    });
+
+    tooltipWrapper.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+    });
+  }
+
+  document.querySelectorAll('content a').forEach(setupListeners);
+</script>
+
+    <script
+  src="https://unpkg.com/littlefoot/dist/littlefoot.js"
+  type="application/javascript"
+></script>
+<script type="application/javascript">
+  littlefoot.littlefoot() // Pass any littlefoot settings here.
+</script>
+  </body>
+</html>

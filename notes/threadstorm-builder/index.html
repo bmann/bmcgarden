@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <link rel="canonical" href="https://bmannconsulting.com/notes/threadstorm-builder/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="I wrote up the design for this many years ago now, when I called it a Tweetstorm Builder and Blog. I'm copying that write up here.In our post Twitter era, bo...">
+  <meta property="og:site_name" content="Boris Mann's Homepage">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="alternate" type="application/atom+xml" title="Blog Feed for bmannconsulting.com" href="https://bmannconsulting.com/blog.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Journal Feed for bmannconsulting.com" href="https://bmannconsulting.com/journal.xml" />
+  
+  
+  <link rel="stylesheet" href="https://unpkg.com/littlefoot/dist/littlefoot.css" />
+
+  
+  <meta property="og:description" content="I wrote up the design for this many years ago now, when I called it a Tweetstorm Builder and Blog. I'm copying that write up here.In our post Twitter era, bo..."/>
+  
+
+  
+  <meta property="og:title" content="Threadstorm builder">
+  <meta property="og:type" content="article">
+  
+  
+  
+  <meta property="article:published_time" content="2024-10-16T22:19:08-07:00">
+  <meta property="article:author" content="https://bmannconsulting.com/">
+  
+
+  <meta property="og:url" content="https://bmannconsulting.com/notes/threadstorm-builder/" />
+
+  
+  <meta property="og:image" content="https://bmannconsulting.com/assets/bmann_hair_orange_256x256.png">
+  
+
+
+  <!-- Open Frames Default -->
+  
+  <meta property="fc:frame:image" content="https://bmannconsulting.com/assets/bmann_hair_orange_256x256.png">
+  <meta property="fc:frame:image:aspect_ratio" content="1:1">
+  
+  <meta property="fc:frame" content="vNext">
+  
+  <meta property="fc:frame:button:1" content="🌱 Home">
+  <meta property="fc:frame:button:1:action" content="link">
+  <meta property="fc:frame:button:1:target" content="https://bmannconsulting.com">
+  
+  <meta property="fc:frame:button:2" content="🔖 Explore">
+  <meta property="fc:frame:button:2:action" content="link">
+  <meta property="fc:frame:button:2:target" content="https://bmannconsulting.com/notes/">
+  <meta property="fc:frame:button:3" content="💰 Drips">
+  <meta property="fc:frame:button:3:action" content="link">
+  <meta property="fc:frame:button:3:target" content="https://www.drips.network/app/bmann.eth">
+
+  <title>
+    
+      Threadstorm builder &mdash; Boris Mann's Homepage
+    
+  </title>
+</head>
+
+  <body>
+    <nav><div>
+    <a class="internal-link" href="/"><b>Boris Mann's Homepage</b></a>
+</div>
+</nav>
+    <div class="wrapper">
+      <main><article>
+  <div>
+    <h1 style="text-transform:capitalize;">Threadstorm builder</h1>
+    
+
+    
+    <time datetime="2024-10-16T22:18:40-07:00">
+      Last updated on October 16, 2024
+    </time>
+    
+
+    <ul>
+    
+    </ul>
+  </div>
+
+  <div id="notes-entry-container">
+    <content>
+      <html><body>
+<p>I wrote up the design for this many years ago now, when I called it a <a href="https://talk.fission.codes/t/tweetstorm-builder-and-blog/433" target="_blank">Tweetstorm Builder and Blog</a>. I'm copying that write up here.</p>
+
+<p>In our post Twitter era, both <a class="internal-link" href="/notes/activitypub/">ActivityPub</a> and <a class="internal-link" href="/notes/atprotocol/">ATProtocol</a> would be good choices. <a href="https://notes.bmannconsulting.com/#/page/Micropub" class="noteslink" target="_blank">Micropub</a> really isn't widely used and I think tying it more social platforms makes more sense.</p>
+
+<p><a class="internal-link" href="/notes/noosphere/">Noosphere</a> could be a fit as well, but also isn't currently social, and I also think they would do well to e.g. post to <a class="internal-link" href="/notes/atprotocol/">ATProtocol</a>. The Noosphere mobile client app, <a class="internal-link" href="/notes/subconscious/">Subconscious</a>, could evolve to be a threadstorm builder.<sup id="fnref:threadstorm" role="doc-noteref"><a href="#fn:threadstorm" class="footnote" rel="footnote">1</a></sup></p>
+
+<p>There are a whole bunch of people who have adopted Twitter as their Digital Garden. So as well as being a builder, it should make it easy to transclude (quote post) and generally maintain and weave long running threads over time (mentioned below as a feature).</p>
+
+<p>I say here Twitter in particular (and continue that the below because that’s when it was originally written). How we can we think about this as cross platform, and supporting crossposting?</p>
+
+<p>A variety of platforms (<a class="internal-link" href="/notes/farcaster/">Farcaster</a>’s Warpcast client is one) support rich embedding of Tweets when a Twitter link is included. What does cross platform quote posts look like?</p>
+
+<p>One of the things we looked at with <a href="https://notes.bmannconsulting.com/#/page/Moa%20Party" class="noteslink" target="_blank">Moa Party</a> was translating @-mentions across platforms. This might be a feature for <a class="internal-link" href="/notes/fedica/">Fedica</a> to think about supporting: opt-in linking / verification of your accounts across platforms.</p>
+
+<p>Below is the cut and paste of the original.</p>
+<h2 id="description">Description</h2>
+
+<p>People write tweetstorms because they’re “easier” than whatever their blog setup is. And the constraints of 280 characters at a time makes for both careful sentence construction and flow.</p>
+
+<p>But - then you’ve got this lovely writing that is trapped on Twitter. At best, you come back and copy / paste the tweets back into a blog post.</p>
+
+<p>The idea is a blog + tweetstorm builder. You log into it with your Twitter account, compose Tweets, and post to Twitter as a tweetstorm. But, you also get a “blog post” that is generated for you.</p>
+
+<h2 id="concept-overview">Concept Overview</h2>
+
+<p>People still don’t seem to be able to get over the hump of blogging. Twitter helps frame bite sized ideas and gets spread and quoting and interaction.</p>
+
+<p>You might get followers, but you don’t have an easy way to keep or highlight that tweetstorm of yours.</p>
+
+<p>Twitter web client now has tools for making multi-tweet threads. Your one option is to fire them all at once, and you are one browser refresh from losing everything you’ve written. Also: no draft tweetstorms.</p>
+
+<p>The tweetstorm client helps you draft and publish tweetstorms.</p>
+
+<p>Once you publish, it also creates a markdown and/or HTML formatted version of your tweetstorm — aka a blog post. Initially, title and optional header description.</p>
+
+<p>This is a bit like Storify, which used to support arbitrary chunks of text between tweets.</p>
+
+<h2 id="features">Features</h2>
+
+<p>A Fission app, enabled with login and file storage</p>
+
+<p>Twitter Auth: Auth with Twitter and keep credentials local per session. Have to figure out webnative&lt;-&gt;OAuth connection here.</p>
+
+<p>Cut and Paste: cut and paste the markdown or HTML and publish it on your own blog. (use case for atJSON native storage here?)</p>
+
+<p>Choose timing of tweets: all at once or pace them out by X minutes</p>
+
+<p>Personal Microblog: if we’re already generating the HTML for a blog post — just be a blog! For Fission, select a public folder to post to / edit from. Need to set up a separate “blog app” for display if we want a custom domain.</p>
+
+<p>Full Micropub client: why just multiple posts? Make it a full Micropub client, so you can draft/write tweet length posts and post to anything that supports Micropub.</p>
+
+<p>Long running threads: the other emergent behaviour is long running tweet threads. Search tools within Twitter are pretty hard to do, so this is actually difficult to manage. If you keep threads around and searchable / browseable, make it simple to attach / post a new tweet to the end of a thread.</p>
+
+<p>Also: look up Twitter “collections”? Tweetbot has the option to “create a topic”, but also “make it a collection”. Can collections include tweets from multiple users? Make it easier to do this.</p>
+
+<p>Mastodon support: Initially point people at <a href="https://moa.party/" target="_blank">Moa Party</a>, but first-class Mastodon support may be of interest to some. Means OAuth into your home server, which is pretty much just like Twitter. But, longer posts and other Mastodon specific features.</p>
+
+<p>Medium, LinkedIn, Tumblr, WordPress, Drupal etc posting: various things have APIs. WP and Drupal can both accept Micropub with the right plugin. Also, <a href="https://micro.blog/" target="_blank">Micro.blog</a> can accept Micropub posts, and handle cross posting.</p>
+
+<h2 id="user-impact">User Impact</h2>
+
+<p><em>Who would want to use this and why?</em></p>
+
+<p>Anyone that wants to compose tweetstorms in a richer environment while also having it post to their own site.</p>
+
+<p>Blogging, but easier. Twitter promotion, without having to be “on” Twitter.</p>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:threadstorm" role="doc-endnote">
+      <p>OK OK, this is a terrible phrase, but in my defense, I came up with in 2 seconds when I realized I didn't want to call it a "Tweetstorm" any longer, I will absolutely not say "Tootstorm", and "Skeetstorm" is also incredibly bad. Threads is the more generic cross platform way of what to call these things. Except, for, you know <a href="https://notes.bmannconsulting.com/#/page/Threads.net" class="noteslink" target="_blank">Threads.net</a> is a thing. <a href="#fnref:threadstorm" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+  </ol>
+</div>
+</body></html>
+    </content>
+
+    <side style="font-size: 0.9em">
+      <h3 style="margin-bottom: 1em">Notes mentioning this note</h3>
+      
+
+      <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
+        <div class="backlink-box" style="background-color: #fff;">
+          View related content on notes.bmannconsulting.com/<a href="https://notes.bmannconsulting.com/#/page/Threadstorm builder" target="_notes">Threadstorm builder</a>
+        </div>
+        <div class="backlink-box" style="background-color: #fff;">
+          Browse the <a href="/notes/" class="internal-link">Local Notes Graph »</a>
+        </div>
+      </div>
+      
+    </side>
+  </div>
+</article>
+</main>
+      <footer><a href="/blog/" class="internal-link">Blog</a> | <a href="/journal/" class="internal-link">Journal</a> | <a href="/notes/" class="internal-link">Notes</a> | <a href="/feeds/" class="internal-link">Feeds</a> | 👉&nbsp;Social Profiles&nbsp;<a href='https://bmann.ca' title='Links to all of my social profiles and accounts'>bmann.ca</a> </footer>
+    </div>
+
+    <!-- That file is not particularly elegant. This will need a refactor at some point. -->
+<style>
+
+  
+
+  #tooltip-wrapper {
+    background: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    font-size: 0.8em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 100ms;
+  }
+
+  #tooltip-wrapper:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+		background-image: linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, 1) 90%);
+		width: 100%;
+		height: 75px;
+  }
+</style>
+
+<div style="opacity: 0; display: none;" id='tooltip-wrapper'>
+  <div id='tooltip-content'>
+  </div>
+</div>
+
+<iframe style="display: none; height: 0; width: 0;" id='link-preview-iframe' src="">
+</iframe>
+
+<script>
+  var opacityTimeout;
+  var contentTimeout;
+  var transitionDurationMs = 100;
+
+  var iframe = document.getElementById('link-preview-iframe')
+  var tooltipWrapper = document.getElementById('tooltip-wrapper')
+  var tooltipContent = document.getElementById('tooltip-content')
+
+  var linkHistories = {};
+
+  function hideTooltip() {
+    opacityTimeout = setTimeout(function() {
+      tooltipWrapper.style.opacity = 0;
+      contentTimeout = setTimeout(function() {
+        tooltipContent.innerHTML = '';
+        tooltipWrapper.style.display = 'none';
+      }, transitionDurationMs + 1);
+    }, transitionDurationMs)
+  }
+
+  function showTooltip(event) {
+    var elem = event.target;
+    var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
+    var top = window.pageYOffset || document.documentElement.scrollTop
+
+    if (event.target.host === window.location.host) {
+      if (!linkHistories[event.target.href]) {
+        iframe.src = event.target.href
+        iframe.onload = function() {
+          tooltipContentHtml = ''
+          tooltipContentHtml += '<div style="font-weight: bold;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
+          tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
+
+          tooltipContent.innerHTML = tooltipContentHtml
+          linkHistories[event.target.href] = tooltipContentHtml
+
+          tooltipWrapper.style.display = 'block';
+          setTimeout(function() {
+            tooltipWrapper.style.opacity = 1;
+          }, 1)
+        } 
+      } else {
+        tooltipContent.innerHTML = linkHistories[event.target.href]
+        tooltipWrapper.style.display = 'block';
+        setTimeout(function() {
+          tooltipWrapper.style.opacity = 1;
+        }, 1)
+      }
+
+
+      tooltipWrapper.style.left = elem_props.left - (tooltipWrapper.offsetWidth / 2) + (elem_props.width / 2) + "px";
+      if ((window.innerHeight - elem_props.top) < (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top - tooltipWrapper.offsetHeight - 10 + "px";
+      } else if ((window.innerHeight - elem_props.top) > (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top + 35 + "px";
+      }
+
+      if ((elem_props.left + (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = "10px";
+      } else if ((document.body.clientWidth - elem_props.left - (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = document.body.clientWidth - tooltipWrapper.offsetWidth - 20 + "px";
+      }
+    }
+  }
+
+  function setupListeners(linkElement) {
+    linkElement.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+      showTooltip(event);
+    });
+
+    tooltipWrapper.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+    });
+  }
+
+  document.querySelectorAll('content a').forEach(setupListeners);
+</script>
+
+    <script
+  src="https://unpkg.com/littlefoot/dist/littlefoot.js"
+  type="application/javascript"
+></script>
+<script type="application/javascript">
+  littlefoot.littlefoot() // Pass any littlefoot settings here.
+</script>
+  </body>
+</html>

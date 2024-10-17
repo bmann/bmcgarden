@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+>
+	<channel>
+		<title>Boris Mann&apos;s Homepage - Blog Feed</title>
+		<description>Daily journals with links and asides, digital garden notes, and occasional long form blogs</description>		
+		<link>https://bmannconsulting.com</link>
+		<atom:link href="https://bmannconsulting.com/blog.xml" rel="self" type="application/rss+xml" />
+		<lastBuildDate>Wed, 16 Oct 2024 22:19:08 -0700</lastBuildDate>
+		
+		
+		
+		
+		  
+			<item>
+				<title>Vancouver Community Search Engine Initial Launch</title>
+				
+					<dc:creator>Boris Mann&apos;s Homepage</dc:creator>
+				
+				<description>&lt;p&gt;Thanks to &lt;a class=&quot;internal-link&quot; href=&quot;/notes/graham-fleming/&quot;&gt;Graham Fleming&lt;/a&gt;, we&apos;ve got an initial launch of a Vancouver Community Search Engine. Visit &lt;a href=&quot;https://search.dwebvancouver.org&quot;&gt;search.dwebvancouver.org&lt;/a&gt; to search local community people, organizations, events, communities.&lt;/p&gt;
+
+&lt;p&gt;It will return &quot;internal&quot; results first, that appear on the websites of the links that have been submitted. Toggle to outgoing links to see content that matches your search that local resources link to.&lt;/p&gt;
+
+&lt;p&gt;Right now, it&apos;s just a customized install of &lt;a class=&quot;internal-link&quot; href=&quot;/notes/lieu/&quot;&gt;Lieu&lt;/a&gt; running things. Here&apos;s how it works:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;there is a website at &lt;a href=&quot;https://localhost.dwebvancouver.org&quot;&gt;localhost.dwebvancouver.org&lt;/a&gt; that is the webring or directory listing of the web pages that are the source for the crawled pages&lt;sup id=&quot;fnref:design&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:design&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+  &lt;li&gt;people can add their personal websites and other links by &lt;a href=&quot;https://github.com/DWebYVR/localhost_vancouver_webring/tree/main/website&quot;&gt;making PRs to the index.html on Github&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;that page gets built and published to Github Pages whenever changes are made&lt;/li&gt;
+  &lt;li&gt;Graham got Lieu deployed on &lt;a class=&quot;internal-link&quot; href=&quot;/notes/railway/&quot;&gt;Railway&lt;/a&gt;, which is what runs &lt;a href=&quot;https://search.dwebvancouver.org&quot;&gt;the search page and queries&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;We still have some work to do to schedule re-indexing of links in the webring&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You can try the search here by using this form. There are relatively few sources so far, and my site has the most content on it, so you&apos;re likely to find a page here for now.&lt;/p&gt;
+
+&lt;form method=&quot;GET&quot; action=&quot;https://search.dwebvancouver.org&quot;&gt;
+	&lt;p style=&quot;margin-bottom: 10px;&quot;&gt;&lt;input type=&quot;search&quot; minlength=&quot;1&quot; required=&quot;&quot; name=&quot;q&quot; placeholder=&quot;Your search query here&quot; id=&quot;search&quot; size=&quot;50&quot; /&gt;&lt;/p&gt;
+	&lt;button type=&quot;submit&quot; style=&quot;padding: 2px 10px&quot;&gt;Search the Vancouver Community&lt;/button&gt;
+&lt;/form&gt;
+
+&lt;p&gt;Design, indexing, the way search results are displayed and many other things can be improved, but we&apos;ve got something to onboard people with for now.&lt;/p&gt;
+
+&lt;h2 id=&quot;search-is-broken&quot;&gt;Search is broken&lt;/h2&gt;
+
+&lt;p&gt;I&apos;ve written a bit about what a &lt;a class=&quot;internal-link&quot; href=&quot;/notes/community-search-engine/&quot;&gt;Community Search Engine&lt;/a&gt; is and have been refining the idea, and need to test it with actual communities.&lt;/p&gt;
+
+&lt;p&gt;The basic premise is that the search experience for &lt;em&gt;users&lt;/em&gt; has been in decline for several years. Ever more SEO&apos;d content and ads, less relevance and quality results for search users.&lt;/p&gt;
+
+&lt;p&gt;So you ask your friends for recommendations. And maybe you use social media for that. But social media is in precipitous decline, mostly happening on corporate owned platforms with opaque algorithms and more paid ads.&lt;/p&gt;
+
+&lt;p&gt;So what if we started collecting resources from our friends and communities? From acquaintances to people from your communities of interest, you have some known factors of recommended by people.&lt;/p&gt;
+
+&lt;h2 id=&quot;add-yourself-and-your-vancouver-resources&quot;&gt;Add yourself and your Vancouver resources&lt;/h2&gt;
+
+&lt;p&gt;The next step is to get people to add themselves, their Vancouver organizations and resources. You can do that by &lt;a href=&quot;https://github.com/DWebYVR/localhost_vancouver_webring/tree/main/website&quot;&gt;adding your personal links to the index.html file&lt;/a&gt;.&lt;sup id=&quot;fnref:github&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:github&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;Ideally, this will become a useful resource to search and browse, which is really about an intent: what should I use for accounting software in Canada? Can anyone recommend a lawyer? What home lab gear are you using?&lt;/p&gt;
+
+&lt;p&gt;My own site here is only tangentially about Vancouver – I&apos;m &lt;em&gt;in&lt;/em&gt; the regional community, but have pointers to resources everywhere. Of course, my &lt;a class=&quot;internal-link&quot; href=&quot;/notes/foodwiki/&quot;&gt;FoodWiki&lt;/a&gt; has tons of Vancouver references that could be useful: I haven&apos;t added it as a link yet.&lt;/p&gt;
+
+&lt;p&gt;I&apos;ll leave discussions about browsing and serendipity for another time. There are some ideas of how to include social posts from Twitter, Mastodon, or ATProtocol, or subscribe to RSS feeds, in a way to surface &quot;new&quot; content over time, as well as evergreen search over resources.&lt;/p&gt;
+
+&lt;p&gt;Please add yourself, and let me know what you think about community search engines.&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:design&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;Yes, the design is bad / unreadable :) There&apos;s an &lt;a href=&quot;https://github.com/DWebYVR/localhost_vancouver_webring/issues/3&quot;&gt;issue filed&lt;/a&gt; if you&apos;d like to get involved with some logo / brand and actual design of what a browseable directory of Vancouver resources should look like. Let me know! &lt;a href=&quot;#fnref:design&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:github&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;This is a fairly technical barrier today – making a pull request in Github. &lt;a href=&quot;https://github.com/DWebYVR/localhost_vancouver_webring/issues/12&quot;&gt;Here&apos;s an issue to make it available to less technical users&lt;/a&gt;. &lt;a href=&quot;#fnref:github&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+				<link>https://bmannconsulting.com/blog/2024/07/21/vancouver-community-search-engine-initial-launch/</link>
+				<pubDate>Sun, 21 Jul 2024 05:50:57 -0700</pubDate>
+				<guid isPermaLink="true">https://bmannconsulting.com/blog/2024/07/21/vancouver-community-search-engine-initial-launch/</guid>
+			</item>
+		    
+          
+		
+		  
+			<item>
+				<title>Daylight Computer Unboxing</title>
+				
+					<dc:creator>Boris Mann&apos;s Homepage</dc:creator>
+				
+				<description>&lt;p&gt;My &lt;a class=&quot;internal-link&quot; href=&quot;/notes/daylight-computer/&quot;&gt;Daylight Computer&lt;/a&gt; got delivered yesterday!&lt;/p&gt;
+
+&lt;p&gt;A quick set of unboxing photos at &lt;a class=&quot;internal-link&quot; href=&quot;/notes/z-space/&quot;&gt;Z-Space&lt;/a&gt;&lt;sup id=&quot;fnref:photocredit&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:photocredit&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; while sitting at the main lounge table.&lt;/p&gt;
+
+&lt;p&gt;In the meantime I&apos;ve linked it to my Google account, taken some notes in Google Docs, and used the Notebook app to take handwritten notes during an in-person meeting.&lt;/p&gt;
+
+&lt;p&gt;I&apos;ll spend more time with it over the next couple of weeks, add notes to the &lt;a class=&quot;internal-link&quot; href=&quot;/notes/daylight-computer/&quot;&gt;Daylight Computer&lt;/a&gt; page and other related notes.&lt;/p&gt;
+&lt;h2 id=&quot;daylight-apps&quot;&gt;Daylight Apps&lt;/h2&gt;
+
+&lt;p&gt;Reader is the main custom app that ships with the device. It&apos;s also what you use to activate your Daylight account. I&apos;ll take more notes at &lt;a class=&quot;internal-link&quot; href=&quot;/notes/daylight-reader/&quot;&gt;Daylight Reader&lt;/a&gt; as I use it.&lt;/p&gt;
+
+&lt;p&gt;I use it for demo&apos;ing the almost infinite zoom and fast scrolling of the device when I hand the tablet and pen to people to try.&lt;/p&gt;
+
+&lt;p&gt;There is a companion &lt;a class=&quot;internal-link&quot; href=&quot;/notes/daylight-capture/&quot;&gt;Daylight Capture&lt;/a&gt; app for iOS that lets you send links, PDFs, ePUBS, highlights, annotations, etc. More after I&apos;ve used it for a bit.&lt;/p&gt;
+&lt;h2 id=&quot;android&quot;&gt;Android&lt;/h2&gt;
+
+&lt;p&gt;I haven&apos;t really used Android seriously for quite some time. I&apos;ll have to explore and see what is possible to install by sideloading.&lt;/p&gt;
+
+&lt;p&gt;I&apos;ve seen other people running &lt;a class=&quot;internal-link&quot; href=&quot;/notes/obsidian/&quot;&gt;Obsidian&lt;/a&gt;, which I&apos;d like to use on here, but I&apos;ll have to go look up Android git support, too, so I can synch my vault between phone / laptop / Daylight.&lt;/p&gt;
+&lt;h2 id=&quot;unboxing-photos&quot;&gt;Unboxing Photos&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2024/daylight-unboxing/01-boris-box-open.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A handwritten note and a phone number to text if I needed any onboarding help.&lt;/p&gt;
+
+&lt;p&gt;It&apos;s an Android device and I haven&apos;t used an Android device in a while, so I had to kind of swipe around figuring stuff out.&lt;/p&gt;
+
+&lt;p&gt;The sign up didn&apos;t seem to work … until I figured out that you needed to be online for things to work! Connected to our open guest wifi and all worked perfectly.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2024/daylight-unboxing/02-boris-puffy-sleeve.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The Daylight Computer was shipped in this puffy sleeve. Both useful to throw in your bag, and good to protect it for shipping.&lt;/p&gt;
+
+&lt;p&gt;Underneath it you can see a Patagonia sling bag with a Daylight logo attached.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2024/daylight-unboxing/03-boris-daylight-sleeve.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Pulling out the Daylight. I had used what I guess was a prototype version at the Vancouver meetup, which felt very light and plasticky. This finished version was solid feeling.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2024/daylight-unboxing/05-boris-keyboard.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A very slim Bluetooth keyboard. Fits in the Patagonia sling bag (along with everything else), I should be able to pair it with my &lt;a class=&quot;internal-link&quot; href=&quot;/notes/rk71/&quot;&gt;RK71&lt;/a&gt;, or maybe an old solar-powered Logitech keyboard.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2024/daylight-unboxing/06-boris-face-holding-daylight.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Me holding the Daylight Computer with most of the things that came in the box arrayed around.&lt;/p&gt;
+
+&lt;p&gt;The grey thing is a folding tablet stand that you can optionally glue to the back of the tablet.&lt;/p&gt;
+
+&lt;p&gt;Behind the lightbulb (which wasn&apos;t really explained, I guess it&apos;s an LED lightbulb), a &lt;a href=&quot;https://lamyshop.ca/ca_en/lamy-al-star-black-emr-stylus-pen.html&quot;&gt;Lamy EMR pen&lt;/a&gt; which is nice to hold and write with.&lt;/p&gt;
+
+&lt;h2 id=&quot;evolving-daylight&quot;&gt;Evolving Daylight&lt;/h2&gt;
+
+&lt;p&gt;I have lots of ideas of how Local-first and other open ecosystems can tie into this hardware. &lt;a href=&quot;https://bmannconsulting.com/blog/2022/06/01/kickstarting-app-ecosystem/&quot;&gt;Kickstarting app ecosystems&lt;/a&gt; was written about Daylight before it was built, and I think the opportunity for novel hardware is even bigger, today. User owned files, AI companion work flows, malleable software are all directions that would work well.&lt;/p&gt;
+
+&lt;p&gt;Daylight can run a managed account system, curating plugins/developers, supporting synch, backup, and API default endpoints, while also staying open to others building on top.&lt;/p&gt;
+
+&lt;p&gt;The Auth0-powered login is fine to start, I was already showing David from &lt;a href=&quot;https://feathers.cloud&quot;&gt;Feathers&lt;/a&gt; how Daylight could benefit from his local first, DID-powered auth (yes, he pre-ordered one after using mine).&lt;/p&gt;
+
+&lt;p&gt;With a standard USB-C port as well as Bluetooth, what other interesting hardware accessories might expand the capabilities of this device? Can I use it as an external monitor or tablet with my Macbook Air?&lt;/p&gt;
+
+&lt;p&gt;Looking forward to exploring more. Congrats, Daylight team!&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:photocredit&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;Photo credit to &lt;a class=&quot;internal-link&quot; href=&quot;/notes/jonny-ostrem/&quot;&gt;Jonny Ostrem&lt;/a&gt; &lt;a href=&quot;#fnref:photocredit&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+				<link>https://bmannconsulting.com/blog/2024/07/09/daylight-computer-unboxing/</link>
+				<pubDate>Tue, 09 Jul 2024 18:24:01 -0700</pubDate>
+				<guid isPermaLink="true">https://bmannconsulting.com/blog/2024/07/09/daylight-computer-unboxing/</guid>
+			</item>
+		    
+          
+		
+		  
+			<item>
+				<title>Vancouver Startup Week and Smart Young BC</title>
+				
+					<dc:creator>Boris Mann&apos;s Homepage</dc:creator>
+				
+				<description>&lt;p&gt;It&apos;s now the week after &lt;a class=&quot;internal-link&quot; href=&quot;/notes/vancouver-startup-week/&quot;&gt;Vancouver Startup Week&lt;/a&gt;. I ended up attending very few things (that&apos;s a me thing, not a reflection on the event itself)&lt;sup id=&quot;fnref:sorry&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:sorry&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; and am feeling inspired and energized.&lt;/p&gt;
+
+&lt;p&gt;Thanks to the VSW organizers for being resilient and keeping things going for a decade.&lt;/p&gt;
+&lt;h2 id=&quot;smart-young-bc&quot;&gt;Smart Young BC&lt;/h2&gt;
+
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; href=&quot;/notes/ian-vanagas/&quot;&gt;Ian Vanagas&lt;/a&gt; put together a great workshop for the &lt;a class=&quot;internal-link&quot; href=&quot;/notes/smart-young-bc-vsw-2024/&quot;&gt;Smart Young BC VSW 2024&lt;/a&gt; session. I was there to support him and do some light facilitation.&lt;/p&gt;
+
+&lt;p&gt;Ian&apos;s presentation was really good. He turned his &lt;a href=&quot;https://smartyoungbc.com&quot;&gt;10K word research essay&lt;/a&gt; into a presentation, walked the group through it, then had some guiding questions for people to discuss in small group break out sessions.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2024/smartyoungbc-daniel.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Thanks &lt;a href=&quot;https://x.com/Shalinsky/status/1798853716927545663&quot;&gt;Daniel for the photo&lt;/a&gt;, I promise there was a roomful of people in front of us :)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Ian defines &quot;Young&quot; as &quot;16 to 26&quot;. He himself is 27, and so has &quot;aged out&quot; of this range. He describes his rational – it&apos;s much easier for young people to take chances, they&apos;re moldable, and it&apos;s easier for them to just pick up and move with less ties and less stuff. There were a number of people in the room that gave feedback that&lt;/p&gt;
+
+&lt;p&gt;&quot;Smart&quot; should not be taken too pedantically here either. This doesn&apos;t mean High IQ, it means &lt;a href=&quot;https://x.com/RuxandraTeslo/status/1799454547082981619&quot;&gt;weird nerds&lt;/a&gt;, &lt;a href=&quot;https://x.com/readswithravi/status/1799179147027116520&quot;&gt;ambitious people&lt;/a&gt;, and just generally with people who stand up and put energy into GSD&lt;sup id=&quot;fnref:gsd&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:gsd&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;For those looking for next steps, check out and support what &lt;a class=&quot;internal-link&quot; href=&quot;/notes/novus/&quot;&gt;Novus&lt;/a&gt; is doing.&lt;/p&gt;
+
+&lt;p&gt;And for something that&apos;s a little broader than &quot;tech startup&quot; showcasing what ambitious people are building across art, tech, and science, attend and support the first &lt;a class=&quot;internal-link&quot; href=&quot;/notes/minimum-viable-demos/&quot;&gt;Minimum Viable Demos&lt;/a&gt; event coming up June 30th.&lt;/p&gt;
+
+&lt;p&gt;As you come across people, activities, or other suggestions that highlight the concept, &lt;a href=&quot;https://x.com/search?q=%23smartyoungbc&quot;&gt;tag things with #smartyoungbc&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Stay tuned for future Smart Young BC workshops. With the presentation and small group break out, we can likely run the same format multiple times, and inspire people to take action. &lt;a href=&quot;https://www.smartyoungbc.com/&quot;&gt;Go subscribe »&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;education-vs-enterprise-vs-entrepreneurship&quot;&gt;Education vs Enterprise vs Entrepreneurship&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/in/pka3300/&quot;&gt;Prashant Agrawal&lt;/a&gt; invited me to sit on a panel about comparing and contrasting journeys around &lt;a href=&quot;https://lu.ma/bepacific_VSW_44&quot;&gt;Education vs Enterprise vs Entrepreneurship&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I wasn&apos;t really sure where this panel was going to go. I did end up ranting quite a bit, but I think it was at least somewhat entertaining judging by the Q&amp;amp;A and folks who came up afterwards to chat.&lt;/p&gt;
+
+&lt;p&gt;I think one of my main rants was that we need more entrepreneurs: people who can be resilient problem solvers not just for themselves, but for teams of people. Why? We are going through a lot of changes. The times of forever jobs is over. If you&apos;re not going to practice entrepreneurship in your day job, then we need all the help we can get for that energy to affect change in the local places where we live.&lt;/p&gt;
+
+&lt;p&gt;I went through university and got a BSc. Computer Science (Education), while participating in the co-op program and then getting hired straight out of school by Nortel (Enterprise), and got laid off during the dotCom-bomb, and so was forced to figure out an Entrepreneurship path.&lt;/p&gt;
+
+&lt;p&gt;One prompt from the audience was, flip your talking points and argue FOR one of the other two tracks. This was a great prompt!&lt;/p&gt;
+
+&lt;p&gt;For Enterprise, I often wonder what my career would have been like if I had actually had a &quot;forever job&quot; at Nortel. I think you can have a lot of impact and leverage while working at a big company. Prashant&apos;s story of supporting people in 100+ promotions in his Enterprise career was inspiring.&lt;/p&gt;
+
+&lt;p&gt;For Education, I&apos;m very interested in &lt;a class=&quot;internal-link&quot; href=&quot;/notes/industrial-research-labs/&quot;&gt;industrial research labs&lt;/a&gt; and applied research. As &lt;a href=&quot;https://www.linkedin.com/in/fergusson&quot;&gt;Michael Fergusson&lt;/a&gt; pointed out, we absolutely do need primary research! The Vancouver region has a strong cluster of expertise in science founders in Biotech for example. My main counter in the realm of Computer Science is, if your goal is to be entrepreneur or to practice software development as a profession, then university is a slow and expensive way to get there.&lt;/p&gt;
+
+&lt;p&gt;So in arguing for Enterprise and Education, I&apos;d say the same thing for both: aim for impact, and aim to be ambitious. If you go to work for a big company, work your way up into a position where you can have impact. If you&apos;re going the academic path, get that PhD!&lt;/p&gt;
+
+&lt;p&gt;I also got a pointed question around my promotion of remote work&lt;sup id=&quot;fnref:remote&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:remote&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; and digital connections. Two parts of this that I have been thinking about a lot. One, despite my many digital connections, a lot of my work over the years has been about converting that into in person events. Two, I&apos;ve been thinking a lot about supply chains recently, and I think Canada needs to get serious about finding more ways to build &amp;amp; buy local, including looking for gaps. Yes, I&apos;m looking for  a &lt;a class=&quot;internal-link&quot; href=&quot;/notes/canadian-elevator-startup/&quot;&gt;Canadian Elevator Startup&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I briefly talked about neurodiversity&lt;sup id=&quot;fnref:nd&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:nd&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt; and mental health, probably something we should be covering a lot more often.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;I met a number of great people in and around these talks and at an after party or two. Here&apos;s a high level description of a couple of encounters:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;a catch up with John Edgar who is building &lt;a class=&quot;internal-link&quot; href=&quot;/notes/ascent/&quot;&gt;Ascent&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;how to stay in Canada while building a business; &lt;a href=&quot;https://notes.bmannconsulting.com/#/page/Startup Visa&quot; class=&quot;noteslink&quot; target=&quot;_notes&quot;&gt;Startup Visa&lt;/a&gt; is still not very well known (and the angel investor part of it needs work)&lt;/li&gt;
+  &lt;li&gt;a team exploring a program inspired by Google&apos;s Summer of Code, focused on onboarding more open source builders in the Province of BC&lt;/li&gt;
+  &lt;li&gt;a startup exploring international fruit importing&lt;/li&gt;
+  &lt;li&gt;someone who heard me talk about neurodiversity and mental health, and had the courage to come up and ask for more resources around this&lt;/li&gt;
+  &lt;li&gt;a connected pet hardware startup which needs local hardware/software expertise&lt;/li&gt;
+  &lt;li&gt;a &lt;a class=&quot;internal-link&quot; href=&quot;/notes/sred/&quot;&gt;SRED&lt;/a&gt; software platform that might be possible to open source&lt;sup id=&quot;fnref:oss&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:oss&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;5&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+  &lt;li&gt;several software developers looking to connect with other technical builders&lt;sup id=&quot;fnref:dev&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:dev&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;6&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I&apos;m looking forward to the meetings I&apos;m going to have with many of the people who already followed up. Thanks for connecting&lt;sup id=&quot;fnref:bmann&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:bmann&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;7&lt;/a&gt;&lt;/sup&gt;!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;The word &quot;startup&quot; hasn&apos;t evolved a lot in the last decade, and as with most things, is missing nuance.&lt;/p&gt;
+
+&lt;p&gt;Building a &lt;a class=&quot;internal-link&quot; href=&quot;/notes/venture-sized-business/&quot;&gt;Venture Sized Business&lt;/a&gt; is part of the venture capital business model, but looking at &lt;a class=&quot;internal-link&quot; href=&quot;/notes/when-tailwinds-vanish/&quot;&gt;When Tailwinds Vanish&lt;/a&gt;, I see an opportunity for many more &quot;digital small business&quot; where founders retain the large majority of the business. This is in contrast to phrases like &quot;lifestyle business&quot; or even &quot;bootstrappers&quot;: let&apos;s normalize the possibility of more people being able to earn a living selling digital, software-powered services to the world.&lt;/p&gt;
+
+&lt;p&gt;Having attempted a venture-funded deep tech software startup with &lt;a class=&quot;internal-link&quot; href=&quot;/notes/fission/&quot;&gt;Fission&lt;/a&gt;, and being a believer in moonshots as part of the formula for long term regional and national success, I &lt;em&gt;also&lt;/em&gt; want to see us rally around big goals.&lt;/p&gt;
+
+&lt;p&gt;I&apos;m spending some time refreshing my &lt;a class=&quot;internal-link&quot; href=&quot;/notes/startup/&quot;&gt;Startup&lt;/a&gt; resources and getting an update on funding and other parts of the ecosystem. I&apos;m encouraged by a lot of the energy from &lt;a class=&quot;internal-link&quot; href=&quot;/notes/vancouver-startup-week/&quot;&gt;Vancouver Startup Week&lt;/a&gt;, but building an innovation ecosystem can&apos;t just happen one week per year. We have a lot of work to do.&lt;/p&gt;
+
+&lt;p&gt;With that in mind, think about what you, personally, are going to work on, who you can collaborate with, what you need help with, and we&apos;ll see you at next year&apos;s Vancouver Startup Week for an update. Cheers!&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:sorry&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;It was a low energy week for me where I did get a few things done, but just putting one foot in front of the other was about all that I managed. I can &quot;put on a face&quot; for public events and have energy for it in the moment, but need small group or alone time. It&apos;s good to share emotional &amp;amp; mental health things, actually! &lt;a href=&quot;#fnref:sorry&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:gsd&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;Getting Shit Done! &lt;a href=&quot;#fnref:gsd&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:remote&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;I flat out tell people that they should not work for a Vancouver company. They&apos;re mostly not competitive in salary or ambition. If I have to choose between having someone stay in Vancouver – or leaving completely for elsewhere – I want them to stay and have an awesome well paid ambitious job where they live locally and work remote. &lt;a href=&quot;#fnref:remote&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:nd&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;I&apos;m almost certain that I am neurodiverse, and I think this is one of the first times I&apos;ve talked about it publicly. I once joked &quot;I&apos;m too busy coping to get diagnosed&quot;, and definitely feel at times that aspects of my weird brain are sometimes a super power, except when it isn&apos;t. When I was a young man, I never heard the term neurodiverse, and never conceived that there would be a different way to relate to the world. I&apos;m still learning and growing around this even now. &lt;a href=&quot;#fnref:nd&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:oss&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;I am unreasonably excited by the potential for an &lt;a class=&quot;internal-link&quot; href=&quot;/notes/open-source-sred-platform/&quot;&gt;Open Source SRED Platform&lt;/a&gt;. I&apos;m not ready to, like, take the SRED program on directly, but it feels like we should be able to make a lot of the pain go away for 1000s of companies across Canada without routing everything through for-profit middlemen consultants. &lt;a href=&quot;#fnref:oss&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:dev&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;This point deserves a little expansion. There wasn&apos;t much in the way of deep technical content at VSW that I could see. Several developers came up to me asking where to find it. It&apos;s clear we&apos;re still not getting the word out to make it easier for technical people to find each other locally. &lt;a href=&quot;#fnref:dev&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:bmann&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;See https://bmann.ca for every single one of my social profiles &lt;a href=&quot;#fnref:bmann&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+				<link>https://bmannconsulting.com/blog/2024/06/10/vsw-smartyoungbc/</link>
+				<pubDate>Mon, 10 Jun 2024 18:45:51 -0700</pubDate>
+				<guid isPermaLink="true">https://bmannconsulting.com/blog/2024/06/10/vsw-smartyoungbc/</guid>
+			</item>
+		    
+          
+		
+		  
+			<item>
+				<title>Digital Garden Transclusion</title>
+				
+					<dc:creator>Boris Mann&apos;s Homepage</dc:creator>
+				
+				<description>&lt;p&gt;Reading a &lt;a href=&quot;https://taoofmac.com/space/blog/2024/03/17/1900&quot;&gt;post by Rui on his Tao of Mac&lt;/a&gt; led me down a number of rabbit holes: Cool review of a mini Linux gaming PC! Bazzite gaming Linux distro! &lt;a class=&quot;internal-link&quot; href=&quot;/notes/universal-blue/&quot;&gt;Universal Blue&lt;/a&gt; format for desktop distros! All things I read and wanted to both share with others and leave notes for myself.&lt;/p&gt;
+
+&lt;p&gt;I use journals to bookmark / share / give an update&lt;sup id=&quot;fnref:silentblog&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:silentblog&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. When I use just a regular link rather than making a note, I&apos;m both sharing that link but also leaving it for future me. I might come back later and make a full notes page. For readers of my social cross-posts, they get to go visit the link directly, rather than clicking on the link to me site, and then needing to go off to read the thing they were interested in.&lt;/p&gt;
+
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; href=&quot;/notes/tao-of-mac/&quot;&gt;Tao of Mac&lt;/a&gt; is setup as a wiki / digital garden&lt;sup id=&quot;fnref:readingtao&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:readingtao&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;. I wanted to bookmark &lt;a class=&quot;internal-link&quot; href=&quot;/notes/bazzite/&quot;&gt;Bazzite&lt;/a&gt; for myself locally and reference Rui’s note page but not copy it. &lt;a class=&quot;internal-link&quot; href=&quot;/notes/transclusion/&quot;&gt;Transclusion&lt;/a&gt; would be ideal, but I&apos;m not up for doing an iframe or something quite yet.&lt;/p&gt;
+
+&lt;p&gt;I did make a new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;transclusion&lt;/code&gt; property in the front matter and stuck the link to Rui&apos;s note in there. It&apos;s a list, so if &lt;a class=&quot;internal-link&quot; href=&quot;/notes/bill-seitz/&quot;&gt;Bill Seitz&lt;/a&gt;&apos;s digital garden has a note page for it, or anyone else, I could link to it as well.&lt;/p&gt;
+
+&lt;p&gt;Have I looked at this before? Of course I have! &lt;a href=&quot;https://2023.bmannconsulting.com/archive/2004/06/07/purple-everywhere/&quot;&gt;June 2004&lt;/a&gt;  reblogging &lt;a href=&quot;http://www.tbray.org/ongoing/When/200x/2004/05/31/PurpleAgain&quot;&gt;Tim Bray&apos;s post on Purple Pilcrows&lt;/a&gt; and then &lt;a href=&quot;https://2023.bmannconsulting.com/archive/2007/07/03/testing-purple/&quot;&gt;July 2007&lt;/a&gt; prompted by a &lt;a href=&quot;https://lmorchard.com&quot;&gt;Les Orchard&lt;/a&gt; post&lt;sup id=&quot;fnref:oldbloggers&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:oldbloggers&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;Let&apos;s quote 20 years ago me on transclusion:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;From Facebook apps to photos stored on Flickr, we want to have all our &quot;stuff&quot; just magically collected together wherever we happen to be, whatever network we happen to be interacting with. Aggregation, sucking this content in, pushing it over there – all just temporary ways of flowing content around. One that arguably duplicates content and spews extraneous permalinks around. I just want my pictures right here, or I just want to link deep into someone else&apos;s posting and pull in a piece of text. And I want the &quot;other end&quot; to know about that inclusion, a gentle ping, yeah, kind of a trackback. That&apos;s the Semantic Web to me: where every plain old HTML file is dynamic and intelligent and knows about the links and people that are incoming and outgoing.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I&apos;m not really looking to reach for semantic web tooling today, because the question I&apos;m asking is, what&apos;s emerging as the way to indicate that these pages in a digital garden are &quot;equivalent&quot; or &quot;describe the same thing&quot;?&lt;/p&gt;
+
+&lt;p&gt;And: how do we easily display such things in a way that communicates this affordance? Where easily means &quot;on a statically hosted website, perhaps enriched by some JavaScript&quot;.&lt;/p&gt;
+
+&lt;p&gt;This is the part where I should go do a little research of any current stuff on transclusion. But, really, I&apos;m just waiting for &lt;a class=&quot;internal-link&quot; href=&quot;/notes/noosphere/&quot;&gt;Noosphere&lt;/a&gt;, and I&apos;ll adopt where things end up there.&lt;/p&gt;
+
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; href=&quot;/notes/quotebacks/&quot;&gt;Quotebacks&lt;/a&gt; are interesting but are focused on quoting, not transcluding. Related, but not quite the same! And, in some ways, quite &lt;em&gt;atomic&lt;/em&gt;: a chunk of text, rather than a whole page/url.&lt;/p&gt;
+
+&lt;p&gt;For now, I&apos;ll file this under blog tinkering, and add it to my &lt;a class=&quot;internal-link&quot; href=&quot;/notes/bmc/&quot;&gt;BMC&lt;/a&gt; TODO list. Stay tuned for another 20 years of linking, transcluding, and generally being in conversation with other people and their writing!&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:silentblog&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;funny, I&apos;m now using blog posts as stuff that is a little less public than my journal, because my journal blasts everything to all of my socials. Affordances matter! &lt;a href=&quot;#fnref:silentblog&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:readingtao&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;The Tao of Mac blog, written by Rui Carmo, is one of the blogs that have been around for 20+ years that I&apos;ve been reading and linking to forever. &lt;a href=&quot;#fnref:readingtao&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:oldbloggers&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;Tim and Les are two other 20+ year blog reads. &lt;a href=&quot;#fnref:oldbloggers&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+				<link>https://bmannconsulting.com/blog/2024/03/17/digital-garden-transclusion/</link>
+				<pubDate>Sun, 17 Mar 2024 13:33:01 -0700</pubDate>
+				<guid isPermaLink="true">https://bmannconsulting.com/blog/2024/03/17/digital-garden-transclusion/</guid>
+			</item>
+		    
+          
+		
+		  
+			<item>
+				<title>On venture and fundraising</title>
+				
+					<dc:creator>Boris Mann&apos;s Homepage</dc:creator>
+				
+				<description>&lt;p&gt;I’ve been hesitating about whether in my new journal setup&lt;sup id=&quot;fnref:journal&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:journal&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, I would write about / share items around venture capital and fundraising.&lt;/p&gt;
+
+&lt;p&gt;It’s an area of expertise of mine, but the fediverse is hostile to the entire concept of investment.&lt;/p&gt;
+
+&lt;p&gt;I decided to filter out cross posting of items tagged with &lt;a class=&quot;internal-link&quot; href=&quot;/notes/future-of-venture/&quot;&gt;Future of Venture&lt;/a&gt; — so it won’t go to my TFT Social Mastodon account — but will go to my Twitter, LinkedIn, and Bluesky accounts.&lt;/p&gt;
+
+&lt;p&gt;Even posting &lt;em&gt;this&lt;/em&gt;&lt;sup id=&quot;fnref:posting&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:posting&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; I wondered where to put it. My personal account? My company founder account? Just not a great feeling.&lt;/p&gt;
+
+&lt;p&gt;Articles like &lt;a class=&quot;internal-link&quot; href=&quot;/notes/when-tailwinds-vanish/&quot;&gt;When Tailwinds Vanish&lt;/a&gt; are fundamental to my thinking about the evolving  investment environment.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;I think more software businesses will be small business rather than venture fundable&lt;/li&gt;
+  &lt;li&gt;funding deep tech innovations is a hard problem&lt;/li&gt;
+  &lt;li&gt;Things like the &lt;a class=&quot;internal-link&quot; href=&quot;/notes/venture-studio/&quot;&gt;Venture Studio&lt;/a&gt; have applicability to both deep tech and execution focused businesses&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As I flesh out / port / refresh content in my notes, I’m reflecting that a bunch of stuff in &lt;a class=&quot;internal-link&quot; href=&quot;/notes/startup/&quot;&gt;Startup&lt;/a&gt; is stale — having been a focus of mine from ~2007 to ~2017. At best that’s 7 years ago from today in early 2024.&lt;/p&gt;
+
+&lt;p&gt;And of course, writing it like that indicates that it was a literal decade of my life! Of course it’s part of who I am and informs my perspective on many other things!&lt;/p&gt;
+
+&lt;p&gt;I still have infinite time for supporting founders. I do a little advising, a little investing&lt;sup id=&quot;fnref:investing&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:investing&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;, and am lucky to have a peer network of folks who do the same for me. It energizes me to jam with people who are trying to build new things.&lt;/p&gt;
+
+&lt;p&gt;New entity&lt;sup id=&quot;fnref:entity&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:entity&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt; creation broadly continues to be an interest of mine. Some of that is captured by the word &lt;a class=&quot;internal-link&quot; href=&quot;/notes/startup/&quot;&gt;Startup&lt;/a&gt;, but I’m diving into &lt;a class=&quot;internal-link&quot; href=&quot;/notes/co-op/&quot;&gt;co-op&lt;/a&gt; structures and looking at different options for &lt;a class=&quot;internal-link&quot; href=&quot;/notes/cohousing/&quot;&gt;Cohousing&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;One of the things I hope to put time into this year is &lt;a class=&quot;internal-link&quot; href=&quot;/notes/founder-peer-investing/&quot;&gt;Founder Peer Investing&lt;/a&gt;, which is really just a fancy term for saying “What if we helped educate founders and build the next generation of investors by investing small amounts into each others companies?”. In Canada, we have the friends &amp;amp; family exemption, which means we can legally do this without needing to be an accredited investor.&lt;/p&gt;
+
+&lt;p&gt;Ok, well I just spent several hours this morning fleshing out notes here and putting down a bunch of thoughts. It feels good to have my own space and have resources to share with people.&lt;/p&gt;
+
+&lt;p&gt;I’m in the midst of fundraising for my company &lt;a class=&quot;internal-link&quot; href=&quot;/notes/fission/&quot;&gt;Fission&lt;/a&gt;, and so this is also a form of self study for me. As always, I write for me, and share it in case it’s useful or interesting or can be helpful to others.&lt;/p&gt;
+
+&lt;p&gt;As always, you can subscribe to &lt;a class=&quot;internal-link&quot; href=&quot;/feeds/&quot;&gt;feeds&lt;/a&gt; here and get everything that I write directly.&lt;/p&gt;
+
+&lt;p&gt;P.S. Send me things you think fit into &lt;a class=&quot;internal-link&quot; href=&quot;/notes/future-of-venture/&quot;&gt;Future of Venture&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:journal&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;I’m writing a lot of &lt;a href=&quot;https://bmannconsulting.com/journal/&quot;&gt;journal entries&lt;/a&gt;, most of which could be considered microblogs in length and style. But I can write long whenever I like and format it how I like, all on my own site. &lt;a class=&quot;internal-link&quot; href=&quot;/notes/fedica/&quot;&gt;Fedica&lt;/a&gt; then reads the RSS feed and schedules cross posts across multiple different networks, which at this point don’t post until like a week after I post them here. &lt;a href=&quot;#fnref:journal&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:posting&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;I &lt;a href=&quot;https://toolsforthought.social/@boris/111829304211822497&quot;&gt;posted to my TFT Social account&lt;/a&gt;, started writing a thread, and realizing I had more to say and that my blog was very much my own space, continued with this blog post. &lt;a href=&quot;#fnref:posting&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:investing&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;VERY little of this, and mostly referring to the past. I’ve written small $5-10K angel cheques. I am mostly broke because I keep playing startup roulette rather than ever having a high paying real job. &lt;a href=&quot;#fnref:investing&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:entity&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;Sorry I know it’s a weird word. There are many different types of legal entities - corporations, partnerships, funds, co-ops, and more. And nebulous terms like community and non-entities like governing a pool of money in Open Collective or body of work in an open source code repository. I know just enough about entity formation to be dangerous, and am interested in their applicability globally. What can you do in Canada vs the US vs entities that work well internationally? Also taxes, and real estate law, which I am dumb about. &lt;a href=&quot;#fnref:entity&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+				<link>https://bmannconsulting.com/blog/2024/01/27/on-venture-and-fundraising/</link>
+				<pubDate>Sat, 27 Jan 2024 03:57:00 -0800</pubDate>
+				<guid isPermaLink="true">https://bmannconsulting.com/blog/2024/01/27/on-venture-and-fundraising/</guid>
+			</item>
+		    
+          
+		
+		  
+			<item>
+				<title>Mostly POSSE</title>
+				
+					<dc:creator>Boris Mann&apos;s Homepage</dc:creator>
+				
+				<description>&lt;p&gt;An overview of my social accounts and posting. It can be summarized as mostly &lt;a class=&quot;internal-link&quot; href=&quot;/notes/posse/&quot;&gt;POSSE&lt;/a&gt;.&lt;sup id=&quot;fnref:overload&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:overload&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;This started as a short post to put directly into a single Mastodon post about my three Mastodon accounts, but kind of got out of hand, so now it’s a blog post.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;I use &lt;a href=&quot;https://cosocial.ca/@boris&quot;&gt;@boris@cosocial.ca&lt;/a&gt; as my main Mastodon account. It receives cross-posts from my &lt;a href=&quot;https://blog.bmannconsulting.com&quot;&gt;personal blog&lt;/a&gt;. Food photos, local Vancouver adventures, travel.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://fission.social/@boris&quot;&gt;@boris@fission.social&lt;/a&gt; is my work account - decentralized compute &lt;a href=&quot;https://fission.social/@everywherecomputer&quot;&gt;@everywherecomputer@fission.social&lt;/a&gt;, &lt;a class=&quot;internal-link&quot; href=&quot;/notes/ipfs/&quot;&gt;IPFS&lt;/a&gt; and protocol discussions&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://toolsforthought.social/@boris&quot;&gt;@boris@toolsforthought.social&lt;/a&gt; is hooked up to my &lt;a href=&quot;https://bmannconsulting.com/journal/&quot;&gt;journal posts&lt;/a&gt;. The journal items also get cross-posted to &lt;a href=&quot;https://bsky.app/profile/bmannconsulting.com&quot;&gt;@bmannconsulting.com on Bluesky&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;My &lt;a href=&quot;https://bmann.ca&quot;&gt;https://bmann.ca&lt;/a&gt; landing page links to all my social accounts&lt;sup id=&quot;fnref:all&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:all&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;, and &lt;a href=&quot;https://bsky.bmann.ca&quot;&gt;@bmann.ca is also my Bluesky username&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I used &lt;a class=&quot;internal-link&quot; href=&quot;/notes/bluesky/&quot;&gt;Bluesky&lt;/a&gt; a lot in the early days, less so now. I’m more interested in &lt;a class=&quot;internal-link&quot; href=&quot;/notes/atprotocol/&quot;&gt;ATProtocol&lt;/a&gt; than any particular network built with it, and am also interested in their &lt;a href=&quot;https://notes.bmannconsulting.com/#/page/DID&quot; class=&quot;noteslink&quot; target=&quot;_notes&quot;&gt;DID&lt;/a&gt; based user ID system.&lt;/p&gt;
+
+&lt;p&gt;My third Bluesky account is for my &lt;a class=&quot;internal-link&quot; href=&quot;/notes/foodwiki/&quot;&gt;FoodWiki&lt;/a&gt; and is &lt;a href=&quot;https://bsky.app/profile/foodwiki.bmann.ca&quot;&gt;@foodwiki.bmann.ca&lt;/a&gt;. For a change of pace, it has no automation and nothing cross posts to it! I hand post food pictures and recipes that I put on my FoodWiki. In part I made that a Bluesky account because many Mastodon users expect Content Warnings (CW) on things like food pictures.&lt;/p&gt;
+
+&lt;p&gt;I still have a Twitter account, but only use it for cross-posting to. The &lt;a class=&quot;internal-link&quot; href=&quot;/notes/twitter/&quot;&gt;Twitter&lt;/a&gt; note page here also details my archive.&lt;/p&gt;
+
+&lt;p&gt;I have a &lt;a class=&quot;internal-link&quot; href=&quot;/notes/farcaster/&quot;&gt;Farcaster&lt;/a&gt; account and access that protocol through the &lt;a class=&quot;internal-link&quot; href=&quot;/notes/warpcast/&quot;&gt;Warpcast&lt;/a&gt; app.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://bmannconsulting.com/blog/&quot;&gt;Tech Blog&lt;/a&gt; posts I’m not auto cross posting. In part because they come across as just title plus link without any context in &lt;a class=&quot;internal-link&quot; href=&quot;/notes/micro-blog/&quot;&gt;Micro.blog&lt;/a&gt;’s feed cross posting. Until I relaunched this site over the holidays, my long form tech blogging had effectively lapsed. We’ll see what the year brings!&lt;/p&gt;
+
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; href=&quot;/notes/fedica/&quot;&gt;Fedica&lt;/a&gt; is a commercial service that does cross posting that I’m experimenting with for sharing blog posts.&lt;/p&gt;
+
+&lt;p&gt;The Fedica model supports 8 accounts even at the free account tier, which is great! But, even at paid tiers, you can only use one account per network, so right away it doesn’t support my three Mastodon accounts. And yeah, I have a pile of company and project accounts I run for work on the &lt;a href=&quot;https://fission.social/@fission&quot;&gt;Fission Mastodon Server&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;There’s a whole other discussion to be had here about the affordances of each network&lt;sup id=&quot;fnref:affordances&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:affordances&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; that fights against cross-posting. No hashtags on Bluesky or Micro.blog. No quote posting on Mastodon. And different character count lengths and embedding support.&lt;/p&gt;
+
+&lt;p&gt;I’ll continue to experiment across many different networks, servers, and protocols. I’ll produce &lt;a class=&quot;internal-link&quot; href=&quot;/feeds/&quot;&gt;feeds&lt;/a&gt; from here.&lt;/p&gt;
+
+&lt;p&gt;I’ll look to own my accounts and data, and continue &lt;a class=&quot;internal-link&quot; href=&quot;/notes/pooling-capital-and-collaboration/&quot;&gt;pooling capital and collaboration&lt;/a&gt; to work with others.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:overload&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;And overload! Yes I realize this is a lot of accounts and protocols and platforms to experiment with. The last time it was this dense was the mid 2000s. This time around, I’m hoping we can end up in more interoperable protocols, with my hope being that &lt;a href=&quot;https://bmannconsulting.com/blog/2024/01/05/why-not-both-protocols/&quot;&gt;ActivityPub and ATProtocol&lt;/a&gt; are both solid foundations for the next generation of not just social networks, but many apps. &lt;a href=&quot;#fnref:overload&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:all&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;Technically not all of them. I have Instagram and Facebook accounts that I don’t use. I have a Swarm/Foursquare account. Maybe I will eventually list &lt;em&gt;all&lt;/em&gt; my accounts for completeness 😅 &lt;a href=&quot;#fnref:all&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:affordances&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a class=&quot;internal-link&quot; href=&quot;/notes/erin-kissane/&quot;&gt;Erin Kissane&lt;/a&gt; has been doing lots of writing and research about this, like her &lt;a href=&quot;https://erinkissane.com/the-affordance-loop&quot;&gt;Affordance Loop&lt;/a&gt; article: “Affordances, in the simplest terms, are &lt;em&gt;what an object offers or provides to a specific individual at a particular moment in time&lt;/em&gt;.” &lt;a href=&quot;#fnref:affordances&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+				<link>https://bmannconsulting.com/blog/2024/01/06/mostly-posse/</link>
+				<pubDate>Sat, 06 Jan 2024 11:07:48 -0800</pubDate>
+				<guid isPermaLink="true">https://bmannconsulting.com/blog/2024/01/06/mostly-posse/</guid>
+			</item>
+		    
+          
+		
+		  
+			<item>
+				<title>Why not both: an ActivityPub Server on an AT Protocol PDS</title>
+				
+					<dc:creator>Boris Mann&apos;s Homepage</dc:creator>
+				
+				<description>&lt;p&gt;I missed Berjon’s &lt;a href=&quot;https://berjon.com/ap-at/&quot;&gt;ActivityPub Over ATProto&lt;/a&gt; when it was published back in November 2023.&lt;/p&gt;
+
+&lt;p&gt;It’s a design provocation of using the two protocols together:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;With relatively little work, we could run ActivityPub atop an AT Protocol PDS.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The little sub heading says “¿Por qué no los dos?”, which of course translates to:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/memes/why_not_both.jpeg&quot; alt=&quot;Why don’t we have both meme little girl&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Well played &lt;a class=&quot;internal-link&quot; href=&quot;/notes/robin-berjon/&quot;&gt;Robin Berjon&lt;/a&gt;. Let’s make sure to capture the meme origin here in my notes &lt;a class=&quot;internal-link&quot; href=&quot;/notes/why-not-both/&quot;&gt;Why not both&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The meat of the article is that both protocols are great in their own way.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Both the Activity* standards and ATProto break this siloing in different ways. ==Activity* are built around URLs and can sort of &quot;socialise&quot; more or less anything on the Web, which is great,== but they don&apos;t touch the underlying substrate. The expectation tends to be that either you run your own server (which isn&apos;t for everyone) or you have to join a federated server, which tends to put you at the mercy of an admin (and, as some people are unfortunately finding out, not all admins are great). ==ATProto, on its side, provides a good initial foundation for an extensible PDS designed around &lt;a href=&quot;https://berjon.com/user-agency/&quot;&gt;user agency&lt;/a&gt; and &lt;a href=&quot;https://subconscious.substack.com/p/credible-exit&quot;&gt;credible exit&lt;/a&gt;.== This means that your online presence can be custodially hosted (so you need not worry about running a server) but if you don&apos;t like your host, you can be guaranteed to be able to take your content elsewhere (verifiably) and nothing will change, you won&apos;t even need to update your handle or set up redirection.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;(highlights my own)&lt;/p&gt;
+
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; href=&quot;/notes/pds/&quot;&gt;PDS&lt;/a&gt; stands for Personal Data Server. As an ATProtocol user, I either run my own PDS, or delegate authority to a service to run it on my behalf. But it’s me that’s in control, not an admin.&lt;/p&gt;
+
+&lt;p&gt;So yeah, &lt;del&gt;running my own&lt;/del&gt; having control over my own data server that can also talk ActivityPub sounds pretty great.&lt;/p&gt;
+
+&lt;p&gt;There’s a discussion thread about Berjon’s post at the &lt;a href=&quot;https://socialhub.activitypub.rocks/t/robin-berjon-running-activitypub-over-atproto/3707/3&quot;&gt;ActivityPub SocialHub Forum&lt;/a&gt; and a &lt;a href=&quot;https://hachyderm.io/@hrefna/111580064413015748&quot;&gt;mini thread&lt;/a&gt; by &lt;a href=&quot;https://hachyderm.io/@hrefna&quot;&gt;@hrefna@hachyderm.io&lt;/a&gt; who has been digging into AP nuances as well and is a great follow if you’re interested in protocols.&lt;/p&gt;
+
+&lt;p&gt;I’ve got concerns about governance for both protocols. Another great Berjon post &lt;a class=&quot;internal-link&quot; href=&quot;/notes/internet-transition/&quot;&gt;Internet Transition&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;ActivityPub is a finalized spec and is stewarded by the W3C which at its core has large players. Folding in community group commentary is hard. But it’s work that has to be done, and Facebook Meta’s Threads going for interop here is important for everyone, never mind Medium, Wordpress.com, Flipboard, Mozilla, and others.&lt;/p&gt;
+
+&lt;p&gt;I’m more of a fan of the pre-standards body open protocol work that Bluesky is doing with ATProtocol. Here it’s the opposite problem: Bluesky is the only “large” player — who isn’t very large, is very busy running one platform while they also evolve the protocol. The DID:PLC that allows for delegation of accounts needs to evolve into a consortium model.&lt;/p&gt;
+
+&lt;p&gt;My belief is that both protocols offer a path forward for composable, user centric data. Social and messaging and media and moderation are part of virtually all multi-user apps. Building on top of vocabularies and lexicons, re-using a person’s data and social connections, and being able to interop is where the next generation of applications are heading.&lt;/p&gt;
+
+&lt;p&gt;I’m the 22nd user on BlueSky. But I also helped found an ActivityPub-centric Canadian co-op, &lt;a class=&quot;internal-link&quot; href=&quot;/notes/cosocial/&quot;&gt;CoSocial&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Why not both?&lt;/p&gt;
+</description>
+				<link>https://bmannconsulting.com/blog/2024/01/05/why-not-both-protocols/</link>
+				<pubDate>Fri, 05 Jan 2024 21:21:56 -0800</pubDate>
+				<guid isPermaLink="true">https://bmannconsulting.com/blog/2024/01/05/why-not-both-protocols/</guid>
+			</item>
+		    
+          
+		
+		  
+			<item>
+				<title>Holiday Blog Tinkering</title>
+				
+					<dc:creator>Boris Mann&apos;s Homepage</dc:creator>
+				
+				<description>&lt;p&gt;I didn&apos;t get much blog tinkering done over the holidays, other than just barely opening my code editor and making a new branch, deciding to delete my archive from this site, and see if &lt;a class=&quot;internal-link&quot; href=&quot;/notes/obsidian/&quot;&gt;Obsidian&lt;/a&gt; can work for what it&apos;s intended to be: a fancy Markdown editor!&lt;/p&gt;
+
+&lt;p&gt;This is my January 1st log of things to look at and what I&apos;m planning to do.&lt;/p&gt;
+&lt;h2 id=&quot;obsidian&quot;&gt;Obsidian&lt;/h2&gt;
+&lt;p&gt;I&apos;ve long &quot;held out&quot; against Obsidian. I tried it, it was fine, but after many years of rolling my own sites with &lt;a href=&quot;https://notes.bmannconsulting.com/#/page/Jekyll&quot; class=&quot;noteslink&quot; target=&quot;_notes&quot;&gt;Jekyll&lt;/a&gt; and &lt;a href=&quot;https://notes.bmannconsulting.com/#/page/Markdown&quot; class=&quot;noteslink&quot; target=&quot;_notes&quot;&gt;Markdown&lt;/a&gt; it didn&apos;t feel like much of a difference.&lt;/p&gt;
+
+&lt;p&gt;I &lt;em&gt;want&lt;/em&gt; the type of graph structure that &lt;a class=&quot;internal-link&quot; href=&quot;/notes/logseq/&quot;&gt;LogSeq&lt;/a&gt; and other advanced systems do, with full block based systems, not just pages of Markdown on disk.&lt;/p&gt;
+
+&lt;p&gt;But! Pages of Markdown on disk does accurately describe what I do when I&apos;m working on this site, especially on desktop.&lt;/p&gt;
+
+&lt;p&gt;We&apos;re also using Obsidian at &lt;a class=&quot;internal-link&quot; href=&quot;/notes/fission/&quot;&gt;Fission&lt;/a&gt; as of December 2023, for our product planning process. We bought licenses for the whole team and are using git for &lt;a href=&quot;https://notes.bmannconsulting.com/#/page/multiplayer&quot; class=&quot;noteslink&quot; target=&quot;_notes&quot;&gt;multiplayer&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;indiekit&quot;&gt;IndieKit&lt;/h2&gt;
+
+&lt;p&gt;I&apos;ve gone back and forth on using &lt;a href=&quot;https://notes.bmannconsulting.com/#/page/IndieKit&quot; class=&quot;noteslink&quot; target=&quot;_notes&quot;&gt;IndieKit&lt;/a&gt;. The main thing it brings is a &lt;a href=&quot;https://notes.bmannconsulting.com/#/page/Micropub&quot; class=&quot;noteslink&quot; target=&quot;_notes&quot;&gt;Micropub&lt;/a&gt; interface for mobile posting to this site. And with LogSeq not really working for me for that, and Noosphere not being quite ready, maybe I bring back journals here.&lt;/p&gt;
+
+&lt;p&gt;I&apos;ve been using and paying for &lt;a class=&quot;internal-link&quot; href=&quot;/notes/micro-blog/&quot;&gt;Micro.blog&lt;/a&gt; for this for my &lt;a href=&quot;https://blog.bmannconsulting.com&quot;&gt;personal blog&lt;/a&gt;, and I&apos;ve been enjoying the cross posting – posts get sent to Bluesky and Mastodon (and Nostr and Tumbler and LinkedIn).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/microblog-cross-posting-screenshot.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;cloudron&quot;&gt;Cloudron&lt;/h2&gt;
+&lt;p&gt;I&apos;m going to make a &lt;a class=&quot;internal-link&quot; href=&quot;/notes/cloudron/&quot;&gt;Cloudron&lt;/a&gt; page here, because I&apos;ve been learning and experimenting and raving about it for 3 months or so.&lt;/p&gt;
+
+&lt;p&gt;I had tried it some time ago and recently re-committed to it in a big way. I&apos;ve got a personal install I call the &lt;a class=&quot;internal-link&quot; href=&quot;/notes/commons-computer/&quot;&gt;Commons Computer&lt;/a&gt;, installed it for &lt;a class=&quot;internal-link&quot; href=&quot;/notes/cosocial/&quot;&gt;CoSocial&lt;/a&gt;, installed it for &lt;a class=&quot;internal-link&quot; href=&quot;/notes/fission/&quot;&gt;Fission&lt;/a&gt;, and have an &lt;a class=&quot;internal-link&quot; href=&quot;/notes/ipfs/&quot;&gt;IPFS&lt;/a&gt; community one that isn&apos;t quite active yet.&lt;/p&gt;
+
+&lt;h2 id=&quot;logseq-and-noosphere-and-linkding-and&quot;&gt;LogSeq (and Noosphere and Linkding and…)&lt;/h2&gt;
+&lt;p&gt;What about my &lt;a href=&quot;https://notes.bmannconsulting.com&quot;&gt;notes site&lt;/a&gt; powered by &lt;a class=&quot;internal-link&quot; href=&quot;/notes/logseq/&quot;&gt;LogSeq&lt;/a&gt;? Do I … migrate all the notes back here? it&apos;s probably a good idea to have a separate notes site which is more ephemeral than this. But maybe everything is ephemeral???&lt;/p&gt;
+
+&lt;p&gt;The other other thing I meant to do over the holidays was install the commandline &lt;a class=&quot;internal-link&quot; href=&quot;/notes/noosphere/&quot;&gt;Noosphere&lt;/a&gt; tooling. I&apos;m in the beta, so have the &lt;a class=&quot;internal-link&quot; href=&quot;/notes/subconscious/&quot;&gt;Subconscious&lt;/a&gt; iOS app, and being able to perhaps use Noosphere for syncing between desktop and mobile would be good, without doing the &lt;a href=&quot;https://notes.bmannconsulting.com/#/page/Working Copy&quot; class=&quot;noteslink&quot; target=&quot;_notes&quot;&gt;Working Copy&lt;/a&gt; git client on my phone.&lt;/p&gt;
+
+&lt;p&gt;And finally, I have a &lt;a href=&quot;https://commonscomputer.com/t/linkding-installed/25&quot;&gt;shared bookmarking service Linkding installed on Commons Computer&lt;/a&gt;. You can browse &lt;a href=&quot;https://links.commonscomputer.com/bookmarks/shared&quot;&gt;shared bookmarks here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Do I need another place to stash bookmarks? Part of the thinking of IndieKit and Journals on this site, is that notes-as-bookmarks / journals-with-links are a good place for them, and yet another service is just another spot for them to never get looked at again.&lt;/p&gt;
+&lt;h2 id=&quot;eleventy&quot;&gt;Eleventy&lt;/h2&gt;
+&lt;p&gt;One of the other solutions for how long it takes to build this site, and perhaps for more advanced &quot;stuff&quot;, is perhaps to move it to &lt;a href=&quot;https://notes.bmannconsulting.com/#/page/Eleventy&quot; class=&quot;noteslink&quot; target=&quot;_notes&quot;&gt;Eleventy&lt;/a&gt;. But that&apos;s going to take a lot more coding and learning time, although I did &lt;a href=&quot;https://links.commonscomputer.com/bookmarks/shared?q=%23eleventy&quot;&gt;capture some Eleventy bookmarks&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;addendum-jan-3rd-2024&quot;&gt;Addendum Jan 3rd, 2024&lt;/h2&gt;
+
+&lt;p&gt;OK, I went back and forth from this being a &quot;blog&quot; vs a &lt;a href=&quot;/journal/&quot;&gt;journal&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now that I&apos;ve got the Obsidian &quot;unique note creator&quot; creating datestamped journal entries that are more &quot;block&quot; sized, this giant post makes more sense as a &quot;blog&quot;. And maybe, since I do have a &lt;a href=&quot;https://bmannconsulting.com/journal/2024-01-02/&quot;&gt;Obsidian on mobile via git&lt;/a&gt;, there really isn&apos;t much pressure to move on IndieKit.&lt;/p&gt;
+
+&lt;p&gt;And the one new person who subscribed to my feed will get it via RSS!&lt;/p&gt;
+
+&lt;p&gt;I&apos;ll add a feed for journals…but may use that just to import / cross-post via Micro.blog, and invite people to follow my Mastodon account (which also has an RSS feed!).&lt;/p&gt;
+
+&lt;p&gt;I likely won&apos;t add a feed for notes, as they get &quot;edited in place&quot;. I have the five most recently updated on the home page, just as a way to surface things for those who truly come in through the home page. And, new notes will often get created / noted via journal posts, so people will get links to them that way.&lt;/p&gt;
+
+&lt;p&gt;Perhaps weekly blog post summaries. We&apos;ll see!&lt;/p&gt;
+
+&lt;p&gt;I&apos;m itchy at how many wikilinks point over to the LogSeq notes site, but re-importing those back over here – again! – is a big project.&lt;/p&gt;
+
+</description>
+				<link>https://bmannconsulting.com/blog/2024/01/01/holiday-blog-tinkering/</link>
+				<pubDate>Mon, 01 Jan 2024 22:06:10 -0800</pubDate>
+				<guid isPermaLink="true">https://bmannconsulting.com/blog/2024/01/01/holiday-blog-tinkering/</guid>
+			</item>
+		    
+          
+		
+		  
+			<item>
+				<title>Notes &amp; Homepage Revamp</title>
+				
+					<dc:creator>Boris Mann&apos;s Homepage</dc:creator>
+				
+				<description>&lt;p&gt;This is very much a blogging about blogging (and Digital Garden) post. I&apos;ve written many words in many places since the last post. Many of those words have been into LogSeq, which I flipped the switch on at the beginning of this year to run this whole site, including my (lapsed) tech &lt;a href=&quot;/blog/&quot;&gt;blog&lt;/a&gt;, and long term &lt;a href=&quot;/archive/&quot;&gt;archive&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I wanted to have one grand intertwingled set of both Digital Garden style Note and Journal pages, as well as all of my archive of posts.&lt;/p&gt;
+
+&lt;p&gt;But LogSeq is not well suited to blog-style articles. And, the way that it publishes, &lt;a href=&quot;https://notes.bmannconsulting.com/#/page/Jan%207th%2C%202023&quot; class=&quot;noteslink&quot; target=&quot;_notes&quot;&gt;it packs everything into a single index.html file&lt;/a&gt;, which for my 20 year archive of blog posts was gigantic. It got up to 40MB!&lt;sup id=&quot;fnref:40MB&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:40MB&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; So someone visiting the site would have to download 40MB … and only then be able to start interacting with the site.&lt;/p&gt;
+
+&lt;p&gt;So, I&apos;ve spent some vacation time this past week&lt;sup id=&quot;fnref:foodwiki&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:foodwiki&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; moving things around. LogSeq had 2000+ archive posts trimmed out of it, and now lives at the &lt;a href=&quot;https://notes.bmannconsulting.com&quot;&gt;notes.bmannconsulting.com&lt;/a&gt; subdomain. That means that it&apos;s a bit smaller, but the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;index.html&lt;/code&gt; is still 9MB, and will only grow as a I add more pages. But it works for me, on both desktop and on my phone, using git to sync.&lt;/p&gt;
+
+&lt;p&gt;I&apos;m calling this site my Homepage. Which is what it is!&lt;sup id=&quot;fnref:neocities&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:neocities&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; It&apos;s the boring domain I picked a long time ago, and this root domain and other subdomains hanging off it is where all my stuff should be.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;bmannconsulting.com: This site, my default domain that represents me and &quot;my stuff&quot;. A homepage. With a blog. And an archive.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.bmannconsulting.com&quot;&gt;blog.bmannconsulting.com&lt;/a&gt;: more personal posts, often around food and local stuff, runs on Micro.blog which powers cross-posting.&lt;sup id=&quot;fnref:crosspost&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:crosspost&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://notes.bmannconsulting.com&quot;&gt;notes.bmannconsulting.com&lt;/a&gt;: LogSeq powered, default home page is the Daily Journals&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And &quot;other stuff&quot;, that I can easily keep at subdomains, and maybe do more with in the future:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://twitter.bmannconsulting.com&quot;&gt;twitter.bmannconsulting.com&lt;/a&gt;: my Twitter archive, powered by &lt;a href=&quot;https://www.zachleat.com/web/tweetback/&quot;&gt;Tweetback&lt;/a&gt;&lt;sup id=&quot;fnref:twitterarchive&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:twitterarchive&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;5&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://2022.bmannconsulting.com&quot;&gt;2022.bmannconsulting.com&lt;/a&gt;: a snapshot of late 2022 version of the website, Simply Jekyll edition&lt;sup id=&quot;fnref:colophon&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:colophon&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;6&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I&apos;m not convinced I&apos;m going to get back on the regular blog posting schedule. I&apos;ve fallen off the wagon of RSS &lt;em&gt;reading&lt;/em&gt;, myself, in part because I&apos;m bouncing around multiple decentralized social networks&lt;sup id=&quot;fnref:decentsocial&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:decentsocial&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;7&lt;/a&gt;&lt;/sup&gt;, and in part as I said at the beginning – I&apos;m writing a lot of words in a lot of places already.&lt;/p&gt;
+
+&lt;p&gt;I may end up doing a weekly round up of the Daily Journal pages from my Notes site. That&apos;s usually where I clip links and articles and such. And there&apos;s a &lt;a href=&quot;/feeds/&quot;&gt;feeds&lt;/a&gt; page here again, so my site should be subscribable.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:40MB&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;The linked note has a screenshot that shows it at 18MB. You can go &lt;a href=&quot;https://github.com/bmann/bmcnotes/blob/gh-pages/index.html&quot;&gt;look at the gh-pages branch&lt;/a&gt; to see how big the current version is. &lt;a href=&quot;#fnref:40MB&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:foodwiki&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;The FoodWiki has views &amp;amp; food from around Nanaimo, starting on &lt;a href=&quot;https://foodwiki.bmann.ca/July%252022nd%252C%25202023.html&quot;&gt;July 22nd&lt;/a&gt;. See what I mean? I&apos;m writing a lot of words! &lt;a href=&quot;#fnref:foodwiki&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:neocities&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;Notwithstanding the &lt;a href=&quot;https://bmann.ca&quot;&gt;bmann.ca&lt;/a&gt; one page kind of link tree thing I put together on Neocities. &lt;a href=&quot;#fnref:neocities&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:crosspost&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;Anything I post to Micro.blog ends up on Mastodon, Bluesky, Nostr, Tumblr, and even LinkedIn. &lt;a href=&quot;#fnref:crosspost&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:twitterarchive&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;I ran a &lt;a href=&quot;https://hawksey.info/blog/2016/08/keeping-your-twitter-archive-fresh-and-freely-hosted-on-github-pages/&quot;&gt;Twitter to Github Pages script for many years&lt;/a&gt; that is still up at &lt;a href=&quot;https://tweets.bmannconsulting.com&quot;&gt;https://tweets.bmannconsulting.com&lt;/a&gt;. You can see when the Twitter API finally died in June. Tweetback has the potential to interconnect &lt;a href=&quot;#fnref:twitterarchive&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:colophon&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;There&apos;s always a &lt;a href=&quot;/notes/colophon/&quot;&gt;Colophon&lt;/a&gt; &lt;a href=&quot;#fnref:colophon&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:decentsocial&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;Or &lt;a href=&quot;https://notes.bmannconsulting.com/#/page/decentsocial&quot;&gt;DecentSocial&lt;/a&gt; as the shorthand goes &lt;a href=&quot;#fnref:decentsocial&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+				<link>https://bmannconsulting.com/blog/2023/07/29/bmc-notes-homepage-revamp/</link>
+				<pubDate>Sat, 29 Jul 2023 23:12:10 -0700</pubDate>
+				<guid isPermaLink="true">https://bmannconsulting.com/blog/2023/07/29/bmc-notes-homepage-revamp/</guid>
+			</item>
+		    
+          
+		
+		  
+			<item>
+				<title>Kickstarting an app ecosystem</title>
+				
+					<dc:creator>Boris Mann&apos;s Homepage</dc:creator>
+				
+				<description>&lt;p&gt;I’ve been thinking about kickstarting a couple of different app ecosystems.&lt;/p&gt;
+
+&lt;p&gt;I’m going to be a bit vague here, but imagine a tablet like dedicated device. I wrote a post about &lt;a href=&quot;https://bmannconsulting.com/blog/2021/02/14/remarkable-tablet-first-usage/&quot;&gt;using the reMarkable&lt;/a&gt; — so maybe consider something like that. But more open and a desire to build a software ecosystem around it. If you’re intrigued, ping me and I can tell you more&lt;sup id=&quot;fnref:preorder&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:preorder&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;At the same time, for my own use and generally thinking what I want to see in the world, I’m a fan of end user programming.&lt;/p&gt;
+
+&lt;p&gt;Or at least, no code like customization. That could range from Zapier automating getting data from one system into another, or building custom forms, data, and views with Airtable.&lt;/p&gt;
+
+&lt;p&gt;The web technology stack is the one with the lowest bar to entry for custom apps. And even there you immediately need logins and storage to make an app that users can come back to and have some preferences and content tailored for them.&lt;/p&gt;
+
+&lt;p&gt;When thinking about new systems — new interfaces, new devices — how do you get developers to commit?&lt;/p&gt;
+
+&lt;p&gt;Actually, even better, how do you get developers — or end users — to &lt;em&gt;start&lt;/em&gt;?&lt;/p&gt;
+
+&lt;p&gt;One way is customization directly. Think MySpace&lt;sup id=&quot;fnref:myspace&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:myspace&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;: give people tools to directly customize their environment.&lt;/p&gt;
+
+&lt;p&gt;But is that even the right metaphor? With smartphones, users customize some icons and widgets and background screens. Very much within proscribed parameters.&lt;/p&gt;
+
+&lt;p&gt;To be clear: I think in popular culture, the concept of an “app” is an excellent base layer object. Web apps, mobile apps, I have an idea for an app, what app do you use for that? — and so on, this is very mass market concept at this point.&lt;/p&gt;
+
+&lt;p&gt;So: you should support apps, and developers. User accounts choose which apps to use to customize their usage of the device. Maybe you support some sort of git-repo aka “link” based sideloading, because the lift of going “full App Store” is a lot. Maybe you want to have some app manifest files with required info to get basic info from the developer and for the user. Use a git repo of your own for people to PR in links to their plugins and widgets, and use that as a source for your “App Store” to start.&lt;/p&gt;
+
+&lt;p&gt;What if we think in more basic primitives? What do I want from a reading / processing / note taking device?&lt;/p&gt;
+
+&lt;p&gt;Notes. Links. Images. People. Environment-wide entities.&lt;/p&gt;
+
+&lt;p&gt;Pretty quickly you maybe end up taking on the whole complexity of the mess we’re in. At the same time, there’s a lot of stuff and standards out there.&lt;/p&gt;
+
+&lt;p&gt;Do I want to sync my contacts to such a thing, so it needs to support CardDAV? Not really, although as we know, every piece of software eventually gains the ability to send email&lt;sup id=&quot;fnref:pos&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:pos&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;But email is maybe an “API that isn’t an API” to consider. Can my device system account be issued multiple inboxes? So I could configure and route all sorts of info — from notes to self to read letter to images — into the system.&lt;sup id=&quot;fnref:imap&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:imap&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;RSS might be another primitive that works as an inbox like thing.&lt;/p&gt;
+
+&lt;p&gt;And since connective tissue tools like Zapier have both email and RSS outputs, creative users can pipe a lot of stuff.&lt;/p&gt;
+
+&lt;p&gt;Bonus: build your own first class Zapier integration that exposes your system primitives as much as possible.&lt;/p&gt;
+
+&lt;p&gt;And of course, you need outgoing tools in the same way. Sync is a super power. Export is considered harmful.&lt;/p&gt;
+
+&lt;p&gt;Right. Display layers and canvas and widgets. Being able to target a widget type as a Zapier endpoint for max flexibility.&lt;/p&gt;
+
+&lt;p&gt;The reMarkable has notebooks and pages as its core data metaphors and visual / display metaphors. It has list view or grid view. No dashboards. No clock widget. No histogram of pages created by day / week / year.&lt;/p&gt;
+
+&lt;p&gt;Making some core widget types like lists, galleries, show first N words and then a more link, etc.&lt;/p&gt;
+
+&lt;p&gt;At which point developer-designer-tinkerers&lt;sup id=&quot;fnref:sitebuilder&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:sitebuilder&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;5&lt;/a&gt;&lt;/sup&gt; can make custom widget display types before they have to make an entire app.&lt;/p&gt;
+
+&lt;p&gt;There’s a whole other riff here about building plugins and widgets into OTHER systems. eG build a widget for WeChat-like super App ecosystems, so content from your ecosystem can easily be manipulated inside the super app, and easy content flows in the other direction.&lt;/p&gt;
+
+&lt;p&gt;And I think I’ll end my somewhat context-free stream of consciousness here. Stay tuned!&lt;/p&gt;
+
+&lt;h2 id=&quot;update-feb-2024&quot;&gt;Update Feb 2024&lt;/h2&gt;
+
+&lt;p&gt;I originally &lt;a href=&quot;https://blog.bmannconsulting.com/2022/06/02/kickstarting-an-app.html&quot;&gt;posted this to my Micro.blog June 1st, 2022&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The device I pre-ordered hasn’t shipped yet. &lt;a href=&quot;https://tomcritchlow.com/2024/02/09/remarkable-notes/&quot;&gt;Tom Critchlow reviewed the reMarkable and made a few suggestions&lt;/a&gt; that are similar to what I’ve suggested above.&lt;/p&gt;
+
+&lt;h2 id=&quot;update-may-2024&quot;&gt;Update May 2024&lt;/h2&gt;
+
+&lt;p&gt;I can now reveal that I bought into the founder’s edition of &lt;a class=&quot;internal-link&quot; href=&quot;/notes/daylight-computer/&quot;&gt;Daylight Computer&lt;/a&gt;. It’s an e-ink tablet made to be a piece of calm technology. More soon!&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:preorder&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;Yes I pre-ordered the founder’s edition. &lt;a href=&quot;#fnref:preorder&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:myspace&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;Ok, this is an extremely old reference, and one that I personally didn’t experience. The story is that people learned HTML in order to customize their MySpace page. &lt;a href=&quot;#fnref:myspace&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:pos&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;I was thinking about this today when I entered my email address into a point-of-sale machine that sent my a receipt by email. &lt;a href=&quot;#fnref:pos&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:imap&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;Or go full IMAP (or &lt;a href=&quot;https://notes.bmannconsulting.com/#/page/DeltaChat&quot; class=&quot;noteslink&quot; target=&quot;_notes&quot;&gt;DeltaChat&lt;/a&gt;!) and use email as a sync mechanism! &lt;a href=&quot;#fnref:imap&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:sitebuilder&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;there are people in certain code ecosystems — eg the Drupal or TiddlyWiki site builder archetype — who become expert at plugin/widget configuration all with the tools of the system, with perhaps some light CSS and/or JS skills to do customization. But you need the right level of remixable primitives. &lt;a href=&quot;#fnref:sitebuilder&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+				<link>https://bmannconsulting.com/blog/2022/06/01/kickstarting-app-ecosystem/</link>
+				<pubDate>Wed, 01 Jun 2022 14:20:00 -0700</pubDate>
+				<guid isPermaLink="true">https://bmannconsulting.com/blog/2022/06/01/kickstarting-app-ecosystem/</guid>
+			</item>
+		    
+          
+		
+		  
+            
+	</channel>
+</rss>

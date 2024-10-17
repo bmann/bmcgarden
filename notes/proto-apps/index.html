@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <link rel="canonical" href="https://bmannconsulting.com/notes/proto-apps/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="I’m adopting the term “Protocol Apps” from David Phelps’ [[Proto-App Thesis]].In short, the thesis says that large, mass market apps that rely on network eff...">
+  <meta property="og:site_name" content="Boris Mann's Homepage">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="alternate" type="application/atom+xml" title="Blog Feed for bmannconsulting.com" href="https://bmannconsulting.com/blog.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Journal Feed for bmannconsulting.com" href="https://bmannconsulting.com/journal.xml" />
+  
+  
+  <link rel="stylesheet" href="https://unpkg.com/littlefoot/dist/littlefoot.css" />
+
+  
+  <meta property="og:description" content="I’m adopting the term “Protocol Apps” from David Phelps’ [[Proto-App Thesis]].In short, the thesis says that large, mass market apps that rely on network eff..."/>
+  
+
+  
+  <meta property="og:title" content="Proto apps">
+  <meta property="og:type" content="article">
+  
+  
+  
+  <meta property="article:published_time" content="2024-10-16T22:19:08-07:00">
+  <meta property="article:author" content="https://bmannconsulting.com/">
+  
+
+  <meta property="og:url" content="https://bmannconsulting.com/notes/proto-apps/" />
+
+  
+  <meta property="og:image" content="https://bmannconsulting.com/assets/bmann_hair_orange_256x256.png">
+  
+
+
+  <!-- Open Frames Default -->
+  
+  <meta property="fc:frame:image" content="https://bmannconsulting.com/assets/bmann_hair_orange_256x256.png">
+  <meta property="fc:frame:image:aspect_ratio" content="1:1">
+  
+  <meta property="fc:frame" content="vNext">
+  
+  <meta property="fc:frame:button:1" content="🌱 Home">
+  <meta property="fc:frame:button:1:action" content="link">
+  <meta property="fc:frame:button:1:target" content="https://bmannconsulting.com">
+  
+  <meta property="fc:frame:button:2" content="🔖 Explore">
+  <meta property="fc:frame:button:2:action" content="link">
+  <meta property="fc:frame:button:2:target" content="https://bmannconsulting.com/notes/">
+  <meta property="fc:frame:button:3" content="💰 Drips">
+  <meta property="fc:frame:button:3:action" content="link">
+  <meta property="fc:frame:button:3:target" content="https://www.drips.network/app/bmann.eth">
+
+  <title>
+    
+      Proto apps &mdash; Boris Mann's Homepage
+    
+  </title>
+</head>
+
+  <body>
+    <nav><div>
+    <a class="internal-link" href="/"><b>Boris Mann's Homepage</b></a>
+</div>
+</nav>
+    <div class="wrapper">
+      <main><article>
+  <div>
+    <h1 style="text-transform:capitalize;">Proto apps</h1>
+    
+
+    
+    <time datetime="2024-10-16T22:18:40-07:00">
+      Last updated on October 16, 2024
+    </time>
+    
+
+    <ul>
+    
+    </ul>
+  </div>
+
+  <div id="notes-entry-container">
+    <content>
+      <html><body>
+<p>I’m adopting the term “Protocol Apps” from David Phelps’ <a class="internal-link" href="/notes/proto-app-thesis/">Proto-App Thesis</a>.</p>
+
+<p>In short, the thesis says that large, mass market apps that rely on network effects are saturated and it is extremely difficult to break in. The existing large apps are all built on centralized, proprietary platforms.</p>
+
+<p>With Protocol Apps, building on a protocol takes advantage of both network effects (many apps share a pooled set of users and content) and interop (the protocol is the API, allowing for interop, multiple clients, and no risk of centralized platform turning off an API).</p>
+
+<h2 id="open-social-protocol-winners">Open Social Protocol Winners</h2>
+
+<p>The three <a class="internal-link" href="/notes/open-social-protocols/">Open Social Protocols</a> that I think are going to be the winners are:</p>
+
+<ul>
+  <li><a class="internal-link" href="/notes/activitypub/">ActivityPub</a></li>
+  <li><a class="internal-link" href="/notes/atprotocol/">ATProtocol</a></li>
+  <li><a class="internal-link" href="/notes/farcaster/">Farcaster</a></li>
+</ul>
+
+<h2 id="dream">D.R.E.A.M.</h2>
+
+<p>Distribution Rules Everything Around Me</p>
+
+<p>As an app developer, getting distribution — getting your app in front of potential users — is the number one challenge.</p>
+
+<p>Closed social platforms like Twitter or Instagram charge you for APIs and restrict what you can do. Their algorithms are opaque and in many cases you’ll need to pay for ads to promote your app to get installs.</p>
+
+<p>App stores are the same: a proprietary algorithm for search ranking, or pay to be promoted.</p>
+
+<p>Direct “social” word of mouth is one of the few avenues left for independent promotion and discovery.</p>
+
+<p>The more your app is multiplayer and has public content, the more building a Protocol App makes sense.</p>
+
+<p>Either you’re building a proprietary platform that you hope will draw users from elsewhere, or you pick one of the three open social protocols as a core building block for your app.</p>
+
+<h2 id="architecture">Architecture</h2>
+
+<p>If you’re building an app that is meant to be used by many users at scale, you’re immediately needing to design your app to solve problems that the open social protocols already have answers for.</p>
+
+<p>For example, how do you make it possible to have users own their data?</p>
+
+<p>For ActivityPub, this would be the ability to run your own server, and built in tools to move between servers.</p>
+
+<p>With ATProtocol, the <a class="internal-link" href="/notes/pds/">Personal Data Server (PDS)</a> is part of the architecture. You can run a default PDS for users but they can bring their own by self hosting or delegating to some other PDS provider.</p>
+
+<p>And Farcaster’s Hubs can be run by anyone, or outsourced to specialized hub hosts like Neymar or Piñata.</p>
+
+<p>All three have different scaling trade offs. And ActivityPub, being the oldest, also has a number of different implementations in different programming languages.</p>
+
+<p>There are many more features and social patterns built into these protocols - likes, moderation, data structures, search, indexing etc etc</p>
+
+<p>As a developer, you can lean into these features rather than figuring them out from scratch.</p>
+
+<h2 id="multiple-protocols">Multiple Protocols</h2>
+
+<p>Should your app integrate with more than one of these open social protocols?</p>
+
+<p>For simpler integrations where you are running your own classic, centralized architecture, yes: you can build integrations into multiple of these. This is the world we are in today, with “share” buttons or basic automated posting across multiple networks.</p>
+
+<p>But, I’m saying that for certain classes of apps, you may want to fully base your app on one of these three protocols.</p>
+
+<p>Much like picking an app building framework like Django or Rails.</p>
+
+</body></html>
+    </content>
+
+    <side style="font-size: 0.9em">
+      <h3 style="margin-bottom: 1em">Notes mentioning this note</h3>
+      
+      <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
+      
+        <div class="backlink-box">
+        <a class="internal-link" href="/notes/atprotocol-dev/">Atprotocol dev</a><br>
+        <div style="font-size: 0.9em">A blog, newsletter, and event series following the development of protocol apps building on top of [[ATProtocol]]. I’m running this as...</div>
+        </div>
+      
+        <div class="backlink-box">
+        <a class="internal-link" href="/notes/community-search-engine/">Community search engine</a><br>
+        <div style="font-size: 0.9em">Community Search Engine is the label for a set of approaches to interconnect communities. These communities are formed by: Events...</div>
+        </div>
+      
+        <div class="backlink-box">
+        <a class="internal-link" href="/notes/ideas/">Ideas</a><br>
+        <div style="font-size: 0.9em">Large and small. Some look more like mini projects. AI Research Lab How can one fund AI research lab? There...</div>
+        </div>
+      
+        <div class="backlink-box">
+        <a class="internal-link" href="/notes/localhost/">LOCALHOST Vancouver</a><br>
+        <div style="font-size: 0.9em">Organized by me, [[Dawn Walker]], [[Chad Kohalyk]], and the [[DWebYVR]] community. Full calendar » IETF Hackathon Saturday July 20th and...</div>
+        </div>
+      
+      
+      </div>
+      
+    </side>
+  </div>
+</article>
+</main>
+      <footer><a href="/blog/" class="internal-link">Blog</a> | <a href="/journal/" class="internal-link">Journal</a> | <a href="/notes/" class="internal-link">Notes</a> | <a href="/feeds/" class="internal-link">Feeds</a> | 👉&nbsp;Social Profiles&nbsp;<a href='https://bmann.ca' title='Links to all of my social profiles and accounts'>bmann.ca</a> </footer>
+    </div>
+
+    <!-- That file is not particularly elegant. This will need a refactor at some point. -->
+<style>
+
+  
+
+  #tooltip-wrapper {
+    background: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    font-size: 0.8em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 100ms;
+  }
+
+  #tooltip-wrapper:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+		background-image: linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, 1) 90%);
+		width: 100%;
+		height: 75px;
+  }
+</style>
+
+<div style="opacity: 0; display: none;" id='tooltip-wrapper'>
+  <div id='tooltip-content'>
+  </div>
+</div>
+
+<iframe style="display: none; height: 0; width: 0;" id='link-preview-iframe' src="">
+</iframe>
+
+<script>
+  var opacityTimeout;
+  var contentTimeout;
+  var transitionDurationMs = 100;
+
+  var iframe = document.getElementById('link-preview-iframe')
+  var tooltipWrapper = document.getElementById('tooltip-wrapper')
+  var tooltipContent = document.getElementById('tooltip-content')
+
+  var linkHistories = {};
+
+  function hideTooltip() {
+    opacityTimeout = setTimeout(function() {
+      tooltipWrapper.style.opacity = 0;
+      contentTimeout = setTimeout(function() {
+        tooltipContent.innerHTML = '';
+        tooltipWrapper.style.display = 'none';
+      }, transitionDurationMs + 1);
+    }, transitionDurationMs)
+  }
+
+  function showTooltip(event) {
+    var elem = event.target;
+    var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
+    var top = window.pageYOffset || document.documentElement.scrollTop
+
+    if (event.target.host === window.location.host) {
+      if (!linkHistories[event.target.href]) {
+        iframe.src = event.target.href
+        iframe.onload = function() {
+          tooltipContentHtml = ''
+          tooltipContentHtml += '<div style="font-weight: bold;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
+          tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
+
+          tooltipContent.innerHTML = tooltipContentHtml
+          linkHistories[event.target.href] = tooltipContentHtml
+
+          tooltipWrapper.style.display = 'block';
+          setTimeout(function() {
+            tooltipWrapper.style.opacity = 1;
+          }, 1)
+        } 
+      } else {
+        tooltipContent.innerHTML = linkHistories[event.target.href]
+        tooltipWrapper.style.display = 'block';
+        setTimeout(function() {
+          tooltipWrapper.style.opacity = 1;
+        }, 1)
+      }
+
+
+      tooltipWrapper.style.left = elem_props.left - (tooltipWrapper.offsetWidth / 2) + (elem_props.width / 2) + "px";
+      if ((window.innerHeight - elem_props.top) < (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top - tooltipWrapper.offsetHeight - 10 + "px";
+      } else if ((window.innerHeight - elem_props.top) > (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top + 35 + "px";
+      }
+
+      if ((elem_props.left + (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = "10px";
+      } else if ((document.body.clientWidth - elem_props.left - (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = document.body.clientWidth - tooltipWrapper.offsetWidth - 20 + "px";
+      }
+    }
+  }
+
+  function setupListeners(linkElement) {
+    linkElement.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+      showTooltip(event);
+    });
+
+    tooltipWrapper.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+    });
+  }
+
+  document.querySelectorAll('content a').forEach(setupListeners);
+</script>
+
+    <script
+  src="https://unpkg.com/littlefoot/dist/littlefoot.js"
+  type="application/javascript"
+></script>
+<script type="application/javascript">
+  littlefoot.littlefoot() // Pass any littlefoot settings here.
+</script>
+  </body>
+</html>

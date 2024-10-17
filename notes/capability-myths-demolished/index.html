@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <link rel="canonical" href="https://bmannconsulting.com/notes/capability-myths-demolished/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="We address three common misconceptions aboutcapability-based systems: the Equivalence Myth (accesscontrol list systems and capability systems are formallyequ...">
+  <meta property="og:site_name" content="Boris Mann's Homepage">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="alternate" type="application/atom+xml" title="Blog Feed for bmannconsulting.com" href="https://bmannconsulting.com/blog.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Journal Feed for bmannconsulting.com" href="https://bmannconsulting.com/journal.xml" />
+  
+  
+  <link rel="stylesheet" href="https://unpkg.com/littlefoot/dist/littlefoot.css" />
+
+  
+  <meta property="og:description" content="We address three common misconceptions aboutcapability-based systems: the Equivalence Myth (accesscontrol list systems and capability systems are formallyequ..."/>
+  
+
+  
+  <meta property="og:title" content="Capability myths demolished">
+  <meta property="og:type" content="article">
+  
+  
+  
+  <meta property="article:published_time" content="2024-10-16T22:19:08-07:00">
+  <meta property="article:author" content="https://bmannconsulting.com/">
+  
+
+  <meta property="og:url" content="https://bmannconsulting.com/notes/capability-myths-demolished/" />
+
+  
+  <meta property="og:image" content="https://bmannconsulting.com/assets/bmann_hair_orange_256x256.png">
+  
+
+
+  <!-- Open Frames Default -->
+  
+  <meta property="fc:frame:image" content="https://bmannconsulting.com/assets/bmann_hair_orange_256x256.png">
+  <meta property="fc:frame:image:aspect_ratio" content="1:1">
+  
+  <meta property="fc:frame" content="vNext">
+  
+  <meta property="fc:frame:button:1" content="🔗 Source">
+  <meta property="fc:frame:button:1:action" content="link">
+  <meta property="fc:frame:button:1:target" content="https://srl.cs.jhu.edu/pubs/SRL2003-02.pdf">
+  
+  <meta property="fc:frame:button:2" content="🔖 Explore">
+  <meta property="fc:frame:button:2:action" content="link">
+  <meta property="fc:frame:button:2:target" content="https://bmannconsulting.com/notes/">
+  <meta property="fc:frame:button:3" content="💰 Drips">
+  <meta property="fc:frame:button:3:action" content="link">
+  <meta property="fc:frame:button:3:target" content="https://www.drips.network/app/bmann.eth">
+
+  <title>
+    
+      Capability myths demolished &mdash; Boris Mann's Homepage
+    
+  </title>
+</head>
+
+  <body>
+    <nav><div>
+    <a class="internal-link" href="/"><b>Boris Mann's Homepage</b></a>
+</div>
+</nav>
+    <div class="wrapper">
+      <main><article>
+  <div>
+    <h1 style="text-transform:capitalize;">Capability myths demolished</h1>
+    
+    <strong><a href="https://srl.cs.jhu.edu/pubs/SRL2003-02.pdf">srl.cs.jhu.edu/pubs/SRL2003-02.pdf</a></strong>, by Mark MillerKa-Ping YeeJonathan Shapiro<br />
+    
+
+    
+    <time datetime="2024-10-16T22:18:40-07:00">
+      Last updated on October 16, 2024
+    </time>
+    
+
+    <ul>
+    
+    </ul>
+  </div>
+
+  <div id="notes-entry-container">
+    <content>
+      <html><body>
+<ul>
+  <li>
+<a class="internal-link" href="/notes/mark-miller/">Mark Miller</a>, Combex, Inc.</li>
+  <li>Ka-Ping Yee, University of California, Berkeley</li>
+  <li>Jonathan Shapiro, Johns Hopkins University
+    <h2 id="abstract">Abstract</h2>
+  </li>
+</ul>
+
+<p>We address three common misconceptions about capability-based systems: the <em>Equivalence Myth</em> (access control list systems and capability systems are formally equivalent), the <em>Confinement Myth</em> (capability systems cannot enforce confinement), and the <em>Irrevocability Myth</em> (capability-based access cannot be revoked). The Equivalence Myth obscures the benefits of capabilities as compared to access control lists, while the Confinement Myth and the Irrevocability Myth lead people to see problems with capabilities that do not actually exist. The prevalence of these myths is due to differing interpretations of the capability security model. To clear up the confusion, we examine three different models that have been used to describe capabilities, and define a set of seven security properties that capture the distinctions among them. Our analysis in terms of these properties shows that pure capability systems have significant advantages over access control list systems: capabilities provide much better support for least-privilege operation and for avoiding confused deputy problems.</p>
+
+<h2 id="a-note-on-the-word-capability">A Note on the word "Capability"</h2>
+
+<p>Given these various interpretations of the capability model, the reader may wonder what one should adopt as the most legitimate meaning for the term capability. We should also explain why we feel justified in declaring the Irrevocability Myth and Confinement Myth to be false, rather than merely false in certain cases. We would argue that the “true” capability model is the object-capability model, because all known major capability systems take the object-based approach (for examples, see <sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> [^4] [^9] [^11] [^16] [^17] [^19] [^21]). In all of these systems, a capability is an object reference – not something that behaves like a key or ticket in the real world. Definitive books on capability-based systems [6, 16] also describe these systems from the objectcapability perspective, and explicitly characterize them as “object-based”.</p>
+
+<p>We know of no security mechanisms outside of the object-capability model that have described themselves using the word capability except for “POSIX capabilities”, “Netscape capabilities”, and “split capabilities” [14]. POSIX capabilities are not generally described as “<a class="internal-link" href="/notes/capability-based-security/">Capability-based security</a>”. The “Netscape capabilities” extensions to Java were fairly short-lived and have not been presented in the research literature as a capability system. Moreover, both “POSIX capabilities” and “Netscape capabilities” have never been presented as security mechanisms that can stand on their own, instead only serving as an extension to existing security systems. The split capabilities model is explicitly presented in contrast to the pure capability model [14].</p>
+
+<h2 id="references">References</h2>
+<ol>
+  <li>
+  <li>W. E. Boebert. On the Inability of an Unmodified Capability Machine to Enforce the ＊-Property. Proceedings of 7th DoD/NBS Computer Security Conference, September 1984, p. 291–293. Online at: http://zesty.ca/capmyths/boebert.html</li>
+  <li>A. Chander, D. Dean, J. C. Mitchell. Proceedings of the 14th Computer Security Foundations Workshop, June 2001, p. 27–43.</li>
+  <li>The E Language: Open Source Distributed Capabilities. http://erights.org/.</li>
+  <li>C. Ellison, B. Frantz, B. Lampson, R. Rivest, B. Thomas, T. Ylonen. SPKI Certificate Theory. IETF RFC 2693. Online at: http://www.ietf.org/rfc/rfc2693.txt</li>
+  <li>E. F. Gehringer. Capability Architectures and Small Objects. UMI Press, 1982.</li>
+  <li>L. Gong. A Secure Identity-Based Capability System. Proceedings of the 1989 IEEE Symposium on Security and Privacy, p. 56–65.</li>
+  <li>M. Granovetter. The Strength of Weak Ties. American Journal of Sociology 78, 1973, p. 1360–1380.</li>
+  <li>N. Hardy. The KeyKOS Architecture. ACM Operating Systems Review, September 1985, p. 8–25. Online at: http://www.agorics.com/Library/KeyKos/architecture.html</li>
+  <li>N. Hardy. The Confused Deputy (or why capabilities might have been invented). Operating Systems Review 22(4), October 1988, p. 36–38.</li>
+  <li>G. Heiser, K. Elphinstone, S. Russel, J. Vochteloo. Mungi: A Distributed Single Address-Space Operating System. Proceedings of the 17th Australasian Computer Science Conference, p. 271–280.</li>
+  <li>A. J. Herbert. A Microprogrammed Operating System Kernel. Ph. D. thesis, University of Cambridge Computer Laboratory, September 1982.</li>
+  <li>P. Karger. Improving Security and Performance for Capability Systems. Technical Report 149, University of Cambridge Computer Laboratory, 1988. (Ph. D. thesis.)</li>
+  <li>A. H. Karp, R. Gupta, G. J. Rozas, A. Banerji. Using Split Capabilities for Access Control. IEEE Software 20(1), January 2003, p. 42–49.</li>
+  <li>B. Lampson. Protection. Proceedings of the 5 th Annual Princeton Conference on Information Sciences and Systems, 1971, p. 437–443.</li>
+  <li>H. Levy. Capability-Based Computer Systems. Digital Press, Bedford, Massachusetts, 1984. Online at: http://www.cs.washington.edu/homes/levy/capabook/</li>
+  <li>A. S. Tanenbaum, S. J. Mullender, R. van Renesse. Using Sparse Capabilities in a Distributed Operating System. Proceedings of 6 th International Conference on Distributed Computing Systems, 1986, p. 558–563. Online at: ftp://ftp.cs.vu.nl/pub/papers/amoeba/dcs86.ps.Z</li>
+  <li>D. D. Redell. Naming and Protection in Extendible Operating Systems. Project MAC TR-140, MIT, November 1974. (Ph. D. thesis.)</li>
+  <li>J. Rees. A Security Kernel Based on the LambdaCalculus. Technical Report AIM-1564, MIT, March 1996. (Ph. D. thesis.)</li>
+  <li>J. H. Saltzer, M. D. Schroeder. The Protection of Information in Computer Systems. Proceedings of the IEEE 63(9), September 1975, p. 1278–1308.</li>
+  <li>J. S. Shapiro, J. M. Smith, D. J. Farber. EROS: A Fast Capability System. Proceedings of the 17th ACM Symposium on Operating Systems Principles, December 1999, p. 170–185.</li>
+  <li>J. S. Shapiro, S. Weber. Verifying the EROS Confinement Mechanism. Proceedings of the 2000 IEEE Symposium on Security and Privacy, p. 166–176.</li>
+  <li>K. Sitaker. Thoughts on Capability Security on the Web. Online at: http://lists.canonical.org/pipermail/kragen-tol/2000-August/000619.html</li>
+  <li>D. S. Wallach, D. Balfanz, D. Dean, E. W. Felten. Extensible Security Architectures for Java. In Proceedings of the 16th Symposium on Operating Systems Principles, 1997, p. 116–128. Online at: http://www.cs.princeton.edu/sip/pub/sosp97.html</li>
+  <li>D. Wagner, D. Tribble. A Security Analysis of the Combex DarpaBrowser Architecture. Online at: http://www.combex.com/papers/darpa-review/</li>
+  <li>K.-P. Yee, M. S. Miller. Auditors: An Extensible, Dynamic Code Verification Mechanism. Online at: http://www.erights.org/elang/kernel/auditors/index.html</li>
+</ol>
+
+<p><img src="/assets/2024/cap-myths-demolished-SRL2003-02.pdf" alt="PDF - Capability Myths Demolished"></p>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>M. Anderson, R. Pose, C. S. Wallace. A Password Capability System. The Computer Journal, 29(1), 1986, p. 1–8. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+  </ol>
+</div>
+</body></html>
+    </content>
+
+    <side style="font-size: 0.9em">
+      <h3 style="margin-bottom: 1em">Notes mentioning this note</h3>
+      
+
+      <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
+        <div class="backlink-box" style="background-color: #fff;">
+          View related content on notes.bmannconsulting.com/<a href="https://notes.bmannconsulting.com/#/page/Capability myths demolished" target="_notes">Capability myths demolished</a>
+        </div>
+        <div class="backlink-box" style="background-color: #fff;">
+          Browse the <a href="/notes/" class="internal-link">Local Notes Graph »</a>
+        </div>
+      </div>
+      
+    </side>
+  </div>
+</article>
+</main>
+      <footer><a href="/blog/" class="internal-link">Blog</a> | <a href="/journal/" class="internal-link">Journal</a> | <a href="/notes/" class="internal-link">Notes</a> | <a href="/feeds/" class="internal-link">Feeds</a> | 👉&nbsp;Social Profiles&nbsp;<a href='https://bmann.ca' title='Links to all of my social profiles and accounts'>bmann.ca</a> </footer>
+    </div>
+
+    <!-- That file is not particularly elegant. This will need a refactor at some point. -->
+<style>
+
+  
+
+  #tooltip-wrapper {
+    background: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    font-size: 0.8em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 100ms;
+  }
+
+  #tooltip-wrapper:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+		background-image: linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, 1) 90%);
+		width: 100%;
+		height: 75px;
+  }
+</style>
+
+<div style="opacity: 0; display: none;" id='tooltip-wrapper'>
+  <div id='tooltip-content'>
+  </div>
+</div>
+
+<iframe style="display: none; height: 0; width: 0;" id='link-preview-iframe' src="">
+</iframe>
+
+<script>
+  var opacityTimeout;
+  var contentTimeout;
+  var transitionDurationMs = 100;
+
+  var iframe = document.getElementById('link-preview-iframe')
+  var tooltipWrapper = document.getElementById('tooltip-wrapper')
+  var tooltipContent = document.getElementById('tooltip-content')
+
+  var linkHistories = {};
+
+  function hideTooltip() {
+    opacityTimeout = setTimeout(function() {
+      tooltipWrapper.style.opacity = 0;
+      contentTimeout = setTimeout(function() {
+        tooltipContent.innerHTML = '';
+        tooltipWrapper.style.display = 'none';
+      }, transitionDurationMs + 1);
+    }, transitionDurationMs)
+  }
+
+  function showTooltip(event) {
+    var elem = event.target;
+    var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
+    var top = window.pageYOffset || document.documentElement.scrollTop
+
+    if (event.target.host === window.location.host) {
+      if (!linkHistories[event.target.href]) {
+        iframe.src = event.target.href
+        iframe.onload = function() {
+          tooltipContentHtml = ''
+          tooltipContentHtml += '<div style="font-weight: bold;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
+          tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
+
+          tooltipContent.innerHTML = tooltipContentHtml
+          linkHistories[event.target.href] = tooltipContentHtml
+
+          tooltipWrapper.style.display = 'block';
+          setTimeout(function() {
+            tooltipWrapper.style.opacity = 1;
+          }, 1)
+        } 
+      } else {
+        tooltipContent.innerHTML = linkHistories[event.target.href]
+        tooltipWrapper.style.display = 'block';
+        setTimeout(function() {
+          tooltipWrapper.style.opacity = 1;
+        }, 1)
+      }
+
+
+      tooltipWrapper.style.left = elem_props.left - (tooltipWrapper.offsetWidth / 2) + (elem_props.width / 2) + "px";
+      if ((window.innerHeight - elem_props.top) < (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top - tooltipWrapper.offsetHeight - 10 + "px";
+      } else if ((window.innerHeight - elem_props.top) > (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top + 35 + "px";
+      }
+
+      if ((elem_props.left + (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = "10px";
+      } else if ((document.body.clientWidth - elem_props.left - (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = document.body.clientWidth - tooltipWrapper.offsetWidth - 20 + "px";
+      }
+    }
+  }
+
+  function setupListeners(linkElement) {
+    linkElement.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+      showTooltip(event);
+    });
+
+    tooltipWrapper.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+    });
+  }
+
+  document.querySelectorAll('content a').forEach(setupListeners);
+</script>
+
+    <script
+  src="https://unpkg.com/littlefoot/dist/littlefoot.js"
+  type="application/javascript"
+></script>
+<script type="application/javascript">
+  littlefoot.littlefoot() // Pass any littlefoot settings here.
+</script>
+  </body>
+</html>

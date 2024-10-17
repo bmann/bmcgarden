@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <link rel="canonical" href="https://bmannconsulting.com/notes/grist/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Open source, Apache licensed cloud spreadsheet. Not quite an Airtable clone, but similar capabilities. Some of the layout and linking makes it feel like File...">
+  <meta property="og:site_name" content="Boris Mann's Homepage">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="alternate" type="application/atom+xml" title="Blog Feed for bmannconsulting.com" href="https://bmannconsulting.com/blog.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Journal Feed for bmannconsulting.com" href="https://bmannconsulting.com/journal.xml" />
+  
+  
+  <link rel="stylesheet" href="https://unpkg.com/littlefoot/dist/littlefoot.css" />
+
+  
+  <meta property="og:description" content="Open source, Apache licensed cloud spreadsheet. Not quite an Airtable clone, but similar capabilities. Some of the layout and linking makes it feel like File..."/>
+  
+
+  
+  <meta property="og:title" content="Grist">
+  <meta property="og:type" content="article">
+  
+  
+  
+  <meta property="article:published_time" content="2024-10-16T22:19:08-07:00">
+  <meta property="article:author" content="https://bmannconsulting.com/">
+  
+
+  <meta property="og:url" content="https://bmannconsulting.com/notes/grist/" />
+
+  
+  <meta property="og:image" content="https://bmannconsulting.com/assets/bmann_hair_orange_256x256.png">
+  
+
+
+  <!-- Open Frames Default -->
+  
+  <meta property="fc:frame:image" content="https://bmannconsulting.com/assets/bmann_hair_orange_256x256.png">
+  <meta property="fc:frame:image:aspect_ratio" content="1:1">
+  
+  <meta property="fc:frame" content="vNext">
+  
+  <meta property="fc:frame:button:1" content="🌱 Home">
+  <meta property="fc:frame:button:1:action" content="link">
+  <meta property="fc:frame:button:1:target" content="https://bmannconsulting.com">
+  
+  <meta property="fc:frame:button:2" content="🔖 Explore">
+  <meta property="fc:frame:button:2:action" content="link">
+  <meta property="fc:frame:button:2:target" content="https://bmannconsulting.com/notes/">
+  <meta property="fc:frame:button:3" content="💰 Drips">
+  <meta property="fc:frame:button:3:action" content="link">
+  <meta property="fc:frame:button:3:target" content="https://www.drips.network/app/bmann.eth">
+
+  <title>
+    
+      Grist &mdash; Boris Mann's Homepage
+    
+  </title>
+</head>
+
+  <body>
+    <nav><div>
+    <a class="internal-link" href="/"><b>Boris Mann's Homepage</b></a>
+</div>
+</nav>
+    <div class="wrapper">
+      <main><article>
+  <div>
+    <h1 style="text-transform:capitalize;">Grist</h1>
+    
+
+    
+    <time datetime="2024-10-16T22:18:40-07:00">
+      Last updated on October 16, 2024
+    </time>
+    
+
+    <ul>
+    
+    <li><strong>github:</strong>&nbsp;<a href="https://github.com/gristlabs/grist-core/">@gristlabs/grist-core/</a></li>
+    
+    </ul>
+  </div>
+
+  <div id="notes-entry-container">
+    <content>
+      <html><body>
+<p>Open source, Apache licensed cloud spreadsheet. Not quite an Airtable clone, but similar capabilities. Some of the layout and linking makes it feel like Filemaker.</p>
+
+<blockquote>
+  <p>Grist is a modern relational spreadsheet. It combines the flexibility of a spreadsheet with the robustness of a database.</p>
+</blockquote>
+
+<p>Grist is a hybrid database/spreadsheet, meaning that:</p>
+
+<ul>
+  <li>Columns work like they do in databases: they are named, and they hold one kind of data.</li>
+  <li>Columns can be filled by formula, spreadsheet-style, with automatic updates when referenced cells change.</li>
+</ul>
+
+<p>There is a <a href="https://git.cloudron.io/walski/grist-app" target="_blank">user-created packaging of Grist</a> for <a class="internal-link" href="/notes/cloudron/">Cloudron</a>.</p>
+
+<h2 id="grist-essentials">Grist essentials</h2>
+
+<ol>
+  <li>
+<strong>Relational database</strong> that’s easy to create and use by non-technical people.</li>
+  <li>
+<strong>Data/view</strong> separation, for app-like functionality, easy to set up and use by non-technical people.</li>
+  <li>Sharing and <strong>access controls</strong> that allow users to address complex real-world access requirements.</li>
+  <li>
+<strong>Open source</strong>, for transparency and trust in the software’s promises, and freedom for technical users to improve it. <a href="https://www.getgrist.com/blog/grist-a-hacker-friendly-spreadsheet/" target="_blank">Read more</a> on this.</li>
+  <li>Options to run <strong>self-managed</strong>, or on the desktop; reliance on a service provider is optional.</li>
+  <li>Support for spreadsheet-like <strong>formulas</strong>, to extend use cases and empower users.</li>
+  <li>Extensibility via <strong>APIs</strong> and other integration points.</li>
+  <li>Data is <strong>portable</strong>, allowing lossless export in a well-supported format, and common export/import options.</li>
+  <li>Comprehensive <strong>documentation</strong> and learning materials.</li>
+  <li>
+<strong>High quality</strong> implementation, well-tested, with a focus on reliability and performance.</li>
+</ol>
+
+<h2 id="python-and-excel-formulas">Python and Excel Formulas</h2>
+
+<p>From the <a href="https://support.getgrist.com/functions/" target="_blank">function reference</a>:</p>
+
+<blockquote>
+  <p>Grist formulas support most Excel functions, as well as the Python programming language.</p>
+
+  <p>The table below lists Grist-specific functions, and the suite of the included Excel-like functions. In addition, the entire <a href="https://docs.python.org/3/library/" target="_blank">Python standard library</a> is available. For more about using formulas in Grist, see <a href="https://support.getgrist.com/formulas/" target="_blank">Intro to Formulas</a>.</p>
+
+  <p><a href="https://support.getgrist.com/python/" target="_blank">Grist uses Python (version 3.11)</a> for formulas. You can use nearly all features of Python (see <a href="https://docs.python.org/3.11/" target="_blank">Python documentation</a>).</p>
+</blockquote>
+
+<p>Also a new <a href="https://support.getgrist.com/ai-assistant/" target="_blank">AI Formula assistant</a>.</p>
+<h2 id="grist-labs">Grist Labs</h2>
+
+<p>From Github README:</p>
+
+<blockquote>
+  <p>The <code class="language-plaintext highlighter-rouge">grist-core</code> repo is the heart of Grist, including the hosted services offered by <a href="https://getgrist.com/" target="_blank">Grist Labs</a>, an NYC-based company 🇺🇸 and Grist's main developer. The French government agency <a href="https://donnees.incubateur.anct.gouv.fr/toolbox/grist" target="_blank">ANCT Données et Territoires</a> 🇫🇷 has also made significant contributions to the codebase.</p>
+</blockquote>
+
+<p>I've captured more on the <a class="internal-link" href="/notes/grist-labs/">Grist Labs</a> – a very inspiring team / company. They</p>
+
+</body></html>
+    </content>
+
+    <side style="font-size: 0.9em">
+      <h3 style="margin-bottom: 1em">Notes mentioning this note</h3>
+      
+      <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
+      
+        <div class="backlink-box">
+        <a class="internal-link" href="/notes/grist-labs/">Grist labs</a><br>
+        <div style="font-size: 0.9em">Grist Labs is a software company. We care about software because it matters inordinately for today’s world — for productivity,...</div>
+        </div>
+      
+      
+      </div>
+      
+    </side>
+  </div>
+</article>
+</main>
+      <footer><a href="/blog/" class="internal-link">Blog</a> | <a href="/journal/" class="internal-link">Journal</a> | <a href="/notes/" class="internal-link">Notes</a> | <a href="/feeds/" class="internal-link">Feeds</a> | 👉&nbsp;Social Profiles&nbsp;<a href='https://bmann.ca' title='Links to all of my social profiles and accounts'>bmann.ca</a> </footer>
+    </div>
+
+    <!-- That file is not particularly elegant. This will need a refactor at some point. -->
+<style>
+
+  
+
+  #tooltip-wrapper {
+    background: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    font-size: 0.8em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 100ms;
+  }
+
+  #tooltip-wrapper:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+		background-image: linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, 1) 90%);
+		width: 100%;
+		height: 75px;
+  }
+</style>
+
+<div style="opacity: 0; display: none;" id='tooltip-wrapper'>
+  <div id='tooltip-content'>
+  </div>
+</div>
+
+<iframe style="display: none; height: 0; width: 0;" id='link-preview-iframe' src="">
+</iframe>
+
+<script>
+  var opacityTimeout;
+  var contentTimeout;
+  var transitionDurationMs = 100;
+
+  var iframe = document.getElementById('link-preview-iframe')
+  var tooltipWrapper = document.getElementById('tooltip-wrapper')
+  var tooltipContent = document.getElementById('tooltip-content')
+
+  var linkHistories = {};
+
+  function hideTooltip() {
+    opacityTimeout = setTimeout(function() {
+      tooltipWrapper.style.opacity = 0;
+      contentTimeout = setTimeout(function() {
+        tooltipContent.innerHTML = '';
+        tooltipWrapper.style.display = 'none';
+      }, transitionDurationMs + 1);
+    }, transitionDurationMs)
+  }
+
+  function showTooltip(event) {
+    var elem = event.target;
+    var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
+    var top = window.pageYOffset || document.documentElement.scrollTop
+
+    if (event.target.host === window.location.host) {
+      if (!linkHistories[event.target.href]) {
+        iframe.src = event.target.href
+        iframe.onload = function() {
+          tooltipContentHtml = ''
+          tooltipContentHtml += '<div style="font-weight: bold;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
+          tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
+
+          tooltipContent.innerHTML = tooltipContentHtml
+          linkHistories[event.target.href] = tooltipContentHtml
+
+          tooltipWrapper.style.display = 'block';
+          setTimeout(function() {
+            tooltipWrapper.style.opacity = 1;
+          }, 1)
+        } 
+      } else {
+        tooltipContent.innerHTML = linkHistories[event.target.href]
+        tooltipWrapper.style.display = 'block';
+        setTimeout(function() {
+          tooltipWrapper.style.opacity = 1;
+        }, 1)
+      }
+
+
+      tooltipWrapper.style.left = elem_props.left - (tooltipWrapper.offsetWidth / 2) + (elem_props.width / 2) + "px";
+      if ((window.innerHeight - elem_props.top) < (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top - tooltipWrapper.offsetHeight - 10 + "px";
+      } else if ((window.innerHeight - elem_props.top) > (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top + 35 + "px";
+      }
+
+      if ((elem_props.left + (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = "10px";
+      } else if ((document.body.clientWidth - elem_props.left - (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = document.body.clientWidth - tooltipWrapper.offsetWidth - 20 + "px";
+      }
+    }
+  }
+
+  function setupListeners(linkElement) {
+    linkElement.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+      showTooltip(event);
+    });
+
+    tooltipWrapper.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+    });
+  }
+
+  document.querySelectorAll('content a').forEach(setupListeners);
+</script>
+
+    <script
+  src="https://unpkg.com/littlefoot/dist/littlefoot.js"
+  type="application/javascript"
+></script>
+<script type="application/javascript">
+  littlefoot.littlefoot() // Pass any littlefoot settings here.
+</script>
+  </body>
+</html>

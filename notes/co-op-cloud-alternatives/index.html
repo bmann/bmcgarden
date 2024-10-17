@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <link rel="canonical" href="https://bmannconsulting.com/notes/co-op-cloud-alternatives/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="[[Co-op Cloud]] has done a great job of listing out their opinions of the pros / cons of other server / app management software.Copy / pasted from their FAQ ...">
+  <meta property="og:site_name" content="Boris Mann's Homepage">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="alternate" type="application/atom+xml" title="Blog Feed for bmannconsulting.com" href="https://bmannconsulting.com/blog.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Journal Feed for bmannconsulting.com" href="https://bmannconsulting.com/journal.xml" />
+  
+  
+  <link rel="stylesheet" href="https://unpkg.com/littlefoot/dist/littlefoot.css" />
+
+  
+  <meta property="og:description" content="[[Co-op Cloud]] has done a great job of listing out their opinions of the pros / cons of other server / app management software.Copy / pasted from their FAQ ..."/>
+  
+
+  
+  <meta property="og:title" content="Co Op cloud alternatives">
+  <meta property="og:type" content="article">
+  
+  
+  
+  <meta property="article:published_time" content="2024-10-16T22:19:08-07:00">
+  <meta property="article:author" content="https://bmannconsulting.com/">
+  
+
+  <meta property="og:url" content="https://bmannconsulting.com/notes/co-op-cloud-alternatives/" />
+
+  
+  <meta property="og:image" content="https://bmannconsulting.com/assets/bmann_hair_orange_256x256.png">
+  
+
+
+  <!-- Open Frames Default -->
+  
+  <meta property="fc:frame:image" content="https://bmannconsulting.com/assets/bmann_hair_orange_256x256.png">
+  <meta property="fc:frame:image:aspect_ratio" content="1:1">
+  
+  <meta property="fc:frame" content="vNext">
+  
+  <meta property="fc:frame:button:1" content="🌱 Home">
+  <meta property="fc:frame:button:1:action" content="link">
+  <meta property="fc:frame:button:1:target" content="https://bmannconsulting.com">
+  
+  <meta property="fc:frame:button:2" content="🔖 Explore">
+  <meta property="fc:frame:button:2:action" content="link">
+  <meta property="fc:frame:button:2:target" content="https://bmannconsulting.com/notes/">
+  <meta property="fc:frame:button:3" content="💰 Drips">
+  <meta property="fc:frame:button:3:action" content="link">
+  <meta property="fc:frame:button:3:target" content="https://www.drips.network/app/bmann.eth">
+
+  <title>
+    
+      Co Op cloud alternatives &mdash; Boris Mann's Homepage
+    
+  </title>
+</head>
+
+  <body>
+    <nav><div>
+    <a class="internal-link" href="/"><b>Boris Mann's Homepage</b></a>
+</div>
+</nav>
+    <div class="wrapper">
+      <main><article>
+  <div>
+    <h1 style="text-transform:capitalize;">Co Op cloud alternatives</h1>
+    
+
+    
+    <time datetime="2024-10-16T22:18:40-07:00">
+      Last updated on October 16, 2024
+    </time>
+    
+
+    <ul>
+    
+    </ul>
+  </div>
+
+  <div id="notes-entry-container">
+    <content>
+      <html><body>
+<p><a class="internal-link" href="/notes/co-op-cloud/">Co-op Cloud</a> has done a great job of listing out their opinions of the pros / cons of other server / app management software.</p>
+
+<p>Copy / pasted from their <a href="https://docs.coopcloud.tech/intro/faq/" target="_blank">FAQ</a> so I can easily reference.</p>
+<h2 id="cloudron"><a class="internal-link" href="/notes/cloudron/">Cloudron</a></h2>
+
+<h3 id="pros">Pros</h3>
+
+<ul>
+  <li>👍 Decent web interface for app, domain &amp; user management.</li>
+  <li>👍 Large library of apps.</li>
+  <li>👍 Built-in SSO using LDAP, which is compatible with more apps and often has a better user interface than OAuth.</li>
+  <li>👍 Apps are actively maintained by the Cloudron team.
+    <h3 id="cons">Cons</h3>
+  </li>
+  <li>👎 Moving away from open source. The core is now proprietary software.</li>
+  <li>👎 Libre tier has a single app limit.</li>
+  <li>👎 Based on Docker images, not stacks, so multi-process apps (e.g. parsoid visual editor for Mediawiki) are a non-starter.</li>
+  <li>👎 Difficult to extend apps.</li>
+  <li>👎 Only supported on Ubuntu LTS.</li>
+  <li>👎 Upstream libre software communities aren't involved in packaging.</li>
+  <li>👎 Limited to vertical scaling.</li>
+  <li>👎 Tension between needs of hosting provider and non-technical user.</li>
+  <li>👎 LDAP introduces security problems - one vulnerable app can expose a user's password for all apps.</li>
+  <li>👎 Bit of a black box</li>
+</ul>
+
+<p><em><strong>@boris commentary:</strong> do I wish that Cloudron were fully open source? Yes. But I also like that the team has a sustainable business where they keep all of these apps packaged and updated over time! They mention the SSO model here as LDAP, but in fact it's OIDC now.</em></p>
+
+<h2 id="yunohost"><a href="https://notes.bmannconsulting.com/#/page/Yunohost" class="noteslink" target="_blank">Yunohost</a></h2>
+
+<h3 id="pros-1">Pros</h3>
+
+<ul>
+  <li>👍 Lovely web interface for app, domain &amp; user management.</li>
+  <li>👍 Bigger library of apps.</li>
+  <li>👍 Awesome backup / deploy / restore continuous integration testing.</li>
+  <li>👍 Supports hosting apps in subdirectories as well as subdomains.</li>
+  <li>👍 Doesn't require a public-facing IP.</li>
+  <li>👍 Supports system-wide mutualisation of resources for apps (e.g. sharing databases by default)
+    <h3 id="cons-1">Cons</h3>
+  </li>
+  <li>👎 Upstream libre software communities aren't involved in packaging.</li>
+  <li>👎 Uninstalling apps leaves growing cruft.</li>
+  <li>👎 Limited to vertical scaling.</li>
+  <li>👎 Not intended for use by hosting providers.</li>
+</ul>
+
+<p><em><strong>@boris commentary:</strong> I took a look at Yunohost and found it scary from a security perspective. Packaging is a pile of bash scripts. More apps but they're mostly undermaintained</em></p>
+<h2 id="caprover"><a href="https://notes.bmannconsulting.com/#/page/Caprover" class="noteslink" target="_blank">Caprover</a></h2>
+
+<h3 id="pros-2">Pros</h3>
+
+<ul>
+  <li>👍 Bigger library of apps.</li>
+  <li>👍 Easy set-up using a DigitalOcean one-click app.</li>
+  <li>👍 Works without a domain name or a public IP, in non-HTTPS mode (good for homeservers).</li>
+  <li>👍 Deploy any app with a <code class="language-plaintext highlighter-rouge">docker-compose.yml</code> file as a "One Click App" via the web interface.</li>
+  <li>👍 Multi-node (multi-server) set-up works by default.
+    <h3 id="cons-2">Cons</h3>
+  </li>
+  <li>👎 Single-file app definition format, difficult to tweak using entrypoint scripts.</li>
+  <li>👎 Nginx instead of Traefik for load-balancing.</li>
+  <li>👎 Command-line client requires NodeJS / <code class="language-plaintext highlighter-rouge">npm</code>.</li>
+  <li>👎 <a href="https://github.com/caprover/caprover/issues/28" target="_blank">Requires 512MB RAM for a single app</a>.</li>
+  <li>👎 <a href="https://caprover.com/docs/backup-and-restore.html" target="_blank">Backup/restore is "experimental"</a>, and doesn't currently help with backing up Docker volumes.</li>
+  <li>👎 Exposes its bespoke management interface to the internet via HTTPS by default.</li>
+</ul>
+
+<h2 id="ansible"><a href="https://notes.bmannconsulting.com/#/page/Ansible" class="noteslink" target="_blank">Ansible</a></h2>
+
+<h3 id="pros-3">Pros</h3>
+
+<ul>
+  <li>👍 Includes server creation and bootstrapping.
+    <h3 id="cons-3">Cons</h3>
+  </li>
+  <li>👎 Upstream libre software communities aren't publishing Ansible roles.</li>
+  <li>👎 Lots of manual work involved in things like app isolation, backups, updates.</li>
+</ul>
+
+<h2 id="kubernetes"><a href="https://notes.bmannconsulting.com/#/page/Kubernetes" class="noteslink" target="_blank">Kubernetes</a></h2>
+
+<h3 id="pros-4">Pros</h3>
+
+<ul>
+  <li>👍 Helm charts are available for some key apps already.</li>
+  <li>👍 Scale all the things.
+    <h3 id="cons-4">Cons</h3>
+  </li>
+  <li>👎 Too big – requires 3rd party tools to run a single-node instance.</li>
+  <li>👎 Not suitable for a small to mid size hosting provider.</li>
+</ul>
+
+<h2 id="docker-compose"><a href="https://notes.bmannconsulting.com/#/page/Docker-compose" class="noteslink" target="_blank">Docker-compose</a></h2>
+
+<h3 id="pros-5">Pros</h3>
+
+<ul>
+  <li>👍 Quick to set up and familiar for many developers.
+    <h3 id="cons-5">Cons</h3>
+  </li>
+  <li>👎 Manual work required for process monitoring.</li>
+  <li>👎 Secret storage not available yet.</li>
+  <li>👎 <a href="https://github.com/BretFisher/ama/issues/8#issuecomment-367575011" target="_blank">Swarm is the new best practice</a>.</li>
+</ul>
+
+<hr>
+
+<p>I'll skip the the "doing it manually" old school version of server + app maintenance.</p>
+</body></html>
+    </content>
+
+    <side style="font-size: 0.9em">
+      <h3 style="margin-bottom: 1em">Notes mentioning this note</h3>
+      
+      <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
+      
+        <div class="backlink-box">
+        <a class="internal-link" href="/notes/co-op-cloud/">Co Op cloud</a><br>
+        <div style="font-size: 0.9em">Website: https://coopcloud.tech Docs: https://docs.coopcloud.tech Co-op Cloud aims to make hosting libre software apps simple for small service providers such as...</div>
+        </div>
+      
+      
+      </div>
+      
+    </side>
+  </div>
+</article>
+</main>
+      <footer><a href="/blog/" class="internal-link">Blog</a> | <a href="/journal/" class="internal-link">Journal</a> | <a href="/notes/" class="internal-link">Notes</a> | <a href="/feeds/" class="internal-link">Feeds</a> | 👉&nbsp;Social Profiles&nbsp;<a href='https://bmann.ca' title='Links to all of my social profiles and accounts'>bmann.ca</a> </footer>
+    </div>
+
+    <!-- That file is not particularly elegant. This will need a refactor at some point. -->
+<style>
+
+  
+
+  #tooltip-wrapper {
+    background: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    font-size: 0.8em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 100ms;
+  }
+
+  #tooltip-wrapper:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+		background-image: linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, 1) 90%);
+		width: 100%;
+		height: 75px;
+  }
+</style>
+
+<div style="opacity: 0; display: none;" id='tooltip-wrapper'>
+  <div id='tooltip-content'>
+  </div>
+</div>
+
+<iframe style="display: none; height: 0; width: 0;" id='link-preview-iframe' src="">
+</iframe>
+
+<script>
+  var opacityTimeout;
+  var contentTimeout;
+  var transitionDurationMs = 100;
+
+  var iframe = document.getElementById('link-preview-iframe')
+  var tooltipWrapper = document.getElementById('tooltip-wrapper')
+  var tooltipContent = document.getElementById('tooltip-content')
+
+  var linkHistories = {};
+
+  function hideTooltip() {
+    opacityTimeout = setTimeout(function() {
+      tooltipWrapper.style.opacity = 0;
+      contentTimeout = setTimeout(function() {
+        tooltipContent.innerHTML = '';
+        tooltipWrapper.style.display = 'none';
+      }, transitionDurationMs + 1);
+    }, transitionDurationMs)
+  }
+
+  function showTooltip(event) {
+    var elem = event.target;
+    var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
+    var top = window.pageYOffset || document.documentElement.scrollTop
+
+    if (event.target.host === window.location.host) {
+      if (!linkHistories[event.target.href]) {
+        iframe.src = event.target.href
+        iframe.onload = function() {
+          tooltipContentHtml = ''
+          tooltipContentHtml += '<div style="font-weight: bold;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
+          tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
+
+          tooltipContent.innerHTML = tooltipContentHtml
+          linkHistories[event.target.href] = tooltipContentHtml
+
+          tooltipWrapper.style.display = 'block';
+          setTimeout(function() {
+            tooltipWrapper.style.opacity = 1;
+          }, 1)
+        } 
+      } else {
+        tooltipContent.innerHTML = linkHistories[event.target.href]
+        tooltipWrapper.style.display = 'block';
+        setTimeout(function() {
+          tooltipWrapper.style.opacity = 1;
+        }, 1)
+      }
+
+
+      tooltipWrapper.style.left = elem_props.left - (tooltipWrapper.offsetWidth / 2) + (elem_props.width / 2) + "px";
+      if ((window.innerHeight - elem_props.top) < (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top - tooltipWrapper.offsetHeight - 10 + "px";
+      } else if ((window.innerHeight - elem_props.top) > (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top + 35 + "px";
+      }
+
+      if ((elem_props.left + (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = "10px";
+      } else if ((document.body.clientWidth - elem_props.left - (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = document.body.clientWidth - tooltipWrapper.offsetWidth - 20 + "px";
+      }
+    }
+  }
+
+  function setupListeners(linkElement) {
+    linkElement.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+      showTooltip(event);
+    });
+
+    tooltipWrapper.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+    });
+  }
+
+  document.querySelectorAll('content a').forEach(setupListeners);
+</script>
+
+    <script
+  src="https://unpkg.com/littlefoot/dist/littlefoot.js"
+  type="application/javascript"
+></script>
+<script type="application/javascript">
+  littlefoot.littlefoot() // Pass any littlefoot settings here.
+</script>
+  </body>
+</html>

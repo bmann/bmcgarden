@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+>
+	<channel>
+		<title>Boris Mann&apos;s Homepage - Journal Feed</title>
+		<description>A journal feed built for Fedica to cross-post, Mastodon flavoured with hashtags</description>		
+		<link>https://bmannconsulting.com</link>
+		<atom:link href="https://bmannconsulting.com/fedica-hashtags.xml" rel="self" type="application/rss+xml" />
+		<lastBuildDate>Wed, 16 Oct 2024 22:19:08 -0700</lastBuildDate>
+		
+		
+			<item>
+				<dc:creator>Boris Mann</dc:creator>
+				
+				
+				
+				<description>&lt;p&gt;[[Frontpage]] is a link aggregator (think Hacker News) defined as a new Lexicon data type on [[ATProtocol]]. It’s out of invite only access, and you can use your existing account to login.&lt;/p&gt;
+</description>
+				
+				<link>https://frontpage.fyi</link>
+				
+				
+				<pubDate>Wed, 16 Oct 2024 13:55:46 -0700</pubDate>
+				<guid isPermaLink="true">https://bmannconsulting.com/journal/2024-10-16-1355/</guid>
+			</item>
+		
+			<item>
+				<dc:creator>Boris Mann</dc:creator>
+				
+				
+				
+				<description>&lt;p&gt;&lt;a href=&quot;https://ia.net/topics/our-android-app-is-frozen-in-carbonite&quot;&gt;iA Writer is cancelling their Android app&lt;/a&gt; because it seems impossible to comply with Google Drive connection rules.&lt;/p&gt;
+
+&lt;p&gt;I see so clearly that we need a user-owned file sync protocol.&lt;/p&gt;
+</description>
+				
+				<link>https://ia.net/topics/our-android-app-is-frozen-in-carbonite</link>
+				
+				
+				<pubDate>Sat, 28 Sep 2024 08:31:52 -0700</pubDate>
+				<guid isPermaLink="true">https://bmannconsulting.com/journal/2024-09-28-0831/</guid>
+			</item>
+		
+			<item>
+				<dc:creator>Boris Mann</dc:creator>
+				
+				
+				
+				<description>&lt;p&gt;[[Jesse Rodgers]], who is helping run [[Startup Barn]] in Waterloo, &lt;a href=&quot;https://whoyoucallingajesse.com/mummy-where-do-baby-startups-come-from-c95b07ac7c16&quot;&gt;makes a pitch for getting back to basics&lt;/a&gt; with the term [[Startup]] — just build:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&quot;Startups, at their core, come from people creating something of value for others. They are born from the act of building, not from the rituals of the startup religions or the blessings of the Venture Capitalists.&quot;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+				
+				<link>https://whoyoucallingajesse.com/mummy-where-do-baby-startups-come-from-c95b07ac7c16</link>
+				
+				
+				<pubDate>Thu, 26 Sep 2024 08:58:04 -0700</pubDate>
+				<guid isPermaLink="true">https://bmannconsulting.com/journal/2024-09-26-0858/</guid>
+			</item>
+		
+			<item>
+				<dc:creator>Boris Mann</dc:creator>
+				
+				
+				
+				<description>&lt;p&gt;The [[Bluesky]] team put together a simple Hello World app to showcase [[ATProtocol]] called &lt;a href=&quot;https://github.com/bluesky-social/statusphere-example-app&quot;&gt;Statusphere&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;It showcases custom data types (Lexicons) as well as OAuth, and runs locally.&lt;/p&gt;
+</description>
+				
+				<link>https://github.com/bluesky-social/statusphere-example-app</link>
+				
+				
+				<pubDate>Tue, 24 Sep 2024 22:31:07 -0700</pubDate>
+				<guid isPermaLink="true">https://bmannconsulting.com/journal/2024-09-24-2231/</guid>
+			</item>
+		
+			<item>
+				<dc:creator>Boris Mann</dc:creator>
+				
+				
+				
+				<description>&lt;p&gt;Wired article on [[Apple Intelligence]] and [[Private Cloud Compute]]: &lt;a href=&quot;https://www.wired.com/story/apple-private-cloud-compute-ai/&quot;&gt;Apple Intelligence Promises Better AI Privacy. Here’s How It Actually Works&lt;/a&gt;&lt;/p&gt;
+</description>
+				
+				<link>https://www.wired.com/story/apple-private-cloud-compute-ai/</link>
+				
+				
+				<pubDate>Wed, 18 Sep 2024 22:46:19 -0700</pubDate>
+				<guid isPermaLink="true">https://bmannconsulting.com/journal/2024-09-18-2246/</guid>
+			</item>
+		
+			<item>
+				<dc:creator>Boris Mann</dc:creator>
+				
+				
+				
+				<description>&lt;p&gt;[[Brad Neuburg]] &lt;a href=&quot;https://x.com/bradneuberg/status/1835680235049869495&quot;&gt;on Y Combinator&lt;/a&gt; “YC model doesn’t work for (deep tech) startups, and is focused on the last tech war”.&lt;/p&gt;
+
+&lt;p&gt;This is the same for all these accelerator programs. See [[When Tailwinds Vanish]] for more.&lt;/p&gt;
+</description>
+				
+				<link>https://x.com/bradneuberg/status/1835680235049869495</link>
+				
+				
+				<pubDate>Mon, 16 Sep 2024 19:27:26 -0700</pubDate>
+				<guid isPermaLink="true">https://bmannconsulting.com/journal/2024-09-16-1927/</guid>
+			</item>
+		
+			<item>
+				<dc:creator>Boris Mann</dc:creator>
+				
+				
+				
+				<description>&lt;p&gt;John from [[Ascent]] is in Vancouver this week, holding office hours at [[Z-Space]]. If you&apos;re building a startup, especially company formation or raising, come through and meet with him.&lt;/p&gt;
+</description>
+				
+				<link>https://calendly.com/ascent_hi</link>
+				
+				
+				<pubDate>Mon, 09 Sep 2024 11:01:12 -0700</pubDate>
+				<guid isPermaLink="true">https://bmannconsulting.com/journal/2024-09-09-1101/</guid>
+			</item>
+		
+			<item>
+				<dc:creator>Boris Mann</dc:creator>
+				
+				
+				
+				<description>&lt;p&gt;[[Ventoy]] is an open source tool to create bootable USB drives.&lt;/p&gt;
+
+&lt;p&gt;via &lt;a href=&quot;https://whtwnd.com/alice.bsky.sh/3l3oje3n5la24&quot;&gt;alice&lt;/a&gt;&lt;/p&gt;
+</description>
+				
+				<link>https://www.ventoy.net/</link>
+				
+				
+				<pubDate>Mon, 09 Sep 2024 07:07:46 -0700</pubDate>
+				<guid isPermaLink="true">https://bmannconsulting.com/journal/2024-09-09-0707/</guid>
+			</item>
+		
+			<item>
+				<dc:creator>Boris Mann</dc:creator>
+				
+				
+				
+				<description>&lt;p&gt;[[Blaine]] told me he built &lt;a href=&quot;https://www.slocanhelps.org/&quot;&gt;Slocan Helps&lt;/a&gt; as a front end on top of [[Grist]] after my recommendation and it worked out well.&lt;/p&gt;
+
+&lt;p&gt;I&apos;m looking for other cool Grist projects – got any to share?&lt;/p&gt;
+</description>
+				
+				<link>https://bmannconsulting.com/journal/2024-08-31-1555/</link>
+				
+				
+				<pubDate>Sat, 31 Aug 2024 15:55:19 -0700</pubDate>
+				<guid isPermaLink="true">https://bmannconsulting.com/journal/2024-08-31-1555/</guid>
+			</item>
+		
+			<item>
+				<dc:creator>Boris Mann</dc:creator>
+				
+				
+				
+				<description>&lt;p&gt;I use [[Obsidian]] as an editor for my website, and git for sync between devices &amp;amp; publishing.&lt;/p&gt;
+
+&lt;p&gt;On my [[Daylight Computer]] which runs Android, I haven’t managed to get git setup.&lt;/p&gt;
+
+&lt;p&gt;What Obsidian plugins should I look at to do my own sync?&lt;/p&gt;
+</description>
+				
+				<link>https://bmannconsulting.com/journal/2024-08-30-0753/</link>
+				
+				
+				<pubDate>Fri, 30 Aug 2024 07:53:21 -0700</pubDate>
+				<guid isPermaLink="true">https://bmannconsulting.com/journal/2024-08-30-0753/</guid>
+			</item>
+		
+			<item>
+				<dc:creator>Boris Mann</dc:creator>
+				
+				
+				
+				<description>&lt;p&gt;[[Automattic]] is planning to migrate 500M+ Tumblr blogs to WordPress, with the nuance that the front end shouldn’t change (and they’re looking to hire)&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;We’re talking about running Tumblr’s backend on WordPress. You won’t even notice a difference from the outside.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+				
+				<link>https://automattic.com/2024/08/27/shipping-tumblr-and-wordpress/</link>
+				
+				
+				<pubDate>Wed, 28 Aug 2024 22:40:28 -0700</pubDate>
+				<guid isPermaLink="true">https://bmannconsulting.com/journal/2024-08-28-2240/</guid>
+			</item>
+		
+			<item>
+				<dc:creator>Boris Mann</dc:creator>
+				
+				
+				
+				<description>&lt;p&gt;I put together a new site [[ATProtocol Dev]] where I’m going to be hosting tech talks and resources about open social protocols.&lt;/p&gt;
+
+&lt;p&gt;My first set of talks will look at emerging [[Proto Apps]] that go beyond microblogging.&lt;/p&gt;
+</description>
+				
+				<link>https://atprotocol.dev</link>
+				
+				
+				<pubDate>Tue, 27 Aug 2024 06:57:40 -0700</pubDate>
+				<guid isPermaLink="true">https://bmannconsulting.com/journal/2024-08-27-0657/</guid>
+			</item>
+		
+			<item>
+				<dc:creator>Boris Mann</dc:creator>
+				
+				
+				
+				<description>&lt;p&gt;The [[FeathersJS]] team wrote up a trip report of their [[DWeb Camp]] experience, as well as David’s presentation at the [[Causal Islands]] Tiny Talks in SF.&lt;/p&gt;
+</description>
+				
+				<link>https://feathers.cloud/blog/posts/2024-08-19-dwebcamp-2024</link>
+				
+				
+				<pubDate>Tue, 20 Aug 2024 10:24:10 -0700</pubDate>
+				<guid isPermaLink="true">https://bmannconsulting.com/journal/2024-08-20-1024/</guid>
+			</item>
+		
+			<item>
+				<dc:creator>Boris Mann</dc:creator>
+				
+				
+				
+				<description>&lt;p&gt;Signed up for [[Spaceship]], a new domain registrar that is in fact [[Namecheap]], but starting over with a new brand and new codebase.&lt;/p&gt;
+</description>
+				
+				<link>https://spaceship.com</link>
+				
+				
+				<pubDate>Sun, 18 Aug 2024 13:03:06 -0700</pubDate>
+				<guid isPermaLink="true">https://bmannconsulting.com/journal/2024-08-18-1303/</guid>
+			</item>
+		
+			<item>
+				<dc:creator>Boris Mann</dc:creator>
+				
+				
+				
+				<description>&lt;p&gt;IndieSearch is a prototype of “decentralized and local-first compatible search”, powered by &lt;a href=&quot;https://pagefind.app/&quot;&gt;Pagefind&lt;/a&gt;. Seen via &lt;a href=&quot;https://alexschroeder.ch/view/2024-08-18-indie-search&quot;&gt;Alex Schroeder’s installation&lt;/a&gt;. I’ll see about adding it to my site.&lt;/p&gt;
+</description>
+				
+				<link>https://www.byjp.me/posts/indiesearch/</link>
+				
+				
+				<pubDate>Sun, 18 Aug 2024 09:34:21 -0700</pubDate>
+				<guid isPermaLink="true">https://bmannconsulting.com/journal/2024-08-18-0934/</guid>
+			</item>
+		
+			<item>
+				<dc:creator>Boris Mann</dc:creator>
+				
+				
+				
+				<description>&lt;p&gt;Deobald: [[Third Wave (Commercial) Open Source]]&lt;/p&gt;
+
+&lt;p&gt;An attempted definition of three waves of (commercial) open source. It specifically sets aside ideology &amp;amp; peer production and focuses on licensing and business model.&lt;/p&gt;
+
+&lt;p&gt;And then highlights [[Local First]] as the “new ideals”.&lt;/p&gt;
+
+&lt;p&gt;I’d also highlight the [[DWeb]] Principles here.&lt;/p&gt;
+
+ #opensource</description>
+				
+				<link>https://www.deobald.ca/essays/2024-08-13-third-wave-commercial-open-source/</link>
+				
+				
+				<pubDate>Sun, 18 Aug 2024 08:46:47 -0700</pubDate>
+				<guid isPermaLink="true">https://bmannconsulting.com/journal/2024-08-18-0846/</guid>
+			</item>
+		
+			<item>
+				<dc:creator>Boris Mann</dc:creator>
+				
+				
+				
+				<description>&lt;p&gt;I&apos;m so stoked to be onboarding to [[USB Club]]. So many delightful touches, audio, words.&lt;/p&gt;
+</description>
+				
+				<link>https://usb.club</link>
+				
+				
+				<pubDate>Tue, 13 Aug 2024 11:11:47 -0700</pubDate>
+				<guid isPermaLink="true">https://bmannconsulting.com/journal/2024-08-13-1111/</guid>
+			</item>
+		
+			<item>
+				<dc:creator>Boris Mann</dc:creator>
+				
+				
+				
+				<description>&lt;p&gt;I set up a QR code with my vCard info in it for [[DWeb Camp]]. [[Go QR]] is the generator I recommend.&lt;/p&gt;
+</description>
+				
+				<link>https://goqr.me/</link>
+				
+				
+				<pubDate>Mon, 05 Aug 2024 10:17:08 -0700</pubDate>
+				<guid isPermaLink="true">https://bmannconsulting.com/journal/2024-08-05-1017/</guid>
+			</item>
+		
+			<item>
+				<dc:creator>Boris Mann</dc:creator>
+				
+				
+				
+				<description>&lt;p&gt;Friend [[Ellie]] is selling [14TB hard drives with a USB adapter], pre-loaded with TBs of LLM models.&lt;/p&gt;
+ #hardware</description>
+				
+				<link>https://computer.supply/products/16tb-drive-w-assorted-large-language-model-weights</link>
+				
+				
+				<pubDate>Mon, 05 Aug 2024 10:11:16 -0700</pubDate>
+				<guid isPermaLink="true">https://bmannconsulting.com/journal/2024-08-05-1011/</guid>
+			</item>
+		
+			<item>
+				<dc:creator>Boris Mann</dc:creator>
+				
+				
+				
+				<description>&lt;p&gt;Heading to the airport to fly down to SFO. Start of my first [[DWeb Camp]] experience, including facilitating the unconference-style [[Emergent Day]].&lt;/p&gt;
+</description>
+				
+				<link>https://bmannconsulting.com/journal/2024-08-04-1046/</link>
+				
+				
+				<pubDate>Sun, 04 Aug 2024 10:46:53 -0700</pubDate>
+				<guid isPermaLink="true">https://bmannconsulting.com/journal/2024-08-04-1046/</guid>
+			</item>
+		
+	</channel>
+</rss>

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <link rel="canonical" href="https://bmannconsulting.com/notes/cloudron/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cloudron is a complete solution for running apps on your own server.It fits into a category of [[selfhosting]] – you provide the server either at home or in ...">
+  <meta property="og:site_name" content="Boris Mann's Homepage">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="alternate" type="application/atom+xml" title="Blog Feed for bmannconsulting.com" href="https://bmannconsulting.com/blog.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Journal Feed for bmannconsulting.com" href="https://bmannconsulting.com/journal.xml" />
+  
+  
+  <link rel="stylesheet" href="https://unpkg.com/littlefoot/dist/littlefoot.css" />
+
+  
+  <meta property="og:description" content="Cloudron is a complete solution for running apps on your own server.It fits into a category of [[selfhosting]] – you provide the server either at home or in ..."/>
+  
+
+  
+  <meta property="og:title" content="Cloudron">
+  <meta property="og:type" content="article">
+  
+  
+  
+  <meta property="article:published_time" content="2024-10-16T22:19:08-07:00">
+  <meta property="article:author" content="https://bmannconsulting.com/">
+  
+
+  <meta property="og:url" content="https://bmannconsulting.com/notes/cloudron/" />
+
+  
+  <meta property="og:image" content="https://bmannconsulting.com/assets/bmann_hair_orange_256x256.png">
+  
+
+
+  <!-- Open Frames Default -->
+  
+  <meta property="fc:frame:image" content="https://bmannconsulting.com/assets/bmann_hair_orange_256x256.png">
+  <meta property="fc:frame:image:aspect_ratio" content="1:1">
+  
+  <meta property="fc:frame" content="vNext">
+  
+  <meta property="fc:frame:button:1" content="🌱 Home">
+  <meta property="fc:frame:button:1:action" content="link">
+  <meta property="fc:frame:button:1:target" content="https://bmannconsulting.com">
+  
+  <meta property="fc:frame:button:2" content="🔖 Explore">
+  <meta property="fc:frame:button:2:action" content="link">
+  <meta property="fc:frame:button:2:target" content="https://bmannconsulting.com/notes/">
+  <meta property="fc:frame:button:3" content="💰 Drips">
+  <meta property="fc:frame:button:3:action" content="link">
+  <meta property="fc:frame:button:3:target" content="https://www.drips.network/app/bmann.eth">
+
+  <title>
+    
+      Cloudron &mdash; Boris Mann's Homepage
+    
+  </title>
+</head>
+
+  <body>
+    <nav><div>
+    <a class="internal-link" href="/"><b>Boris Mann's Homepage</b></a>
+</div>
+</nav>
+    <div class="wrapper">
+      <main><article>
+  <div>
+    <h1 style="text-transform:capitalize;">Cloudron</h1>
+    
+
+    
+    <time datetime="2024-10-16T22:18:40-07:00">
+      Last updated on October 16, 2024
+    </time>
+    
+
+    <ul>
+    
+    </ul>
+  </div>
+
+  <div id="notes-entry-container">
+    <content>
+      <html><body>
+<p><a href="https://www.cloudron.io/?refcode=b90d0ee382ac47ba" target="_blank">Cloudron</a> is a complete solution for running apps on your own server.</p>
+
+<p>It fits into a category of <a href="https://notes.bmannconsulting.com/#/page/selfhosting" class="noteslink" target="_blank">selfhosting</a> – you provide the server either at home or in the cloud, and  Cloudron helps you manage the entire server including installing and updating apps, managing DNS, running email, backups, operating system updates, user accounts, and so on.</p>
+
+<p>The <a href="https://www.cloudron.io/about.html" target="_blank">about page</a> also uses the term <a href="https://notes.bmannconsulting.com/#/page/private%20cloud" class="noteslink" target="_blank">private cloud</a>.</p>
+
+<p>It's designed to run on Ubuntu LTS versions. The server interface will take care of keeping the Ubuntu operating system packages maintained.</p>
+
+<p>I run <a class="internal-link" href="/notes/commons-computer/">Commons Computer</a> as my personal Cloudron instance.</p>
+<h2 id="license">License</h2>
+<p>The Cloudron code itself is source-available, with a <a href="https://www.cloudron.io/legal/license.html" target="_blank">subscription license</a> required if you want to self host more than 2 apps and have full access to all features like email. Paying for the license means the team supports you in the forums and will help troubleshoot via email.</p>
+
+<p>The team creates, contributes to, and directly supports a <a href="https://www.cloudron.io/opensource.html" target="_blank">number of open source packages</a>. All of the app packages that are deployed on Cloudron are open source.</p>
+
+<p>A number of app packages they support installing (e.g. Atlassian Confluence, Outline, Cal.com) have various non-commercial / subscription required licenses as well.<sup id="fnref:licensing" role="doc-noteref"><a href="#fn:licensing" class="footnote" rel="footnote">1</a></sup></p>
+
+<h2 id="cost">Cost</h2>
+
+<ul>
+  <li>Cloudron license: $15/month, paid annually</li>
+  <li>Backup: $5USD/month</li>
+  <li>Hosting: $11USD/month</li>
+</ul>
+
+<p>Total: $31USD per month, $372USD per year.</p>
+
+<p>For many services like email ($5-$10/user/month), file sharing ($5-$10/user/month), calendaring ($5-$10/user/month), you can quickly see that ~5 users of a hosted service will be more expensive than the hosting costs of a Cloudron powered server. If we benchmark $10/user/service as a typical service cost, Cloudron hosting can be much cheaper.</p>
+
+<p>10 users = $100/month, vs $30 Cloudron costs.</p>
+
+<p>That does assume someone willing to do basic Cloudron admin. You don't need to use the command line, but you do need to be familiar with DNS, email, and other services with API keys and relatively technical settings.</p>
+<h3 id="backup">Backup</h3>
+
+<p><a href="https://notes.bmannconsulting.com/#/page/Digital%20Ocean" class="noteslink" target="_blank">Digital Ocean</a> has <a href="https://www.digitalocean.com/products/spaces" target="_blank">Spaces storage starting at $5</a> for up to 250GB. <a href="https://docs.cloudron.io/backups/" target="_blank">Cloudron lists all of the storage providers they support</a>.</p>
+<h3 id="hosting">Hosting</h3>
+<h4 id="ovh-bare-metal-servers">OVH Bare Metal Servers</h4>
+<p>For <a class="internal-link" href="/notes/cosocial/">CoSocial</a>, I wanted to keep hosting in Canada. OVH has a data center in Quebec and low cost bare metal servers.</p>
+
+<p>Example OVH for $29.99CAD/month</p>
+<ul>
+  <li>Intel Xeon E3-1245v2 - 4 c / 8 t - 3.4 GHz / 3.8 GHz</li>
+  <li>Memory: 32 GB DDR3</li>
+  <li>Storage: 2 x 480 GB SSD SATA Soft RAID</li>
+</ul>
+
+<p>A bare metal server will be able to host many more apps than a VPS, but it's also a single point of failure: if something goes wrong with the hardware of that server, that's your problem.</p>
+
+<h4 id="hostinger-vps">Hostinger VPS</h4>
+
+<p><img src="/assets/hostinger-vps-plans-screenshot.png" alt=""></p>
+
+<p>For the difference in price, I'd recommend at least the KVM 4 with 16GB RAM. Those are USD prices. You can use my referral code for one-click Cloudron installs on a <a href="https://hostinger.com/vps-hosting?REFERRALCODE=1BORIS58" target="_blank">Hostinger VPS</a></p>
+<h4 id="home-hosting">Home Hosting</h4>
+<p>I'd love to try running a Cloudron install at home, but it all seems quite a bit trickier. You're still looking at a ~$500 mini server purchase, which is like 2 - 3 years of VPS hosting costs!</p>
+
+<h3 id="dns-and-domains">DNS and Domains</h3>
+
+<p>You'll need at least one domain name and more likely will have at least 2, so add another $10 - $30 per year in domain registration fees.</p>
+
+<p>Cloudron will automatically <a href="https://docs.cloudron.io/domains/" target="_blank">manage all your DNS settings for you</a> if you add them using a registrar that supports API access.</p>
+<h3 id="email">Email</h3>
+
+<p>For production services of things like mailing lists, you may have trouble with deliverability of self-hosted email. You can <a href="https://docs.cloudron.io/email/#relay-outbound-mails" target="_blank">setup SMTP relay</a> from a number of different providers. Any provider that provides SMTP services will work.</p>
+
+<p>There are some apps (like Ghost) that <a href="https://docs.cloudron.io/apps/ghost/#bulk-emails" target="_blank">require Mailgun</a> for their subscription services.</p>
+
+<p>Example starter pricing: Postmark $15USD/month, Mailgun is free for up to 10,000 emails and the first paid plan is $35USD/month for up to 50K emails.</p>
+
+<h2 id="apps">Apps</h2>
+<p>The <a href="https://www.cloudron.io/store/index.html" target="_blank">Cloudron store lists all the apps they support</a>. It uses <a class="internal-link" href="/notes/docker/">Docker</a> images to package apps, but then runs centrally managed services like database, redis, files, email, etc.</p>
+
+<p>There are many "open source clones" of various commercial services. Listing them this way may help people find apps that are new to them or figure out what to look for to meet the needs that they have:</p>
+
+<ul>
+  <li>Dropbox: use Nextcloud for file syncing and sharing.</li>
+  <li>Google Email &amp; Calendar: SoGo or Nextcloud both have webmail that can sync contacts and calendars</li>
+  <li>Airtable, Typeform: NocoDB has both Airtable-like interfaces for spreadsheet style data storage, as well as a survey mode that could be used instead of Typeform.</li>
+  <li>Figma: Penpot</li>
+  <li>1Password, LastPass: Vaultwarden is the self-hostable backend that connects with Bitwarden apps</li>
+  <li>Zoom, Google Meet: Jitsi does video-based. Nextcloud Talk is another alternative.</li>
+  <li>Slack, Microsoft Teams: Mattermost chat</li>
+  <li>Help Scout, Shared Email Inbox: FreeScout</li>
+  <li>Mailchimp: Listmonk</li>
+</ul>
+
+<p>And there are open source apps that are themselves well-known that can be complicated to install or maintain:</p>
+
+<ul>
+  <li>Mastodon, ActivityPub enabled micro-blogging</li>
+  <li>Discourse, forum and community server</li>
+  <li>Gitlab, self hosted Github alternate. Gitea, a simpler "forge" software is also available</li>
+  <li>Peertube, ActivityPub enabled video platform. Can sync with or import from YouTube</li>
+  <li>Wordpress, self-hosted version that is setup and maintained for you</li>
+  <li>MediaWiki, the wiki platform that powers Wikipedia and other sites (DokuWiki, HedgeDoc, WikiJS, Confluence, BookStack, and Outline are other supported apps that are wiki variants with slightly different specializations)</li>
+</ul>
+
+<h2 id="forum">Forum</h2>
+
+<p>The <a href="https://forum.cloudron.io/" target="_blank">Cloudron forum</a> has lots of great discussions on apps, setup and use cases, as well as wishlists for new apps, and more.</p>
+
+<h2 id="alternatives">Alternatives</h2>
+
+<p><a class="internal-link" href="/notes/co-op-cloud/">Co-op Cloud</a></p>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:licensing" role="doc-endnote">
+      <p>I have a whole page on <a class="internal-link" href="/notes/open-source-licensing/">Open Source Licensing</a>. There will definitely be people who don’t like Cloudron because it’s “not open source”. If anything, I don’t think they’re charging ENOUGH. It would be interesting to see if license holders “voted” for the software packages they want to allocate resources to. <a href="#fnref:licensing" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+  </ol>
+</div>
+</body></html>
+    </content>
+
+    <side style="font-size: 0.9em">
+      <h3 style="margin-bottom: 1em">Notes mentioning this note</h3>
+      
+      <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
+      
+        <div class="backlink-box">
+        <a class="internal-link" href="/notes/bring-your-own-server/">Bring your own server</a><br>
+        <div style="font-size: 0.9em">This is a term I'm exploring around software that installs on your own server, that then fully manages it and...</div>
+        </div>
+      
+        <div class="backlink-box">
+        <a class="internal-link" href="/notes/co-op-cloud-alternatives/">Co Op cloud alternatives</a><br>
+        <div style="font-size: 0.9em">[[Co-op Cloud]] has done a great job of listing out their opinions of the pros / cons of other server...</div>
+        </div>
+      
+        <div class="backlink-box">
+        <a class="internal-link" href="/notes/commons-computer/">Commons computer</a><br>
+        <div style="font-size: 0.9em">My personal shared [[Cloudron]] install. The Discourse forum at commonscomputer.com has more info and updates.
+
+Apps
+
+[[Rallly]]
+
+https://rally.commonscomputer.com
+</div>
+        </div>
+      
+        <div class="backlink-box">
+        <a class="internal-link" href="/notes/cosmos-server/">Cosmos server</a><br>
+        <div style="font-size: 0.9em">From the GIthub README: Cosmos is the most secure and easy way to self-host a Home Server. It acts as...</div>
+        </div>
+      
+        <div class="backlink-box">
+        <a class="internal-link" href="/notes/design-for-deployment/">Design for deployment</a><br>
+        <div style="font-size: 0.9em">Designing software while very much thinking about how it will be deployed and operated. Design is trade-offs, so one one...</div>
+        </div>
+      
+        <div class="backlink-box">
+        <a class="internal-link" href="/notes/email-clients/">Email clients</a><br>
+        <div style="font-size: 0.9em">I’m a long time [[Missive]] user for work, and I’m looking for a new email client and/or new email workflows...</div>
+        </div>
+      
+        <div class="backlink-box">
+        <a class="internal-link" href="/notes/freescout/">Freescout</a><br>
+        <div style="font-size: 0.9em">Open source shared Helpdesk and Shared Mailbox Available for self hosting on [[Cloudron]] It’s free of charge to self host,...</div>
+        </div>
+      
+        <div class="backlink-box">
+        <a class="internal-link" href="/notes/ghost/">Ghost</a><br>
+        <div style="font-size: 0.9em">A blogging and membership based newsletter app. [[MIT]] licensed open source. Maintained by the non-profit Ghost Foundation, who also run...</div>
+        </div>
+      
+        <div class="backlink-box">
+        <a class="internal-link" href="/notes/grist/">Grist</a><br>
+        <div style="font-size: 0.9em">Open source, Apache licensed cloud spreadsheet. Not quite an Airtable clone, but similar capabilities. Some of the layout and linking...</div>
+        </div>
+      
+        <div class="backlink-box">
+        <a class="internal-link" href="/notes/headless-cms/">Headless cms</a><br>
+        <div style="font-size: 0.9em">Headless CMS or other data-first builder for information / API building. Interested especially for events, where you want to model...</div>
+        </div>
+      
+        <div class="backlink-box">
+        <a class="internal-link" href="/notes/lenovo-m900-tiny-setup/">Lenovo m900 tiny setup</a><br>
+        <div style="font-size: 0.9em">I’m going to go over a lot of the yak shaving I did to set up the [[Lenovo M900 Tiny]]....</div>
+        </div>
+      
+        <div class="backlink-box">
+        <a class="internal-link" href="/notes/outline/">Outline</a><br>
+        <div style="font-size: 0.9em">An open source collaborative knowledge base for modern teams. [[BSL]] licensed. Self Hosting Available on [[Cloudron]]. Community edition limits features,...</div>
+        </div>
+      
+        <div class="backlink-box">
+        <a class="internal-link" href="/notes/photo-sharing/">Photo sharing</a><br>
+        <div style="font-size: 0.9em">I recently [[2024-03-04_0743 shared that Ente is open sourcing their back end]] and lots of people are asking about what...</div>
+        </div>
+      
+        <div class="backlink-box">
+        <a class="internal-link" href="/notes/rallly/">Rallly</a><br>
+        <div style="font-size: 0.9em">Website: https://rallly.co Rallly is an open-source scheduling and collaboration tool designed to make organizing events and meetings easier. I don't...</div>
+        </div>
+      
+      
+      </div>
+      
+    </side>
+  </div>
+</article>
+</main>
+      <footer><a href="/blog/" class="internal-link">Blog</a> | <a href="/journal/" class="internal-link">Journal</a> | <a href="/notes/" class="internal-link">Notes</a> | <a href="/feeds/" class="internal-link">Feeds</a> | 👉&nbsp;Social Profiles&nbsp;<a href='https://bmann.ca' title='Links to all of my social profiles and accounts'>bmann.ca</a> </footer>
+    </div>
+
+    <!-- That file is not particularly elegant. This will need a refactor at some point. -->
+<style>
+
+  
+
+  #tooltip-wrapper {
+    background: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    font-size: 0.8em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 100ms;
+  }
+
+  #tooltip-wrapper:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+		background-image: linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, 1) 90%);
+		width: 100%;
+		height: 75px;
+  }
+</style>
+
+<div style="opacity: 0; display: none;" id='tooltip-wrapper'>
+  <div id='tooltip-content'>
+  </div>
+</div>
+
+<iframe style="display: none; height: 0; width: 0;" id='link-preview-iframe' src="">
+</iframe>
+
+<script>
+  var opacityTimeout;
+  var contentTimeout;
+  var transitionDurationMs = 100;
+
+  var iframe = document.getElementById('link-preview-iframe')
+  var tooltipWrapper = document.getElementById('tooltip-wrapper')
+  var tooltipContent = document.getElementById('tooltip-content')
+
+  var linkHistories = {};
+
+  function hideTooltip() {
+    opacityTimeout = setTimeout(function() {
+      tooltipWrapper.style.opacity = 0;
+      contentTimeout = setTimeout(function() {
+        tooltipContent.innerHTML = '';
+        tooltipWrapper.style.display = 'none';
+      }, transitionDurationMs + 1);
+    }, transitionDurationMs)
+  }
+
+  function showTooltip(event) {
+    var elem = event.target;
+    var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
+    var top = window.pageYOffset || document.documentElement.scrollTop
+
+    if (event.target.host === window.location.host) {
+      if (!linkHistories[event.target.href]) {
+        iframe.src = event.target.href
+        iframe.onload = function() {
+          tooltipContentHtml = ''
+          tooltipContentHtml += '<div style="font-weight: bold;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
+          tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
+
+          tooltipContent.innerHTML = tooltipContentHtml
+          linkHistories[event.target.href] = tooltipContentHtml
+
+          tooltipWrapper.style.display = 'block';
+          setTimeout(function() {
+            tooltipWrapper.style.opacity = 1;
+          }, 1)
+        } 
+      } else {
+        tooltipContent.innerHTML = linkHistories[event.target.href]
+        tooltipWrapper.style.display = 'block';
+        setTimeout(function() {
+          tooltipWrapper.style.opacity = 1;
+        }, 1)
+      }
+
+
+      tooltipWrapper.style.left = elem_props.left - (tooltipWrapper.offsetWidth / 2) + (elem_props.width / 2) + "px";
+      if ((window.innerHeight - elem_props.top) < (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top - tooltipWrapper.offsetHeight - 10 + "px";
+      } else if ((window.innerHeight - elem_props.top) > (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top + 35 + "px";
+      }
+
+      if ((elem_props.left + (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = "10px";
+      } else if ((document.body.clientWidth - elem_props.left - (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = document.body.clientWidth - tooltipWrapper.offsetWidth - 20 + "px";
+      }
+    }
+  }
+
+  function setupListeners(linkElement) {
+    linkElement.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+      showTooltip(event);
+    });
+
+    tooltipWrapper.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+    });
+  }
+
+  document.querySelectorAll('content a').forEach(setupListeners);
+</script>
+
+    <script
+  src="https://unpkg.com/littlefoot/dist/littlefoot.js"
+  type="application/javascript"
+></script>
+<script type="application/javascript">
+  littlefoot.littlefoot() // Pass any littlefoot settings here.
+</script>
+  </body>
+</html>
