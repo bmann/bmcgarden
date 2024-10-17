@@ -1,9 +1,0 @@
----
----
-/archive/* https://2023.bmannconsulting.com/archive/:splat 301
-/blog/* https://2023.bmannconsulting.com/blog/:splat 301
-
-{% for note in site.notes %}{% for alias in note.aliases %}
-/notes/{{ alias | url_encode }} {{ note.url }} 302  {% endfor %}{% endfor %}
-
-/* /404.html 404
