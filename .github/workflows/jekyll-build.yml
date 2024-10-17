@@ -64,7 +64,13 @@ jobs:
           ### If you need to specify any Jekyll build options, enable the above input
           ### Flags accepted can be found here https://jekyllrb.com/docs/configuration/options/#build-command-options
 
-      - name: 🚀 fission publish
-        uses: fission-codes/publish-action@v1
+      # - name: 🚀 fission publish
+      #  uses: fission-codes/publish-action@v1
+      #  with:
+      #      machine_key: ${{ secrets.FISSION_KEY }}
+
+      - name: 🚀 deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
-            machine_key: ${{ secrets.FISSION_KEY }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
