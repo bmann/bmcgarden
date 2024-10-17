@@ -9,8 +9,20 @@
 		<description>Daily journals with links and asides, digital garden notes, and occasional long form blogs</description>		
 		<link>https://bmannconsulting.com</link>
 		<atom:link href="https://bmannconsulting.com/journal.xml" rel="self" type="application/rss+xml" />
-		<lastBuildDate>Wed, 16 Oct 2024 23:04:48 -0700</lastBuildDate>
+		<lastBuildDate>Wed, 16 Oct 2024 23:45:22 -0700</lastBuildDate>
 		
+		
+			<item>
+				<dc:creator>Boris Mann</dc:creator>
+				
+				<description>&lt;p&gt;Had an inspiring call with the [[ZKorum]] team this morning. They&apos;re trying on some new taglines, including &quot;building citizen networks rather than social networks&quot;&lt;/p&gt;
+</description>
+				
+				<link>https://zkorum.com/</link>
+				
+				<pubDate>Wed, 16 Oct 2024 23:40:20 -0700</pubDate>
+				<guid isPermaLink="true">https://bmannconsulting.com/journal/2024-10-16-2340/</guid>
+			</item>
 		
 			<item>
 				<dc:creator>Boris Mann</dc:creator>
@@ -269,18 +281,6 @@
 				
 				<pubDate>Mon, 05 Aug 2024 10:17:08 -0700</pubDate>
 				<guid isPermaLink="true">https://bmannconsulting.com/journal/2024-08-05-1017/</guid>
-			</item>
-		
-			<item>
-				<dc:creator>Boris Mann</dc:creator>
-				
-				<description>&lt;p&gt;Friend [[Ellie]] is selling [14TB hard drives with a USB adapter], pre-loaded with TBs of LLM models.&lt;/p&gt;
-</description>
-				
-				<link>https://computer.supply/products/16tb-drive-w-assorted-large-language-model-weights</link>
-				
-				<pubDate>Mon, 05 Aug 2024 10:11:16 -0700</pubDate>
-				<guid isPermaLink="true">https://bmannconsulting.com/journal/2024-08-05-1011/</guid>
 			</item>
 		
 	</channel>
