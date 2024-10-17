@@ -2,7 +2,9 @@
 tags:
   - BMC
 ---
+## October 2024
 
+Turned off publishing to [[Fission]]. Just plain old Github Pages now.
 ## January 2024
 
 The site is still powered by [[Digital Garden Jekyll Template]]. Using [[Obsidian]] to edit on desktop and mobile, with git for syncing. Obsidian wikilinks are compatible with the Jekyll template processing. The only manual thing is that image links need to be relative Markdown links rather than wikilinks.
