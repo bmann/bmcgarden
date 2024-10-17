@@ -9,8 +9,20 @@
 		<description>Daily journals with links and asides, digital garden notes, and occasional long form blogs</description>		
 		<link>https://bmannconsulting.com</link>
 		<atom:link href="https://bmannconsulting.com/journal.xml" rel="self" type="application/rss+xml" />
-		<lastBuildDate>Thu, 17 Oct 2024 07:33:31 -0700</lastBuildDate>
+		<lastBuildDate>Thu, 17 Oct 2024 11:57:58 -0700</lastBuildDate>
 		
+		
+			<item>
+				<dc:creator>Boris Mann</dc:creator>
+				
+				<description>&lt;p&gt;[[Subvert]] is launching today: you can become a co-op founding member for $100USD by buying the zine &quot;Plan for the Artist-Owned Internet&quot;, or for free as a founding musician or label. I&apos;ve joined, love to see more projects like this.&lt;/p&gt;
+</description>
+				
+				<link>https://subvert.fm/</link>
+				
+				<pubDate>Thu, 17 Oct 2024 10:49:12 -0700</pubDate>
+				<guid isPermaLink="true">https://bmannconsulting.com/journal/2024-10-17-1049/</guid>
+			</item>
 		
 			<item>
 				<dc:creator>Boris Mann</dc:creator>
@@ -269,18 +281,6 @@
 				
 				<pubDate>Tue, 13 Aug 2024 11:11:47 -0700</pubDate>
 				<guid isPermaLink="true">https://bmannconsulting.com/journal/2024-08-13-1111/</guid>
-			</item>
-		
-			<item>
-				<dc:creator>Boris Mann</dc:creator>
-				
-				<description>&lt;p&gt;I set up a QR code with my vCard info in it for [[DWeb Camp]]. [[Go QR]] is the generator I recommend.&lt;/p&gt;
-</description>
-				
-				<link>https://goqr.me/</link>
-				
-				<pubDate>Mon, 05 Aug 2024 10:17:08 -0700</pubDate>
-				<guid isPermaLink="true">https://bmannconsulting.com/journal/2024-08-05-1017/</guid>
 			</item>
 		
 	</channel>
