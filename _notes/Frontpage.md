@@ -10,3 +10,9 @@ Frontpage is a link aggregator — a social network built around aggregating lin
 Hacker News and Reddit are two examples of social network platforms that use links as their core social object.
 
 It’s a little bit different than the older concept of social bookmarking — eg Delicious — but building on top of Frontpage you could also have a front end that feels like that sort of system.
+
+## Architecture and Design
+
+https://youtu.be/pvoLfGzjmPc
+
+I interviewed Tom Sherman for [[ATProtocol Dev]], [read the full post there](https://atprotocol.dev/tech-talk-frontpage-link-aggregator/).
